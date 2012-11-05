@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:text="@string/title">
+  
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" 
+     android:scrollbars="vertical" 
+     android:layout_height="fill_parent" 
+     android:layout_width="fill_parent">
+    
+  <TableLayout 
+		android:id="@+id/purchScanTable1" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+		<TableRow 
+			android:id="@+id/table1Row1" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content">
+			<TextView 
+				android:id="@+id/status_label"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:text="Current Status:  " />
+			<TextView 
+				android:id="@+id/status_data" 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" 
+				android:text=" Scan a Tag" />
+			
+  
+		</TableRow>		
+		
+		<View
+ 		    android:id="@+id/purchScanES1" 
+ 		    android:layout_width="match_parent"
+			android:layout_height="55px"
+			android:layout_below="@id/status_label"
+			android:background="#000000" />	 
+
+		<Spinner
+			    android:id="@+id/cmbCards"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_above="@+id/btn_clear"
+			  />
+		<Button 
+				android:id="@+id/btn_clear" 
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"  
+				android:layout_below="@id/purchScanES1"
+				android:gravity="center_horizontal"				 
+				android:text="Clear" />     
+	</TableLayout>
+	 
+</ScrollView>
+  
+	
+</RelativeLayout>

@@ -1,0 +1,14 @@
+net.thempra.yocaina.MainActivity
+net.thempra.yocaina.MainActivity: MainActivity()
+net.thempra.yocaina.MainActivity: void onClick(android.view.View)
+net.thempra.yocaina.R$drawable: int icon
+net.thempra.yocaina.R$id: int btn_clear
+net.thempra.yocaina.R$id: int cmbCards
+net.thempra.yocaina.R$id: int purchScanES1
+net.thempra.yocaina.R$id: int purchScanTable1
+net.thempra.yocaina.R$id: int status_data
+net.thempra.yocaina.R$id: int status_label
+net.thempra.yocaina.R$id: int table1Row1
+net.thempra.yocaina.R$layout: int main
+net.thempra.yocaina.R$string: int app_name
+net.thempra.yocaina.R$string: int title

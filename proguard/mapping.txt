@@ -1,0 +1,32 @@
+net.thempra.yocaina.MainActivity -> net.thempra.yocaina.MainActivity:
+    android.widget.TextView status_Data -> a
+    android.widget.Spinner cmbCards -> b
+    android.widget.TableLayout tl -> c
+    android.nfc.NfcAdapter mAdapter -> d
+    android.app.PendingIntent mPendingIntent -> e
+    android.content.IntentFilter[] mFilters -> f
+    java.lang.String[][] mTechLists -> g
+    byte[] HEX_CHAR_TABLE -> h
+    java.util.ArrayList customKeys -> i
+    void onCreate(android.os.Bundle) -> onCreate
+    void resolveIntent(android.content.Intent) -> a
+    void showAlert(int) -> a
+    void onClick(android.view.View) -> onClick
+    void clearFields() -> d
+    java.lang.String getHexString(byte[],int) -> a
+    void onResume() -> onResume
+    void onNewIntent(android.content.Intent) -> onNewIntent
+    void onPause() -> onPause
+    boolean LoadCards() -> e
+    void LoadKeys(java.lang.String) -> a
+    void access$0() -> a
+    android.widget.TextView access$1() -> b
+    android.widget.Spinner access$2() -> c
+    void access$3(net.thempra.yocaina.MainActivity,java.lang.String) -> a
+net.thempra.yocaina.MainActivity$1 -> net.thempra.yocaina.a:
+    net.thempra.yocaina.MainActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+net.thempra.yocaina.MainActivity$2 -> net.thempra.yocaina.b:
+    net.thempra.yocaina.MainActivity this$0 -> a
+    void onItemSelected(android.widget.AdapterView,android.view.View,int,long) -> onItemSelected
+    void onNothingSelected(android.widget.AdapterView) -> onNothingSelected

@@ -1,0 +1,16 @@
+net.thempra.yocaina.BuildConfig
+net.thempra.yocaina.MainActivity:
+    private static final int AUTH
+    private static final int EMPTY_BLOCK_0
+    private static final int EMPTY_BLOCK_1
+    private static final int EMPTY_BLOCK_2
+    private static final int EMPTY_BLOCK_3
+    private static final int NETWORK
+    private static final java.lang.String TAG
+    329:329:private byte[] GetKey(int,int)
+net.thempra.yocaina.R
+net.thempra.yocaina.R$attr
+net.thempra.yocaina.R$drawable
+net.thempra.yocaina.R$id
+net.thempra.yocaina.R$layout
+net.thempra.yocaina.R$string
