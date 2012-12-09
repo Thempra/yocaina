@@ -45,13 +45,14 @@
 			    android:layout_height="wrap_content"
 			    android:layout_above="@+id/btn_clear"
 			  />
+		<Button android:id="@+id/btn_clear" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center_horizontal" android:text="Clear"/>
 		<Button 
-				android:id="@+id/btn_clear" 
+				android:id="@+id/btn_dump" 
 				android:layout_width="fill_parent"
 				android:layout_height="wrap_content"  
 				android:layout_below="@id/purchScanES1"
 				android:gravity="center_horizontal"				 
-				android:text="Clear" />     
+				android:text="Dump" />       
 	</TableLayout>
 	 
 </ScrollView>

@@ -9,6 +9,8 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
+import net.thempra.yocaina.cards.CardMifare;
+
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.PendingIntent;
@@ -52,7 +54,7 @@ public class MainActivity extends Activity implements OnClickListener {
 	private static IntentFilter[] mFilters;
 	private static String[][] mTechLists;
 
-	// Just for alerts
+/*	// Just for alerts
 
 	private static final int AUTH = 1;
 	private static final int EMPTY_BLOCK_0 = 2;
@@ -62,7 +64,10 @@ public class MainActivity extends Activity implements OnClickListener {
 	private static final int NETWORK = 6;
 	private static final String TAG = "purchtagscanact";
 
-	private ArrayList<byte[]> customKeys = new ArrayList<byte[]>();
+*/
+	
+	private CardMifare crdMifare;
+	
 
 	/** Called when the activity is first created. */
 	@Override
@@ -88,8 +93,10 @@ public class MainActivity extends Activity implements OnClickListener {
 
 			// Capture Purchase button from layout
 			Button btn_clear = (Button) findViewById(R.id.btn_clear);
+			Button btn_dump = (Button) findViewById(R.id.btn_dump);
 			// Register the onClick listener with the implementation above
 			btn_clear.setOnClickListener(this);
+			btn_dump.setOnClickListener(dumpToFile());
 
 			mAdapter = NfcAdapter.getDefaultAdapter(this);
 			if (mAdapter != null) {
@@ -128,6 +135,13 @@ public class MainActivity extends Activity implements OnClickListener {
 		}
 	}
 
+	private OnClickListener dumpToFile() {
+		// TODO Auto-generated method stub
+		//crdMifare.dumpToFile();
+		
+		return null;
+	}
+
 	void resolveIntent(Intent intent) {
 
 		// Parse the intent
@@ -136,95 +150,68 @@ public class MainActivity extends Activity implements OnClickListener {
 			// status_Data.setText("Discovered tag with intent: " + intent);
 			Tag tagFromIntent = intent.getParcelableExtra(NfcAdapter.EXTRA_TAG);
 			
-/*			Ndef ndefTag = Ndef.get(tagFromIntent);
-			String NFCType =ndefTag.getType(); 
-			status_Data.setText("Type: "+NFCType);
-	*/		
 			
-			MifareClassic mfc = MifareClassic.get(tagFromIntent);
-			byte[] data;
-			try {
-				mfc.connect();
-				boolean auth = false;
-				String cardData = null;
-				status_Data.setText("Authenticating the Tag..");
+	/*		Ndef ndefTag = Ndef.get(tagFromIntent);
+			int size = ndefTag.getMaxSize();         // tag size
+			String NFCType =ndefTag.getType(); 
+			boolean writable = ndefTag.isWritable(); // is tag writable?
 
-				for (int i = 0; i < mfc.getSectorCount(); i++)
-				// for(int i=0 ;i<NUM_SECTORS; i++)
+			status_Data.setText("Type: "+NFCType);
+*/			
+
+			status_Data.setText("Reading the Tag..");
+			crdMifare = new CardMifare(cmbCards.getSelectedItem().toString());
+			status_Data.setText("Tag read.");
+
+			ArrayList<String> dump = crdMifare.getData(tagFromIntent);
+			for (int i = 0; i < dump.size() ; i++)
+			{
+
+				if (i%crdMifare.blocksInSector()==0)
 				{
+				tl = (TableLayout) findViewById(R.id.purchScanTable1);
 
-					tl = (TableLayout) findViewById(R.id.purchScanTable1);
+				TableRow trTitle = new TableRow(this);
+				trTitle.setLayoutParams(new LayoutParams(
+						LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT));
 
-					TableRow trTitle = new TableRow(this);
-					trTitle.setLayoutParams(new LayoutParams(
-							LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT));
+				TextView tvSect = new TextView(this);
+				tvSect.setText("\nSection " + i/crdMifare.blocksInSector());
+				tvSect.setTextColor(Color.YELLOW);
 
-					TextView tvSect = new TextView(this);
-					tvSect.setText("\nSection " + i);
-					tvSect.setTextColor(Color.YELLOW);
-
-					trTitle.addView(tvSect);
-					tl.addView(trTitle,
-							new TableLayout.LayoutParams(
-									LayoutParams.FILL_PARENT,
-									LayoutParams.WRAP_CONTENT));
-
-					// Authenticating and reading Block 0 /Sector 1
-					auth = mfc.authenticateSectorWithKeyA(i, customKeys.get(i));
-					
-					if (auth) {
-
-						
-						// If authenticated
-						for (int j = mfc.sectorToBlock(i); j < mfc
-								.sectorToBlock(i)
-								+ mfc.getBlockCountInSector(i); j++) {
-
-							/* ············································· */
-							data = mfc.readBlock(j);
-							cardData = Utils.getHexString(data, data.length);
-
-							if (cardData != null) {
-								// block_0_Data.setText(cardData);
-
-								TableRow tr1 = new TableRow(this);
-								tr1.setLayoutParams(new LayoutParams(
-										LayoutParams.FILL_PARENT,
-										LayoutParams.WRAP_CONTENT));
-
-								TextView tvBlk = new TextView(this);
-								tvBlk.setText("BLOCK " + j);
-
-								TextView textview = new TextView(this);
-								textview.setText(cardData);
-
-								tr1.addView(tvBlk);
-								tr1.addView(textview);
-								tl.addView(tr1, new TableLayout.LayoutParams(
-										LayoutParams.FILL_PARENT,
-										LayoutParams.WRAP_CONTENT));
-
-							} else {
-								showAlert(EMPTY_BLOCK_0);
-							}
-						}
-						status_Data.setText("Read ok");
-
-
-					} else {
-						showAlert(AUTH);
-						break;
-					}
+				trTitle.addView(tvSect);
+				tl.addView(trTitle,
+						new TableLayout.LayoutParams(
+								LayoutParams.FILL_PARENT,
+								LayoutParams.WRAP_CONTENT));
 				}
-			} catch (IOException e) {
-				Log.e(TAG, e.getLocalizedMessage());
-				showAlert(NETWORK);
+			
+			
+					TableRow tr1 = new TableRow(this);
+					tr1.setLayoutParams(new LayoutParams(
+							LayoutParams.FILL_PARENT,
+							LayoutParams.WRAP_CONTENT));
+
+					TextView tvBlk = new TextView(this);
+					tvBlk.setText("BLOCK " + i +":   ");
+
+					TextView textview = new TextView(this);
+					textview.setText(dump.get(i));
+
+					tr1.addView(tvBlk);
+					tr1.addView(textview);
+					tl.addView(tr1, new TableLayout.LayoutParams(
+							LayoutParams.FILL_PARENT,
+							LayoutParams.WRAP_CONTENT));
+					
+				
+	
 			}
 		} else {
 			status_Data.setText("Online + Scan a tag");
 		}
 	}
-
+/*
 	private void showAlert(int alertCase) {
 		// prepare the alert box
 		AlertDialog.Builder alertbox = new AlertDialog.Builder(this);
@@ -261,7 +248,8 @@ public class MainActivity extends Activity implements OnClickListener {
 		alertbox.show();
 
 	}
-
+*/
+	
 	@Override
 	public void onClick(View v) {
 		clearFields();
@@ -303,10 +291,10 @@ public class MainActivity extends Activity implements OnClickListener {
 			mAdapter.disableForegroundDispatch(this);
 	}
 
-	private byte[] GetKey(int n, int sector) {
+/*	private byte[] GetKey(int n, int sector) {
 		return customKeys.get(sector);
 	}
-
+*/
 	private boolean LoadCards() {
 		// /sdcard/yocaina
 		Resources res = getResources();
@@ -347,7 +335,6 @@ public class MainActivity extends Activity implements OnClickListener {
 					// your code here
 					status_Data.setText("Selected "
 							+ cmbCards.getSelectedItem().toString());
-					LoadKeys(cmbCards.getSelectedItem().toString());
 					clearFields();
 				}
 
@@ -363,54 +350,5 @@ public class MainActivity extends Activity implements OnClickListener {
 		
 	}
 
-	private void LoadKeys(String file) {
-		customKeys.clear();
-
-		try {
-			File f = new File(Environment.getExternalStorageDirectory()
-					+ "/yocaina/" + file);
-			FileInputStream fileIS = new FileInputStream(f);
-			BufferedReader buf = new BufferedReader(new InputStreamReader(
-					fileIS));
-			String readString = new String();
-
-			// just reading each line and pass it on the debugger
-
-			while ((readString = buf.readLine()) != null) {
-				String[] separated = readString.split(" ");
-
-				// byte n = (byte)(Integer.parseInt(separated[0].replace("0x",
-				// ""), 16) & 0xFF);
-				// byte[] k1 ={ (byte) 0xa0, (byte) 0xa1, (byte) 0xa2, (byte)
-				// 0xa3, (byte) 0xa4, (byte) 0xa5};
-
-				byte[] kn = {
-						(byte) (Integer.parseInt(
-								separated[0].replace("0x", ""), 16) & 0xFF),
-						(byte) (Integer.parseInt(
-								separated[1].replace("0x", ""), 16) & 0xFF),
-						(byte) (Integer.parseInt(
-								separated[2].replace("0x", ""), 16) & 0xFF),
-						(byte) (Integer.parseInt(
-								separated[3].replace("0x", ""), 16) & 0xFF),
-						(byte) (Integer.parseInt(
-								separated[4].replace("0x", ""), 16) & 0xFF),
-						(byte) (Integer.parseInt(
-								separated[5].replace("0x", ""), 16) & 0xFF) };
-
-				customKeys.add(kn);
-
-			}
-
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		} catch (Exception e) {
-			e.printStackTrace();
-
-		}
-
-	}
 
 }

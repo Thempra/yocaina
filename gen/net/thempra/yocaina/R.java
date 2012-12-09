@@ -15,6 +15,7 @@ public final class R {
     }
     public static final class id {
         public static final int btn_clear=0x7f050006;
+        public static final int btn_dump=0x7f050007;
         public static final int cmbCards=0x7f050005;
         public static final int purchScanES1=0x7f050004;
         public static final int purchScanTable1=0x7f050000;

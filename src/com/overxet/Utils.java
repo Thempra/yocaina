@@ -1,5 +1,16 @@
 package com.overxet;
 
+import java.io.IOException;
+import java.io.StringWriter;
+import java.util.List;
+
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import org.xmlpull.v1.XmlSerializer;
+
+import android.os.Message;
+import android.util.Xml;
+
 
 public class Utils {
 	// Hex help
@@ -29,5 +40,70 @@ public class Utils {
 		return new String(hex);
 	}
 
+/*	private String writeXml(List<Message> messages){
+	    XmlSerializer serializer = Xml.newSerializer();
+	    StringWriter writer = new StringWriter();
+	    try {
+	        serializer.setOutput(writer);
+	        serializer.startDocument("UTF-8", true);
+	        serializer.startTag("", "messages");
+	        serializer.attribute("", "number", String.valueOf(messages.size()));
+	        for (Message msg: messages){
+	            serializer.startTag("", "dump");
+	            serializer.attribute("", "date", msg.getDate());
+	            serializer.startTag("", "title");
+	            serializer.text(msg.getTitle());
+	            serializer.endTag("", "title");
+	            serializer.startTag("", "url");
+	            serializer.text(msg.getLink().toExternalForm());
+	            serializer.endTag("", "url");
+	            serializer.startTag("", "body");
+	            serializer.text(msg.getDescription());
+	            serializer.endTag("", "body");
+	            serializer.endTag("", "message");
+	        }
+	        serializer.endTag("", "messages");
+	        serializer.endDocument();
+	        return writer.toString();
+	    } catch (Exception e) {
+	        throw new RuntimeException(e);
+	    } 
+	}
+	*/
+	
+	public static String getStringFromNode(Node root) throws IOException {
 
+        StringBuilder result = new StringBuilder();
+
+        if (root.getNodeType() == 3)
+            result.append(root.getNodeValue());
+        else {
+            if (root.getNodeType() != 9) {
+                StringBuffer attrs = new StringBuffer();
+                for (int k = 0; k < root.getAttributes().getLength(); ++k) {
+                    attrs.append(" ").append(
+                            root.getAttributes().item(k).getNodeName()).append(
+                            "=\"").append(
+                            root.getAttributes().item(k).getNodeValue())
+                            .append("\" ");
+                }
+                result.append("<").append(root.getNodeName()).append(" ")
+                        .append(attrs).append(">");
+            } else {
+                result.append("<?xml version=\"1.0\" encoding=\"UTF-8\"?>");
+            }
+
+            NodeList nodes = root.getChildNodes();
+            for (int i = 0, j = nodes.getLength(); i < j; i++) {
+                Node node = nodes.item(i);
+                result.append(getStringFromNode(node));
+            }
+
+            if (root.getNodeType() != 9) {
+                result.append("</").append(root.getNodeName()).append(">");
+            }
+        }
+        return result.toString();
+    }
+	
 }
