@@ -1,3 +1,6 @@
+com.overxet.Utils -> a.a.a:
+    byte[] HEX_CHAR_TABLE -> a
+    java.lang.String getHexString(byte[],int) -> a
 net.thempra.yocaina.MainActivity -> net.thempra.yocaina.MainActivity:
     android.widget.TextView status_Data -> a
     android.widget.Spinner cmbCards -> b
@@ -6,23 +9,20 @@ net.thempra.yocaina.MainActivity -> net.thempra.yocaina.MainActivity:
     android.app.PendingIntent mPendingIntent -> e
     android.content.IntentFilter[] mFilters -> f
     java.lang.String[][] mTechLists -> g
-    byte[] HEX_CHAR_TABLE -> h
-    java.util.ArrayList customKeys -> i
+    net.thempra.yocaina.cards.Card currentCard -> h
     void onCreate(android.os.Bundle) -> onCreate
+    android.view.View$OnClickListener dumpToFile() -> d
     void resolveIntent(android.content.Intent) -> a
     void showAlert(int) -> a
     void onClick(android.view.View) -> onClick
-    void clearFields() -> d
-    java.lang.String getHexString(byte[],int) -> a
+    void clearFields() -> e
     void onResume() -> onResume
     void onNewIntent(android.content.Intent) -> onNewIntent
     void onPause() -> onPause
-    boolean LoadCards() -> e
-    void LoadKeys(java.lang.String) -> a
+    boolean LoadCards() -> f
     void access$0() -> a
     android.widget.TextView access$1() -> b
     android.widget.Spinner access$2() -> c
-    void access$3(net.thempra.yocaina.MainActivity,java.lang.String) -> a
 net.thempra.yocaina.MainActivity$1 -> net.thempra.yocaina.a:
     net.thempra.yocaina.MainActivity this$0 -> a
     void onClick(android.content.DialogInterface,int) -> onClick
@@ -30,3 +30,19 @@ net.thempra.yocaina.MainActivity$2 -> net.thempra.yocaina.b:
     net.thempra.yocaina.MainActivity this$0 -> a
     void onItemSelected(android.widget.AdapterView,android.view.View,int,long) -> onItemSelected
     void onNothingSelected(android.widget.AdapterView) -> onNothingSelected
+net.thempra.yocaina.cards.Card -> net.thempra.yocaina.a.a:
+    java.util.ArrayList customKeys -> a
+    int lasterror -> b
+    java.util.ArrayList dump -> c
+    java.util.ArrayList getData(android.nfc.Tag) -> a
+    int blocksInSector() -> a
+    int getLastError() -> b
+net.thempra.yocaina.cards.CardMifare -> net.thempra.yocaina.a.b:
+    java.util.ArrayList getData(android.nfc.Tag) -> a
+    void LoadKeys(java.lang.String) -> a
+    int blocksInSector() -> a
+    int getLastError() -> b
+net.thempra.yocaina.cards.CardNfcV -> net.thempra.yocaina.a.c:
+    java.util.ArrayList getData(android.nfc.Tag) -> a
+    int blocksInSector() -> a
+    int getLastError() -> b

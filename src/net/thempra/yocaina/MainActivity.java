@@ -9,7 +9,9 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
+import net.thempra.yocaina.cards.Card;
 import net.thempra.yocaina.cards.CardMifare;
+import net.thempra.yocaina.cards.CardNfcV;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -66,7 +68,7 @@ public class MainActivity extends Activity implements OnClickListener {
 
 */
 	
-	private CardMifare crdMifare;
+	private Card currentCard;
 	
 
 	/** Called when the activity is first created. */
@@ -137,102 +139,100 @@ public class MainActivity extends Activity implements OnClickListener {
 
 	private OnClickListener dumpToFile() {
 		// TODO Auto-generated method stub
+
 		//crdMifare.dumpToFile();
-		
+
 		return null;
 	}
 
 	void resolveIntent(Intent intent) {
 
+		ArrayList<String> dump;
 		// Parse the intent
 		String action = intent.getAction();
 		if (NfcAdapter.ACTION_TECH_DISCOVERED.equals(action)) {
 			// status_Data.setText("Discovered tag with intent: " + intent);
 			Tag tagFromIntent = intent.getParcelableExtra(NfcAdapter.EXTRA_TAG);
 			
-			
-	/*		Ndef ndefTag = Ndef.get(tagFromIntent);
-			int size = ndefTag.getMaxSize();         // tag size
-			String NFCType =ndefTag.getType(); 
-			boolean writable = ndefTag.isWritable(); // is tag writable?
-
-			status_Data.setText("Type: "+NFCType);
-*/			
-
 			status_Data.setText("Reading the Tag..");
-			crdMifare = new CardMifare(cmbCards.getSelectedItem().toString());
-			status_Data.setText("Tag read.");
-
-			ArrayList<String> dump = crdMifare.getData(tagFromIntent);
-			for (int i = 0; i < dump.size() ; i++)
+			
+			clearFields();
+			
+			//Detecting card
+			if (tagFromIntent.getTechList()[0].equals("android.nfc.tech.MifareClassic"))
+				currentCard = new CardMifare(cmbCards.getSelectedItem().toString());
+			else if (tagFromIntent.getTechList()[0].equals("android.nfc.tech.NfcV"))
+				currentCard = new CardNfcV(cmbCards.getSelectedItem().toString());
+			
+			//Reading card
+			dump = currentCard.getData(tagFromIntent);
+			if ( dump.size() ==0)
 			{
-
-				if (i%crdMifare.blocksInSector()==0)
+				status_Data.setText("Error reading card.");
+				showAlert(currentCard.getLastError());
+			}
+			else
+			{
+				status_Data.setText("Tag read.");
+				//Publish data to Activity
+				for (int i = 0; i < dump.size() ; i++)
 				{
-				tl = (TableLayout) findViewById(R.id.purchScanTable1);
-
-				TableRow trTitle = new TableRow(this);
-				trTitle.setLayoutParams(new LayoutParams(
-						LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT));
-
-				TextView tvSect = new TextView(this);
-				tvSect.setText("\nSection " + i/crdMifare.blocksInSector());
-				tvSect.setTextColor(Color.YELLOW);
-
-				trTitle.addView(tvSect);
-				tl.addView(trTitle,
-						new TableLayout.LayoutParams(
-								LayoutParams.FILL_PARENT,
-								LayoutParams.WRAP_CONTENT));
-				}
-			
-			
+	
+					if (i%currentCard.blocksInSector()==0)
+					{
+					tl = (TableLayout) findViewById(R.id.purchScanTable1);
+	
+					TableRow trTitle = new TableRow(this);
+					trTitle.setLayoutParams(new LayoutParams(
+							LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT));
+	
+					TextView tvSect = new TextView(this);
+					tvSect.setText("\nSection " + i/currentCard.blocksInSector());
+					tvSect.setTextColor(Color.YELLOW);
+	
+					trTitle.addView(tvSect);
+					tl.addView(trTitle,
+							new TableLayout.LayoutParams(
+									LayoutParams.FILL_PARENT,
+									LayoutParams.WRAP_CONTENT));
+					}
+					
 					TableRow tr1 = new TableRow(this);
 					tr1.setLayoutParams(new LayoutParams(
 							LayoutParams.FILL_PARENT,
 							LayoutParams.WRAP_CONTENT));
-
+	
 					TextView tvBlk = new TextView(this);
 					tvBlk.setText("BLOCK " + i +":   ");
-
+	
 					TextView textview = new TextView(this);
 					textview.setText(dump.get(i));
-
+	
 					tr1.addView(tvBlk);
 					tr1.addView(textview);
 					tl.addView(tr1, new TableLayout.LayoutParams(
 							LayoutParams.FILL_PARENT,
 							LayoutParams.WRAP_CONTENT));
 					
-				
-	
+				}
 			}
 		} else {
 			status_Data.setText("Online + Scan a tag");
 		}
 	}
-/*
+
 	private void showAlert(int alertCase) {
 		// prepare the alert box
 		AlertDialog.Builder alertbox = new AlertDialog.Builder(this);
 		switch (alertCase) {
 
-		case AUTH:// Card Authentication Error
-			alertbox.setMessage("Authentication Failed on Block 0");
+		case Card.AUTH:// Card Authentication Error
+			alertbox.setMessage("Authentication Failed on Block");
 			break;
-		case EMPTY_BLOCK_0: // Block 0 Empty
-			alertbox.setMessage("Failed reading Block 0");
+		case Card.EMPTY_BLOCK: // Block 0 Empty
+			alertbox.setMessage("Failed reading Block");
 			break;
-		case EMPTY_BLOCK_1:// Block 1 Empty
-			alertbox.setMessage("Failed reading Block 1");
-			break;
-		case EMPTY_BLOCK_2:// Block 1 Empty
-			alertbox.setMessage("Failed reading Block 2");
-			break;
-		case EMPTY_BLOCK_3:// Block 1 Empty
-			alertbox.setMessage("Failed reading Block 3");
-			break;
-		case NETWORK: // Communication Error
+		case Card.NETWORK: // Communication Error
 			alertbox.setMessage("Tag reading error");
 			break;
 		}
@@ -248,7 +248,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		alertbox.show();
 
 	}
-*/
+
 	
 	@Override
 	public void onClick(View v) {
@@ -335,7 +335,7 @@ public class MainActivity extends Activity implements OnClickListener {
 					// your code here
 					status_Data.setText("Selected "
 							+ cmbCards.getSelectedItem().toString());
-					clearFields();
+					
 				}
 
 				@Override

@@ -61,8 +61,6 @@ public class CardMifare extends Card {
 	public ArrayList<String> getData(Tag tagFromIntent) {
 		
 		MifareClassic mfc = MifareClassic.get(tagFromIntent);
-		ArrayList<String> dump = new ArrayList<String>() ;
-		
 		
 		byte[] data;
 		try {
@@ -93,19 +91,20 @@ public class CardMifare extends Card {
 							dump.add(cardData);
 
 						} else {
-							//showAlert(EMPTY_BLOCK);
+							lasterror=EMPTY_BLOCK;
 						}
 					}
 					
 
 				} else {
-					//showAlert(AUTH);
+					lasterror=AUTH;
 					break;
 				}
 			}
 		} catch (IOException e) {
 			Log.e(TAG, e.getLocalizedMessage());
-			//showAlert(NETWORK);
+			lasterror=NETWORK;
+
 		}
 		return dump;
 	}
@@ -172,6 +171,12 @@ public class CardMifare extends Card {
 	public int blocksInSector() {
 		// TODO Auto-generated method stub
 		return 4;
+	}
+
+	@Override
+	public int getLastError() {
+		// TODO Auto-generated method stub
+		return lasterror;
 	}
 	
 }

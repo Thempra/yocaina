@@ -6,6 +6,10 @@ import android.nfc.Tag;
 
 public class CardNfcV extends Card {
 
+	public CardNfcV(String string) {
+		// TODO Auto-generated constructor stub
+	}
+
 	@Override
 	public Boolean setType() {
 		// TODO Auto-generated method stub
@@ -33,13 +37,14 @@ public class CardNfcV extends Card {
 	@Override
 	public Boolean setData() {
 		// TODO Auto-generated method stub
-		return null;
+		return false;
 	}
 
 	@Override
 	public ArrayList<String> getData(Tag tagFromIntent) {
 		// TODO Auto-generated method stub
-		return null;
+		dump.add("Not implemented yet");
+		return dump;
 	}
 
 	@Override
@@ -57,7 +62,13 @@ public class CardNfcV extends Card {
 	@Override
 	public int blocksInSector() {
 		// TODO Auto-generated method stub
-		return 0;
+		return 1;
+	}
+
+	@Override
+	public int getLastError() {
+		// TODO Auto-generated method stub
+		return lasterror;
 	}
 
 }
