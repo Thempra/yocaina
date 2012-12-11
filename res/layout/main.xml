@@ -11,13 +11,15 @@
      android:layout_width="fill_parent">
     
   <TableLayout 
-		android:id="@+id/purchScanTable1" 
+		android:id="@+id/tblGeneral" 
 		android:layout_width="wrap_content" 
 		android:layout_height="wrap_content">
-		<TableRow 
-			android:id="@+id/table1Row1" 
-			android:layout_width="wrap_content" 
-			android:layout_height="wrap_content">
+
+		<TableRow
+		    android:id="@+id/tableStatus"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content" >
+
 			<TextView 
 				android:id="@+id/status_label"
 				android:layout_width="wrap_content" 
@@ -30,29 +32,73 @@
 				android:text=" Scan a Tag" />
 			
   
-		</TableRow>		
-		
+		</TableRow>
+
 		<View
- 		    android:id="@+id/purchScanES1" 
- 		    android:layout_width="match_parent"
-			android:layout_height="55px"
-			android:layout_below="@id/status_label"
-			android:background="#000000" />	 
+		    android:id="@+id/viewScan"
+		    style="@style/table_header"
+		    android:layout_width="match_parent"
+		    android:layout_height="55px"
+		    android:background="#000000" />
 
 		<Spinner
-			    android:id="@+id/cmbCards"
-			    android:layout_width="wrap_content"
-			    android:layout_height="wrap_content"
-			    android:layout_above="@+id/btn_clear"
-			  />
-		<Button android:id="@+id/btn_clear" android:layout_width="fill_parent" android:layout_height="wrap_content" android:gravity="center_horizontal" android:text="Clear"/>
-		<Button 
-				android:id="@+id/btn_dump" 
-				android:layout_width="fill_parent"
-				android:layout_height="wrap_content"  
-				android:layout_below="@id/purchScanES1"
-				android:gravity="center_horizontal"				 
-				android:text="Dump" />       
+		    android:id="@+id/cmbCards"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content" />
+
+		<LinearLayout
+		    android:id="@+id/LinearLayoutButtons"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center" >
+		
+		<Button
+		    android:id="@+id/btn_clear"
+		    style="@style/button_black"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_margin="3sp"
+		    android:gravity="center_horizontal"
+		    android:paddingLeft="20dp"
+		    android:paddingRight="20dp"
+		    android:paddingTop="5dp"
+		    android:text="Clear" />
+
+
+		<Button
+		    android:id="@+id/btn_decode"
+		    style="@style/button_black"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:gravity="center_horizontal"
+		    android:paddingLeft="20dp"
+		    android:paddingRight="20dp"
+		    android:paddingTop="5dp"
+		    android:text="Decode" />
+		
+		<Button
+		    android:id="@+id/btn_dump"
+		    style="@style/button_black"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:gravity="center_horizontal"
+		    android:paddingLeft="20dp"
+		    android:paddingRight="20dp"
+		    android:paddingTop="5dp"
+		    android:text="Dump to File" />
+		
+		<Button
+		    android:id="@+id/btn_other"
+		    style="@style/button_black"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:gravity="center_horizontal"
+		    android:paddingLeft="20dp"
+		    android:paddingRight="20dp"
+		    android:paddingTop="5dp"
+		    android:text="Others" />
+								
+       </LinearLayout>
 	</TableLayout>
 	 
 </ScrollView>

@@ -18,7 +18,7 @@ public abstract class Card {
 	protected ArrayList<String> dump= new ArrayList<String>();
 	
 	
-
+	
 	public abstract Boolean setType();
 	public abstract String getType(Tag tagFromIntent);
 
@@ -26,7 +26,11 @@ public abstract class Card {
 	public abstract String getKey();
 	
 	public abstract Boolean setData();
-	public abstract ArrayList<String> getData(Tag tagFromIntent);
+	public  ArrayList<String> getData(Tag tagFromIntent){
+		// TODO Auto-generated method stub
+		dump.add("Not implemented yet");
+		return dump;
+	}
 	
 	public abstract Boolean dumpToFile();
 	protected abstract void LoadKeys(String file);

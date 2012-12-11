@@ -1,11 +1,6 @@
 package net.thempra.yocaina;
 
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,11 +20,13 @@ import android.graphics.Color;
 import android.nfc.NfcAdapter;
 import android.nfc.Tag;
 import android.nfc.tech.MifareClassic;
-import android.nfc.tech.Ndef;
 import android.os.Bundle;
 import android.os.Environment;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
@@ -41,7 +38,6 @@ import android.widget.Spinner;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
-import com.overxet.*;
 
 public class MainActivity extends Activity implements OnClickListener {
 
@@ -56,26 +52,21 @@ public class MainActivity extends Activity implements OnClickListener {
 	private static IntentFilter[] mFilters;
 	private static String[][] mTechLists;
 
-/*	// Just for alerts
 
-	private static final int AUTH = 1;
-	private static final int EMPTY_BLOCK_0 = 2;
-	private static final int EMPTY_BLOCK_1 = 3;
-	private static final int EMPTY_BLOCK_2 = 4;
-	private static final int EMPTY_BLOCK_3 = 5;
-	private static final int NETWORK = 6;
-	private static final String TAG = "purchtagscanact";
-
-*/
-	
 	private Card currentCard;
 	
 
 	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
+		/* Codigo para no poner el titulo */
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
+
+		
 
 		status_Data = (TextView) findViewById(R.id.status_data);
 
@@ -164,6 +155,7 @@ public class MainActivity extends Activity implements OnClickListener {
 			else if (tagFromIntent.getTechList()[0].equals("android.nfc.tech.NfcV"))
 				currentCard = new CardNfcV(cmbCards.getSelectedItem().toString());
 			
+			
 			//Reading card
 			dump = currentCard.getData(tagFromIntent);
 			if ( dump.size() ==0)
@@ -180,15 +172,18 @@ public class MainActivity extends Activity implements OnClickListener {
 	
 					if (i%currentCard.blocksInSector()==0)
 					{
-					tl = (TableLayout) findViewById(R.id.purchScanTable1);
+					tl = (TableLayout) findViewById(R.id.tblGeneral);
 	
-					TableRow trTitle = new TableRow(this);
+					//TableRow trTitle = new TableRow(this);
+				    TableRow trTitle = (TableRow)LayoutInflater.from(this).inflate(R.layout.table_section_header, null);
 					trTitle.setLayoutParams(new LayoutParams(
 							LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT));
 	
+					
+					
 					TextView tvSect = new TextView(this);
 					tvSect.setText("\nSection " + i/currentCard.blocksInSector());
-					tvSect.setTextColor(Color.YELLOW);
+					//tvSect.setTextColor(Color.YELLOW);
 	
 					trTitle.addView(tvSect);
 					tl.addView(trTitle,
@@ -197,10 +192,13 @@ public class MainActivity extends Activity implements OnClickListener {
 									LayoutParams.WRAP_CONTENT));
 					}
 					
-					TableRow tr1 = new TableRow(this);
+					TableRow tr1 = (TableRow)LayoutInflater.from(this).inflate(R.layout.table_section_data, null);
+					//TableRow tr1 = new TableRow(this);
 					tr1.setLayoutParams(new LayoutParams(
 							LayoutParams.FILL_PARENT,
 							LayoutParams.WRAP_CONTENT));
+					
+					
 	
 					TextView tvBlk = new TextView(this);
 					tvBlk.setText("BLOCK " + i +":   ");
