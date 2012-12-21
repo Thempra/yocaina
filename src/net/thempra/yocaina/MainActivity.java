@@ -10,6 +10,7 @@ import net.thempra.yocaina.cards.CardNfcV;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.Dialog;
 import android.app.PendingIntent;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -43,7 +44,11 @@ public class MainActivity extends Activity implements OnClickListener {
 
 	// UI Elements
 	private static TextView status_Data;
-	private static Spinner cmbCards;
+	private static Button btnDecode;
+	private static Button btnDumpToFile;
+	private static Button btnOther;
+	//private static Spinner cmbCards;
+	private static  List<String> cmbCards;
 	private static TableLayout tl;
 
 	// NFC parts
@@ -67,8 +72,14 @@ public class MainActivity extends Activity implements OnClickListener {
 		setContentView(R.layout.main);
 
 		
-
 		status_Data = (TextView) findViewById(R.id.status_data);
+		btnDecode = (Button) findViewById(R.id.btn_decode);
+		btnDumpToFile = (Button) findViewById(R.id.btn_dump);
+		btnOther = (Button) findViewById(R.id.btn_other);
+		
+		btnDecode.setEnabled(false);
+		btnDumpToFile.setEnabled(false);
+		btnOther.setEnabled(false);
 
 		if (!LoadCards()) {
 			// Show message no cards
@@ -80,7 +91,7 @@ public class MainActivity extends Activity implements OnClickListener {
 					"0xa0 0xa1 0xa2 0xa3 0xa4 0xa5\n" +
 					"0xa6 0xa7 0xa8 0xa9 0x14 0x10\n" +
 					"......");
-			cmbCards.setEnabled(false);
+			
 
 		} else {
 
@@ -138,12 +149,11 @@ public class MainActivity extends Activity implements OnClickListener {
 
 	void resolveIntent(Intent intent) {
 
-		ArrayList<String> dump;
 		// Parse the intent
 		String action = intent.getAction();
 		if (NfcAdapter.ACTION_TECH_DISCOVERED.equals(action)) {
 			// status_Data.setText("Discovered tag with intent: " + intent);
-			Tag tagFromIntent = intent.getParcelableExtra(NfcAdapter.EXTRA_TAG);
+			final Tag tagFromIntent = intent.getParcelableExtra(NfcAdapter.EXTRA_TAG);
 			
 			status_Data.setText("Reading the Tag..");
 			
@@ -151,71 +161,100 @@ public class MainActivity extends Activity implements OnClickListener {
 			
 			//Detecting card
 			if (tagFromIntent.getTechList()[0].equals("android.nfc.tech.MifareClassic"))
-				currentCard = new CardMifare(cmbCards.getSelectedItem().toString());
+			{
+				  AlertDialog d;
+				  int default_value=0;
+				 
+				     //c.show();
+				     AlertDialog.Builder builder=new AlertDialog.Builder(this).setSingleChoiceItems(getCards(), default_value,new  DialogInterface.OnClickListener() {
+				    	 @Override
+				         public void onClick(DialogInterface dialog, int position) 
+				         {
+				    		 dialog.dismiss(); 
+				        	 currentCard = new CardMifare(cmbCards.get(position).toString());
+				        	 showCardData(tagFromIntent);
+				        	
+				         }
+				     }).setTitle("Select card");
+				     
+				     d=builder.create();
+				     d.show();
+				 
+				
+				
+				//currentCard = new CardMifare(cmbCards.getSelectedItem().toString());
+			}
 			else if (tagFromIntent.getTechList()[0].equals("android.nfc.tech.NfcV"))
-				currentCard = new CardNfcV(cmbCards.getSelectedItem().toString());
+				currentCard = new CardNfcV("");
 			
 			
-			//Reading card
-			dump = currentCard.getData(tagFromIntent);
-			if ( dump.size() ==0)
-			{
-				status_Data.setText("Error reading card.");
-				showAlert(currentCard.getLastError());
-			}
-			else
-			{
-				status_Data.setText("Tag read.");
-				//Publish data to Activity
-				for (int i = 0; i < dump.size() ; i++)
-				{
-	
-					if (i%currentCard.blocksInSector()==0)
-					{
-					tl = (TableLayout) findViewById(R.id.tblGeneral);
-	
-					//TableRow trTitle = new TableRow(this);
-				    TableRow trTitle = (TableRow)LayoutInflater.from(this).inflate(R.layout.table_section_header, null);
-					trTitle.setLayoutParams(new LayoutParams(
-							LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT));
-	
-					
-					
-					TextView tvSect = new TextView(this);
-					tvSect.setText("\nSection " + i/currentCard.blocksInSector());
-					//tvSect.setTextColor(Color.YELLOW);
-	
-					trTitle.addView(tvSect);
-					tl.addView(trTitle,
-							new TableLayout.LayoutParams(
-									LayoutParams.FILL_PARENT,
-									LayoutParams.WRAP_CONTENT));
-					}
-					
-					TableRow tr1 = (TableRow)LayoutInflater.from(this).inflate(R.layout.table_section_data, null);
-					//TableRow tr1 = new TableRow(this);
-					tr1.setLayoutParams(new LayoutParams(
-							LayoutParams.FILL_PARENT,
-							LayoutParams.WRAP_CONTENT));
-					
-					
-	
-					TextView tvBlk = new TextView(this);
-					tvBlk.setText("BLOCK " + i +":   ");
-	
-					TextView textview = new TextView(this);
-					textview.setText(dump.get(i));
-	
-					tr1.addView(tvBlk);
-					tr1.addView(textview);
-					tl.addView(tr1, new TableLayout.LayoutParams(
-							LayoutParams.FILL_PARENT,
-							LayoutParams.WRAP_CONTENT));
-					
-				}
-			}
 		} else {
 			status_Data.setText("Online + Scan a tag");
+		}
+	}
+
+	
+	
+	private void showCardData(Tag tagFromIntent) {
+		ArrayList<String> dump;
+		//Reading card
+		
+		dump = currentCard.getData(tagFromIntent);
+		if ( dump.size() ==0)
+		{
+			status_Data.setText("Error reading card.");
+			showAlert(currentCard.getLastError());
+		}
+		else
+		{
+			status_Data.setText("Tag read.");
+			//Publish data to Activity
+			for (int i = 0; i < dump.size() ; i++)
+			{
+
+				if (i%currentCard.blocksInSector()==0)
+				{
+				tl = (TableLayout) findViewById(R.id.tblGeneral);
+
+				//TableRow trTitle = new TableRow(this);
+			    TableRow trTitle = (TableRow)LayoutInflater.from(this).inflate(R.layout.table_section_header, null);
+				trTitle.setLayoutParams(new LayoutParams(
+						LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT));
+
+				
+				
+				TextView tvSect = new TextView(this);
+				tvSect.setText("\nSection " + i/currentCard.blocksInSector());
+				//tvSect.setTextColor(Color.YELLOW);
+
+				trTitle.addView(tvSect);
+				tl.addView(trTitle,
+						new TableLayout.LayoutParams(
+								LayoutParams.FILL_PARENT,
+								LayoutParams.WRAP_CONTENT));
+				}
+				
+				TableRow tr1 = (TableRow)LayoutInflater.from(this).inflate(R.layout.table_section_data, null);
+				//TableRow tr1 = new TableRow(this);
+				tr1.setLayoutParams(new LayoutParams(
+						LayoutParams.FILL_PARENT,
+						LayoutParams.WRAP_CONTENT));
+				
+				
+
+				TextView tvBlk = new TextView(this);
+				tvBlk.setText("BLOCK " + i +":   ");
+
+				TextView textview = new TextView(this);
+				textview.setText(dump.get(i));
+
+				tr1.addView(tvBlk);
+				tr1.addView(textview);
+				tl.addView(tr1, new TableLayout.LayoutParams(
+						LayoutParams.FILL_PARENT,
+						LayoutParams.WRAP_CONTENT));
+				
+			}
 		}
 	}
 
@@ -293,6 +332,33 @@ public class MainActivity extends Activity implements OnClickListener {
 		return customKeys.get(sector);
 	}
 */
+	
+	private CharSequence[] getCards() {
+		// /sdcard/yocaina
+		
+		Resources res = getResources();
+		File f = new File(Environment.getExternalStorageDirectory() + "/"
+				+ res.getString(R.string.app_name).toLowerCase());
+		
+		if (!f.isDirectory()) {
+			File cardsPath = new File(Environment.getExternalStorageDirectory()
+					+ "/" + res.getString(R.string.app_name).toLowerCase());
+			cardsPath.mkdirs();
+		}
+
+		
+		File[] files = f.listFiles();
+		CharSequence[] cards = new CharSequence[files.length];;
+		
+		for (int i = 0; i< files.length; i++)
+			cards[i]=files[i].getName();	
+		return cards;
+			
+			
+	}
+	
+	
+	
 	private boolean LoadCards() {
 		// /sdcard/yocaina
 		Resources res = getResources();
@@ -306,46 +372,22 @@ public class MainActivity extends Activity implements OnClickListener {
 		}
 
 			File[] files = f.listFiles();
-			cmbCards = (Spinner) findViewById(R.id.cmbCards);
-			final List<String> strValues = new ArrayList<String>();
+			//cmbCards = (Spinner) findViewById(R.id.cmbCards);
+			//cmbCards = (Spinner) findViewById(R.id.cmbCardsDialog);
+			
+			 cmbCards = new ArrayList<String>();
 
 			// Fill items
 			for (File inFile : files) {
-				strValues.add(inFile.getName());
+				cmbCards.add(inFile.getName());
 
 			}
 
-			if (strValues.isEmpty())
+			if (cmbCards.isEmpty())
 				return false;
-
-			// Define array
-			ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-					android.R.layout.simple_spinner_item, strValues);
-
-			adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-			cmbCards.setAdapter(adapter);
-
-			// Add listeners
-			cmbCards.setOnItemSelectedListener(new OnItemSelectedListener() {
-				@Override
-				public void onItemSelected(AdapterView<?> parentView,
-						View selectedItemView, int position, long id) {
-					// your code here
-					status_Data.setText("Selected "
-							+ cmbCards.getSelectedItem().toString());
-					
-				}
-
-				@Override
-				public void onNothingSelected(AdapterView<?> parentView) {
-					// your code here
-					status_Data.setText("Selected "
-							+ cmbCards.getSelectedItem().toString());
-				}
-
-			});
-			return true;
-		
+			else
+				return true;
+	
 	}
 
 
