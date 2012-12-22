@@ -9,6 +9,15 @@
 		<item name="android:gravity">center</item>
 		<item name="android:layout_margin">3sp</item>
 	</style>
+	<style name="button_black_disable">
+		<item name="android:background">@drawable/black_button_disable</item>
+		<item name="android:textColor">#FFFFFF</item>
+		<item name="android:typeface">sans</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textSize">20sp</item>
+		<item name="android:gravity">center</item>
+		<item name="android:layout_margin">3sp</item>
+	</style>
 	<style name="table_header">
 		<item name="android:background">@drawable/cell_shape_head</item>
 		<item name="android:textColor">#ffffff00</item>

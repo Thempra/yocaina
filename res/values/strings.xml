@@ -2,5 +2,34 @@
 <resources>
     <string name="title">Tag Detection Tool</string>
     <string name="app_name">Yocaina</string>
+    
+	<string name="currentStatus">Current Status: </string>
+	<string name="scanTag"> Scan a Tag </string>
+
+    <string name="clear">Clear</string>
+    <string name="decode">Decode</string>
+    <string name="dump">Dump</string>
+    <string name="dumpToFile">Dump to File</string>
+    <string name="other">Other</string>
+    
+    <string name="online">Online</string>
+    <string name="reading">Reading the Tag..</string>
+    <string name="selectCard">Select card</string>
+    <string name="tagRead">Tag read.</string>
+    <string name="errorReading">Error reading card.</string>
+    
+    <string name="authFailed">Authentication Failed on Block</string>
+    <string name="blockFailed">Failed reading Block</string>
+    
+    <string name="readyScan">Ready for Scan</string>
+    <string name="noCards">No cards in your device\n\n To add new card create a new file in path:</string>
+    
+    
+    
+    <string name="section">Section</string>
+    <string name="block">BLOCK</string>
+    
+    
+    
  
 </resources>

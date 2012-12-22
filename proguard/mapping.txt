@@ -3,33 +3,39 @@ com.overxet.Utils -> a.a.a:
     java.lang.String getHexString(byte[],int) -> a
 net.thempra.yocaina.MainActivity -> net.thempra.yocaina.MainActivity:
     android.widget.TextView status_Data -> a
-    android.widget.Spinner cmbCards -> b
-    android.widget.TableLayout tl -> c
-    android.nfc.NfcAdapter mAdapter -> d
-    android.app.PendingIntent mPendingIntent -> e
-    android.content.IntentFilter[] mFilters -> f
-    java.lang.String[][] mTechLists -> g
-    net.thempra.yocaina.cards.Card currentCard -> h
+    android.widget.Button btnDecode -> b
+    android.widget.Button btnDumpToFile -> c
+    android.widget.Button btnOther -> d
+    java.util.List cmbCards -> e
+    android.widget.TableLayout tl -> f
+    android.nfc.NfcAdapter mAdapter -> g
+    android.app.PendingIntent mPendingIntent -> h
+    android.content.IntentFilter[] mFilters -> i
+    java.lang.String[][] mTechLists -> j
+    net.thempra.yocaina.cards.Card currentCard -> k
     void onCreate(android.os.Bundle) -> onCreate
-    android.view.View$OnClickListener dumpToFile() -> d
+    android.view.View$OnClickListener dumpToFile() -> c
     void resolveIntent(android.content.Intent) -> a
+    void showCardData(android.nfc.Tag) -> a
     void showAlert(int) -> a
     void onClick(android.view.View) -> onClick
-    void clearFields() -> e
+    void clearFields() -> d
     void onResume() -> onResume
     void onNewIntent(android.content.Intent) -> onNewIntent
     void onPause() -> onPause
+    java.lang.CharSequence[] getCards() -> e
     boolean LoadCards() -> f
-    void access$0() -> a
-    android.widget.TextView access$1() -> b
-    android.widget.Spinner access$2() -> c
+    java.util.List access$0() -> a
+    void access$1(net.thempra.yocaina.MainActivity,net.thempra.yocaina.cards.Card) -> a
+    void access$2(net.thempra.yocaina.MainActivity,android.nfc.Tag) -> a
+    void access$3() -> b
 net.thempra.yocaina.MainActivity$1 -> net.thempra.yocaina.a:
     net.thempra.yocaina.MainActivity this$0 -> a
+    android.nfc.Tag val$tagFromIntent -> b
     void onClick(android.content.DialogInterface,int) -> onClick
 net.thempra.yocaina.MainActivity$2 -> net.thempra.yocaina.b:
     net.thempra.yocaina.MainActivity this$0 -> a
-    void onItemSelected(android.widget.AdapterView,android.view.View,int,long) -> onItemSelected
-    void onNothingSelected(android.widget.AdapterView) -> onNothingSelected
+    void onClick(android.content.DialogInterface,int) -> onClick
 net.thempra.yocaina.cards.Card -> net.thempra.yocaina.a.a:
     java.util.ArrayList customKeys -> a
     int lasterror -> b

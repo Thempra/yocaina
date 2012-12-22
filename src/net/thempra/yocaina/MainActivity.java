@@ -10,14 +10,12 @@ import net.thempra.yocaina.cards.CardNfcV;
 
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.app.Dialog;
 import android.app.PendingIntent;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.IntentFilter.MalformedMimeTypeException;
 import android.content.res.Resources;
-import android.graphics.Color;
 import android.nfc.NfcAdapter;
 import android.nfc.Tag;
 import android.nfc.tech.MifareClassic;
@@ -31,11 +29,7 @@ import android.view.WindowManager;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemSelectedListener;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.Spinner;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -44,10 +38,12 @@ public class MainActivity extends Activity implements OnClickListener {
 
 	// UI Elements
 	private static TextView status_Data;
+	
+	private static Button btn_clear;
 	private static Button btnDecode;
 	private static Button btnDumpToFile;
 	private static Button btnOther;
-	//private static Spinner cmbCards;
+	
 	private static  List<String> cmbCards;
 	private static TableLayout tl;
 
@@ -73,6 +69,8 @@ public class MainActivity extends Activity implements OnClickListener {
 
 		
 		status_Data = (TextView) findViewById(R.id.status_data);
+		
+		btn_clear = (Button) findViewById(R.id.btn_clear);
 		btnDecode = (Button) findViewById(R.id.btn_decode);
 		btnDumpToFile = (Button) findViewById(R.id.btn_dump);
 		btnOther = (Button) findViewById(R.id.btn_other);
@@ -84,8 +82,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		if (!LoadCards()) {
 			// Show message no cards
 			Resources res = getResources();
-			status_Data.setText("No cards in your device\n\n" +
-					"To add new card create a new file in " + Environment.getExternalStorageDirectory() + "/"
+			status_Data.setText(R.string.noCards + Environment.getExternalStorageDirectory().toString() + "/"
 					+ res.getString(R.string.app_name).toLowerCase() +"\n\n" +
 					"Format file (keys):\n" +
 					"0xa0 0xa1 0xa2 0xa3 0xa4 0xa5\n" +
@@ -96,11 +93,10 @@ public class MainActivity extends Activity implements OnClickListener {
 		} else {
 
 			// Capture Purchase button from layout
-			Button btn_clear = (Button) findViewById(R.id.btn_clear);
-			Button btn_dump = (Button) findViewById(R.id.btn_dump);
+			
 			// Register the onClick listener with the implementation above
 			btn_clear.setOnClickListener(this);
-			btn_dump.setOnClickListener(dumpToFile());
+			btnDumpToFile.setOnClickListener(dumpToFile());
 
 			mAdapter = NfcAdapter.getDefaultAdapter(this);
 			if (mAdapter != null) {
@@ -155,7 +151,7 @@ public class MainActivity extends Activity implements OnClickListener {
 			// status_Data.setText("Discovered tag with intent: " + intent);
 			final Tag tagFromIntent = intent.getParcelableExtra(NfcAdapter.EXTRA_TAG);
 			
-			status_Data.setText("Reading the Tag..");
+			status_Data.setText(R.string.reading);
 			
 			clearFields();
 			
@@ -175,7 +171,7 @@ public class MainActivity extends Activity implements OnClickListener {
 				        	 showCardData(tagFromIntent);
 				        	
 				         }
-				     }).setTitle("Select card");
+				     }).setTitle(R.string.selectCard);
 				     
 				     d=builder.create();
 				     d.show();
@@ -189,7 +185,7 @@ public class MainActivity extends Activity implements OnClickListener {
 			
 			
 		} else {
-			status_Data.setText("Online + Scan a tag");
+			status_Data.setText(getString(R.string.online)+" + " + getString(R.string.readyScan));
 		}
 	}
 
@@ -202,12 +198,12 @@ public class MainActivity extends Activity implements OnClickListener {
 		dump = currentCard.getData(tagFromIntent);
 		if ( dump.size() ==0)
 		{
-			status_Data.setText("Error reading card.");
+			status_Data.setText(R.string.errorReading);
 			showAlert(currentCard.getLastError());
 		}
 		else
 		{
-			status_Data.setText("Tag read.");
+			status_Data.setText(R.string.tagRead);
 			//Publish data to Activity
 			for (int i = 0; i < dump.size() ; i++)
 			{
@@ -224,7 +220,7 @@ public class MainActivity extends Activity implements OnClickListener {
 				
 				
 				TextView tvSect = new TextView(this);
-				tvSect.setText("\nSection " + i/currentCard.blocksInSector());
+				tvSect.setText("\n" + getString(R.string.section) +" " + i/currentCard.blocksInSector());
 				//tvSect.setTextColor(Color.YELLOW);
 
 				trTitle.addView(tvSect);
@@ -243,7 +239,7 @@ public class MainActivity extends Activity implements OnClickListener {
 				
 
 				TextView tvBlk = new TextView(this);
-				tvBlk.setText("BLOCK " + i +":   ");
+				tvBlk.setText(getString(R.string.block) +" " + i +":   ");
 
 				TextView textview = new TextView(this);
 				textview.setText(dump.get(i));
@@ -264,13 +260,13 @@ public class MainActivity extends Activity implements OnClickListener {
 		switch (alertCase) {
 
 		case Card.AUTH:// Card Authentication Error
-			alertbox.setMessage("Authentication Failed on Block");
+			alertbox.setMessage(R.string.authFailed);
 			break;
 		case Card.EMPTY_BLOCK: // Block 0 Empty
-			alertbox.setMessage("Failed reading Block");
+			alertbox.setMessage(R.string.blockFailed);
 			break;
 		case Card.NETWORK: // Communication Error
-			alertbox.setMessage("Tag reading error");
+			alertbox.setMessage(R.string.errorReading);
 			break;
 		}
 		// set a positive/yes button and create a listener
@@ -302,7 +298,7 @@ public class MainActivity extends Activity implements OnClickListener {
 					((ViewGroup) child).removeAllViews();
 			}
 		}
-		status_Data.setText("Ready for Scan");
+		status_Data.setText(R.string.readyScan);
 	}
 
 	@Override
@@ -372,8 +368,6 @@ public class MainActivity extends Activity implements OnClickListener {
 		}
 
 			File[] files = f.listFiles();
-			//cmbCards = (Spinner) findViewById(R.id.cmbCards);
-			//cmbCards = (Spinner) findViewById(R.id.cmbCardsDialog);
 			
 			 cmbCards = new ArrayList<String>();
 

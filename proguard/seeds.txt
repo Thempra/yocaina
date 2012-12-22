@@ -1,16 +1,33 @@
 net.thempra.yocaina.MainActivity
 net.thempra.yocaina.MainActivity: MainActivity()
 net.thempra.yocaina.MainActivity: void onClick(android.view.View)
+net.thempra.yocaina.R$drawable: int black_button
+net.thempra.yocaina.R$drawable: int black_button_disable
+net.thempra.yocaina.R$drawable: int button_black
+net.thempra.yocaina.R$drawable: int button_black_tap
+net.thempra.yocaina.R$drawable: int button_blacktap
+net.thempra.yocaina.R$drawable: int cell_shape_data
+net.thempra.yocaina.R$drawable: int cell_shape_head
 net.thempra.yocaina.R$drawable: int icon
+net.thempra.yocaina.R$id: int LinearLayoutButtons
 net.thempra.yocaina.R$id: int btn_clear
+net.thempra.yocaina.R$id: int btn_decode
 net.thempra.yocaina.R$id: int btn_dump
-net.thempra.yocaina.R$id: int cmbCards
-net.thempra.yocaina.R$id: int purchScanES1
-net.thempra.yocaina.R$id: int purchScanTable1
+net.thempra.yocaina.R$id: int btn_other
+net.thempra.yocaina.R$id: int cmbCardsDialog
 net.thempra.yocaina.R$id: int status_data
 net.thempra.yocaina.R$id: int status_label
-net.thempra.yocaina.R$id: int table1Row1
+net.thempra.yocaina.R$id: int tableStatus
+net.thempra.yocaina.R$id: int tblGeneral
+net.thempra.yocaina.R$id: int viewScan
+net.thempra.yocaina.R$layout: int cmb_mifare_cards
 net.thempra.yocaina.R$layout: int main
+net.thempra.yocaina.R$layout: int table_section_data
+net.thempra.yocaina.R$layout: int table_section_header
 net.thempra.yocaina.R$string: int app_name
 net.thempra.yocaina.R$string: int title
+net.thempra.yocaina.R$style: int button_black
+net.thempra.yocaina.R$style: int button_black_disable
+net.thempra.yocaina.R$style: int table_data
+net.thempra.yocaina.R$style: int table_header
 net.thempra.yocaina.R$xml: int nfc_tech_filter

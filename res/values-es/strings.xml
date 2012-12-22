@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="title">Herramienta de deteccion de Tags</string>
+    <string name="app_name">Yocaina</string>
+    
+	<string name="currentStatus">Estado: </string>
+	<string name="scanTag"> Puede escanear un Tag </string>
+
+    <string name="clear">Limpiar</string>
+    <string name="decode">Decodificar</string>
+    <string name="dump">Volcar</string>
+    <string name="dumpToFile">Volcar a fichero</string>
+    <string name="other">Otros</string>
+ 
+    <string name="online">Preparado</string>
+    <string name="reading">Leyendo elTag..</string>
+    <string name="selectCard">Selecione tarjeta</string>
+    <string name="tagRead">Tag leido.</string>
+    <string name="errorReading">Error leyendo tag.</string>
+    
+    <string name="authFailed">Fallo en la Autenticacion de bloquek</string>
+    <string name="blockFailed">Failed reading Block</string>
+    
+    <string name="readyScan">Listo para escanear</string>
+    <string name="noCards">No cards in your device\n\n To add new card create a new file in path:</string>
+    
+    
+    
+    <string name="section">Sección</string>
+    <string name="block">BLOQUE</string>
+</resources>
