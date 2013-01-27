@@ -3,16 +3,17 @@ com.overxet.Utils -> a.a.a:
     java.lang.String getHexString(byte[],int) -> a
 net.thempra.yocaina.MainActivity -> net.thempra.yocaina.MainActivity:
     android.widget.TextView status_Data -> a
-    android.widget.Button btnDecode -> b
-    android.widget.Button btnDumpToFile -> c
-    android.widget.Button btnOther -> d
-    java.util.List cmbCards -> e
-    android.widget.TableLayout tl -> f
-    android.nfc.NfcAdapter mAdapter -> g
-    android.app.PendingIntent mPendingIntent -> h
-    android.content.IntentFilter[] mFilters -> i
-    java.lang.String[][] mTechLists -> j
-    net.thempra.yocaina.cards.Card currentCard -> k
+    android.widget.Button btn_clear -> b
+    android.widget.Button btnDecode -> c
+    android.widget.Button btnDumpToFile -> d
+    android.widget.Button btnOther -> e
+    java.util.List cmbCards -> f
+    android.widget.TableLayout tl -> g
+    android.nfc.NfcAdapter mAdapter -> h
+    android.app.PendingIntent mPendingIntent -> i
+    android.content.IntentFilter[] mFilters -> j
+    java.lang.String[][] mTechLists -> k
+    net.thempra.yocaina.cards.Card currentCard -> l
     void onCreate(android.os.Bundle) -> onCreate
     android.view.View$OnClickListener dumpToFile() -> c
     void resolveIntent(android.content.Intent) -> a

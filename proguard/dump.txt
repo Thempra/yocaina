@@ -199,24 +199,37 @@ _____________________________________________________________________
 Interfaces (count = 1):
   + Class [android/view/View$OnClickListener]
 
-Constant Pool (count = 460):
+Constant Pool (count = 468):
   + Integer [536870912]
   + Integer [2130903041]
   + Integer [2130903042]
   + Integer [2130903043]
   + Integer [2131034113]
+  + Integer [2131034121]
+  + Integer [2131034122]
+  + Integer [2131034123]
+  + Integer [2131034124]
+  + Integer [2131034125]
+  + Integer [2131034126]
+  + Integer [2131034127]
+  + Integer [2131034128]
+  + Integer [2131034129]
+  + Integer [2131034130]
+  + Integer [2131034131]
   + Integer [2131165185]
+  + Integer [2131165187]
   + Integer [2131165188]
-  + Integer [2131165191]
-  + Integer [2131165192]
+  + Integer [2131165189]
+  + Integer [2131165190]
   + Integer [2131165193]
-  + Integer [2131165194]
   + String []
+  + String [
+]
   + String [
 
 ]
-  + String [
-Section ]
+  + String [ ]
+  + String [ + ]
   + String [*/*]
   + String [......]
   + String [/]
@@ -225,25 +238,12 @@ Section ]
   + String [0xa6 0xa7 0xa8 0xa9 0x14 0x10
 ]
   + String [:   ]
-  + String [Authentication Failed on Block]
-  + String [BLOCK ]
   + String [Discovered tag with intent: ]
-  + String [Error reading card.]
-  + String [Failed reading Block]
   + String [Foreground dispatch]
   + String [Format file (keys):
 ]
   + String [No NFC device]
-  + String [No cards in your device
-
-To add new card create a new file in path: ]
   + String [OK]
-  + String [Online + Scan a tag]
-  + String [Reading the Tag..]
-  + String [Ready for Scan]
-  + String [Select card]
-  + String [Tag read.]
-  + String [Tag reading error]
   + String [android.nfc.action.TECH_DISCOVERED]
   + String [android.nfc.extra.TAG]
   + String [android.nfc.tech.MifareClassic]
@@ -294,13 +294,14 @@ To add new card create a new file in path: ]
   + Fieldref [net/thempra/yocaina/MainActivity.b Landroid/widget/Button;]
   + Fieldref [net/thempra/yocaina/MainActivity.c Landroid/widget/Button;]
   + Fieldref [net/thempra/yocaina/MainActivity.d Landroid/widget/Button;]
-  + Fieldref [net/thempra/yocaina/MainActivity.e Ljava/util/List;]
-  + Fieldref [net/thempra/yocaina/MainActivity.f Landroid/widget/TableLayout;]
-  + Fieldref [net/thempra/yocaina/MainActivity.g Landroid/nfc/NfcAdapter;]
-  + Fieldref [net/thempra/yocaina/MainActivity.h Landroid/app/PendingIntent;]
-  + Fieldref [net/thempra/yocaina/MainActivity.i [Landroid/content/IntentFilter;]
-  + Fieldref [net/thempra/yocaina/MainActivity.j [[Ljava/lang/String;]
-  + Fieldref [net/thempra/yocaina/MainActivity.k Lnet/thempra/yocaina/a/a;]
+  + Fieldref [net/thempra/yocaina/MainActivity.e Landroid/widget/Button;]
+  + Fieldref [net/thempra/yocaina/MainActivity.f Ljava/util/List;]
+  + Fieldref [net/thempra/yocaina/MainActivity.g Landroid/widget/TableLayout;]
+  + Fieldref [net/thempra/yocaina/MainActivity.h Landroid/nfc/NfcAdapter;]
+  + Fieldref [net/thempra/yocaina/MainActivity.i Landroid/app/PendingIntent;]
+  + Fieldref [net/thempra/yocaina/MainActivity.j [Landroid/content/IntentFilter;]
+  + Fieldref [net/thempra/yocaina/MainActivity.k [[Ljava/lang/String;]
+  + Fieldref [net/thempra/yocaina/MainActivity.l Lnet/thempra/yocaina/a/a;]
   + Methodref [android/app/Activity.<init> ()V]
   + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
   + Methodref [android/app/Activity.onPause ()V]
@@ -308,10 +309,10 @@ To add new card create a new file in path: ]
   + Methodref [android/app/AlertDialog.show ()V]
   + Methodref [android/app/AlertDialog$Builder.<init> (Landroid/content/Context;)V]
   + Methodref [android/app/AlertDialog$Builder.create ()Landroid/app/AlertDialog;]
-  + Methodref [android/app/AlertDialog$Builder.setMessage (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  + Methodref [android/app/AlertDialog$Builder.setMessage (I)Landroid/app/AlertDialog$Builder;]
   + Methodref [android/app/AlertDialog$Builder.setPositiveButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
   + Methodref [android/app/AlertDialog$Builder.setSingleChoiceItems ([Ljava/lang/CharSequence;ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
-  + Methodref [android/app/AlertDialog$Builder.setTitle (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  + Methodref [android/app/AlertDialog$Builder.setTitle (I)Landroid/app/AlertDialog$Builder;]
   + Methodref [android/app/AlertDialog$Builder.show ()Landroid/app/AlertDialog;]
   + Methodref [android/app/PendingIntent.getActivity (Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;]
   + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
@@ -341,6 +342,7 @@ To add new card create a new file in path: ]
   + Methodref [android/widget/TableRow.addView (Landroid/view/View;)V]
   + Methodref [android/widget/TableRow.setLayoutParams (Landroid/view/ViewGroup$LayoutParams;)V]
   + Methodref [android/widget/TextView.<init> (Landroid/content/Context;)V]
+  + Methodref [android/widget/TextView.setText (I)V]
   + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
   + Methodref [java/io/File.<init> (Ljava/lang/String;)V]
   + Methodref [java/io/File.getName ()Ljava/lang/String;]
@@ -353,6 +355,8 @@ To add new card create a new file in path: ]
   + Methodref [java/lang/RuntimeException.<init> (Ljava/lang/String;Ljava/lang/Throwable;)V]
   + Methodref [java/lang/String.equals (Ljava/lang/Object;)Z]
   + Methodref [java/lang/String.toLowerCase ()Ljava/lang/String;]
+  + Methodref [java/lang/String.valueOf (I)Ljava/lang/String;]
+  + Methodref [java/lang/String.valueOf (Ljava/lang/Object;)Ljava/lang/String;]
   + Methodref [java/lang/StringBuilder.<init> ()V]
   + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
   + Methodref [java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;]
@@ -372,9 +376,11 @@ To add new card create a new file in path: ]
   + Methodref [net/thempra/yocaina/MainActivity.findViewById (I)Landroid/view/View;]
   + Methodref [net/thempra/yocaina/MainActivity.getIntent ()Landroid/content/Intent;]
   + Methodref [net/thempra/yocaina/MainActivity.getResources ()Landroid/content/res/Resources;]
+  + Methodref [net/thempra/yocaina/MainActivity.getString (I)Ljava/lang/String;]
   + Methodref [net/thempra/yocaina/MainActivity.getWindow ()Landroid/view/Window;]
   + Methodref [net/thempra/yocaina/MainActivity.requestWindowFeature (I)Z]
   + Methodref [net/thempra/yocaina/MainActivity.setContentView (I)V]
+  + Methodref [net/thempra/yocaina/MainActivity.setRequestedOrientation (I)V]
   + Methodref [net/thempra/yocaina/a.<init> (Lnet/thempra/yocaina/MainActivity;Landroid/nfc/Tag;)V]
   + Methodref [net/thempra/yocaina/a/a.a ()I]
   + Methodref [net/thempra/yocaina/a/a.a (Landroid/nfc/Tag;)Ljava/util/ArrayList;]
@@ -414,14 +420,14 @@ To add new card create a new file in path: ]
   + NameAndType [d Landroid/widget/Button;]
   + NameAndType [disableForegroundDispatch (Landroid/app/Activity;)V]
   + NameAndType [e ()[Ljava/lang/CharSequence;]
-  + NameAndType [e Ljava/util/List;]
+  + NameAndType [e Landroid/widget/Button;]
   + NameAndType [enableForegroundDispatch (Landroid/app/Activity;Landroid/app/PendingIntent;[Landroid/content/IntentFilter;[[Ljava/lang/String;)V]
   + NameAndType [equals (Ljava/lang/Object;)Z]
   + NameAndType [f ()Z]
-  + NameAndType [f Landroid/widget/TableLayout;]
+  + NameAndType [f Ljava/util/List;]
   + NameAndType [findViewById (I)Landroid/view/View;]
   + NameAndType [from (Landroid/content/Context;)Landroid/view/LayoutInflater;]
-  + NameAndType [g Landroid/nfc/NfcAdapter;]
+  + NameAndType [g Landroid/widget/TableLayout;]
   + NameAndType [get (I)Ljava/lang/Object;]
   + NameAndType [getAction ()Ljava/lang/String;]
   + NameAndType [getActivity (Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;]
@@ -437,14 +443,15 @@ To add new card create a new file in path: ]
   + NameAndType [getString (I)Ljava/lang/String;]
   + NameAndType [getTechList ()[Ljava/lang/String;]
   + NameAndType [getWindow ()Landroid/view/Window;]
-  + NameAndType [h Landroid/app/PendingIntent;]
+  + NameAndType [h Landroid/nfc/NfcAdapter;]
   + NameAndType [i (Ljava/lang/String;Ljava/lang/String;)I]
-  + NameAndType [i [Landroid/content/IntentFilter;]
+  + NameAndType [i Landroid/app/PendingIntent;]
   + NameAndType [inflate (ILandroid/view/ViewGroup;)Landroid/view/View;]
   + NameAndType [isDirectory ()Z]
   + NameAndType [isEmpty ()Z]
-  + NameAndType [j [[Ljava/lang/String;]
-  + NameAndType [k Lnet/thempra/yocaina/a/a;]
+  + NameAndType [j [Landroid/content/IntentFilter;]
+  + NameAndType [k [[Ljava/lang/String;]
+  + NameAndType [l Lnet/thempra/yocaina/a/a;]
   + NameAndType [listFiles ()[Ljava/io/File;]
   + NameAndType [mkdirs ()Z]
   + NameAndType [onCreate (Landroid/os/Bundle;)V]
@@ -456,23 +463,29 @@ To add new card create a new file in path: ]
   + NameAndType [setEnabled (Z)V]
   + NameAndType [setFlags (II)V]
   + NameAndType [setLayoutParams (Landroid/view/ViewGroup$LayoutParams;)V]
-  + NameAndType [setMessage (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  + NameAndType [setMessage (I)Landroid/app/AlertDialog$Builder;]
   + NameAndType [setOnClickListener (Landroid/view/View$OnClickListener;)V]
   + NameAndType [setPositiveButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+  + NameAndType [setRequestedOrientation (I)V]
   + NameAndType [setSingleChoiceItems ([Ljava/lang/CharSequence;ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+  + NameAndType [setText (I)V]
   + NameAndType [setText (Ljava/lang/CharSequence;)V]
-  + NameAndType [setTitle (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  + NameAndType [setTitle (I)Landroid/app/AlertDialog$Builder;]
   + NameAndType [show ()Landroid/app/AlertDialog;]
   + NameAndType [show ()V]
   + NameAndType [size ()I]
   + NameAndType [toLowerCase ()Ljava/lang/String;]
   + NameAndType [toString ()Ljava/lang/String;]
+  + NameAndType [valueOf (I)Ljava/lang/String;]
+  + NameAndType [valueOf (Ljava/lang/Object;)Ljava/lang/String;]
   + Utf8 []
+  + Utf8 [
+]
   + Utf8 [
 
 ]
-  + Utf8 [
-Section ]
+  + Utf8 [ ]
+  + Utf8 [ + ]
   + Utf8 [()I]
   + Utf8 [()Landroid/app/AlertDialog;]
   + Utf8 [()Landroid/content/Intent;]
@@ -488,6 +501,7 @@ Section ]
   + Utf8 [()[Ljava/io/File;]
   + Utf8 [()[Ljava/lang/CharSequence;]
   + Utf8 [()[Ljava/lang/String;]
+  + Utf8 [(I)Landroid/app/AlertDialog$Builder;]
   + Utf8 [(I)Landroid/content/Intent;]
   + Utf8 [(I)Landroid/view/View;]
   + Utf8 [(I)Ljava/lang/Object;]
@@ -512,9 +526,9 @@ Section ]
   + Utf8 [(Landroid/view/View;)V]
   + Utf8 [(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V]
   + Utf8 [(Landroid/view/ViewGroup$LayoutParams;)V]
-  + Utf8 [(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
   + Utf8 [(Ljava/lang/CharSequence;)V]
   + Utf8 [(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+  + Utf8 [(Ljava/lang/Object;)Ljava/lang/String;]
   + Utf8 [(Ljava/lang/Object;)Ljava/lang/StringBuilder;]
   + Utf8 [(Ljava/lang/Object;)Z]
   + Utf8 [(Ljava/lang/String;)Landroid/os/Parcelable;]
@@ -536,12 +550,8 @@ Section ]
 ]
   + Utf8 [:   ]
   + Utf8 [<init>]
-  + Utf8 [Authentication Failed on Block]
-  + Utf8 [BLOCK ]
   + Utf8 [Code]
   + Utf8 [Discovered tag with intent: ]
-  + Utf8 [Error reading card.]
-  + Utf8 [Failed reading Block]
   + Utf8 [Foreground dispatch]
   + Utf8 [Format file (keys):
 ]
@@ -553,17 +563,8 @@ Section ]
   + Utf8 [Ljava/util/List;]
   + Utf8 [Lnet/thempra/yocaina/a/a;]
   + Utf8 [No NFC device]
-  + Utf8 [No cards in your device
-
-To add new card create a new file in path: ]
   + Utf8 [OK]
-  + Utf8 [Online + Scan a tag]
-  + Utf8 [Reading the Tag..]
-  + Utf8 [Ready for Scan]
-  + Utf8 [Select card]
   + Utf8 [StackMapTable]
-  + Utf8 [Tag read.]
-  + Utf8 [Tag reading error]
   + Utf8 [[Landroid/content/IntentFilter;]
   + Utf8 [[Ljava/io/File;]
   + Utf8 [[Ljava/lang/CharSequence;]
@@ -647,6 +648,7 @@ To add new card create a new file in path: ]
   + Utf8 [java/util/ArrayList]
   + Utf8 [java/util/List]
   + Utf8 [k]
+  + Utf8 [l]
   + Utf8 [listFiles]
   + Utf8 [mkdirs]
   + Utf8 [net/thempra/yocaina/MainActivity]
@@ -668,6 +670,7 @@ To add new card create a new file in path: ]
   + Utf8 [setMessage]
   + Utf8 [setOnClickListener]
   + Utf8 [setPositiveButton]
+  + Utf8 [setRequestedOrientation]
   + Utf8 [setSingleChoiceItems]
   + Utf8 [setText]
   + Utf8 [setTitle]
@@ -675,8 +678,9 @@ To add new card create a new file in path: ]
   + Utf8 [size]
   + Utf8 [toLowerCase]
   + Utf8 [toString]
+  + Utf8 [valueOf]
 
-Fields (count = 11):
+Fields (count = 12):
   + Field:        a Landroid/widget/TextView;
     Access flags: 0xa
       = private static android.widget.TextView a
@@ -689,27 +693,30 @@ Fields (count = 11):
   + Field:        d Landroid/widget/Button;
     Access flags: 0xa
       = private static android.widget.Button d
-  + Field:        e Ljava/util/List;
+  + Field:        e Landroid/widget/Button;
     Access flags: 0xa
-      = private static java.util.List e
-  + Field:        f Landroid/widget/TableLayout;
+      = private static android.widget.Button e
+  + Field:        f Ljava/util/List;
     Access flags: 0xa
-      = private static android.widget.TableLayout f
-  + Field:        g Landroid/nfc/NfcAdapter;
+      = private static java.util.List f
+  + Field:        g Landroid/widget/TableLayout;
     Access flags: 0xa
-      = private static android.nfc.NfcAdapter g
-  + Field:        h Landroid/app/PendingIntent;
+      = private static android.widget.TableLayout g
+  + Field:        h Landroid/nfc/NfcAdapter;
     Access flags: 0xa
-      = private static android.app.PendingIntent h
-  + Field:        i [Landroid/content/IntentFilter;
+      = private static android.nfc.NfcAdapter h
+  + Field:        i Landroid/app/PendingIntent;
     Access flags: 0xa
-      = private static android.content.IntentFilter[] i
-  + Field:        j [[Ljava/lang/String;
+      = private static android.app.PendingIntent i
+  + Field:        j [Landroid/content/IntentFilter;
     Access flags: 0xa
-      = private static java.lang.String[][] j
-  + Field:        k Lnet/thempra/yocaina/a/a;
+      = private static android.content.IntentFilter[] j
+  + Field:        k [[Ljava/lang/String;
+    Access flags: 0xa
+      = private static java.lang.String[][] k
+  + Field:        l Lnet/thempra/yocaina/a/a;
     Access flags: 0x2
-      = private net.thempra.yocaina.a.a k
+      = private net.thempra.yocaina.a.a l
 
 Methods (count = 17):
   - Method:       <init>()V
@@ -718,7 +725,7 @@ Methods (count = 17):
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 5, locals = 1, stack = 1):
       [0] aload_0 v0
-      [1] invokespecial #94
+      [1] invokespecial #97
         + Methodref [android/app/Activity.<init> ()V]
       [4] return
       Code attribute exceptions (count = 0):
@@ -727,278 +734,277 @@ Methods (count = 17):
     Access flags: 0x1
       = public void onCreate(android.os.Bundle)
     Class member attributes (count = 1):
-    + Code attribute instructions (code length = 348, locals = 6, stack = 7):
+    + Code attribute instructions (code length = 345, locals = 4, stack = 7):
       [0] aload_0 v0
       [1] iconst_1
-      [2] invokevirtual #166
+      [2] invokevirtual #173
         + Methodref [net/thempra/yocaina/MainActivity.requestWindowFeature (I)Z]
       [5] pop
       [6] aload_0 v0
-      [7] invokevirtual #165
+      [7] invokevirtual #172
         + Methodref [net/thempra/yocaina/MainActivity.getWindow ()Landroid/view/Window;]
       [10] sipush 1024
       [13] sipush 1024
-      [16] invokevirtual #124
+      [16] invokevirtual #127
         + Methodref [android/view/Window.setFlags (II)V]
       [19] aload_0 v0
-      [20] aload_1 v1
-      [21] invokespecial #95
-        + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+      [20] iconst_1
+      [21] invokevirtual #175
+        + Methodref [net/thempra/yocaina/MainActivity.setRequestedOrientation (I)V]
       [24] aload_0 v0
-      [25] ldc #2
+      [25] aload_1 v1
+      [26] invokespecial #98
+        + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+      [29] aload_0 v0
+      [30] ldc #2
         + Integer [2130903041]
-      [27] invokevirtual #167
+      [32] invokevirtual #174
         + Methodref [net/thempra/yocaina/MainActivity.setContentView (I)V]
-      [30] aload_0 v0
-      [31] ldc #7
-        + Integer [2131165188]
-      [33] invokevirtual #162
-        + Methodref [net/thempra/yocaina/MainActivity.findViewById (I)Landroid/view/View;]
-      [36] checkcast #68
-        + Class [android/widget/TextView]
-      [39] putstatic #83
-        + Fieldref [net/thempra/yocaina/MainActivity.a Landroid/widget/TextView;]
-      [42] aload_0 v0
-      [43] ldc #9
-        + Integer [2131165192]
-      [45] invokevirtual #162
-        + Methodref [net/thempra/yocaina/MainActivity.findViewById (I)Landroid/view/View;]
-      [48] checkcast #64
-        + Class [android/widget/Button]
-      [51] putstatic #84
-        + Fieldref [net/thempra/yocaina/MainActivity.b Landroid/widget/Button;]
-      [54] aload_0 v0
-      [55] ldc #10
+      [35] aload_0 v0
+      [36] ldc #22
         + Integer [2131165193]
-      [57] invokevirtual #162
+      [38] invokevirtual #168
         + Methodref [net/thempra/yocaina/MainActivity.findViewById (I)Landroid/view/View;]
-      [60] checkcast #64
-        + Class [android/widget/Button]
-      [63] putstatic #85
-        + Fieldref [net/thempra/yocaina/MainActivity.c Landroid/widget/Button;]
-      [66] aload_0 v0
-      [67] ldc #11
-        + Integer [2131165194]
-      [69] invokevirtual #162
-        + Methodref [net/thempra/yocaina/MainActivity.findViewById (I)Landroid/view/View;]
-      [72] checkcast #64
-        + Class [android/widget/Button]
-      [75] putstatic #86
-        + Fieldref [net/thempra/yocaina/MainActivity.d Landroid/widget/Button;]
-      [78] getstatic #84
-        + Fieldref [net/thempra/yocaina/MainActivity.b Landroid/widget/Button;]
-      [81] iconst_0
-      [82] invokevirtual #125
-        + Methodref [android/widget/Button.setEnabled (Z)V]
-      [85] getstatic #85
-        + Fieldref [net/thempra/yocaina/MainActivity.c Landroid/widget/Button;]
-      [88] iconst_0
-      [89] invokevirtual #125
-        + Methodref [android/widget/Button.setEnabled (Z)V]
-      [92] getstatic #86
-        + Fieldref [net/thempra/yocaina/MainActivity.d Landroid/widget/Button;]
-      [95] iconst_0
-      [96] invokevirtual #125
-        + Methodref [android/widget/Button.setEnabled (Z)V]
-      [99] aload_0 v0
-      [100] invokespecial #161
-        + Methodref [net/thempra/yocaina/MainActivity.f ()Z]
-      [103] ifne +80 (target=183)
-      [106] aload_0 v0
-      [107] invokevirtual #164
-        + Methodref [net/thempra/yocaina/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [110] astore_2 v2
-      [111] getstatic #83
+      [41] checkcast #70
+        + Class [android/widget/TextView]
+      [44] putstatic #85
         + Fieldref [net/thempra/yocaina/MainActivity.a Landroid/widget/TextView;]
-      [114] new #75
+      [47] aload_0 v0
+      [48] ldc #18
+        + Integer [2131165187]
+      [50] invokevirtual #168
+        + Methodref [net/thempra/yocaina/MainActivity.findViewById (I)Landroid/view/View;]
+      [53] checkcast #66
+        + Class [android/widget/Button]
+      [56] putstatic #86
+        + Fieldref [net/thempra/yocaina/MainActivity.b Landroid/widget/Button;]
+      [59] aload_0 v0
+      [60] ldc #19
+        + Integer [2131165188]
+      [62] invokevirtual #168
+        + Methodref [net/thempra/yocaina/MainActivity.findViewById (I)Landroid/view/View;]
+      [65] checkcast #66
+        + Class [android/widget/Button]
+      [68] putstatic #87
+        + Fieldref [net/thempra/yocaina/MainActivity.c Landroid/widget/Button;]
+      [71] aload_0 v0
+      [72] ldc #20
+        + Integer [2131165189]
+      [74] invokevirtual #168
+        + Methodref [net/thempra/yocaina/MainActivity.findViewById (I)Landroid/view/View;]
+      [77] checkcast #66
+        + Class [android/widget/Button]
+      [80] putstatic #88
+        + Fieldref [net/thempra/yocaina/MainActivity.d Landroid/widget/Button;]
+      [83] aload_0 v0
+      [84] ldc #21
+        + Integer [2131165190]
+      [86] invokevirtual #168
+        + Methodref [net/thempra/yocaina/MainActivity.findViewById (I)Landroid/view/View;]
+      [89] checkcast #66
+        + Class [android/widget/Button]
+      [92] putstatic #89
+        + Fieldref [net/thempra/yocaina/MainActivity.e Landroid/widget/Button;]
+      [95] getstatic #87
+        + Fieldref [net/thempra/yocaina/MainActivity.c Landroid/widget/Button;]
+      [98] iconst_0
+      [99] invokevirtual #128
+        + Methodref [android/widget/Button.setEnabled (Z)V]
+      [102] getstatic #88
+        + Fieldref [net/thempra/yocaina/MainActivity.d Landroid/widget/Button;]
+      [105] iconst_0
+      [106] invokevirtual #128
+        + Methodref [android/widget/Button.setEnabled (Z)V]
+      [109] getstatic #89
+        + Fieldref [net/thempra/yocaina/MainActivity.e Landroid/widget/Button;]
+      [112] iconst_0
+      [113] invokevirtual #128
+        + Methodref [android/widget/Button.setEnabled (Z)V]
+      [116] aload_0 v0
+      [117] invokespecial #167
+        + Methodref [net/thempra/yocaina/MainActivity.f ()Z]
+      [120] ifne +83 (target=203)
+      [123] aload_0 v0
+      [124] invokevirtual #170
+        + Methodref [net/thempra/yocaina/MainActivity.getResources ()Landroid/content/res/Resources;]
+      [127] astore_2 v2
+      [128] getstatic #85
+        + Fieldref [net/thempra/yocaina/MainActivity.a Landroid/widget/TextView;]
+      [131] new #77
         + Class [java/lang/StringBuilder]
-      [117] dup
-      [118] ldc #29
-        + String [No cards in your device
-
-To add new card create a new file in path: ]
-      [120] invokespecial #147
+      [134] dup
+      [135] ldc #14
+        + Integer [2131034129]
+      [137] invokestatic #150
+        + Methodref [java/lang/String.valueOf (I)Ljava/lang/String;]
+      [140] invokespecial #153
         + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
-      [123] invokestatic #118
+      [143] invokestatic #121
         + Methodref [android/os/Environment.getExternalStorageDirectory ()Ljava/io/File;]
-      [126] invokevirtual #140
+      [146] invokevirtual #144
         + Methodref [java/io/File.toString ()Ljava/lang/String;]
-      [129] invokevirtual #150
+      [149] invokevirtual #156
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [132] ldc #17
+      [152] ldc #30
         + String [/]
-      [134] invokevirtual #150
+      [154] invokevirtual #156
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [137] aload_2 v2
-      [138] ldc #5
+      [157] aload_2 v2
+      [158] ldc #5
         + Integer [2131034113]
-      [140] invokevirtual #113
+      [160] invokevirtual #116
         + Methodref [android/content/res/Resources.getString (I)Ljava/lang/String;]
-      [143] invokevirtual #145
+      [163] invokevirtual #149
         + Methodref [java/lang/String.toLowerCase ()Ljava/lang/String;]
-      [146] invokevirtual #150
+      [166] invokevirtual #156
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [149] ldc #13
+      [169] ldc #25
         + String [
 
 ]
-      [151] invokevirtual #150
+      [171] invokevirtual #156
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [154] ldc #27
+      [174] ldc #36
         + String [Format file (keys):
 ]
-      [156] invokevirtual #150
+      [176] invokevirtual #156
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [159] ldc #18
+      [179] ldc #31
         + String [0xa0 0xa1 0xa2 0xa3 0xa4 0xa5
 ]
-      [161] invokevirtual #150
+      [181] invokevirtual #156
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [164] ldc #19
+      [184] ldc #32
         + String [0xa6 0xa7 0xa8 0xa9 0x14 0x10
 ]
-      [166] invokevirtual #150
+      [186] invokevirtual #156
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [169] ldc #16
+      [189] ldc #29
         + String [......]
-      [171] invokevirtual #150
+      [191] invokevirtual #156
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [174] invokevirtual #151
+      [194] invokevirtual #157
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
-      [177] invokevirtual #134
+      [197] invokevirtual #138
         + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
-      [180] goto +167 (target=347)
-      [183] aload_0 v0
-      [184] ldc #8
-        + Integer [2131165191]
-      [186] invokevirtual #162
-        + Methodref [net/thempra/yocaina/MainActivity.findViewById (I)Landroid/view/View;]
-      [189] checkcast #64
-        + Class [android/widget/Button]
-      [192] astore_2 v2
-      [193] aload_0 v0
-      [194] ldc #10
-        + Integer [2131165193]
-      [196] invokevirtual #162
-        + Methodref [net/thempra/yocaina/MainActivity.findViewById (I)Landroid/view/View;]
-      [199] checkcast #64
-        + Class [android/widget/Button]
-      [202] astore_3 v3
-      [203] aload_2 v2
-      [204] aload_0 v0
-      [205] invokevirtual #126
+      [200] goto +144 (target=344)
+      [203] getstatic #86
+        + Fieldref [net/thempra/yocaina/MainActivity.b Landroid/widget/Button;]
+      [206] aload_0 v0
+      [207] invokevirtual #129
         + Methodref [android/widget/Button.setOnClickListener (Landroid/view/View$OnClickListener;)V]
-      [208] aload_3 v3
-      [209] aload_0 v0
-      [210] invokespecial #158
+      [210] getstatic #88
+        + Fieldref [net/thempra/yocaina/MainActivity.d Landroid/widget/Button;]
+      [213] aload_0 v0
+      [214] invokespecial #164
         + Methodref [net/thempra/yocaina/MainActivity.c ()Landroid/view/View$OnClickListener;]
-      [213] invokevirtual #126
+      [217] invokevirtual #129
         + Methodref [android/widget/Button.setOnClickListener (Landroid/view/View$OnClickListener;)V]
-      [216] aload_0 v0
-      [217] invokestatic #116
+      [220] aload_0 v0
+      [221] invokestatic #119
         + Methodref [android/nfc/NfcAdapter.getDefaultAdapter (Landroid/content/Context;)Landroid/nfc/NfcAdapter;]
-      [220] putstatic #89
-        + Fieldref [net/thempra/yocaina/MainActivity.g Landroid/nfc/NfcAdapter;]
-      [223] getstatic #89
-        + Fieldref [net/thempra/yocaina/MainActivity.g Landroid/nfc/NfcAdapter;]
-      [226] ifnull +113 (target=339)
-      [229] aload_0 v0
-      [230] iconst_0
-      [231] new #49
+      [224] putstatic #92
+        + Fieldref [net/thempra/yocaina/MainActivity.h Landroid/nfc/NfcAdapter;]
+      [227] getstatic #92
+        + Fieldref [net/thempra/yocaina/MainActivity.h Landroid/nfc/NfcAdapter;]
+      [230] ifnull +106 (target=336)
+      [233] aload_0 v0
+      [234] iconst_0
+      [235] new #51
         + Class [android/content/Intent]
-      [234] dup
-      [235] aload_0 v0
-      [236] aload_0 v0
-      [237] invokevirtual #142
+      [238] dup
+      [239] aload_0 v0
+      [240] aload_0 v0
+      [241] invokevirtual #146
         + Methodref [java/lang/Object.getClass ()Ljava/lang/Class;]
-      [240] invokespecial #107
+      [244] invokespecial #110
         + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
-      [243] ldc #1
+      [247] ldc #1
         + Integer [536870912]
-      [245] invokevirtual #108
+      [249] invokevirtual #111
         + Methodref [android/content/Intent.addFlags (I)Landroid/content/Intent;]
-      [248] iconst_0
-      [249] invokestatic #106
+      [252] iconst_0
+      [253] invokestatic #109
         + Methodref [android/app/PendingIntent.getActivity (Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;]
-      [252] putstatic #90
-        + Fieldref [net/thempra/yocaina/MainActivity.h Landroid/app/PendingIntent;]
-      [255] new #50
+      [256] putstatic #93
+        + Fieldref [net/thempra/yocaina/MainActivity.i Landroid/app/PendingIntent;]
+      [259] new #52
         + Class [android/content/IntentFilter]
-      [258] dup
-      [259] ldc #37
+      [262] dup
+      [263] ldc #39
         + String [android.nfc.action.TECH_DISCOVERED]
-      [261] invokespecial #111
+      [265] invokespecial #114
         + Methodref [android/content/IntentFilter.<init> (Ljava/lang/String;)V]
-      [264] astore v4
-      [266] aload v4
-      [268] ldc #15
+      [268] astore_2 v2
+      [269] aload_2 v2
+      [270] ldc #28
         + String [*/*]
-      [270] invokevirtual #112
+      [272] invokevirtual #115
         + Methodref [android/content/IntentFilter.addDataType (Ljava/lang/String;)V]
-      [273] goto +17 (target=290)
-      [276] astore v5
-      [278] new #73
+      [275] goto +15 (target=290)
+      [278] astore_3 v3
+      [279] new #75
         + Class [java/lang/RuntimeException]
-      [281] dup
-      [282] ldc #41
+      [282] dup
+      [283] ldc #43
         + String [fail]
-      [284] aload v5
-      [286] invokespecial #143
+      [285] aload_3 v3
+      [286] invokespecial #147
         + Methodref [java/lang/RuntimeException.<init> (Ljava/lang/String;Ljava/lang/Throwable;)V]
       [289] athrow
       [290] iconst_1
-      [291] anewarray #50
+      [291] anewarray #52
         + Class [android/content/IntentFilter]
       [294] dup
       [295] iconst_0
-      [296] aload v4
-      [298] aastore
-      [299] putstatic #91
-        + Fieldref [net/thempra/yocaina/MainActivity.i [Landroid/content/IntentFilter;]
-      [302] iconst_1
-      [303] anewarray #44
+      [296] aload_2 v2
+      [297] aastore
+      [298] putstatic #94
+        + Fieldref [net/thempra/yocaina/MainActivity.j [Landroid/content/IntentFilter;]
+      [301] iconst_1
+      [302] anewarray #46
         + Class [[Ljava/lang/String;]
-      [306] dup
-      [307] iconst_0
-      [308] iconst_1
-      [309] anewarray #74
+      [305] dup
+      [306] iconst_0
+      [307] iconst_1
+      [308] anewarray #76
         + Class [java/lang/String]
-      [312] dup
-      [313] iconst_0
-      [314] ldc #55
+      [311] dup
+      [312] iconst_0
+      [313] ldc #57
         + Class [android/nfc/tech/MifareClassic]
-      [316] invokevirtual #141
+      [315] invokevirtual #145
         + Methodref [java/lang/Class.getName ()Ljava/lang/String;]
+      [318] aastore
       [319] aastore
-      [320] aastore
-      [321] putstatic #92
-        + Fieldref [net/thempra/yocaina/MainActivity.j [[Ljava/lang/String;]
-      [324] aload_0 v0
-      [325] invokevirtual #163
+      [320] putstatic #95
+        + Fieldref [net/thempra/yocaina/MainActivity.k [[Ljava/lang/String;]
+      [323] aload_0 v0
+      [324] invokevirtual #169
         + Methodref [net/thempra/yocaina/MainActivity.getIntent ()Landroid/content/Intent;]
-      [328] astore v5
-      [330] aload_0 v0
-      [331] aload v5
-      [333] invokevirtual #156
+      [327] astore_3 v3
+      [328] aload_0 v0
+      [329] aload_3 v3
+      [330] invokevirtual #162
         + Methodref [net/thempra/yocaina/MainActivity.a (Landroid/content/Intent;)V]
-      [336] goto +11 (target=347)
-      [339] getstatic #83
+      [333] goto +11 (target=344)
+      [336] getstatic #85
         + Fieldref [net/thempra/yocaina/MainActivity.a Landroid/widget/TextView;]
-      [342] ldc #28
+      [339] ldc #37
         + String [No NFC device]
-      [344] invokevirtual #134
+      [341] invokevirtual #138
         + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
-      [347] return
+      [344] return
       Code attribute exceptions (count = 1):
-      - ExceptionInfo (266 -> 273: 276):
+      - ExceptionInfo (269 -> 275: 278):
       + Class [android/content/IntentFilter$MalformedMimeTypeException]
       Code attribute attributes (attribute count = 1):
       + Stack map table attribute (count = 5):
-        - [183] Var: ..., Stack: (empty)
-        - [276] Var: [a:net/thempra/yocaina/MainActivity][a:android/os/Bundle][a:android/widget/Button][a:android/widget/Button][a:android/content/IntentFilter], Stack: [a:android/content/IntentFilter$MalformedMimeTypeException]
+        - [203] Var: ..., Stack: (empty)
+        - [278] Var: [a:net/thempra/yocaina/MainActivity][a:android/os/Bundle][a:android/content/IntentFilter], Stack: [a:android/content/IntentFilter$MalformedMimeTypeException]
         - [290] Var: ..., Stack: (empty)
-        - [339] Var: -1, Stack: (empty)
-        - [347] Var: -2, Stack: (empty)
+        - [336] Var: -1, Stack: (empty)
+        - [344] Var: ..., Stack: (empty)
   + Method:       c()Landroid/view/View$OnClickListener;
     Access flags: 0x2
       = private android.view.View$OnClickListener c()
@@ -1012,343 +1018,386 @@ To add new card create a new file in path: ]
     Access flags: 0x0
       = void a(android.content.Intent)
     Class member attributes (count = 1):
-    + Code attribute instructions (code length = 139, locals = 7, stack = 7):
+    + Code attribute instructions (code length = 170, locals = 7, stack = 7):
       [0] aload_1 v1
-      [1] invokevirtual #109
+      [1] invokevirtual #112
         + Methodref [android/content/Intent.getAction ()Ljava/lang/String;]
       [4] astore_2 v2
-      [5] ldc #37
+      [5] ldc #39
         + String [android.nfc.action.TECH_DISCOVERED]
       [7] aload_2 v2
-      [8] invokevirtual #144
+      [8] invokevirtual #148
         + Methodref [java/lang/String.equals (Ljava/lang/Object;)Z]
       [11] ifeq +119 (target=130)
       [14] aload_1 v1
-      [15] ldc #38
+      [15] ldc #40
         + String [android.nfc.extra.TAG]
-      [17] invokevirtual #110
+      [17] invokevirtual #113
         + Methodref [android/content/Intent.getParcelableExtra (Ljava/lang/String;)Landroid/os/Parcelable;]
-      [20] checkcast #54
+      [20] checkcast #56
         + Class [android/nfc/Tag]
       [23] astore_3 v3
-      [24] getstatic #83
+      [24] getstatic #85
         + Fieldref [net/thempra/yocaina/MainActivity.a Landroid/widget/TextView;]
-      [27] ldc #32
-        + String [Reading the Tag..]
-      [29] invokevirtual #134
-        + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
-      [32] invokestatic #159
+      [27] ldc #7
+        + Integer [2131034122]
+      [29] invokevirtual #137
+        + Methodref [android/widget/TextView.setText (I)V]
+      [32] invokestatic #165
         + Methodref [net/thempra/yocaina/MainActivity.d ()V]
       [35] aload_3 v3
-      [36] invokevirtual #117
+      [36] invokevirtual #120
         + Methodref [android/nfc/Tag.getTechList ()[Ljava/lang/String;]
       [39] iconst_0
       [40] aaload
-      [41] ldc #39
+      [41] ldc #41
         + String [android.nfc.tech.MifareClassic]
-      [43] invokevirtual #144
+      [43] invokevirtual #148
         + Methodref [java/lang/String.equals (Ljava/lang/Object;)Z]
       [46] ifeq +54 (target=100)
       [49] iconst_0
       [50] istore v5
-      [52] new #47
+      [52] new #49
         + Class [android/app/AlertDialog$Builder]
       [55] dup
       [56] aload_0 v0
-      [57] invokespecial #99
+      [57] invokespecial #102
         + Methodref [android/app/AlertDialog$Builder.<init> (Landroid/content/Context;)V]
       [60] aload_0 v0
-      [61] invokespecial #160
+      [61] invokespecial #166
         + Methodref [net/thempra/yocaina/MainActivity.e ()[Ljava/lang/CharSequence;]
       [64] iload v5
-      [66] new #79
+      [66] new #81
         + Class [net/thempra/yocaina/a]
       [69] dup
       [70] aload_0 v0
       [71] aload_3 v3
-      [72] invokespecial #168
+      [72] invokespecial #176
         + Methodref [net/thempra/yocaina/a.<init> (Lnet/thempra/yocaina/MainActivity;Landroid/nfc/Tag;)V]
-      [75] invokevirtual #103
+      [75] invokevirtual #106
         + Methodref [android/app/AlertDialog$Builder.setSingleChoiceItems ([Ljava/lang/CharSequence;ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
-      [78] ldc #34
-        + String [Select card]
-      [80] invokevirtual #104
-        + Methodref [android/app/AlertDialog$Builder.setTitle (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+      [78] ldc #8
+        + Integer [2131034123]
+      [80] invokevirtual #107
+        + Methodref [android/app/AlertDialog$Builder.setTitle (I)Landroid/app/AlertDialog$Builder;]
       [83] astore v6
       [85] aload v6
-      [87] invokevirtual #100
+      [87] invokevirtual #103
         + Methodref [android/app/AlertDialog$Builder.create ()Landroid/app/AlertDialog;]
       [90] astore v4
       [92] aload v4
-      [94] invokevirtual #98
+      [94] invokevirtual #101
         + Methodref [android/app/AlertDialog.show ()V]
-      [97] goto +41 (target=138)
+      [97] goto +72 (target=169)
       [100] aload_3 v3
-      [101] invokevirtual #117
+      [101] invokevirtual #120
         + Methodref [android/nfc/Tag.getTechList ()[Ljava/lang/String;]
       [104] iconst_0
       [105] aaload
-      [106] ldc #40
+      [106] ldc #42
         + String [android.nfc.tech.NfcV]
-      [108] invokevirtual #144
+      [108] invokevirtual #148
         + Methodref [java/lang/String.equals (Ljava/lang/Object;)Z]
-      [111] ifeq +27 (target=138)
+      [111] ifeq +58 (target=169)
       [114] aload_0 v0
-      [115] new #81
+      [115] new #83
         + Class [net/thempra/yocaina/a/c]
       [118] dup
-      [119] ldc #12
+      [119] ldc #23
         + String []
-      [121] invokespecial #172
+      [121] invokespecial #180
         + Methodref [net/thempra/yocaina/a/c.<init> (Ljava/lang/String;)V]
-      [124] putfield #93
-        + Fieldref [net/thempra/yocaina/MainActivity.k Lnet/thempra/yocaina/a/a;]
-      [127] goto +11 (target=138)
-      [130] getstatic #83
+      [124] putfield #96
+        + Fieldref [net/thempra/yocaina/MainActivity.l Lnet/thempra/yocaina/a/a;]
+      [127] goto +42 (target=169)
+      [130] getstatic #85
         + Fieldref [net/thempra/yocaina/MainActivity.a Landroid/widget/TextView;]
-      [133] ldc #31
-        + String [Online + Scan a tag]
-      [135] invokevirtual #134
+      [133] new #77
+        + Class [java/lang/StringBuilder]
+      [136] dup
+      [137] aload_0 v0
+      [138] ldc #6
+        + Integer [2131034121]
+      [140] invokevirtual #171
+        + Methodref [net/thempra/yocaina/MainActivity.getString (I)Ljava/lang/String;]
+      [143] invokestatic #151
+        + Methodref [java/lang/String.valueOf (Ljava/lang/Object;)Ljava/lang/String;]
+      [146] invokespecial #153
+        + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+      [149] ldc #27
+        + String [ + ]
+      [151] invokevirtual #156
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [154] aload_0 v0
+      [155] ldc #13
+        + Integer [2131034128]
+      [157] invokevirtual #171
+        + Methodref [net/thempra/yocaina/MainActivity.getString (I)Ljava/lang/String;]
+      [160] invokevirtual #156
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [163] invokevirtual #157
+        + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [166] invokevirtual #138
         + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
-      [138] return
+      [169] return
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 1):
       + Stack map table attribute (count = 4):
         - [100] Var: ...[a:java/lang/String][a:android/nfc/Tag], Stack: (empty)
         - [127] Var: ..., Stack: (empty)
         - [130] Var: -1, Stack: (empty)
-        - [138] Var: ..., Stack: (empty)
+        - [169] Var: ..., Stack: (empty)
   + Method:       a(Landroid/nfc/Tag;)V
     Access flags: 0x2
       = private void a(android.nfc.Tag)
     Class member attributes (count = 1):
-    + Code attribute instructions (code length = 302, locals = 7, stack = 6):
+    + Code attribute instructions (code length = 328, locals = 7, stack = 6):
       [0] aload_0 v0
-      [1] getfield #93
-        + Fieldref [net/thempra/yocaina/MainActivity.k Lnet/thempra/yocaina/a/a;]
+      [1] getfield #96
+        + Fieldref [net/thempra/yocaina/MainActivity.l Lnet/thempra/yocaina/a/a;]
       [4] aload_1 v1
-      [5] invokevirtual #170
+      [5] invokevirtual #178
         + Methodref [net/thempra/yocaina/a/a.a (Landroid/nfc/Tag;)Ljava/util/ArrayList;]
       [8] astore_2 v2
       [9] aload_2 v2
-      [10] invokevirtual #154
+      [10] invokevirtual #160
         + Methodref [java/util/ArrayList.size ()I]
       [13] ifne +25 (target=38)
-      [16] getstatic #83
+      [16] getstatic #85
         + Fieldref [net/thempra/yocaina/MainActivity.a Landroid/widget/TextView;]
-      [19] ldc #24
-        + String [Error reading card.]
-      [21] invokevirtual #134
-        + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
+      [19] ldc #10
+        + Integer [2131034125]
+      [21] invokevirtual #137
+        + Methodref [android/widget/TextView.setText (I)V]
       [24] aload_0 v0
       [25] aload_0 v0
-      [26] getfield #93
-        + Fieldref [net/thempra/yocaina/MainActivity.k Lnet/thempra/yocaina/a/a;]
-      [29] invokevirtual #171
+      [26] getfield #96
+        + Fieldref [net/thempra/yocaina/MainActivity.l Lnet/thempra/yocaina/a/a;]
+      [29] invokevirtual #179
         + Methodref [net/thempra/yocaina/a/a.b ()I]
-      [32] invokespecial #155
+      [32] invokespecial #161
         + Methodref [net/thempra/yocaina/MainActivity.a (I)V]
-      [35] goto +266 (target=301)
-      [38] getstatic #83
+      [35] goto +292 (target=327)
+      [38] getstatic #85
         + Fieldref [net/thempra/yocaina/MainActivity.a Landroid/widget/TextView;]
-      [41] ldc #35
-        + String [Tag read.]
-      [43] invokevirtual #134
-        + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
+      [41] ldc #9
+        + Integer [2131034124]
+      [43] invokevirtual #137
+        + Methodref [android/widget/TextView.setText (I)V]
       [46] iconst_0
       [47] istore_3 v3
-      [48] goto +245 (target=293)
+      [48] goto +271 (target=319)
       [51] iload_3 v3
       [52] aload_0 v0
-      [53] getfield #93
-        + Fieldref [net/thempra/yocaina/MainActivity.k Lnet/thempra/yocaina/a/a;]
-      [56] invokevirtual #169
+      [53] getfield #96
+        + Fieldref [net/thempra/yocaina/MainActivity.l Lnet/thempra/yocaina/a/a;]
+      [56] invokevirtual #177
         + Methodref [net/thempra/yocaina/a/a.a ()I]
       [59] irem
-      [60] ifne +109 (target=169)
+      [60] ifne +123 (target=183)
       [63] aload_0 v0
-      [64] ldc #6
+      [64] ldc #17
         + Integer [2131165185]
-      [66] invokevirtual #162
+      [66] invokevirtual #168
         + Methodref [net/thempra/yocaina/MainActivity.findViewById (I)Landroid/view/View;]
-      [69] checkcast #65
+      [69] checkcast #67
         + Class [android/widget/TableLayout]
-      [72] putstatic #88
-        + Fieldref [net/thempra/yocaina/MainActivity.f Landroid/widget/TableLayout;]
+      [72] putstatic #91
+        + Fieldref [net/thempra/yocaina/MainActivity.g Landroid/widget/TableLayout;]
       [75] aload_0 v0
-      [76] invokestatic #120
+      [76] invokestatic #123
         + Methodref [android/view/LayoutInflater.from (Landroid/content/Context;)Landroid/view/LayoutInflater;]
       [79] ldc #4
         + Integer [2130903043]
       [81] aconst_null
-      [82] invokevirtual #121
+      [82] invokevirtual #124
         + Methodref [android/view/LayoutInflater.inflate (ILandroid/view/ViewGroup;)Landroid/view/View;]
-      [85] checkcast #67
+      [85] checkcast #69
         + Class [android/widget/TableRow]
       [88] astore v4
       [90] aload v4
-      [92] new #62
+      [92] new #64
         + Class [android/view/ViewGroup$LayoutParams]
       [95] dup
       [96] iconst_m1
       [97] bipush -2
-      [99] invokespecial #123
+      [99] invokespecial #126
         + Methodref [android/view/ViewGroup$LayoutParams.<init> (II)V]
-      [102] invokevirtual #132
+      [102] invokevirtual #135
         + Methodref [android/widget/TableRow.setLayoutParams (Landroid/view/ViewGroup$LayoutParams;)V]
-      [105] new #68
+      [105] new #70
         + Class [android/widget/TextView]
       [108] dup
       [109] aload_0 v0
-      [110] invokespecial #133
+      [110] invokespecial #136
         + Methodref [android/widget/TextView.<init> (Landroid/content/Context;)V]
       [113] astore v5
       [115] aload v5
-      [117] new #75
+      [117] new #77
         + Class [java/lang/StringBuilder]
       [120] dup
-      [121] ldc #14
+      [121] ldc #24
         + String [
-Section ]
-      [123] invokespecial #147
+]
+      [123] invokespecial #153
         + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
-      [126] iload_3 v3
-      [127] aload_0 v0
-      [128] getfield #93
-        + Fieldref [net/thempra/yocaina/MainActivity.k Lnet/thempra/yocaina/a/a;]
-      [131] invokevirtual #169
-        + Methodref [net/thempra/yocaina/a/a.a ()I]
-      [134] idiv
-      [135] invokevirtual #148
-        + Methodref [java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;]
-      [138] invokevirtual #151
-        + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
-      [141] invokevirtual #134
-        + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
-      [144] aload v4
-      [146] aload v5
-      [148] invokevirtual #131
-        + Methodref [android/widget/TableRow.addView (Landroid/view/View;)V]
-      [151] getstatic #88
-        + Fieldref [net/thempra/yocaina/MainActivity.f Landroid/widget/TableLayout;]
-      [154] aload v4
-      [156] new #66
-        + Class [android/widget/TableLayout$LayoutParams]
-      [159] dup
-      [160] iconst_m1
-      [161] bipush -2
-      [163] invokespecial #130
-        + Methodref [android/widget/TableLayout$LayoutParams.<init> (II)V]
-      [166] invokevirtual #127
-        + Methodref [android/widget/TableLayout.addView (Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V]
-      [169] aload_0 v0
-      [170] invokestatic #120
-        + Methodref [android/view/LayoutInflater.from (Landroid/content/Context;)Landroid/view/LayoutInflater;]
-      [173] ldc #3
-        + Integer [2130903042]
-      [175] aconst_null
-      [176] invokevirtual #121
-        + Methodref [android/view/LayoutInflater.inflate (ILandroid/view/ViewGroup;)Landroid/view/View;]
-      [179] checkcast #67
-        + Class [android/widget/TableRow]
-      [182] astore v4
-      [184] aload v4
-      [186] new #62
-        + Class [android/view/ViewGroup$LayoutParams]
-      [189] dup
-      [190] iconst_m1
-      [191] bipush -2
-      [193] invokespecial #123
-        + Methodref [android/view/ViewGroup$LayoutParams.<init> (II)V]
-      [196] invokevirtual #132
-        + Methodref [android/widget/TableRow.setLayoutParams (Landroid/view/ViewGroup$LayoutParams;)V]
-      [199] new #68
-        + Class [android/widget/TextView]
-      [202] dup
-      [203] aload_0 v0
-      [204] invokespecial #133
-        + Methodref [android/widget/TextView.<init> (Landroid/content/Context;)V]
-      [207] astore v5
-      [209] aload v5
-      [211] new #75
-        + Class [java/lang/StringBuilder]
-      [214] dup
-      [215] ldc #22
-        + String [BLOCK ]
-      [217] invokespecial #147
-        + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
-      [220] iload_3 v3
-      [221] invokevirtual #148
-        + Methodref [java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;]
-      [224] ldc #20
-        + String [:   ]
-      [226] invokevirtual #150
+      [126] aload_0 v0
+      [127] ldc #15
+        + Integer [2131034130]
+      [129] invokevirtual #171
+        + Methodref [net/thempra/yocaina/MainActivity.getString (I)Ljava/lang/String;]
+      [132] invokevirtual #156
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [229] invokevirtual #151
+      [135] ldc #26
+        + String [ ]
+      [137] invokevirtual #156
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [140] iload_3 v3
+      [141] aload_0 v0
+      [142] getfield #96
+        + Fieldref [net/thempra/yocaina/MainActivity.l Lnet/thempra/yocaina/a/a;]
+      [145] invokevirtual #177
+        + Methodref [net/thempra/yocaina/a/a.a ()I]
+      [148] idiv
+      [149] invokevirtual #154
+        + Methodref [java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;]
+      [152] invokevirtual #157
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
-      [232] invokevirtual #134
+      [155] invokevirtual #138
         + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
-      [235] new #68
-        + Class [android/widget/TextView]
-      [238] dup
-      [239] aload_0 v0
-      [240] invokespecial #133
-        + Methodref [android/widget/TextView.<init> (Landroid/content/Context;)V]
-      [243] astore v6
-      [245] aload v6
-      [247] aload_2 v2
-      [248] iload_3 v3
-      [249] invokevirtual #153
-        + Methodref [java/util/ArrayList.get (I)Ljava/lang/Object;]
-      [252] checkcast #70
-        + Class [java/lang/CharSequence]
-      [255] invokevirtual #134
-        + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
-      [258] aload v4
-      [260] aload v5
-      [262] invokevirtual #131
+      [158] aload v4
+      [160] aload v5
+      [162] invokevirtual #134
         + Methodref [android/widget/TableRow.addView (Landroid/view/View;)V]
-      [265] aload v4
-      [267] aload v6
-      [269] invokevirtual #131
-        + Methodref [android/widget/TableRow.addView (Landroid/view/View;)V]
-      [272] getstatic #88
-        + Fieldref [net/thempra/yocaina/MainActivity.f Landroid/widget/TableLayout;]
-      [275] aload v4
-      [277] new #66
+      [165] getstatic #91
+        + Fieldref [net/thempra/yocaina/MainActivity.g Landroid/widget/TableLayout;]
+      [168] aload v4
+      [170] new #68
         + Class [android/widget/TableLayout$LayoutParams]
-      [280] dup
-      [281] iconst_m1
-      [282] bipush -2
-      [284] invokespecial #130
+      [173] dup
+      [174] iconst_m1
+      [175] bipush -2
+      [177] invokespecial #133
         + Methodref [android/widget/TableLayout$LayoutParams.<init> (II)V]
-      [287] invokevirtual #127
+      [180] invokevirtual #130
         + Methodref [android/widget/TableLayout.addView (Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V]
-      [290] iinc v3, 1
-      [293] iload_3 v3
-      [294] aload_2 v2
-      [295] invokevirtual #154
+      [183] aload_0 v0
+      [184] invokestatic #123
+        + Methodref [android/view/LayoutInflater.from (Landroid/content/Context;)Landroid/view/LayoutInflater;]
+      [187] ldc #3
+        + Integer [2130903042]
+      [189] aconst_null
+      [190] invokevirtual #124
+        + Methodref [android/view/LayoutInflater.inflate (ILandroid/view/ViewGroup;)Landroid/view/View;]
+      [193] checkcast #69
+        + Class [android/widget/TableRow]
+      [196] astore v4
+      [198] aload v4
+      [200] new #64
+        + Class [android/view/ViewGroup$LayoutParams]
+      [203] dup
+      [204] iconst_m1
+      [205] bipush -2
+      [207] invokespecial #126
+        + Methodref [android/view/ViewGroup$LayoutParams.<init> (II)V]
+      [210] invokevirtual #135
+        + Methodref [android/widget/TableRow.setLayoutParams (Landroid/view/ViewGroup$LayoutParams;)V]
+      [213] new #70
+        + Class [android/widget/TextView]
+      [216] dup
+      [217] aload_0 v0
+      [218] invokespecial #136
+        + Methodref [android/widget/TextView.<init> (Landroid/content/Context;)V]
+      [221] astore v5
+      [223] aload v5
+      [225] new #77
+        + Class [java/lang/StringBuilder]
+      [228] dup
+      [229] aload_0 v0
+      [230] ldc #16
+        + Integer [2131034131]
+      [232] invokevirtual #171
+        + Methodref [net/thempra/yocaina/MainActivity.getString (I)Ljava/lang/String;]
+      [235] invokestatic #151
+        + Methodref [java/lang/String.valueOf (Ljava/lang/Object;)Ljava/lang/String;]
+      [238] invokespecial #153
+        + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+      [241] ldc #26
+        + String [ ]
+      [243] invokevirtual #156
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [246] iload_3 v3
+      [247] invokevirtual #154
+        + Methodref [java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;]
+      [250] ldc #33
+        + String [:   ]
+      [252] invokevirtual #156
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [255] invokevirtual #157
+        + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [258] invokevirtual #138
+        + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
+      [261] new #70
+        + Class [android/widget/TextView]
+      [264] dup
+      [265] aload_0 v0
+      [266] invokespecial #136
+        + Methodref [android/widget/TextView.<init> (Landroid/content/Context;)V]
+      [269] astore v6
+      [271] aload v6
+      [273] aload_2 v2
+      [274] iload_3 v3
+      [275] invokevirtual #159
+        + Methodref [java/util/ArrayList.get (I)Ljava/lang/Object;]
+      [278] checkcast #72
+        + Class [java/lang/CharSequence]
+      [281] invokevirtual #138
+        + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
+      [284] aload v4
+      [286] aload v5
+      [288] invokevirtual #134
+        + Methodref [android/widget/TableRow.addView (Landroid/view/View;)V]
+      [291] aload v4
+      [293] aload v6
+      [295] invokevirtual #134
+        + Methodref [android/widget/TableRow.addView (Landroid/view/View;)V]
+      [298] getstatic #91
+        + Fieldref [net/thempra/yocaina/MainActivity.g Landroid/widget/TableLayout;]
+      [301] aload v4
+      [303] new #68
+        + Class [android/widget/TableLayout$LayoutParams]
+      [306] dup
+      [307] iconst_m1
+      [308] bipush -2
+      [310] invokespecial #133
+        + Methodref [android/widget/TableLayout$LayoutParams.<init> (II)V]
+      [313] invokevirtual #130
+        + Methodref [android/widget/TableLayout.addView (Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V]
+      [316] iinc v3, 1
+      [319] iload_3 v3
+      [320] aload_2 v2
+      [321] invokevirtual #160
         + Methodref [java/util/ArrayList.size ()I]
-      [298] ificmplt -247 (target=51)
-      [301] return
+      [324] ificmplt -273 (target=51)
+      [327] return
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 1):
       + Stack map table attribute (count = 5):
         - [38] Var: ...[a:java/util/ArrayList], Stack: (empty)
         - [51] Var: ...[i], Stack: (empty)
-        - [169] Var: ..., Stack: (empty)
-        - [293] Var: ..., Stack: (empty)
-        - [301] Var: -1, Stack: (empty)
+        - [183] Var: ..., Stack: (empty)
+        - [319] Var: ..., Stack: (empty)
+        - [327] Var: -1, Stack: (empty)
   + Method:       a(I)V
     Access flags: 0x2
       = private void a(int)
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 96, locals = 3, stack = 5):
-      [0] new #47
+      [0] new #49
         + Class [android/app/AlertDialog$Builder]
       [3] dup
       [4] aload_0 v0
-      [5] invokespecial #99
+      [5] invokespecial #102
         + Methodref [android/app/AlertDialog$Builder.<init> (Landroid/content/Context;)V]
       [8] astore_2 v2
       [9] iload_1 v1
@@ -1361,39 +1410,39 @@ Section ]
         6: offset = 58, target = 68
         default: offset = 65, target = 75
       [48] aload_2 v2
-      [49] ldc #21
-        + String [Authentication Failed on Block]
-      [51] invokevirtual #101
-        + Methodref [android/app/AlertDialog$Builder.setMessage (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+      [49] ldc #11
+        + Integer [2131034126]
+      [51] invokevirtual #104
+        + Methodref [android/app/AlertDialog$Builder.setMessage (I)Landroid/app/AlertDialog$Builder;]
       [54] pop
       [55] goto +20 (target=75)
       [58] aload_2 v2
-      [59] ldc #25
-        + String [Failed reading Block]
-      [61] invokevirtual #101
-        + Methodref [android/app/AlertDialog$Builder.setMessage (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+      [59] ldc #12
+        + Integer [2131034127]
+      [61] invokevirtual #104
+        + Methodref [android/app/AlertDialog$Builder.setMessage (I)Landroid/app/AlertDialog$Builder;]
       [64] pop
       [65] goto +10 (target=75)
       [68] aload_2 v2
-      [69] ldc #36
-        + String [Tag reading error]
-      [71] invokevirtual #101
-        + Methodref [android/app/AlertDialog$Builder.setMessage (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+      [69] ldc #10
+        + Integer [2131034125]
+      [71] invokevirtual #104
+        + Methodref [android/app/AlertDialog$Builder.setMessage (I)Landroid/app/AlertDialog$Builder;]
       [74] pop
       [75] aload_2 v2
-      [76] ldc #30
+      [76] ldc #38
         + String [OK]
-      [78] new #82
+      [78] new #84
         + Class [net/thempra/yocaina/b]
       [81] dup
       [82] aload_0 v0
-      [83] invokespecial #173
+      [83] invokespecial #181
         + Methodref [net/thempra/yocaina/b.<init> (Lnet/thempra/yocaina/MainActivity;)V]
-      [86] invokevirtual #102
+      [86] invokevirtual #105
         + Methodref [android/app/AlertDialog$Builder.setPositiveButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
       [89] pop
       [90] aload_2 v2
-      [91] invokevirtual #105
+      [91] invokevirtual #108
         + Methodref [android/app/AlertDialog$Builder.show ()Landroid/app/AlertDialog;]
       [94] pop
       [95] return
@@ -1409,7 +1458,7 @@ Section ]
       = public void onClick(android.view.View)
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 4, locals = 2, stack = 0):
-      [0] invokestatic #159
+      [0] invokestatic #165
         + Methodref [net/thempra/yocaina/MainActivity.d ()V]
       [3] return
       Code attribute exceptions (count = 0):
@@ -1419,42 +1468,42 @@ Section ]
       = private static void d()
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 57, locals = 3, stack = 2):
-      [0] getstatic #88
-        + Fieldref [net/thempra/yocaina/MainActivity.f Landroid/widget/TableLayout;]
+      [0] getstatic #91
+        + Fieldref [net/thempra/yocaina/MainActivity.g Landroid/widget/TableLayout;]
       [3] ifnull +45 (target=48)
-      [6] getstatic #88
-        + Fieldref [net/thempra/yocaina/MainActivity.f Landroid/widget/TableLayout;]
-      [9] invokevirtual #129
+      [6] getstatic #91
+        + Fieldref [net/thempra/yocaina/MainActivity.g Landroid/widget/TableLayout;]
+      [9] invokevirtual #132
         + Methodref [android/widget/TableLayout.getChildCount ()I]
       [12] istore_0 v0
       [13] iconst_0
       [14] istore_1 v1
       [15] goto +28 (target=43)
-      [18] getstatic #88
-        + Fieldref [net/thempra/yocaina/MainActivity.f Landroid/widget/TableLayout;]
+      [18] getstatic #91
+        + Fieldref [net/thempra/yocaina/MainActivity.g Landroid/widget/TableLayout;]
       [21] iload_1 v1
-      [22] invokevirtual #128
+      [22] invokevirtual #131
         + Methodref [android/widget/TableLayout.getChildAt (I)Landroid/view/View;]
       [25] astore_2 v2
       [26] aload_2 v2
-      [27] instanceof #67
+      [27] instanceof #69
         + Class [android/widget/TableRow]
       [30] ifeq +10 (target=40)
       [33] aload_2 v2
-      [34] checkcast #61
+      [34] checkcast #63
         + Class [android/view/ViewGroup]
-      [37] invokevirtual #122
+      [37] invokevirtual #125
         + Methodref [android/view/ViewGroup.removeAllViews ()V]
       [40] iinc v1, 1
       [43] iload_1 v1
       [44] iload_0 v0
       [45] ificmplt -27 (target=18)
-      [48] getstatic #83
+      [48] getstatic #85
         + Fieldref [net/thempra/yocaina/MainActivity.a Landroid/widget/TextView;]
-      [51] ldc #33
-        + String [Ready for Scan]
-      [53] invokevirtual #134
-        + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
+      [51] ldc #13
+        + Integer [2131034128]
+      [53] invokevirtual #137
+        + Methodref [android/widget/TextView.setText (I)V]
       [56] return
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 1):
@@ -1469,21 +1518,21 @@ Section ]
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 27, locals = 1, stack = 5):
       [0] aload_0 v0
-      [1] invokespecial #97
+      [1] invokespecial #100
         + Methodref [android/app/Activity.onResume ()V]
-      [4] getstatic #89
-        + Fieldref [net/thempra/yocaina/MainActivity.g Landroid/nfc/NfcAdapter;]
+      [4] getstatic #92
+        + Fieldref [net/thempra/yocaina/MainActivity.h Landroid/nfc/NfcAdapter;]
       [7] ifnull +19 (target=26)
-      [10] getstatic #89
-        + Fieldref [net/thempra/yocaina/MainActivity.g Landroid/nfc/NfcAdapter;]
+      [10] getstatic #92
+        + Fieldref [net/thempra/yocaina/MainActivity.h Landroid/nfc/NfcAdapter;]
       [13] aload_0 v0
-      [14] getstatic #90
-        + Fieldref [net/thempra/yocaina/MainActivity.h Landroid/app/PendingIntent;]
-      [17] getstatic #91
-        + Fieldref [net/thempra/yocaina/MainActivity.i [Landroid/content/IntentFilter;]
-      [20] getstatic #92
-        + Fieldref [net/thempra/yocaina/MainActivity.j [[Ljava/lang/String;]
-      [23] invokevirtual #115
+      [14] getstatic #93
+        + Fieldref [net/thempra/yocaina/MainActivity.i Landroid/app/PendingIntent;]
+      [17] getstatic #94
+        + Fieldref [net/thempra/yocaina/MainActivity.j [Landroid/content/IntentFilter;]
+      [20] getstatic #95
+        + Fieldref [net/thempra/yocaina/MainActivity.k [[Ljava/lang/String;]
+      [23] invokevirtual #118
         + Methodref [android/nfc/NfcAdapter.enableForegroundDispatch (Landroid/app/Activity;Landroid/app/PendingIntent;[Landroid/content/IntentFilter;[[Ljava/lang/String;)V]
       [26] return
       Code attribute exceptions (count = 0):
@@ -1495,26 +1544,26 @@ Section ]
       = public void onNewIntent(android.content.Intent)
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 28, locals = 2, stack = 4):
-      [0] ldc #26
+      [0] ldc #35
         + String [Foreground dispatch]
-      [2] new #75
+      [2] new #77
         + Class [java/lang/StringBuilder]
       [5] dup
-      [6] ldc #23
+      [6] ldc #34
         + String [Discovered tag with intent: ]
-      [8] invokespecial #147
+      [8] invokespecial #153
         + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
       [11] aload_1 v1
-      [12] invokevirtual #149
+      [12] invokevirtual #155
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;]
-      [15] invokevirtual #151
+      [15] invokevirtual #157
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
-      [18] invokestatic #119
+      [18] invokestatic #122
         + Methodref [android/util/Log.i (Ljava/lang/String;Ljava/lang/String;)I]
       [21] pop
       [22] aload_0 v0
       [23] aload_1 v1
-      [24] invokevirtual #156
+      [24] invokevirtual #162
         + Methodref [net/thempra/yocaina/MainActivity.a (Landroid/content/Intent;)V]
       [27] return
       Code attribute exceptions (count = 0):
@@ -1525,15 +1574,15 @@ Section ]
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 18, locals = 1, stack = 2):
       [0] aload_0 v0
-      [1] invokespecial #96
+      [1] invokespecial #99
         + Methodref [android/app/Activity.onPause ()V]
-      [4] getstatic #89
-        + Fieldref [net/thempra/yocaina/MainActivity.g Landroid/nfc/NfcAdapter;]
+      [4] getstatic #92
+        + Fieldref [net/thempra/yocaina/MainActivity.h Landroid/nfc/NfcAdapter;]
       [7] ifnull +10 (target=17)
-      [10] getstatic #89
-        + Fieldref [net/thempra/yocaina/MainActivity.g Landroid/nfc/NfcAdapter;]
+      [10] getstatic #92
+        + Fieldref [net/thempra/yocaina/MainActivity.h Landroid/nfc/NfcAdapter;]
       [13] aload_0 v0
-      [14] invokevirtual #114
+      [14] invokevirtual #117
         + Methodref [android/nfc/NfcAdapter.disableForegroundDispatch (Landroid/app/Activity;)V]
       [17] return
       Code attribute exceptions (count = 0):
@@ -1546,84 +1595,84 @@ Section ]
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 142, locals = 6, stack = 5):
       [0] aload_0 v0
-      [1] invokevirtual #164
+      [1] invokevirtual #170
         + Methodref [net/thempra/yocaina/MainActivity.getResources ()Landroid/content/res/Resources;]
       [4] astore_1 v1
-      [5] new #69
+      [5] new #71
         + Class [java/io/File]
       [8] dup
-      [9] new #75
+      [9] new #77
         + Class [java/lang/StringBuilder]
       [12] dup
-      [13] invokespecial #146
+      [13] invokespecial #152
         + Methodref [java/lang/StringBuilder.<init> ()V]
-      [16] invokestatic #118
+      [16] invokestatic #121
         + Methodref [android/os/Environment.getExternalStorageDirectory ()Ljava/io/File;]
-      [19] invokevirtual #149
+      [19] invokevirtual #155
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;]
-      [22] ldc #17
+      [22] ldc #30
         + String [/]
-      [24] invokevirtual #150
+      [24] invokevirtual #156
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
       [27] aload_1 v1
       [28] ldc #5
         + Integer [2131034113]
-      [30] invokevirtual #113
+      [30] invokevirtual #116
         + Methodref [android/content/res/Resources.getString (I)Ljava/lang/String;]
-      [33] invokevirtual #145
+      [33] invokevirtual #149
         + Methodref [java/lang/String.toLowerCase ()Ljava/lang/String;]
-      [36] invokevirtual #150
+      [36] invokevirtual #156
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [39] invokevirtual #151
+      [39] invokevirtual #157
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
-      [42] invokespecial #135
+      [42] invokespecial #139
         + Methodref [java/io/File.<init> (Ljava/lang/String;)V]
       [45] astore_2 v2
       [46] aload_2 v2
-      [47] invokevirtual #137
+      [47] invokevirtual #141
         + Methodref [java/io/File.isDirectory ()Z]
       [50] ifne +49 (target=99)
-      [53] new #69
+      [53] new #71
         + Class [java/io/File]
       [56] dup
-      [57] new #75
+      [57] new #77
         + Class [java/lang/StringBuilder]
       [60] dup
-      [61] invokespecial #146
+      [61] invokespecial #152
         + Methodref [java/lang/StringBuilder.<init> ()V]
-      [64] invokestatic #118
+      [64] invokestatic #121
         + Methodref [android/os/Environment.getExternalStorageDirectory ()Ljava/io/File;]
-      [67] invokevirtual #149
+      [67] invokevirtual #155
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;]
-      [70] ldc #17
+      [70] ldc #30
         + String [/]
-      [72] invokevirtual #150
+      [72] invokevirtual #156
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
       [75] aload_1 v1
       [76] ldc #5
         + Integer [2131034113]
-      [78] invokevirtual #113
+      [78] invokevirtual #116
         + Methodref [android/content/res/Resources.getString (I)Ljava/lang/String;]
-      [81] invokevirtual #145
+      [81] invokevirtual #149
         + Methodref [java/lang/String.toLowerCase ()Ljava/lang/String;]
-      [84] invokevirtual #150
+      [84] invokevirtual #156
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [87] invokevirtual #151
+      [87] invokevirtual #157
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
-      [90] invokespecial #135
+      [90] invokespecial #139
         + Methodref [java/io/File.<init> (Ljava/lang/String;)V]
       [93] astore_3 v3
       [94] aload_3 v3
-      [95] invokevirtual #139
+      [95] invokevirtual #143
         + Methodref [java/io/File.mkdirs ()Z]
       [98] pop
       [99] aload_2 v2
-      [100] invokevirtual #138
+      [100] invokevirtual #142
         + Methodref [java/io/File.listFiles ()[Ljava/io/File;]
       [103] astore_3 v3
       [104] aload_3 v3
       [105] arraylength
-      [106] anewarray #70
+      [106] anewarray #72
         + Class [java/lang/CharSequence]
       [109] astore v4
       [111] iconst_0
@@ -1634,7 +1683,7 @@ Section ]
       [121] aload_3 v3
       [122] iload v5
       [124] aaload
-      [125] invokevirtual #136
+      [125] invokevirtual #140
         + Methodref [java/io/File.getName ()Ljava/lang/String;]
       [128] aastore
       [129] iinc v5, 1
@@ -1656,88 +1705,88 @@ Section ]
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 173, locals = 8, stack = 5):
       [0] aload_0 v0
-      [1] invokevirtual #164
+      [1] invokevirtual #170
         + Methodref [net/thempra/yocaina/MainActivity.getResources ()Landroid/content/res/Resources;]
       [4] astore_1 v1
-      [5] new #69
+      [5] new #71
         + Class [java/io/File]
       [8] dup
-      [9] new #75
+      [9] new #77
         + Class [java/lang/StringBuilder]
       [12] dup
-      [13] invokespecial #146
+      [13] invokespecial #152
         + Methodref [java/lang/StringBuilder.<init> ()V]
-      [16] invokestatic #118
+      [16] invokestatic #121
         + Methodref [android/os/Environment.getExternalStorageDirectory ()Ljava/io/File;]
-      [19] invokevirtual #149
+      [19] invokevirtual #155
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;]
-      [22] ldc #17
+      [22] ldc #30
         + String [/]
-      [24] invokevirtual #150
+      [24] invokevirtual #156
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
       [27] aload_1 v1
       [28] ldc #5
         + Integer [2131034113]
-      [30] invokevirtual #113
+      [30] invokevirtual #116
         + Methodref [android/content/res/Resources.getString (I)Ljava/lang/String;]
-      [33] invokevirtual #145
+      [33] invokevirtual #149
         + Methodref [java/lang/String.toLowerCase ()Ljava/lang/String;]
-      [36] invokevirtual #150
+      [36] invokevirtual #156
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [39] invokevirtual #151
+      [39] invokevirtual #157
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
-      [42] invokespecial #135
+      [42] invokespecial #139
         + Methodref [java/io/File.<init> (Ljava/lang/String;)V]
       [45] astore_2 v2
       [46] aload_2 v2
-      [47] invokevirtual #137
+      [47] invokevirtual #141
         + Methodref [java/io/File.isDirectory ()Z]
       [50] ifne +49 (target=99)
-      [53] new #69
+      [53] new #71
         + Class [java/io/File]
       [56] dup
-      [57] new #75
+      [57] new #77
         + Class [java/lang/StringBuilder]
       [60] dup
-      [61] invokespecial #146
+      [61] invokespecial #152
         + Methodref [java/lang/StringBuilder.<init> ()V]
-      [64] invokestatic #118
+      [64] invokestatic #121
         + Methodref [android/os/Environment.getExternalStorageDirectory ()Ljava/io/File;]
-      [67] invokevirtual #149
+      [67] invokevirtual #155
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;]
-      [70] ldc #17
+      [70] ldc #30
         + String [/]
-      [72] invokevirtual #150
+      [72] invokevirtual #156
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
       [75] aload_1 v1
       [76] ldc #5
         + Integer [2131034113]
-      [78] invokevirtual #113
+      [78] invokevirtual #116
         + Methodref [android/content/res/Resources.getString (I)Ljava/lang/String;]
-      [81] invokevirtual #145
+      [81] invokevirtual #149
         + Methodref [java/lang/String.toLowerCase ()Ljava/lang/String;]
-      [84] invokevirtual #150
+      [84] invokevirtual #156
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [87] invokevirtual #151
+      [87] invokevirtual #157
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
-      [90] invokespecial #135
+      [90] invokespecial #139
         + Methodref [java/io/File.<init> (Ljava/lang/String;)V]
       [93] astore_3 v3
       [94] aload_3 v3
-      [95] invokevirtual #139
+      [95] invokevirtual #143
         + Methodref [java/io/File.mkdirs ()Z]
       [98] pop
       [99] aload_2 v2
-      [100] invokevirtual #138
+      [100] invokevirtual #142
         + Methodref [java/io/File.listFiles ()[Ljava/io/File;]
       [103] astore_3 v3
-      [104] new #76
+      [104] new #78
         + Class [java/util/ArrayList]
       [107] dup
-      [108] invokespecial #152
+      [108] invokespecial #158
         + Methodref [java/util/ArrayList.<init> ()V]
-      [111] putstatic #87
-        + Fieldref [net/thempra/yocaina/MainActivity.e Ljava/util/List;]
+      [111] putstatic #90
+        + Fieldref [net/thempra/yocaina/MainActivity.f Ljava/util/List;]
       [114] aload_3 v3
       [115] dup
       [116] astore v7
@@ -1750,21 +1799,21 @@ Section ]
       [129] iload v5
       [131] aaload
       [132] astore v4
-      [134] getstatic #87
-        + Fieldref [net/thempra/yocaina/MainActivity.e Ljava/util/List;]
+      [134] getstatic #90
+        + Fieldref [net/thempra/yocaina/MainActivity.f Ljava/util/List;]
       [137] aload v4
-      [139] invokevirtual #136
+      [139] invokevirtual #140
         + Methodref [java/io/File.getName ()Ljava/lang/String;]
-      [142] invokeinterface #174
+      [142] invokeinterface #182
         + InterfaceMethodref [java/util/List.add (Ljava/lang/Object;)Z]
       [147] pop
       [148] iinc v5, 1
       [151] iload v5
       [153] iload v6
       [155] ificmplt -28 (target=127)
-      [158] getstatic #87
-        + Fieldref [net/thempra/yocaina/MainActivity.e Ljava/util/List;]
-      [161] invokeinterface #175
+      [158] getstatic #90
+        + Fieldref [net/thempra/yocaina/MainActivity.f Ljava/util/List;]
+      [161] invokeinterface #183
         + InterfaceMethodref [java/util/List.isEmpty ()Z]
       [166] ifeq +5 (target=171)
       [169] iconst_0
@@ -1783,8 +1832,8 @@ Section ]
       = static synthetic java.util.List a()
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 4, locals = 0, stack = 1):
-      [0] getstatic #87
-        + Fieldref [net/thempra/yocaina/MainActivity.e Ljava/util/List;]
+      [0] getstatic #90
+        + Fieldref [net/thempra/yocaina/MainActivity.f Ljava/util/List;]
       [3] areturn
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 0):
@@ -1795,8 +1844,8 @@ Section ]
     + Code attribute instructions (code length = 6, locals = 2, stack = 2):
       [0] aload_0 v0
       [1] aload_1 v1
-      [2] putfield #93
-        + Fieldref [net/thempra/yocaina/MainActivity.k Lnet/thempra/yocaina/a/a;]
+      [2] putfield #96
+        + Fieldref [net/thempra/yocaina/MainActivity.l Lnet/thempra/yocaina/a/a;]
       [5] return
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 0):
@@ -1807,7 +1856,7 @@ Section ]
     + Code attribute instructions (code length = 6, locals = 2, stack = 2):
       [0] aload_0 v0
       [1] aload_1 v1
-      [2] invokespecial #157
+      [2] invokespecial #163
         + Methodref [net/thempra/yocaina/MainActivity.a (Landroid/nfc/Tag;)V]
       [5] return
       Code attribute exceptions (count = 0):
@@ -1817,7 +1866,7 @@ Section ]
       = static synthetic void b()
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 4, locals = 0, stack = 0):
-      [0] invokestatic #159
+      [0] invokestatic #165
         + Methodref [net/thempra/yocaina/MainActivity.d ()V]
       [3] return
       Code attribute exceptions (count = 0):
