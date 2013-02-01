@@ -1,8 +1,10 @@
 package net.thempra.yocaina;
 
 import java.io.File;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
+
 
 import net.thempra.yocaina.cards.Card;
 import net.thempra.yocaina.cards.CardMifare;
@@ -30,7 +32,9 @@ import android.view.WindowManager;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
+import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -79,7 +83,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		
 		btnDecode.setEnabled(false);
 		btnDumpToFile.setEnabled(false);
-		btnOther.setEnabled(false);
+		//btnOther.setEnabled(false);
 
 		if (!LoadCards()) {
 			// Show message no cards
@@ -99,6 +103,21 @@ public class MainActivity extends Activity implements OnClickListener {
 			// Register the onClick listener with the implementation above
 			btn_clear.setOnClickListener(this);
 			btnDumpToFile.setOnClickListener(dumpToFile());
+			
+			
+			btnOther.setOnClickListener(new OnClickListener() {
+				public void onClick(View view) {
+					
+		            Intent repo = new Intent(MainActivity.this, RepositoryActivity.class);
+		            startActivity(repo);
+		        		
+		        	
+		        }
+
+		    });
+			
+			
+			
 
 			mAdapter = NfcAdapter.getDefaultAdapter(this);
 			if (mAdapter != null) {

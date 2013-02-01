@@ -28,11 +28,10 @@
 		    android:layout_height="wrap_content"
 		    android:layout_margin="3sp"
 		    android:gravity="center_horizontal"
-		    android:paddingLeft="20dp"
-		    android:paddingRight="20dp"
+		    android:paddingLeft="5dp"
+		    android:paddingRight="5dp"
 		    android:paddingTop="5dp"
 		    android:text="@string/clear" />
-
 
 		<Button
 		    android:id="@+id/btn_decode"
@@ -40,8 +39,8 @@
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content"
 		    android:gravity="center_horizontal"
-		    android:paddingLeft="20dp"
-		    android:paddingRight="20dp"
+		    android:paddingLeft="5dp"
+		    android:paddingRight="5dp"
 		    android:paddingTop="5dp"
 		    android:text="@string/decode" />
 		
@@ -51,19 +50,19 @@
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content"
 		    android:gravity="center_horizontal"
-		    android:paddingLeft="20dp"
-		    android:paddingRight="20dp"
+		    android:paddingLeft="5dp"
+		    android:paddingRight="5dp"
 		    android:paddingTop="5dp"
 		    android:text="@string/dump" />
 		
 		<Button
 		    android:id="@+id/btn_other"
-		    style="@style/button_black_disable"
+		    style="@style/button_black"
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content"
 		    android:gravity="center_horizontal"
-		    android:paddingLeft="20dp"
-		    android:paddingRight="20dp"
+		    android:paddingLeft="5dp"
+		    android:paddingRight="5dp"
 		    android:paddingTop="5dp"
 		    android:text="@string/other" />
 								

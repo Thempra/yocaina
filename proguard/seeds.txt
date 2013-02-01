@@ -1,6 +1,7 @@
 net.thempra.yocaina.MainActivity
 net.thempra.yocaina.MainActivity: MainActivity()
 net.thempra.yocaina.MainActivity: void onClick(android.view.View)
+net.thempra.yocaina.R$drawable: int background
 net.thempra.yocaina.R$drawable: int black_button
 net.thempra.yocaina.R$drawable: int black_button_disable
 net.thempra.yocaina.R$drawable: int button_black

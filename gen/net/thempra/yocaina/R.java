@@ -23,6 +23,7 @@ public final class R {
     }
     public static final class id {
         public static final int LinearLayoutButtons=0x7f070002;
+        public static final int btnDownload=0x7f07000c;
         public static final int btn_clear=0x7f070003;
         public static final int btn_decode=0x7f070004;
         public static final int btn_dump=0x7f070005;
@@ -32,13 +33,15 @@ public final class R {
         public static final int status_label=0x7f070008;
         public static final int tableStatus=0x7f070007;
         public static final int tblGeneral=0x7f070001;
+        public static final int txtURL=0x7f07000b;
         public static final int viewScan=0x7f07000a;
     }
     public static final class layout {
         public static final int cmb_mifare_cards=0x7f030000;
         public static final int main=0x7f030001;
-        public static final int table_section_data=0x7f030002;
-        public static final int table_section_header=0x7f030003;
+        public static final int repositoryactivity=0x7f030002;
+        public static final int table_section_data=0x7f030003;
+        public static final int table_section_header=0x7f030004;
     }
     public static final class string {
         public static final int app_name=0x7f050001;
