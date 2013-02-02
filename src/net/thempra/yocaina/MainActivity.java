@@ -7,7 +7,7 @@ import java.util.List;
 
 
 import net.thempra.yocaina.cards.Card;
-import net.thempra.yocaina.cards.CardMifare;
+import net.thempra.yocaina.cards.CardMifareClassic;
 import net.thempra.yocaina.cards.CardNfcV;
 
 import android.app.Activity;
@@ -184,7 +184,7 @@ public class MainActivity extends Activity implements OnClickListener {
 				         public void onClick(DialogInterface dialog, int position) 
 				         {
 				    		 dialog.dismiss(); 
-				        	 currentCard = new CardMifare(cmbCards.get(position).toString());
+				        	 currentCard = new CardMifareClassic(cmbCards.get(position).toString());
 				        	 showCardData(tagFromIntent);
 				        	
 				         }

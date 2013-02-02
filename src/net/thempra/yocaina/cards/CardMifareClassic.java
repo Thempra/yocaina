@@ -17,10 +17,10 @@ import android.os.Environment;
 import android.util.Log;
 
 
-public class CardMifare extends Card {
+public class CardMifareClassic extends Card {
 
 	
-	public CardMifare (String filecfg)
+	public CardMifareClassic (String filecfg)
 	{
 		this.LoadKeys(filecfg);
 		
@@ -126,11 +126,21 @@ public class CardMifare extends Card {
 			FileInputStream fileIS = new FileInputStream(f);
 			BufferedReader buf = new BufferedReader(new InputStreamReader(
 					fileIS));
-			String readString = new String();
+			//String readString = new String();
 
+			
 			// just reading each line and pass it on the debugger
-
-			while ((readString = buf.readLine()) != null) {
+			String[] items = {"keyA0","keyA1","keyA2","keyA3","keyA4","keyA5","keyA6","keyA7","keyA8","keyA9","keyA10","keyA11","keyA12","keyA13","keyA14","keyA15",
+							"keyB0","keyB1","keyB2","keyB3","keyB4","keyB5","keyB6","keyB7","keyB8","keyB9","keyB10","keyB11","keyB12","keyB13","keyB14","keyB15"};
+			
+			ArrayList<String> arrayKeys= Utils.getItemsFromFile(Environment.getExternalStorageDirectory()
+					+ "/yocaina/" + file,"card",items);
+			
+			//while ((readString = buf.readLine()) != null) {
+			for ( String readString: arrayKeys){
+				
+				if (readString==null) break;
+				
 				String[] separated = readString.split(" ");
 
 				// byte n = (byte)(Integer.parseInt(separated[0].replace("0x",

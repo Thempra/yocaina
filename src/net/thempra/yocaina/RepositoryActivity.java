@@ -199,6 +199,8 @@ private ArrayList<String> getItemsFromURL(String urlXml, String mainNode){
 	}
 
 
+	
+	
 
 	void DownloadFile (String fileName, URL url) {
 		

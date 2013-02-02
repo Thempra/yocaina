@@ -1,11 +1,21 @@
 package com.overxet;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.StringWriter;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
+import org.xml.sax.InputSource;
 import org.xmlpull.v1.XmlSerializer;
 
 import android.os.Message;
@@ -105,5 +115,75 @@ public class Utils {
         }
         return result.toString();
     }
+	
+	
+	/****************************************************************************************/
+	
+	public static ArrayList<String> getItemsFromFile(String xmlPath, String mainNode, String[] subitems){
+		
+		ArrayList<HashMap<String, Object>> mylist = new ArrayList<HashMap<String, Object>>();
+		HashMap<String, Object> map;
+		
+	
+		ArrayList<String> data = new ArrayList<String>();
+		ArrayList<String> datareturn = new ArrayList<String>();
+		
+		
+		try{
+			
+		//URL url = new URL(urlXml);
+			
+        DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+        DocumentBuilder db = dbf.newDocumentBuilder();
+       
+        
+        Document doc = db.parse( new File(xmlPath));
+        doc.getDocumentElement().normalize();
+		
+        NodeList nodeList = doc.getElementsByTagName(mainNode);
+
+        /** Assign textview array lenght by arraylist size */
+        
+        for (int i = 0; i < nodeList.getLength(); i++) {
+
+            
+            Element fstElmnt = (Element) nodeList.item(i);
+            data.add (getNodeValueByTagName(fstElmnt, "keys"));
+            
+            map = new HashMap<String, Object>();
+            
+            for (String s : subitems)
+            {
+            	map.put(s, getNodeValueByTagName(fstElmnt, s));
+            	datareturn.add(getNodeValueByTagName(fstElmnt, s));
+            }
+            
+			mylist.add(map);
+
+        }
+		
+        
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	
+		
+		return datareturn;
+	    }
+	
+	
+	private static String getNodeValueByTagName(Node parentNode, String tagNameOfNode)
+	{
+	    String nodeValue = "";
+	    if (((Element) parentNode).getElementsByTagName(tagNameOfNode).getLength() != 0)
+	        if (((Element) ((Element) parentNode).getElementsByTagName(tagNameOfNode).item(0)).hasChildNodes())
+	        {
+	            nodeValue = ((Node) ((Element) ((Element) parentNode).getElementsByTagName(tagNameOfNode).item(0)).getChildNodes().item(0)).getNodeValue();
+	        }
+	    return nodeValue;
+	}
+
+	
+	
 	
 }
