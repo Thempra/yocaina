@@ -47,7 +47,7 @@ public class MainActivity extends Activity implements OnClickListener {
 	private static Button btn_clear;
 	private static Button btnDecode;
 	private static Button btnDumpToFile;
-	private static Button btnOther;
+	private static Button btnCards;
 	
 	private static  List<String> cmbCards;
 	private static TableLayout tl;
@@ -79,7 +79,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		btn_clear = (Button) findViewById(R.id.btn_clear);
 		btnDecode = (Button) findViewById(R.id.btn_decode);
 		btnDumpToFile = (Button) findViewById(R.id.btn_dump);
-		btnOther = (Button) findViewById(R.id.btn_other);
+		btnCards = (Button) findViewById(R.id.btn_cards);
 		
 		btnDecode.setEnabled(false);
 		btnDumpToFile.setEnabled(false);
@@ -105,13 +105,11 @@ public class MainActivity extends Activity implements OnClickListener {
 			btnDumpToFile.setOnClickListener(dumpToFile());
 			
 			
-			btnOther.setOnClickListener(new OnClickListener() {
+			btnCards.setOnClickListener(new OnClickListener() {
 				public void onClick(View view) {
 					
 		            Intent repo = new Intent(MainActivity.this, RepositoryActivity.class);
 		            startActivity(repo);
-		        		
-		        	
 		        }
 
 		    });

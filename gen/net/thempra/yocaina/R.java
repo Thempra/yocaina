@@ -24,10 +24,10 @@ public final class R {
     public static final class id {
         public static final int LinearLayoutButtons=0x7f070002;
         public static final int btnDownload=0x7f07000d;
+        public static final int btn_cards=0x7f070006;
         public static final int btn_clear=0x7f070003;
         public static final int btn_decode=0x7f070004;
         public static final int btn_dump=0x7f070005;
-        public static final int btn_other=0x7f070006;
         public static final int cmbCardsDialog=0x7f070000;
         public static final int linearLayout1=0x7f07000b;
         public static final int status_data=0x7f070009;
@@ -50,15 +50,17 @@ public final class R {
         public static final int authFailed=0x7f05000e;
         public static final int block=0x7f050013;
         public static final int blockFailed=0x7f05000f;
+        public static final int cards=0x7f050008;
+        public static final int cardsAvailable=0x7f050015;
         public static final int clear=0x7f050004;
         public static final int currentStatus=0x7f050002;
         public static final int decode=0x7f050005;
+        public static final int download=0x7f050014;
         public static final int dump=0x7f050006;
         public static final int dumpToFile=0x7f050007;
         public static final int errorReading=0x7f05000d;
         public static final int noCards=0x7f050011;
         public static final int online=0x7f050009;
-        public static final int other=0x7f050008;
         public static final int reading=0x7f05000a;
         public static final int readyScan=0x7f050010;
         public static final int scanTag=0x7f050003;

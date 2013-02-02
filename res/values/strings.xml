@@ -10,7 +10,7 @@
     <string name="decode">Decode</string>
     <string name="dump">Dump</string>
     <string name="dumpToFile">Dump to File</string>
-    <string name="other">Other</string>
+    <string name="cards">Cards</string>
     
     <string name="online">Online</string>
     <string name="reading">Reading the Tag..</string>
@@ -29,7 +29,8 @@
     <string name="section">Section</string>
     <string name="block">BLOCK</string>
     
-    
+    <string name="download">Download</string>
+    <string name="cardsAvailable">Cards Available:</string>
     
  
 </resources>

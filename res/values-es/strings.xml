@@ -10,7 +10,7 @@
     <string name="decode">Decodificar</string>
     <string name="dump">Volcar</string>
     <string name="dumpToFile">Volcar a fichero</string>
-    <string name="other">Otros</string>
+    <string name="cards">Tarjetas</string>
  
     <string name="online">Preparado</string>
     <string name="reading">Leyendo elTag..</string>
@@ -28,4 +28,7 @@
     
     <string name="section">Sección</string>
     <string name="block">BLOQUE</string>
+    
+    <string name="download">Descargar</string>
+    <string name="cardsAvailable">Tarjetas disponibles:</string>
 </resources>

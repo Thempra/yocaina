@@ -18,20 +18,20 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import org.apache.http.util.ByteArrayBuffer;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
 
 import android.app.Activity;
-import android.content.BroadcastReceiver;
-import android.content.Context;
-import android.content.Intent;
-import android.content.IntentFilter;
+import android.content.pm.ActivityInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
 import android.util.Log;
+import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
+import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -40,7 +40,6 @@ import android.widget.TextView;
 public class RepositoryActivity extends Activity
 
 {
-	private static final String ACTION_GET_CARDS = "Get_cards";
 
 	private static EditText txtURL;
 	private static Button btnDownload;
@@ -55,47 +54,53 @@ public class RepositoryActivity extends Activity
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		 requestWindowFeature(Window.FEATURE_NO_TITLE);
+	     getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+	     setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+	        
 		
 		setContentView(R.layout.repositoryactivity);
 		
 		txtURL= (EditText) findViewById(R.id.txtURL);
 		btnDownload= (Button) findViewById(R.id.btnDownload);
+		txtDebug= (TextView) findViewById(R.id.txtDebug);
+
 		
 	
 			
 		card = new ArrayList<String>();
-	    
-	    
-	//	btnDownload.setOnClickListener(new OnClickListener() {
-	//		public void onClick(View view) {
-				
+
+		btnDownload.setOnClickListener(new OnClickListener() {
+			public void onClick(View view) {
+					
 				new AsyncTask<Activity, Void, String>() {
-			        @Override
-			        public String doInBackground(Activity... activities) {
-			        	card= getItemsFromURL("http://"+txtURL.getText().toString()+"/cards.xml","card");
-			     
-			        	//Send to Activity
-			    		Intent conectedIntent = new Intent();
-			    		conectedIntent.setAction(ACTION_GET_CARDS);
-			            sendBroadcast(conectedIntent);
-			            return ""; //return Utilities.DBGetOnlineVersionNumber(activities[0]);
-			        }
-			        
-			    }.execute(this);
-	    
-	    
-		//	 }
+					@Override
+					protected String doInBackground(Activity... arg0) {
+						
+						card= getItemsFromURL("http://"+txtURL.getText().toString()+"/cards.xml","card");						 
+						manageNewCards();
+						
+						
+						
+						return null;
+					}
+				}.execute();
+				RefreshLocalCards();
+			 }
 
-	    //});
+	    });
+		
+		RefreshLocalCards();
+	
 
-			    
-	    
-	    if (activityReceiver != null) {
-        	//Create an intent filter to listen to the broadcast sent with the action "ACTION_STRING_ACTIVITY"
-        	            IntentFilter intentFilter = new IntentFilter(ACTION_GET_CARDS);
-        	//Map the intent filter to the receiver
-        	            registerReceiver(activityReceiver, intentFilter);
-        	        }
+	}
+
+	private void RefreshLocalCards() {
+		String[] fileList = new File(Environment.getExternalStorageDirectory().toString()+"/yocaina/").list();
+		
+		txtDebug.setText(getString(R.string.cardsAvailable));
+		for (String f : fileList)
+	    	txtDebug.setText(txtDebug.getText()+"\n - "+ f);
 	}
 	
 private ArrayList<String> getItemsFromURL(String urlXml, String mainNode){
@@ -128,14 +133,12 @@ private ArrayList<String> getItemsFromURL(String urlXml, String mainNode){
             map.put("url", getNodeValueByTagName(fstElmnt, "url"));
             
      
-            //getResources().getResourceName(resid)
 			mylist.add(map);
 
         }
 		
         
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	   
@@ -157,17 +160,7 @@ private ArrayList<String> getItemsFromURL(String urlXml, String mainNode){
 	    return nodeValue;
 	}
 
-	private String getNodeAttributeByTagName(Node parentNode, String tagNameOfAttr)
-	{
-	    String nodeValue = "";
-
-	    NamedNodeMap questNodeAttr = parentNode.getAttributes();
-
-	    if (questNodeAttr.getLength() != 0)
-	        nodeValue = questNodeAttr.getNamedItem(tagNameOfAttr).getTextContent();
-
-	    return nodeValue;
-	}
+	
 	
 	
 	private void manageNewCards() {
@@ -175,27 +168,28 @@ private ArrayList<String> getItemsFromURL(String urlXml, String mainNode){
 		txtDebug = (TextView) findViewById(R.id.txtDebug);
 	    
 	    
-		for (HashMap<String, Object> item : mylist)
+		for (final HashMap<String, Object> item : mylist)
 		{
-			txtDebug.setText(txtDebug.getText()+"\n\t- "+item.get("name").toString());
-			try {
-				DownloadFile(item.get("name").toString(),new URL(item.get("url").toString()));
-			} catch (MalformedURLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+			//txtDebug.setText(txtDebug.getText()+"\n\t- "+item.get("name").toString());
+			new AsyncTask<Activity, Void, String>() {
+			    
+
+				@Override
+				protected String doInBackground(Activity... arg0) {
+					
+					try {
+						DownloadFile(item.get("name").toString(),new URL (item.get("url").toString()));
+					} catch (MalformedURLException e) {
+						e.printStackTrace();
+					}
+					return null;
+				}
+			}.execute(this);
 		}
 		
 			
 	}
 
-	private BroadcastReceiver activityReceiver = new BroadcastReceiver() {
-
-        @Override
-        public void onReceive(Context context, Intent intent) {
-        	manageNewCards();
-        }
-    };
 
 
 	void DownloadFile (String fileName, URL url) {
@@ -204,10 +198,6 @@ private ArrayList<String> getItemsFromURL(String urlXml, String mainNode){
            
             File file = new File(fileName);
 
-            long startTime = System.currentTimeMillis();
-            Log.d("Manage", "download begining");
-            Log.d("Manage", "download url:" + url);
-            Log.d("Manage", "downloaded file name:" + fileName);
             /* Open a connection to that URL. */
             URLConnection ucon = url.openConnection();
 
@@ -218,12 +208,7 @@ private ArrayList<String> getItemsFromURL(String urlXml, String mainNode){
             /*
              * Define InputStreams to read from the URLConnection.
              */
-            
-            
-            /*************************************************************************/
-            //FIXME: Error al hacer el getInputStream 
-            /*************************************************************************/
-            
+      
             InputStream is = ucon.getInputStream();
             BufferedInputStream bis = new BufferedInputStream(is);
 
@@ -240,72 +225,15 @@ private ArrayList<String> getItemsFromURL(String urlXml, String mainNode){
             FileOutputStream fos = new FileOutputStream(Environment.getExternalStorageDirectory().toString()+"/yocaina/"+file);
             fos.write(baf.toByteArray());
             fos.close();
-            Log.d("Manage", "download ready in"
-                            + ((System.currentTimeMillis() - startTime) / 1000)
-                            + " sec");
 
     } catch (IOException e) {
             Log.d("Manage", "Error: " + e);
     }
 		
-	/*	try {
-	        //set the download URL, a url that points to a file on the internet
-	        //this is the file to be downloaded
-	       
 	
-	        //create the new connection
-	        HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
-	
-	        //set up some things on the connection
-	        urlConnection.setRequestMethod("GET");
-	        urlConnection.setDoOutput(true);
-	
-	        //and connect!
-	        urlConnection.connect();
-	
-	        //set the path where we want to save the file
-	        //in this case, going to save it on the root directory of the
-	        //sd card.
-	        File SDCardRoot = Environment.getExternalStorageDirectory();
-	        //create a new file, specifying the path, and the filename
-	        //which we want to save the file as.
-	        File file = new File(SDCardRoot,"/yocaina/"+name);
-	
-	        //this will be used to write the downloaded data into the file we created
-	        FileOutputStream fileOutput = new FileOutputStream(file);
-	
-	        //this will be used in reading the data from the internet
-	        InputStream inputStream = urlConnection.getInputStream();
-	
-	        //this is the total size of the file
-	        int totalSize = urlConnection.getContentLength();
-	        //variable to store total downloaded bytes
-	        int downloadedSize = 0;
-	
-	        //create a buffer...
-	        byte[] buffer = new byte[1024];
-	        int bufferLength = 0; //used to store a temporary size of the buffer
-	
-	        //now, read through the input buffer and write the contents to the file
-	        while ( (bufferLength = inputStream.read(buffer)) > 0 ) {
-	                //add the data in the buffer to the file in the file output stream (the file on the sd card
-	                fileOutput.write(buffer, 0, bufferLength);
-	                //add up the size so we know how much is downloaded
-	                downloadedSize += bufferLength;
-	                //this is where you would do something to report the prgress, like this maybe
-	               // updateProgress(downloadedSize, totalSize);
-	
-	        }
-	        //close the output stream when done
-	        fileOutput.close();
-	
-	//catch some possible errors...
-	} catch (MalformedURLException e) {
-	        e.printStackTrace();
-	} catch (IOException e) {
-	        e.printStackTrace();
-	}
-	*/
 	}
 	
 }
+
+
+
