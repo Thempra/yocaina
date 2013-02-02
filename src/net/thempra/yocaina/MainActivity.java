@@ -85,6 +85,16 @@ public class MainActivity extends Activity implements OnClickListener {
 		btnDumpToFile.setEnabled(false);
 		//btnOther.setEnabled(false);
 
+		
+		btnCards.setOnClickListener(new OnClickListener() {
+			public void onClick(View view) {
+				
+	            Intent repo = new Intent(MainActivity.this, RepositoryActivity.class);
+	            startActivity(repo);
+	        }
+
+	    });
+		
 		if (!LoadCards()) {
 			// Show message no cards
 			Resources res = getResources();
@@ -103,18 +113,6 @@ public class MainActivity extends Activity implements OnClickListener {
 			// Register the onClick listener with the implementation above
 			btn_clear.setOnClickListener(this);
 			btnDumpToFile.setOnClickListener(dumpToFile());
-			
-			
-			btnCards.setOnClickListener(new OnClickListener() {
-				public void onClick(View view) {
-					
-		            Intent repo = new Intent(MainActivity.this, RepositoryActivity.class);
-		            startActivity(repo);
-		        }
-
-		    });
-			
-			
 			
 
 			mAdapter = NfcAdapter.getDefaultAdapter(this);

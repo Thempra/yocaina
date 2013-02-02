@@ -24,6 +24,7 @@ import org.xml.sax.InputSource;
 
 import android.app.Activity;
 import android.content.pm.ActivityInfo;
+import android.content.res.Resources;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
@@ -64,12 +65,11 @@ public class RepositoryActivity extends Activity
 		txtURL= (EditText) findViewById(R.id.txtURL);
 		btnDownload= (Button) findViewById(R.id.btnDownload);
 		txtDebug= (TextView) findViewById(R.id.txtDebug);
-
-		
-	
 			
 		card = new ArrayList<String>();
 
+		RefreshLocalCards();
+		
 		btnDownload.setOnClickListener(new OnClickListener() {
 			public void onClick(View view) {
 					
@@ -90,13 +90,23 @@ public class RepositoryActivity extends Activity
 
 	    });
 		
-		RefreshLocalCards();
+		
 	
 
 	}
 
 	private void RefreshLocalCards() {
-		String[] fileList = new File(Environment.getExternalStorageDirectory().toString()+"/yocaina/").list();
+		Resources res = getResources();
+		
+		File path = new File(Environment.getExternalStorageDirectory() + "/"
+				+ res.getString(R.string.app_name).toLowerCase());
+		if (!path.isDirectory()) {
+			File cardsPath = new File(Environment.getExternalStorageDirectory()
+					+ "/" + res.getString(R.string.app_name).toLowerCase());
+			cardsPath.mkdirs();
+		}
+		
+		String[] fileList = path.list();
 		
 		txtDebug.setText(getString(R.string.cardsAvailable));
 		for (String f : fileList)
@@ -141,9 +151,7 @@ private ArrayList<String> getItemsFromURL(String urlXml, String mainNode){
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-	   
 	
-		
 		
 		return data;
 	    }
@@ -222,7 +230,8 @@ private ArrayList<String> getItemsFromURL(String urlXml, String mainNode){
             }
 
             /* Convert the Bytes read to a String. */
-            FileOutputStream fos = new FileOutputStream(Environment.getExternalStorageDirectory().toString()+"/yocaina/"+file);
+            Resources res = getResources();
+            FileOutputStream fos = new FileOutputStream(Environment.getExternalStorageDirectory().toString()+"/"+res.getString(R.string.app_name).toLowerCase()+"/"+file);
             fos.write(baf.toByteArray());
             fos.close();
 

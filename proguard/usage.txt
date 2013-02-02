@@ -1,5 +1,3 @@
-android.annotation.SuppressLint
-android.annotation.TargetApi
 com.overxet.Utils:
     15:15:public Utils()
     76:106:public static java.lang.String getStringFromNode(org.w3c.dom.Node)
