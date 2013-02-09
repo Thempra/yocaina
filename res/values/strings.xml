@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <resources>
-    <string name="title">Tag Detection Tool</string>
+    <string name="title">Mifare Detection Tool</string>
     <string name="app_name">Yocaina</string>
     
 	<string name="currentStatus">Current Status: </string>
 	<string name="scanTag"> Scan a Tag </string>
 
-    <string name="clear">Clear</string>
+    <string name="scan">Scan</string>
     <string name="decode">Decode</string>
     <string name="dump">Dump</string>
     <string name="dumpToFile">Dump to File</string>
+    <string name="clone">Clone</string>
     <string name="cards">Cards</string>
     
     <string name="online">Online</string>

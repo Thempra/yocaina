@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <resources>
-    <string name="title">Herramienta de deteccion de Tags</string>
+    <string name="title">Herramienta de deteccion de Mifares</string>
     <string name="app_name">Yocaina</string>
     
 	<string name="currentStatus">Estado: </string>
 	<string name="scanTag"> Puede escanear un Tag </string>
 
-    <string name="clear">Limpiar</string>
+    <string name="scan">Escanear</string>
     <string name="decode">Decodificar</string>
     <string name="dump">Volcar</string>
     <string name="dumpToFile">Volcar a fichero</string>
+    <string name="clone">Clonar</string>
     <string name="cards">Tarjetas</string>
  
     <string name="online">Preparado</string>

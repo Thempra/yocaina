@@ -11,6 +11,7 @@ import net.thempra.yocaina.cards.CardNfcV;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.Dialog;
 import android.app.PendingIntent;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -36,10 +37,13 @@ public class MainActivity extends Activity implements OnClickListener {
 	// UI Elements
 	private static TextView status_Data;
 	
-	private static Button btn_clear;
+	private static Button btn_scan;
 	private static Button btnDecode;
 	private static Button btnDumpToFile;
+	private static Button btnClone;
 	private static Button btnCards;
+	private static Button btnOther;
+	
 	
 	private static  List<String> cmbCards;
 
@@ -67,15 +71,13 @@ public class MainActivity extends Activity implements OnClickListener {
 		
 		status_Data = (TextView) findViewById(R.id.status_data);
 		
-		btn_clear = (Button) findViewById(R.id.btn_clear);
+		btn_scan = (Button) findViewById(R.id.btn_scan);
 		btnDecode = (Button) findViewById(R.id.btn_decode);
 		btnDumpToFile = (Button) findViewById(R.id.btn_dump);
+		btnClone = (Button) findViewById(R.id.btn_clone);
 		btnCards = (Button) findViewById(R.id.btn_cards);
+		btnOther= (Button) findViewById(R.id.btn_other);
 		
-		btnDecode.setEnabled(false);
-		btnDumpToFile.setEnabled(false);
-		//btnOther.setEnabled(false);
-
 		
 		btnCards.setOnClickListener(new OnClickListener() {
 			public void onClick(View view) {
@@ -102,7 +104,7 @@ public class MainActivity extends Activity implements OnClickListener {
 			// Capture Purchase button from layout
 			
 			// Register the onClick listener with the implementation above
-			btn_clear.setOnClickListener(this);
+			btn_scan.setOnClickListener(this);
 			btnDumpToFile.setOnClickListener(dumpToFile());
 			
 
@@ -141,6 +143,48 @@ public class MainActivity extends Activity implements OnClickListener {
 			}
 
 		}
+		
+		
+		btnDecode.setOnClickListener(new OnClickListener() {
+			public void onClick(View view) {
+				Dialog dialog = new Dialog(MainActivity.this);
+		        dialog.setTitle("Not implemented yet.");
+		        dialog.show();
+				
+			}
+		});
+		
+		btnDumpToFile.setOnClickListener(new OnClickListener() {
+			public void onClick(View view) {
+				
+				Dialog dialog = new Dialog(MainActivity.this);
+		        dialog.setTitle("Not implemented yet.");
+		        dialog.show();
+				
+			}
+		});
+		
+		btnClone.setOnClickListener(new OnClickListener() {
+			public void onClick(View view) {
+				
+				Dialog dialog = new Dialog(MainActivity.this);
+		        dialog.setTitle("Not implemented yet.");
+		        dialog.show();
+				
+			}
+		});
+		
+		btnOther.setOnClickListener(new OnClickListener() {
+			public void onClick(View view) {
+				
+				Dialog dialog = new Dialog(MainActivity.this);
+		        dialog.setTitle("Not implemented yet.");
+		        dialog.show();
+				
+			}
+		});
+		
+		
 	}
 
 	private OnClickListener dumpToFile() {

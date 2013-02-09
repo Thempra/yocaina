@@ -3,6 +3,11 @@ com.overxet.Utils -> a.a.a:
     java.lang.String getHexString(byte[],int) -> a
     java.util.ArrayList getItemsFromFile(java.lang.String,java.lang.String,java.lang.String[]) -> a
     java.lang.String getNodeValueByTagName(org.w3c.dom.Node,java.lang.String) -> a
+net.thempra.yocaina.DataActivity -> net.thempra.yocaina.DataActivity:
+    android.widget.TableLayout tl -> a
+    android.widget.TextView status_Data -> b
+    void onCreate(android.os.Bundle) -> onCreate
+    void showCardData(java.util.ArrayList,java.lang.Integer) -> a
 net.thempra.yocaina.MainActivity -> net.thempra.yocaina.MainActivity:
     android.widget.TextView status_Data -> a
     android.widget.Button btn_clear -> b
@@ -10,29 +15,25 @@ net.thempra.yocaina.MainActivity -> net.thempra.yocaina.MainActivity:
     android.widget.Button btnDumpToFile -> d
     android.widget.Button btnCards -> e
     java.util.List cmbCards -> f
-    android.widget.TableLayout tl -> g
-    android.nfc.NfcAdapter mAdapter -> h
-    android.app.PendingIntent mPendingIntent -> i
-    android.content.IntentFilter[] mFilters -> j
-    java.lang.String[][] mTechLists -> k
-    net.thempra.yocaina.cards.Card currentCard -> l
+    android.nfc.NfcAdapter mAdapter -> g
+    android.app.PendingIntent mPendingIntent -> h
+    android.content.IntentFilter[] mFilters -> i
+    java.lang.String[][] mTechLists -> j
+    net.thempra.yocaina.cards.Card currentCard -> k
     void onCreate(android.os.Bundle) -> onCreate
-    android.view.View$OnClickListener dumpToFile() -> c
-    void resolveIntent(android.content.Intent) -> a
-    void showCardData(android.nfc.Tag) -> a
-    void showAlert(int) -> a
+    android.view.View$OnClickListener dumpToFile() -> b
     void onClick(android.view.View) -> onClick
-    void clearFields() -> d
     void onResume() -> onResume
     void onNewIntent(android.content.Intent) -> onNewIntent
     void onPause() -> onPause
-    java.lang.CharSequence[] getCards() -> e
-    boolean LoadCards() -> f
+    void resolveIntent(android.content.Intent) -> a
+    java.lang.CharSequence[] getCards() -> c
+    boolean LoadCards() -> d
+    void showAlert(int) -> a
     java.util.List access$0() -> a
     void access$1(net.thempra.yocaina.MainActivity,net.thempra.yocaina.cards.Card) -> a
     net.thempra.yocaina.cards.Card access$2(net.thempra.yocaina.MainActivity) -> a
-    void access$3(net.thempra.yocaina.MainActivity,android.nfc.Tag) -> a
-    void access$4() -> b
+    void access$3(net.thempra.yocaina.MainActivity,int) -> a
 net.thempra.yocaina.MainActivity$1 -> net.thempra.yocaina.a:
     net.thempra.yocaina.MainActivity this$0 -> a
     void onClick(android.view.View) -> onClick

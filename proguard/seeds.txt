@@ -1,3 +1,5 @@
+net.thempra.yocaina.DataActivity
+net.thempra.yocaina.DataActivity: DataActivity()
 net.thempra.yocaina.MainActivity
 net.thempra.yocaina.MainActivity: MainActivity()
 net.thempra.yocaina.MainActivity: void onClick(android.view.View)
@@ -26,7 +28,9 @@ net.thempra.yocaina.R$id: int txtDebug
 net.thempra.yocaina.R$id: int txtURL
 net.thempra.yocaina.R$id: int viewScan
 net.thempra.yocaina.R$layout: int cmb_mifare_cards
+net.thempra.yocaina.R$layout: int dataactivity
 net.thempra.yocaina.R$layout: int main
+net.thempra.yocaina.R$layout: int mainactivity
 net.thempra.yocaina.R$layout: int repositoryactivity
 net.thempra.yocaina.R$layout: int table_section_data
 net.thempra.yocaina.R$layout: int table_section_header
