@@ -12,6 +12,7 @@ import net.thempra.yocaina.cards.CardNfcV;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.app.Notification.Builder;
 import android.app.PendingIntent;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -41,7 +42,7 @@ public class MainActivity extends Activity implements OnClickListener {
 	private static Button btnDecode;
 	private static Button btnDumpToFile;
 	private static Button btnClone;
-	private static Button btnCards;
+	private static Button btnRepo;
 	private static Button btnOther;
 	
 	
@@ -56,6 +57,8 @@ public class MainActivity extends Activity implements OnClickListener {
 
 	private Card currentCard;
 	
+    Dialog dialogToScan ;
+
 
 	/** Called when the activity is first created. */
 	@Override
@@ -68,18 +71,18 @@ public class MainActivity extends Activity implements OnClickListener {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.mainactivity);
 
-		
+		AlertDialog.Builder dialog = new AlertDialog.Builder(MainActivity.this);
 		status_Data = (TextView) findViewById(R.id.status_data);
 		
 		btn_scan = (Button) findViewById(R.id.btn_scan);
 		btnDecode = (Button) findViewById(R.id.btn_decode);
 		btnDumpToFile = (Button) findViewById(R.id.btn_dump);
 		btnClone = (Button) findViewById(R.id.btn_clone);
-		btnCards = (Button) findViewById(R.id.btn_cards);
+		btnRepo = (Button) findViewById(R.id.btn_repository);
 		btnOther= (Button) findViewById(R.id.btn_other);
 		
 		
-		btnCards.setOnClickListener(new OnClickListener() {
+		btnRepo.setOnClickListener(new OnClickListener() {
 			public void onClick(View view) {
 				
 	            Intent repo = new Intent(MainActivity.this, RepositoryActivity.class);
@@ -104,7 +107,7 @@ public class MainActivity extends Activity implements OnClickListener {
 			// Capture Purchase button from layout
 			
 			// Register the onClick listener with the implementation above
-			btn_scan.setOnClickListener(this);
+			//btn_scan.setOnClickListener(this);
 			btnDumpToFile.setOnClickListener(dumpToFile());
 			
 
@@ -141,45 +144,61 @@ public class MainActivity extends Activity implements OnClickListener {
 				status_Data.setText("No NFC device");
 
 			}
+			
+			
+			
+			btn_scan.setOnClickListener(new OnClickListener() {
+				public void onClick(View view) {
+					dialogToScan = new Dialog(MainActivity.this);
+					dialogToScan.setTitle(getString(R.string.neardevice));
+					dialogToScan.show();
+			        
+				}
+			});
 
 		}
 		
 		
 		btnDecode.setOnClickListener(new OnClickListener() {
 			public void onClick(View view) {
-				Dialog dialog = new Dialog(MainActivity.this);
-		        dialog.setTitle("Not implemented yet.");
-		        dialog.show();
+				AlertDialog.Builder dialog = new AlertDialog.Builder(MainActivity.this);
+				dialog.setTitle(getString(R.string.developing));
+				dialog.setMessage(getString(R.string.notImplemented));
+				dialog.setPositiveButton("OK", null);
+				dialog.show();
 				
 			}
 		});
 		
 		btnDumpToFile.setOnClickListener(new OnClickListener() {
 			public void onClick(View view) {
-				
-				Dialog dialog = new Dialog(MainActivity.this);
-		        dialog.setTitle("Not implemented yet.");
-		        dialog.show();
+				AlertDialog.Builder dialog = new AlertDialog.Builder(MainActivity.this);
+				dialog.setTitle(getString(R.string.developing));
+				dialog.setMessage(getString(R.string.notImplemented));
+				dialog.setPositiveButton("OK", null);
+				dialog.show();
 				
 			}
 		});
 		
 		btnClone.setOnClickListener(new OnClickListener() {
 			public void onClick(View view) {
-				
-				Dialog dialog = new Dialog(MainActivity.this);
-		        dialog.setTitle("Not implemented yet.");
-		        dialog.show();
+				AlertDialog.Builder dialog = new AlertDialog.Builder(MainActivity.this);
+				dialog.setTitle(getString(R.string.developing));
+				dialog.setMessage(getString(R.string.notImplemented));
+				dialog.setPositiveButton("OK", null);
+				dialog.show();
 				
 			}
 		});
 		
 		btnOther.setOnClickListener(new OnClickListener() {
 			public void onClick(View view) {
-				
-				Dialog dialog = new Dialog(MainActivity.this);
-		        dialog.setTitle("Not implemented yet.");
-		        dialog.show();
+				AlertDialog.Builder dialog = new AlertDialog.Builder(MainActivity.this);
+				dialog.setTitle(getString(R.string.developing));
+				dialog.setMessage(getString(R.string.notImplemented));
+				dialog.setPositiveButton("OK", null);
+				dialog.show();
 				
 			}
 		});
@@ -215,6 +234,8 @@ public class MainActivity extends Activity implements OnClickListener {
 		resolveIntent(intent);
 		// mText.setText("Discovered tag " + ++mCount + " with intent: " +
 		// intent);
+		dialogToScan.dismiss();
+		
 	}
 
 	@Override
@@ -273,12 +294,14 @@ public class MainActivity extends Activity implements OnClickListener {
 				        			//Reading card
 				        			
 				        		dump = currentCard.getData(tagFromIntent);
+				        		status_Data.setText(R.string.tagRead);
 				        		
 				        		if ( dump.size() ==0)
 				        		{
 				        			showAlert(currentCard.getLastError());
 				        		}else
 				        		{
+				        			
 					        		Intent showScan = new Intent(MainActivity.this, DataActivity.class);
 					        		//Send data to other Activity
 					        		showScan.putExtra("DUMP",dump);
@@ -382,6 +405,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		case Card.NETWORK: // Communication Error
 			alertbox.setMessage(R.string.errorReading);
 			break;
+		
 		}
 		// set a positive/yes button and create a listener
 		alertbox.setPositiveButton("OK", new DialogInterface.OnClickListener() {

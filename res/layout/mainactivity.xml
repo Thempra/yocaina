@@ -193,11 +193,11 @@
 			    android:paddingRight="20px"
 		   	>
 			   	<Button
-			   	    android:id="@+id/btn_cards"
+			   	    android:id="@+id/btn_repository"
 			    	android:layout_width="wrap_content" 
 			    	android:layout_height="wrap_content" 
 			    	android:layout_weight="1"
-			    	android:background="@drawable/cards" 
+			    	android:background="@drawable/repo" 
 			    />
 			    
 			    <TextView  
@@ -206,7 +206,7 @@
 				  	android:gravity="center"
 				  	android:textStyle="bold"
 				  	android:textColor="#FFFFFF"
-				  	android:text="@string/cards"
+				  	android:text="@string/repository"
 			  	/>
 		    </LinearLayout>
 		    

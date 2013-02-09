@@ -11,8 +11,12 @@
     <string name="dump">Volcar</string>
     <string name="dumpToFile">Volcar a fichero</string>
     <string name="clone">Clonar</string>
-    <string name="cards">Tarjetas</string>
+	<string name="repository">Repositorio</string>
  
+    <string name="neardevice">Acerca la tarjeta a tu dispositivo.</string>
+    <string name="developing">En desarrollo ..</string>
+    <string name="notImplemented">No implementado todavia.</string>
+    
     <string name="online">Preparado</string>
     <string name="reading">Leyendo elTag..</string>
     <string name="selectCard">Selecione tarjeta</string>

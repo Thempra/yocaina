@@ -11,7 +11,13 @@
     <string name="dump">Dump</string>
     <string name="dumpToFile">Dump to File</string>
     <string name="clone">Clone</string>
-    <string name="cards">Cards</string>
+    <string name="repository">Repository</string>
+    <string name="other">Other</string>
+    
+    <string name="neardevice">Put your card near device.</string>
+    <string name="developing">Developing ..</string>
+    <string name="notImplemented">Not implemented yet.</string>
+    
     
     <string name="online">Online</string>
     <string name="reading">Reading the Tag..</string>
