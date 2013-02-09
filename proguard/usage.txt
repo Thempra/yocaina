@@ -1,6 +1,6 @@
 com.overxet.Utils:
-    15:15:public Utils()
-    76:106:public static java.lang.String getStringFromNode(org.w3c.dom.Node)
+    25:25:public Utils()
+    86:116:public static java.lang.String getStringFromNode(org.w3c.dom.Node)
 net.thempra.yocaina.BuildConfig
 net.thempra.yocaina.R
 net.thempra.yocaina.R$attr
@@ -21,14 +21,14 @@ net.thempra.yocaina.cards.Card:
     public abstract java.lang.String getKey()
     public abstract java.lang.Boolean setData()
     public abstract java.lang.Boolean dumpToFile()
-    protected abstract void LoadKeys(java.lang.String)
-net.thempra.yocaina.cards.CardMifare:
-    32:32:public java.lang.Boolean setType()
-    38:39:public java.lang.String getType(android.nfc.Tag)
-    45:45:public java.lang.Boolean setKey()
-    51:51:public java.lang.String getKey()
-    57:57:public java.lang.Boolean setData()
-    115:115:public java.lang.Boolean dumpToFile()
+    protected abstract int LoadKeys(java.lang.String)
+net.thempra.yocaina.cards.CardMifareClassic:
+    33:33:public java.lang.Boolean setType()
+    39:40:public java.lang.String getType(android.nfc.Tag)
+    46:46:public java.lang.Boolean setKey()
+    52:52:public java.lang.String getKey()
+    58:58:public java.lang.Boolean setData()
+    116:116:public java.lang.Boolean dumpToFile()
 net.thempra.yocaina.cards.CardNfcV:
     22:22:public java.lang.Boolean setType()
     28:28:public java.lang.String getType(android.nfc.Tag)
@@ -36,4 +36,4 @@ net.thempra.yocaina.cards.CardNfcV:
     40:40:public java.lang.String getKey()
     46:46:public java.lang.Boolean setData()
     89:89:public java.lang.Boolean dumpToFile()
-    96:96:protected void LoadKeys(java.lang.String)
+    95:95:protected int LoadKeys(java.lang.String)

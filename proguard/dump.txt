@@ -8,16 +8,81 @@ _____________________________________________________________________
 
 Interfaces (count = 0):
 
-Constant Pool (count = 21):
+Constant Pool (count = 112):
+  + String []
+  + String [keys]
   + Class [[B]
+  + Class [[Ljava/lang/String;]
   + Class [a/a/a]
+  + Class [java/io/File]
+  + Class [java/lang/Exception]
   + Class [java/lang/Object]
   + Class [java/lang/String]
+  + Class [java/util/ArrayList]
+  + Class [java/util/HashMap]
+  + Class [javax/xml/parsers/DocumentBuilder]
+  + Class [javax/xml/parsers/DocumentBuilderFactory]
+  + Class [org/w3c/dom/Document]
+  + Class [org/w3c/dom/Element]
+  + Class [org/w3c/dom/Node]
+  + Class [org/w3c/dom/NodeList]
   + Fieldref [a/a/a.a [B]
+  + Methodref [a/a/a.a (Lorg/w3c/dom/Node;Ljava/lang/String;)Ljava/lang/String;]
+  + Methodref [java/io/File.<init> (Ljava/lang/String;)V]
+  + Methodref [java/lang/Exception.printStackTrace ()V]
   + Methodref [java/lang/String.<init> ([B)V]
+  + Methodref [java/util/ArrayList.<init> ()V]
+  + Methodref [java/util/ArrayList.add (Ljava/lang/Object;)Z]
+  + Methodref [java/util/HashMap.<init> ()V]
+  + Methodref [java/util/HashMap.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;]
+  + Methodref [javax/xml/parsers/DocumentBuilder.parse (Ljava/io/File;)Lorg/w3c/dom/Document;]
+  + Methodref [javax/xml/parsers/DocumentBuilderFactory.newDocumentBuilder ()Ljavax/xml/parsers/DocumentBuilder;]
+  + Methodref [javax/xml/parsers/DocumentBuilderFactory.newInstance ()Ljavax/xml/parsers/DocumentBuilderFactory;]
+  + InterfaceMethodref [org/w3c/dom/Document.getDocumentElement ()Lorg/w3c/dom/Element;]
+  + InterfaceMethodref [org/w3c/dom/Document.getElementsByTagName (Ljava/lang/String;)Lorg/w3c/dom/NodeList;]
+  + InterfaceMethodref [org/w3c/dom/Element.getChildNodes ()Lorg/w3c/dom/NodeList;]
+  + InterfaceMethodref [org/w3c/dom/Element.getElementsByTagName (Ljava/lang/String;)Lorg/w3c/dom/NodeList;]
+  + InterfaceMethodref [org/w3c/dom/Element.hasChildNodes ()Z]
+  + InterfaceMethodref [org/w3c/dom/Element.normalize ()V]
+  + InterfaceMethodref [org/w3c/dom/Node.getNodeValue ()Ljava/lang/String;]
+  + InterfaceMethodref [org/w3c/dom/NodeList.getLength ()I]
+  + InterfaceMethodref [org/w3c/dom/NodeList.item (I)Lorg/w3c/dom/Node;]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Ljava/lang/String;)V]
   + NameAndType [<init> ([B)V]
+  + NameAndType [a (Lorg/w3c/dom/Node;Ljava/lang/String;)Ljava/lang/String;]
   + NameAndType [a [B]
+  + NameAndType [add (Ljava/lang/Object;)Z]
+  + NameAndType [getChildNodes ()Lorg/w3c/dom/NodeList;]
+  + NameAndType [getDocumentElement ()Lorg/w3c/dom/Element;]
+  + NameAndType [getElementsByTagName (Ljava/lang/String;)Lorg/w3c/dom/NodeList;]
+  + NameAndType [getLength ()I]
+  + NameAndType [getNodeValue ()Ljava/lang/String;]
+  + NameAndType [hasChildNodes ()Z]
+  + NameAndType [item (I)Lorg/w3c/dom/Node;]
+  + NameAndType [newDocumentBuilder ()Ljavax/xml/parsers/DocumentBuilder;]
+  + NameAndType [newInstance ()Ljavax/xml/parsers/DocumentBuilderFactory;]
+  + NameAndType [normalize ()V]
+  + NameAndType [parse (Ljava/io/File;)Lorg/w3c/dom/Document;]
+  + NameAndType [printStackTrace ()V]
+  + NameAndType [put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;]
+  + Utf8 []
+  + Utf8 [()I]
+  + Utf8 [()Ljava/lang/String;]
+  + Utf8 [()Ljavax/xml/parsers/DocumentBuilder;]
+  + Utf8 [()Ljavax/xml/parsers/DocumentBuilderFactory;]
+  + Utf8 [()Lorg/w3c/dom/Element;]
+  + Utf8 [()Lorg/w3c/dom/NodeList;]
   + Utf8 [()V]
+  + Utf8 [()Z]
+  + Utf8 [(I)Lorg/w3c/dom/Node;]
+  + Utf8 [(Ljava/io/File;)Lorg/w3c/dom/Document;]
+  + Utf8 [(Ljava/lang/Object;)Z]
+  + Utf8 [(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;]
+  + Utf8 [(Ljava/lang/String;)Lorg/w3c/dom/NodeList;]
+  + Utf8 [(Ljava/lang/String;)V]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/util/ArrayList;]
+  + Utf8 [(Lorg/w3c/dom/Node;Ljava/lang/String;)Ljava/lang/String;]
   + Utf8 [([B)V]
   + Utf8 [([BI)Ljava/lang/String;]
   + Utf8 [<clinit>]
@@ -25,17 +90,43 @@ Constant Pool (count = 21):
   + Utf8 [Code]
   + Utf8 [StackMapTable]
   + Utf8 [[B]
+  + Utf8 [[Ljava/lang/String;]
   + Utf8 [a]
   + Utf8 [a/a/a]
+  + Utf8 [add]
+  + Utf8 [getChildNodes]
+  + Utf8 [getDocumentElement]
+  + Utf8 [getElementsByTagName]
+  + Utf8 [getLength]
+  + Utf8 [getNodeValue]
+  + Utf8 [hasChildNodes]
+  + Utf8 [item]
+  + Utf8 [java/io/File]
+  + Utf8 [java/lang/Exception]
   + Utf8 [java/lang/Object]
   + Utf8 [java/lang/String]
+  + Utf8 [java/util/ArrayList]
+  + Utf8 [java/util/HashMap]
+  + Utf8 [javax/xml/parsers/DocumentBuilder]
+  + Utf8 [javax/xml/parsers/DocumentBuilderFactory]
+  + Utf8 [keys]
+  + Utf8 [newDocumentBuilder]
+  + Utf8 [newInstance]
+  + Utf8 [normalize]
+  + Utf8 [org/w3c/dom/Document]
+  + Utf8 [org/w3c/dom/Element]
+  + Utf8 [org/w3c/dom/Node]
+  + Utf8 [org/w3c/dom/NodeList]
+  + Utf8 [parse]
+  + Utf8 [printStackTrace]
+  + Utf8 [put]
 
 Fields (count = 1):
   + Field:        a [B
     Access flags: 0x1a
       = private static final byte[] a
 
-Methods (count = 2):
+Methods (count = 4):
   - Method:       <clinit>()V
     Access flags: 0x8
       = static void <clinit>()
@@ -107,7 +198,7 @@ Methods (count = 2):
       [89] bipush 15
       [91] bipush 70
       [93] bastore
-      [94] putstatic #5
+      [94] putstatic #18
         + Fieldref [a/a/a.a [B]
       [97] return
       Code attribute exceptions (count = 0):
@@ -150,7 +241,7 @@ Methods (count = 2):
       [51] aload_2 v2
       [52] iload_3 v3
       [53] iinc v3, 1
-      [56] getstatic #5
+      [56] getstatic #18
         + Fieldref [a/a/a.a [B]
       [59] iload v9
       [61] iconst_4
@@ -160,7 +251,7 @@ Methods (count = 2):
       [65] aload_2 v2
       [66] iload_3 v3
       [67] iinc v3, 1
-      [70] getstatic #5
+      [70] getstatic #18
         + Fieldref [a/a/a.a [B]
       [73] iload v9
       [75] bipush 15
@@ -171,11 +262,11 @@ Methods (count = 2):
       [83] iload v6
       [85] iload v7
       [87] ificmplt -63 (target=24)
-      [90] new #4
+      [90] new #9
         + Class [java/lang/String]
       [93] dup
       [94] aload_2 v2
-      [95] invokespecial #6
+      [95] invokespecial #22
         + Methodref [java/lang/String.<init> ([B)V]
       [98] areturn
       Code attribute exceptions (count = 0):
@@ -185,6 +276,199 @@ Methods (count = 2):
         - [40] Var: [a:[B][i][a:[B][i][i][i][i][i][a:[B], Stack: 
         - [83] Var: [a:[B][i][a:[B][i][i][T][i][i][a:[B], Stack: 
         - [90] Var: [a:[B][i][a:[B][i][i], Stack: 
+  + Method:       a(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/util/ArrayList;
+    Access flags: 0x9
+      = public static java.util.ArrayList a(java.lang.String,java.lang.String,java.lang.String[])
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 210, locals = 17, stack = 4):
+      [0] new #10
+        + Class [java/util/ArrayList]
+      [3] dup
+      [4] invokespecial #23
+        + Methodref [java/util/ArrayList.<init> ()V]
+      [7] astore_3 v3
+      [8] new #10
+        + Class [java/util/ArrayList]
+      [11] dup
+      [12] invokespecial #23
+        + Methodref [java/util/ArrayList.<init> ()V]
+      [15] astore v5
+      [17] new #10
+        + Class [java/util/ArrayList]
+      [20] dup
+      [21] invokespecial #23
+        + Methodref [java/util/ArrayList.<init> ()V]
+      [24] astore v6
+      [26] invokestatic #29
+        + Methodref [javax/xml/parsers/DocumentBuilderFactory.newInstance ()Ljavax/xml/parsers/DocumentBuilderFactory;]
+      [29] astore v7
+      [31] aload v7
+      [33] invokevirtual #28
+        + Methodref [javax/xml/parsers/DocumentBuilderFactory.newDocumentBuilder ()Ljavax/xml/parsers/DocumentBuilder;]
+      [36] astore v8
+      [38] aload v8
+      [40] new #6
+        + Class [java/io/File]
+      [43] dup
+      [44] aload_0 v0
+      [45] invokespecial #20
+        + Methodref [java/io/File.<init> (Ljava/lang/String;)V]
+      [48] invokevirtual #27
+        + Methodref [javax/xml/parsers/DocumentBuilder.parse (Ljava/io/File;)Lorg/w3c/dom/Document;]
+      [51] astore v9
+      [53] aload v9
+      [55] invokeinterface #30
+        + InterfaceMethodref [org/w3c/dom/Document.getDocumentElement ()Lorg/w3c/dom/Element;]
+      [60] invokeinterface #35
+        + InterfaceMethodref [org/w3c/dom/Element.normalize ()V]
+      [65] aload v9
+      [67] aload_1 v1
+      [68] invokeinterface #31
+        + InterfaceMethodref [org/w3c/dom/Document.getElementsByTagName (Ljava/lang/String;)Lorg/w3c/dom/NodeList;]
+      [73] astore v10
+      [75] iconst_0
+      [76] istore v11
+      [78] goto +107 (target=185)
+      [81] aload v10
+      [83] iload v11
+      [85] invokeinterface #38
+        + InterfaceMethodref [org/w3c/dom/NodeList.item (I)Lorg/w3c/dom/Node;]
+      [90] checkcast #15
+        + Class [org/w3c/dom/Element]
+      [93] astore v12
+      [95] aload v5
+      [97] aload v12
+      [99] ldc #2
+        + String [keys]
+      [101] invokestatic #19
+        + Methodref [a/a/a.a (Lorg/w3c/dom/Node;Ljava/lang/String;)Ljava/lang/String;]
+      [104] invokevirtual #24
+        + Methodref [java/util/ArrayList.add (Ljava/lang/Object;)Z]
+      [107] pop
+      [108] new #11
+        + Class [java/util/HashMap]
+      [111] dup
+      [112] invokespecial #25
+        + Methodref [java/util/HashMap.<init> ()V]
+      [115] astore v4
+      [117] aload_2 v2
+      [118] dup
+      [119] astore v16
+      [121] arraylength
+      [122] istore v15
+      [124] iconst_0
+      [125] istore v14
+      [127] goto +41 (target=168)
+      [130] aload v16
+      [132] iload v14
+      [134] aaload
+      [135] astore v13
+      [137] aload v4
+      [139] aload v13
+      [141] aload v12
+      [143] aload v13
+      [145] invokestatic #19
+        + Methodref [a/a/a.a (Lorg/w3c/dom/Node;Ljava/lang/String;)Ljava/lang/String;]
+      [148] invokevirtual #26
+        + Methodref [java/util/HashMap.put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;]
+      [151] pop
+      [152] aload v6
+      [154] aload v12
+      [156] aload v13
+      [158] invokestatic #19
+        + Methodref [a/a/a.a (Lorg/w3c/dom/Node;Ljava/lang/String;)Ljava/lang/String;]
+      [161] invokevirtual #24
+        + Methodref [java/util/ArrayList.add (Ljava/lang/Object;)Z]
+      [164] pop
+      [165] iinc v14, 1
+      [168] iload v14
+      [170] iload v15
+      [172] ificmplt -42 (target=130)
+      [175] aload_3 v3
+      [176] aload v4
+      [178] invokevirtual #24
+        + Methodref [java/util/ArrayList.add (Ljava/lang/Object;)Z]
+      [181] pop
+      [182] iinc v11, 1
+      [185] iload v11
+      [187] aload v10
+      [189] invokeinterface #37
+        + InterfaceMethodref [org/w3c/dom/NodeList.getLength ()I]
+      [194] ificmplt -113 (target=81)
+      [197] goto +10 (target=207)
+      [200] astore v7
+      [202] aload v7
+      [204] invokevirtual #21
+        + Methodref [java/lang/Exception.printStackTrace ()V]
+      [207] aload v6
+      [209] areturn
+      Code attribute exceptions (count = 1):
+      - ExceptionInfo (26 -> 197: 200):
+      + Class [java/lang/Exception]
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 6):
+        - [81] Var: [a:java/lang/String][a:java/lang/String][a:[Ljava/lang/String;][a:java/util/ArrayList][T][a:java/util/ArrayList][a:java/util/ArrayList][a:javax/xml/parsers/DocumentBuilderFactory][a:javax/xml/parsers/DocumentBuilder][a:org/w3c/dom/Document][a:org/w3c/dom/NodeList][i], Stack: 
+        - [130] Var: [a:java/lang/String][a:java/lang/String][a:[Ljava/lang/String;][a:java/util/ArrayList][a:java/util/HashMap][a:java/util/ArrayList][a:java/util/ArrayList][a:javax/xml/parsers/DocumentBuilderFactory][a:javax/xml/parsers/DocumentBuilder][a:org/w3c/dom/Document][a:org/w3c/dom/NodeList][i][a:org/w3c/dom/Element][T][i][i][a:[Ljava/lang/String;], Stack: 
+        - [168] Var: ..., Stack: (empty)
+        - [185] Var: [a:java/lang/String][a:java/lang/String][a:[Ljava/lang/String;][a:java/util/ArrayList][T][a:java/util/ArrayList][a:java/util/ArrayList][a:javax/xml/parsers/DocumentBuilderFactory][a:javax/xml/parsers/DocumentBuilder][a:org/w3c/dom/Document][a:org/w3c/dom/NodeList][i], Stack: 
+        - [200] Var: [a:java/lang/String][a:java/lang/String][a:[Ljava/lang/String;][a:java/util/ArrayList][T][a:java/util/ArrayList][a:java/util/ArrayList], Stack: [a:java/lang/Exception]
+        - [207] Var: ..., Stack: (empty)
+  + Method:       a(Lorg/w3c/dom/Node;Ljava/lang/String;)Ljava/lang/String;
+    Access flags: 0xa
+      = private static java.lang.String a(org.w3c.dom.Node,java.lang.String)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 86, locals = 3, stack = 2):
+      [0] ldc #1
+        + String []
+      [2] astore_2 v2
+      [3] aload_0 v0
+      [4] checkcast #15
+        + Class [org/w3c/dom/Element]
+      [7] aload_1 v1
+      [8] invokeinterface #33
+        + InterfaceMethodref [org/w3c/dom/Element.getElementsByTagName (Ljava/lang/String;)Lorg/w3c/dom/NodeList;]
+      [13] invokeinterface #37
+        + InterfaceMethodref [org/w3c/dom/NodeList.getLength ()I]
+      [18] ifeq +66 (target=84)
+      [21] aload_0 v0
+      [22] checkcast #15
+        + Class [org/w3c/dom/Element]
+      [25] aload_1 v1
+      [26] invokeinterface #33
+        + InterfaceMethodref [org/w3c/dom/Element.getElementsByTagName (Ljava/lang/String;)Lorg/w3c/dom/NodeList;]
+      [31] iconst_0
+      [32] invokeinterface #38
+        + InterfaceMethodref [org/w3c/dom/NodeList.item (I)Lorg/w3c/dom/Node;]
+      [37] checkcast #15
+        + Class [org/w3c/dom/Element]
+      [40] invokeinterface #34
+        + InterfaceMethodref [org/w3c/dom/Element.hasChildNodes ()Z]
+      [45] ifeq +39 (target=84)
+      [48] aload_0 v0
+      [49] checkcast #15
+        + Class [org/w3c/dom/Element]
+      [52] aload_1 v1
+      [53] invokeinterface #33
+        + InterfaceMethodref [org/w3c/dom/Element.getElementsByTagName (Ljava/lang/String;)Lorg/w3c/dom/NodeList;]
+      [58] iconst_0
+      [59] invokeinterface #38
+        + InterfaceMethodref [org/w3c/dom/NodeList.item (I)Lorg/w3c/dom/Node;]
+      [64] checkcast #15
+        + Class [org/w3c/dom/Element]
+      [67] invokeinterface #32
+        + InterfaceMethodref [org/w3c/dom/Element.getChildNodes ()Lorg/w3c/dom/NodeList;]
+      [72] iconst_0
+      [73] invokeinterface #38
+        + InterfaceMethodref [org/w3c/dom/NodeList.item (I)Lorg/w3c/dom/Node;]
+      [78] invokeinterface #36
+        + InterfaceMethodref [org/w3c/dom/Node.getNodeValue ()Ljava/lang/String;]
+      [83] astore_2 v2
+      [84] aload_2 v2
+      [85] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 1):
+        - [84] Var: ...[a:java/lang/String], Stack: (empty)
 
 Class file attributes (count = 0):
 
@@ -199,7 +483,7 @@ _____________________________________________________________________
 Interfaces (count = 1):
   + Class [android/view/View$OnClickListener]
 
-Constant Pool (count = 471):
+Constant Pool (count = 472):
   + Integer [536870912]
   + Integer [2130903041]
   + Integer [2130903043]
@@ -290,7 +574,7 @@ Constant Pool (count = 471):
   + Class [net/thempra/yocaina/a/a]
   + Class [net/thempra/yocaina/a/c]
   + Class [net/thempra/yocaina/b]
-  + Class [net/thempra/yocaina/c]
+  + Class [net/thempra/yocaina/d]
   + Fieldref [net/thempra/yocaina/MainActivity.a Landroid/widget/TextView;]
   + Fieldref [net/thempra/yocaina/MainActivity.b Landroid/widget/Button;]
   + Fieldref [net/thempra/yocaina/MainActivity.c Landroid/widget/Button;]
@@ -388,7 +672,7 @@ Constant Pool (count = 471):
   + Methodref [net/thempra/yocaina/a/a.b ()I]
   + Methodref [net/thempra/yocaina/a/c.<init> (Ljava/lang/String;)V]
   + Methodref [net/thempra/yocaina/b.<init> (Lnet/thempra/yocaina/MainActivity;Landroid/nfc/Tag;)V]
-  + Methodref [net/thempra/yocaina/c.<init> (Lnet/thempra/yocaina/MainActivity;)V]
+  + Methodref [net/thempra/yocaina/d.<init> (Lnet/thempra/yocaina/MainActivity;)V]
   + InterfaceMethodref [java/util/List.add (Ljava/lang/Object;)Z]
   + InterfaceMethodref [java/util/List.isEmpty ()Z]
   + NameAndType [<init> ()V]
@@ -538,6 +822,7 @@ Constant Pool (count = 471):
   + Utf8 [(Ljava/lang/String;)V]
   + Utf8 [(Ljava/lang/String;Ljava/lang/String;)I]
   + Utf8 [(Ljava/lang/String;Ljava/lang/Throwable;)V]
+  + Utf8 [(Lnet/thempra/yocaina/MainActivity;)Lnet/thempra/yocaina/a/a;]
   + Utf8 [(Lnet/thempra/yocaina/MainActivity;)V]
   + Utf8 [(Lnet/thempra/yocaina/MainActivity;Landroid/nfc/Tag;)V]
   + Utf8 [(Lnet/thempra/yocaina/MainActivity;Lnet/thempra/yocaina/a/a;)V]
@@ -658,7 +943,7 @@ Constant Pool (count = 471):
   + Utf8 [net/thempra/yocaina/a/a]
   + Utf8 [net/thempra/yocaina/a/c]
   + Utf8 [net/thempra/yocaina/b]
-  + Utf8 [net/thempra/yocaina/c]
+  + Utf8 [net/thempra/yocaina/d]
   + Utf8 [onClick]
   + Utf8 [onCreate]
   + Utf8 [onNewIntent]
@@ -721,7 +1006,7 @@ Fields (count = 12):
     Access flags: 0x2
       = private net.thempra.yocaina.a.a l
 
-Methods (count = 17):
+Methods (count = 18):
   - Method:       <init>()V
     Access flags: 0x1
       = public MainActivity()
@@ -1441,11 +1726,11 @@ Methods (count = 17):
       [76] ldc #38
         + String [OK]
       [78] new #85
-        + Class [net/thempra/yocaina/c]
+        + Class [net/thempra/yocaina/d]
       [81] dup
       [82] aload_0 v0
       [83] invokespecial #183
-        + Methodref [net/thempra/yocaina/c.<init> (Lnet/thempra/yocaina/MainActivity;)V]
+        + Methodref [net/thempra/yocaina/d.<init> (Lnet/thempra/yocaina/MainActivity;)V]
       [86] invokevirtual #106
         + Methodref [android/app/AlertDialog$Builder.setPositiveButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
       [89] pop
@@ -1857,6 +2142,17 @@ Methods (count = 17):
       [5] return
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 0):
+  + Method:       a(Lnet/thempra/yocaina/MainActivity;)Lnet/thempra/yocaina/a/a;
+    Access flags: 0x1008
+      = static synthetic net.thempra.yocaina.a.a a(net.thempra.yocaina.MainActivity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #97
+        + Fieldref [net/thempra/yocaina/MainActivity.l Lnet/thempra/yocaina/a/a;]
+      [4] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
   + Method:       a(Lnet/thempra/yocaina/MainActivity;Landroid/nfc/Tag;)V
     Access flags: 0x1008
       = static synthetic void a(net.thempra.yocaina.MainActivity,android.nfc.Tag)
@@ -1986,7 +2282,13 @@ _____________________________________________________________________
 Interfaces (count = 1):
   + Class [android/content/DialogInterface$OnClickListener]
 
-Constant Pool (count = 55):
+Constant Pool (count = 99):
+  + String [Files out of date]
+  + String [OK]
+  + String [Your files are out of date.
+ Please update new format files from the repository]
+  + Class [android/app/AlertDialog]
+  + Class [android/app/AlertDialog$Builder]
   + Class [android/content/DialogInterface]
   + Class [android/content/DialogInterface$OnClickListener]
   + Class [java/lang/Object]
@@ -1995,42 +2297,77 @@ Constant Pool (count = 55):
   + Class [net/thempra/yocaina/MainActivity]
   + Class [net/thempra/yocaina/a/b]
   + Class [net/thempra/yocaina/b]
+  + Class [net/thempra/yocaina/c]
   + Fieldref [net/thempra/yocaina/b.a Lnet/thempra/yocaina/MainActivity;]
   + Fieldref [net/thempra/yocaina/b.b Landroid/nfc/Tag;]
+  + Methodref [android/app/AlertDialog.setButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V]
+  + Methodref [android/app/AlertDialog.setMessage (Ljava/lang/CharSequence;)V]
+  + Methodref [android/app/AlertDialog.setTitle (Ljava/lang/CharSequence;)V]
+  + Methodref [android/app/AlertDialog.show ()V]
+  + Methodref [android/app/AlertDialog$Builder.<init> (Landroid/content/Context;)V]
+  + Methodref [android/app/AlertDialog$Builder.create ()Landroid/app/AlertDialog;]
   + Methodref [java/lang/Object.<init> ()V]
   + Methodref [java/lang/String.toString ()Ljava/lang/String;]
   + Methodref [net/thempra/yocaina/MainActivity.a ()Ljava/util/List;]
+  + Methodref [net/thempra/yocaina/MainActivity.a (Lnet/thempra/yocaina/MainActivity;)Lnet/thempra/yocaina/a/a;]
   + Methodref [net/thempra/yocaina/MainActivity.a (Lnet/thempra/yocaina/MainActivity;Landroid/nfc/Tag;)V]
   + Methodref [net/thempra/yocaina/MainActivity.a (Lnet/thempra/yocaina/MainActivity;Lnet/thempra/yocaina/a/a;)V]
   + Methodref [net/thempra/yocaina/a/b.<init> (Ljava/lang/String;)V]
+  + Methodref [net/thempra/yocaina/a/b.c ()Z]
+  + Methodref [net/thempra/yocaina/c.<init> (Lnet/thempra/yocaina/b;)V]
   + InterfaceMethodref [android/content/DialogInterface.dismiss ()V]
   + InterfaceMethodref [java/util/List.get (I)Ljava/lang/Object;]
   + NameAndType [<init> ()V]
+  + NameAndType [<init> (Landroid/content/Context;)V]
   + NameAndType [<init> (Ljava/lang/String;)V]
+  + NameAndType [<init> (Lnet/thempra/yocaina/b;)V]
   + NameAndType [a ()Ljava/util/List;]
+  + NameAndType [a (Lnet/thempra/yocaina/MainActivity;)Lnet/thempra/yocaina/a/a;]
   + NameAndType [a (Lnet/thempra/yocaina/MainActivity;Landroid/nfc/Tag;)V]
   + NameAndType [a (Lnet/thempra/yocaina/MainActivity;Lnet/thempra/yocaina/a/a;)V]
   + NameAndType [a Lnet/thempra/yocaina/MainActivity;]
   + NameAndType [b Landroid/nfc/Tag;]
+  + NameAndType [c ()Z]
+  + NameAndType [create ()Landroid/app/AlertDialog;]
   + NameAndType [dismiss ()V]
   + NameAndType [get (I)Ljava/lang/Object;]
+  + NameAndType [setButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V]
+  + NameAndType [setMessage (Ljava/lang/CharSequence;)V]
+  + NameAndType [setTitle (Ljava/lang/CharSequence;)V]
+  + NameAndType [show ()V]
   + NameAndType [toString ()Ljava/lang/String;]
+  + Utf8 [()Landroid/app/AlertDialog;]
   + Utf8 [()Ljava/lang/String;]
   + Utf8 [()Ljava/util/List;]
   + Utf8 [()V]
+  + Utf8 [()Z]
   + Utf8 [(I)Ljava/lang/Object;]
+  + Utf8 [(Landroid/content/Context;)V]
   + Utf8 [(Landroid/content/DialogInterface;I)V]
+  + Utf8 [(Ljava/lang/CharSequence;)V]
+  + Utf8 [(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V]
   + Utf8 [(Ljava/lang/String;)V]
+  + Utf8 [(Lnet/thempra/yocaina/MainActivity;)Lnet/thempra/yocaina/a/a;]
   + Utf8 [(Lnet/thempra/yocaina/MainActivity;Landroid/nfc/Tag;)V]
   + Utf8 [(Lnet/thempra/yocaina/MainActivity;Lnet/thempra/yocaina/a/a;)V]
+  + Utf8 [(Lnet/thempra/yocaina/b;)V]
   + Utf8 [<init>]
   + Utf8 [Code]
+  + Utf8 [Files out of date]
   + Utf8 [Landroid/nfc/Tag;]
   + Utf8 [Lnet/thempra/yocaina/MainActivity;]
+  + Utf8 [OK]
+  + Utf8 [StackMapTable]
+  + Utf8 [Your files are out of date.
+ Please update new format files from the repository]
   + Utf8 [a]
+  + Utf8 [android/app/AlertDialog]
+  + Utf8 [android/app/AlertDialog$Builder]
   + Utf8 [android/content/DialogInterface]
   + Utf8 [android/content/DialogInterface$OnClickListener]
   + Utf8 [b]
+  + Utf8 [c]
+  + Utf8 [create]
   + Utf8 [dismiss]
   + Utf8 [get]
   + Utf8 [java/lang/Object]
@@ -2039,7 +2376,12 @@ Constant Pool (count = 55):
   + Utf8 [net/thempra/yocaina/MainActivity]
   + Utf8 [net/thempra/yocaina/a/b]
   + Utf8 [net/thempra/yocaina/b]
+  + Utf8 [net/thempra/yocaina/c]
   + Utf8 [onClick]
+  + Utf8 [setButton]
+  + Utf8 [setMessage]
+  + Utf8 [setTitle]
+  + Utf8 [show]
   + Utf8 [toString]
 
 Fields (count = 2):
@@ -2058,14 +2400,14 @@ Methods (count = 2):
     + Code attribute instructions (code length = 15, locals = 3, stack = 2):
       [0] aload_0 v0
       [1] aload_1 v1
-      [2] putfield #9
+      [2] putfield #15
         + Fieldref [net/thempra/yocaina/b.a Lnet/thempra/yocaina/MainActivity;]
       [5] aload_0 v0
       [6] aload_2 v2
-      [7] putfield #10
+      [7] putfield #16
         + Fieldref [net/thempra/yocaina/b.b Landroid/nfc/Tag;]
       [10] aload_0 v0
-      [11] invokespecial #11
+      [11] invokespecial #23
         + Methodref [java/lang/Object.<init> ()V]
       [14] return
       Code attribute exceptions (count = 0):
@@ -2074,40 +2416,90 @@ Methods (count = 2):
     Access flags: 0x1
       = public void onClick(android.content.DialogInterface,int)
     Class member attributes (count = 1):
-    + Code attribute instructions (code length = 47, locals = 3, stack = 5):
+    + Code attribute instructions (code length = 111, locals = 4, stack = 5):
       [0] aload_1 v1
-      [1] invokeinterface #17
+      [1] invokeinterface #32
         + InterfaceMethodref [android/content/DialogInterface.dismiss ()V]
       [6] aload_0 v0
-      [7] getfield #9
+      [7] getfield #15
         + Fieldref [net/thempra/yocaina/b.a Lnet/thempra/yocaina/MainActivity;]
-      [10] new #7
+      [10] new #12
         + Class [net/thempra/yocaina/a/b]
       [13] dup
-      [14] invokestatic #13
+      [14] invokestatic #25
         + Methodref [net/thempra/yocaina/MainActivity.a ()Ljava/util/List;]
       [17] iload_2 v2
-      [18] invokeinterface #18
+      [18] invokeinterface #33
         + InterfaceMethodref [java/util/List.get (I)Ljava/lang/Object;]
-      [23] checkcast #4
+      [23] checkcast #9
         + Class [java/lang/String]
-      [26] invokevirtual #12
+      [26] invokevirtual #24
         + Methodref [java/lang/String.toString ()Ljava/lang/String;]
-      [29] invokespecial #16
+      [29] invokespecial #29
         + Methodref [net/thempra/yocaina/a/b.<init> (Ljava/lang/String;)V]
-      [32] invokestatic #15
+      [32] invokestatic #28
         + Methodref [net/thempra/yocaina/MainActivity.a (Lnet/thempra/yocaina/MainActivity;Lnet/thempra/yocaina/a/a;)V]
       [35] aload_0 v0
-      [36] getfield #9
+      [36] getfield #15
         + Fieldref [net/thempra/yocaina/b.a Lnet/thempra/yocaina/MainActivity;]
-      [39] aload_0 v0
-      [40] getfield #10
+      [39] invokestatic #26
+        + Methodref [net/thempra/yocaina/MainActivity.a (Lnet/thempra/yocaina/MainActivity;)Lnet/thempra/yocaina/a/a;]
+      [42] checkcast #12
+        + Class [net/thempra/yocaina/a/b]
+      [45] invokevirtual #30
+        + Methodref [net/thempra/yocaina/a/b.c ()Z]
+      [48] ifne +51 (target=99)
+      [51] new #5
+        + Class [android/app/AlertDialog$Builder]
+      [54] dup
+      [55] aload_0 v0
+      [56] getfield #15
+        + Fieldref [net/thempra/yocaina/b.a Lnet/thempra/yocaina/MainActivity;]
+      [59] invokespecial #21
+        + Methodref [android/app/AlertDialog$Builder.<init> (Landroid/content/Context;)V]
+      [62] invokevirtual #22
+        + Methodref [android/app/AlertDialog$Builder.create ()Landroid/app/AlertDialog;]
+      [65] astore_3 v3
+      [66] aload_3 v3
+      [67] ldc #1
+        + String [Files out of date]
+      [69] invokevirtual #19
+        + Methodref [android/app/AlertDialog.setTitle (Ljava/lang/CharSequence;)V]
+      [72] aload_3 v3
+      [73] ldc #3
+        + String [Your files are out of date.
+ Please update new format files from the repository]
+      [75] invokevirtual #18
+        + Methodref [android/app/AlertDialog.setMessage (Ljava/lang/CharSequence;)V]
+      [78] aload_3 v3
+      [79] ldc #2
+        + String [OK]
+      [81] new #14
+        + Class [net/thempra/yocaina/c]
+      [84] dup
+      [85] aload_0 v0
+      [86] invokespecial #31
+        + Methodref [net/thempra/yocaina/c.<init> (Lnet/thempra/yocaina/b;)V]
+      [89] invokevirtual #17
+        + Methodref [android/app/AlertDialog.setButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V]
+      [92] aload_3 v3
+      [93] invokevirtual #20
+        + Methodref [android/app/AlertDialog.show ()V]
+      [96] goto +14 (target=110)
+      [99] aload_0 v0
+      [100] getfield #15
+        + Fieldref [net/thempra/yocaina/b.a Lnet/thempra/yocaina/MainActivity;]
+      [103] aload_0 v0
+      [104] getfield #16
         + Fieldref [net/thempra/yocaina/b.b Landroid/nfc/Tag;]
-      [43] invokestatic #14
+      [107] invokestatic #27
         + Methodref [net/thempra/yocaina/MainActivity.a (Lnet/thempra/yocaina/MainActivity;Landroid/nfc/Tag;)V]
-      [46] return
+      [110] return
       Code attribute exceptions (count = 0):
-      Code attribute attributes (attribute count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 2):
+        - [99] Var: ..., Stack: (empty)
+        - [110] Var: ..., Stack: (empty)
 
 Class file attributes (count = 0):
 
@@ -2122,12 +2514,75 @@ _____________________________________________________________________
 Interfaces (count = 1):
   + Class [android/content/DialogInterface$OnClickListener]
 
+Constant Pool (count = 19):
+  + Class [android/content/DialogInterface$OnClickListener]
+  + Class [java/lang/Object]
+  + Class [net/thempra/yocaina/c]
+  + Fieldref [net/thempra/yocaina/c.a Lnet/thempra/yocaina/b;]
+  + Methodref [java/lang/Object.<init> ()V]
+  + NameAndType [<init> ()V]
+  + NameAndType [a Lnet/thempra/yocaina/b;]
+  + Utf8 [()V]
+  + Utf8 [(Landroid/content/DialogInterface;I)V]
+  + Utf8 [(Lnet/thempra/yocaina/b;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Lnet/thempra/yocaina/b;]
+  + Utf8 [a]
+  + Utf8 [android/content/DialogInterface$OnClickListener]
+  + Utf8 [java/lang/Object]
+  + Utf8 [net/thempra/yocaina/c]
+  + Utf8 [onClick]
+
+Fields (count = 1):
+  + Field:        a Lnet/thempra/yocaina/b;
+    Access flags: 0x1010
+      = final synthetic net.thempra.yocaina.b a
+
+Methods (count = 2):
+  - Method:       <init>(Lnet/thempra/yocaina/b;)V
+    Access flags: 0x0
+      = c(net.thempra.yocaina.b)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #4
+        + Fieldref [net/thempra/yocaina/c.a Lnet/thempra/yocaina/b;]
+      [5] aload_0 v0
+      [6] invokespecial #5
+        + Methodref [java/lang/Object.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onClick(Landroid/content/DialogInterface;I)V
+    Access flags: 0x1
+      = public void onClick(android.content.DialogInterface,int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 1, locals = 3, stack = 0):
+      [0] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: net/thempra/yocaina/d
+  Superclass:    java/lang/Object
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x20
+    = class net.thempra.yocaina.d extends java.lang.Object
+
+Interfaces (count = 1):
+  + Class [android/content/DialogInterface$OnClickListener]
+
 Constant Pool (count = 24):
   + Class [android/content/DialogInterface$OnClickListener]
   + Class [java/lang/Object]
   + Class [net/thempra/yocaina/MainActivity]
-  + Class [net/thempra/yocaina/c]
-  + Fieldref [net/thempra/yocaina/c.a Lnet/thempra/yocaina/MainActivity;]
+  + Class [net/thempra/yocaina/d]
+  + Fieldref [net/thempra/yocaina/d.a Lnet/thempra/yocaina/MainActivity;]
   + Methodref [java/lang/Object.<init> ()V]
   + Methodref [net/thempra/yocaina/MainActivity.b ()V]
   + NameAndType [<init> ()V]
@@ -2144,7 +2599,7 @@ Constant Pool (count = 24):
   + Utf8 [b]
   + Utf8 [java/lang/Object]
   + Utf8 [net/thempra/yocaina/MainActivity]
-  + Utf8 [net/thempra/yocaina/c]
+  + Utf8 [net/thempra/yocaina/d]
   + Utf8 [onClick]
 
 Fields (count = 1):
@@ -2155,13 +2610,13 @@ Fields (count = 1):
 Methods (count = 2):
   - Method:       <init>(Lnet/thempra/yocaina/MainActivity;)V
     Access flags: 0x0
-      = c(net.thempra.yocaina.MainActivity)
+      = d(net.thempra.yocaina.MainActivity)
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 10, locals = 2, stack = 2):
       [0] aload_0 v0
       [1] aload_1 v1
       [2] putfield #5
-        + Fieldref [net/thempra/yocaina/c.a Lnet/thempra/yocaina/MainActivity;]
+        + Fieldref [net/thempra/yocaina/d.a Lnet/thempra/yocaina/MainActivity;]
       [5] aload_0 v0
       [6] invokespecial #6
         + Methodref [java/lang/Object.<init> ()V]
@@ -2232,8 +2687,8 @@ Constant Pool (count = 338):
   + Class [javax/xml/parsers/DocumentBuilder]
   + Class [javax/xml/parsers/DocumentBuilderFactory]
   + Class [net/thempra/yocaina/RepositoryActivity]
-  + Class [net/thempra/yocaina/d]
-  + Class [net/thempra/yocaina/f]
+  + Class [net/thempra/yocaina/e]
+  + Class [net/thempra/yocaina/g]
   + Class [org/apache/http/util/ByteArrayBuffer]
   + Class [org/w3c/dom/Document]
   + Class [org/w3c/dom/Element]
@@ -2298,9 +2753,9 @@ Constant Pool (count = 338):
   + Methodref [net/thempra/yocaina/RepositoryActivity.requestWindowFeature (I)Z]
   + Methodref [net/thempra/yocaina/RepositoryActivity.setContentView (I)V]
   + Methodref [net/thempra/yocaina/RepositoryActivity.setRequestedOrientation (I)V]
-  + Methodref [net/thempra/yocaina/d.<init> (Lnet/thempra/yocaina/RepositoryActivity;)V]
-  + Methodref [net/thempra/yocaina/f.<init> (Lnet/thempra/yocaina/RepositoryActivity;Ljava/util/HashMap;)V]
-  + Methodref [net/thempra/yocaina/f.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
+  + Methodref [net/thempra/yocaina/e.<init> (Lnet/thempra/yocaina/RepositoryActivity;)V]
+  + Methodref [net/thempra/yocaina/g.<init> (Lnet/thempra/yocaina/RepositoryActivity;Ljava/util/HashMap;)V]
+  + Methodref [net/thempra/yocaina/g.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
   + Methodref [org/apache/http/util/ByteArrayBuffer.<init> (I)V]
   + Methodref [org/apache/http/util/ByteArrayBuffer.append (I)V]
   + Methodref [org/apache/http/util/ByteArrayBuffer.toByteArray ()[B]
@@ -2498,8 +2953,8 @@ Constant Pool (count = 338):
   + Utf8 [mkdirs]
   + Utf8 [name]
   + Utf8 [net/thempra/yocaina/RepositoryActivity]
-  + Utf8 [net/thempra/yocaina/d]
-  + Utf8 [net/thempra/yocaina/f]
+  + Utf8 [net/thempra/yocaina/e]
+  + Utf8 [net/thempra/yocaina/g]
   + Utf8 [newDocumentBuilder]
   + Utf8 [newInstance]
   + Utf8 [next]
@@ -2643,11 +3098,11 @@ Methods (count = 11):
       [86] getstatic #52
         + Fieldref [net/thempra/yocaina/RepositoryActivity.e Landroid/widget/Button;]
       [89] new #40
-        + Class [net/thempra/yocaina/d]
+        + Class [net/thempra/yocaina/e]
       [92] dup
       [93] aload_0 v0
       [94] invokespecial #106
-        + Methodref [net/thempra/yocaina/d.<init> (Lnet/thempra/yocaina/RepositoryActivity;)V]
+        + Methodref [net/thempra/yocaina/e.<init> (Lnet/thempra/yocaina/RepositoryActivity;)V]
       [97] invokevirtual #60
         + Methodref [android/widget/Button.setOnClickListener (Landroid/view/View$OnClickListener;)V]
       [100] return
@@ -3009,12 +3464,12 @@ Methods (count = 11):
         + Class [java/util/HashMap]
       [32] astore_1 v1
       [33] new #41
-        + Class [net/thempra/yocaina/f]
+        + Class [net/thempra/yocaina/g]
       [36] dup
       [37] aload_0 v0
       [38] aload_1 v1
       [39] invokespecial #107
-        + Methodref [net/thempra/yocaina/f.<init> (Lnet/thempra/yocaina/RepositoryActivity;Ljava/util/HashMap;)V]
+        + Methodref [net/thempra/yocaina/g.<init> (Lnet/thempra/yocaina/RepositoryActivity;Ljava/util/HashMap;)V]
       [42] iconst_1
       [43] anewarray #16
         + Class [android/app/Activity]
@@ -3023,7 +3478,7 @@ Methods (count = 11):
       [48] aload_0 v0
       [49] aastore
       [50] invokevirtual #108
-        + Methodref [net/thempra/yocaina/f.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
+        + Methodref [net/thempra/yocaina/g.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
       [53] pop
       [54] aload_2 v2
       [55] invokeinterface #113
@@ -3222,12 +3677,12 @@ Methods (count = 11):
 Class file attributes (count = 0):
 
 _____________________________________________________________________
-+ Program class: net/thempra/yocaina/d
++ Program class: net/thempra/yocaina/e
   Superclass:    java/lang/Object
   Major version: 0x32
   Minor version: 0x0
   Access flags:  0x20
-    = class net.thempra.yocaina.d extends java.lang.Object
+    = class net.thempra.yocaina.e extends java.lang.Object
 
 Interfaces (count = 1):
   + Class [android/view/View$OnClickListener]
@@ -3237,23 +3692,23 @@ Constant Pool (count = 36):
   + Class [android/view/View$OnClickListener]
   + Class [java/lang/Object]
   + Class [net/thempra/yocaina/RepositoryActivity]
-  + Class [net/thempra/yocaina/d]
   + Class [net/thempra/yocaina/e]
-  + Fieldref [net/thempra/yocaina/d.a Lnet/thempra/yocaina/RepositoryActivity;]
+  + Class [net/thempra/yocaina/f]
+  + Fieldref [net/thempra/yocaina/e.a Lnet/thempra/yocaina/RepositoryActivity;]
   + Methodref [java/lang/Object.<init> ()V]
   + Methodref [net/thempra/yocaina/RepositoryActivity.b (Lnet/thempra/yocaina/RepositoryActivity;)V]
-  + Methodref [net/thempra/yocaina/e.<init> (Lnet/thempra/yocaina/d;)V]
-  + Methodref [net/thempra/yocaina/e.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
+  + Methodref [net/thempra/yocaina/f.<init> (Lnet/thempra/yocaina/e;)V]
+  + Methodref [net/thempra/yocaina/f.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
   + NameAndType [<init> ()V]
-  + NameAndType [<init> (Lnet/thempra/yocaina/d;)V]
+  + NameAndType [<init> (Lnet/thempra/yocaina/e;)V]
   + NameAndType [a Lnet/thempra/yocaina/RepositoryActivity;]
   + NameAndType [b (Lnet/thempra/yocaina/RepositoryActivity;)V]
   + NameAndType [execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
   + Utf8 [()V]
   + Utf8 [(Landroid/view/View;)V]
   + Utf8 [(Lnet/thempra/yocaina/RepositoryActivity;)V]
-  + Utf8 [(Lnet/thempra/yocaina/d;)Lnet/thempra/yocaina/RepositoryActivity;]
-  + Utf8 [(Lnet/thempra/yocaina/d;)V]
+  + Utf8 [(Lnet/thempra/yocaina/e;)Lnet/thempra/yocaina/RepositoryActivity;]
+  + Utf8 [(Lnet/thempra/yocaina/e;)V]
   + Utf8 [([Ljava/lang/Object;)Landroid/os/AsyncTask;]
   + Utf8 [<init>]
   + Utf8 [Code]
@@ -3265,8 +3720,8 @@ Constant Pool (count = 36):
   + Utf8 [execute]
   + Utf8 [java/lang/Object]
   + Utf8 [net/thempra/yocaina/RepositoryActivity]
-  + Utf8 [net/thempra/yocaina/d]
   + Utf8 [net/thempra/yocaina/e]
+  + Utf8 [net/thempra/yocaina/f]
   + Utf8 [onClick]
 
 Fields (count = 1):
@@ -3277,13 +3732,13 @@ Fields (count = 1):
 Methods (count = 3):
   - Method:       <init>(Lnet/thempra/yocaina/RepositoryActivity;)V
     Access flags: 0x0
-      = d(net.thempra.yocaina.RepositoryActivity)
+      = e(net.thempra.yocaina.RepositoryActivity)
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 10, locals = 2, stack = 2):
       [0] aload_0 v0
       [1] aload_1 v1
       [2] putfield #7
-        + Fieldref [net/thempra/yocaina/d.a Lnet/thempra/yocaina/RepositoryActivity;]
+        + Fieldref [net/thempra/yocaina/e.a Lnet/thempra/yocaina/RepositoryActivity;]
       [5] aload_0 v0
       [6] invokespecial #8
         + Methodref [java/lang/Object.<init> ()V]
@@ -3296,33 +3751,33 @@ Methods (count = 3):
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 24, locals = 2, stack = 3):
       [0] new #6
-        + Class [net/thempra/yocaina/e]
+        + Class [net/thempra/yocaina/f]
       [3] dup
       [4] aload_0 v0
       [5] invokespecial #10
-        + Methodref [net/thempra/yocaina/e.<init> (Lnet/thempra/yocaina/d;)V]
+        + Methodref [net/thempra/yocaina/f.<init> (Lnet/thempra/yocaina/e;)V]
       [8] iconst_0
       [9] anewarray #1
         + Class [android/app/Activity]
       [12] invokevirtual #11
-        + Methodref [net/thempra/yocaina/e.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
+        + Methodref [net/thempra/yocaina/f.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
       [15] pop
       [16] aload_0 v0
       [17] getfield #7
-        + Fieldref [net/thempra/yocaina/d.a Lnet/thempra/yocaina/RepositoryActivity;]
+        + Fieldref [net/thempra/yocaina/e.a Lnet/thempra/yocaina/RepositoryActivity;]
       [20] invokestatic #9
         + Methodref [net/thempra/yocaina/RepositoryActivity.b (Lnet/thempra/yocaina/RepositoryActivity;)V]
       [23] return
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 0):
-  + Method:       a(Lnet/thempra/yocaina/d;)Lnet/thempra/yocaina/RepositoryActivity;
+  + Method:       a(Lnet/thempra/yocaina/e;)Lnet/thempra/yocaina/RepositoryActivity;
     Access flags: 0x1008
-      = static synthetic net.thempra.yocaina.RepositoryActivity a(net.thempra.yocaina.d)
+      = static synthetic net.thempra.yocaina.RepositoryActivity a(net.thempra.yocaina.e)
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 5, locals = 1, stack = 1):
       [0] aload_0 v0
       [1] getfield #7
-        + Fieldref [net/thempra/yocaina/d.a Lnet/thempra/yocaina/RepositoryActivity;]
+        + Fieldref [net/thempra/yocaina/e.a Lnet/thempra/yocaina/RepositoryActivity;]
       [4] areturn
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 0):
@@ -3330,12 +3785,12 @@ Methods (count = 3):
 Class file attributes (count = 0):
 
 _____________________________________________________________________
-+ Program class: net/thempra/yocaina/e
++ Program class: net/thempra/yocaina/f
   Superclass:    android/os/AsyncTask
   Major version: 0x32
   Minor version: 0x0
   Access flags:  0x20
-    = class net.thempra.yocaina.e extends android.os.AsyncTask
+    = class net.thempra.yocaina.f extends android.os.AsyncTask
 
 Interfaces (count = 0):
 
@@ -3349,10 +3804,10 @@ Constant Pool (count = 69):
   + Class [android/widget/EditText]
   + Class [java/lang/StringBuilder]
   + Class [net/thempra/yocaina/RepositoryActivity]
-  + Class [net/thempra/yocaina/d]
   + Class [net/thempra/yocaina/e]
+  + Class [net/thempra/yocaina/f]
   + Fieldref [net/thempra/yocaina/RepositoryActivity.a Ljava/util/ArrayList;]
-  + Fieldref [net/thempra/yocaina/e.a Lnet/thempra/yocaina/d;]
+  + Fieldref [net/thempra/yocaina/f.a Lnet/thempra/yocaina/e;]
   + Methodref [android/os/AsyncTask.<init> ()V]
   + Methodref [android/widget/EditText.getText ()Landroid/text/Editable;]
   + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
@@ -3361,18 +3816,18 @@ Constant Pool (count = 69):
   + Methodref [net/thempra/yocaina/RepositoryActivity.a ()Landroid/widget/EditText;]
   + Methodref [net/thempra/yocaina/RepositoryActivity.a (Lnet/thempra/yocaina/RepositoryActivity;)V]
   + Methodref [net/thempra/yocaina/RepositoryActivity.a (Lnet/thempra/yocaina/RepositoryActivity;Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;]
-  + Methodref [net/thempra/yocaina/d.a (Lnet/thempra/yocaina/d;)Lnet/thempra/yocaina/RepositoryActivity;]
-  + Methodref [net/thempra/yocaina/e.a ([Landroid/app/Activity;)Ljava/lang/String;]
+  + Methodref [net/thempra/yocaina/e.a (Lnet/thempra/yocaina/e;)Lnet/thempra/yocaina/RepositoryActivity;]
+  + Methodref [net/thempra/yocaina/f.a ([Landroid/app/Activity;)Ljava/lang/String;]
   + InterfaceMethodref [android/text/Editable.toString ()Ljava/lang/String;]
   + NameAndType [<init> ()V]
   + NameAndType [<init> (Ljava/lang/String;)V]
   + NameAndType [a ()Landroid/widget/EditText;]
   + NameAndType [a (Lnet/thempra/yocaina/RepositoryActivity;)V]
   + NameAndType [a (Lnet/thempra/yocaina/RepositoryActivity;Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;]
-  + NameAndType [a (Lnet/thempra/yocaina/d;)Lnet/thempra/yocaina/RepositoryActivity;]
+  + NameAndType [a (Lnet/thempra/yocaina/e;)Lnet/thempra/yocaina/RepositoryActivity;]
   + NameAndType [a ([Landroid/app/Activity;)Ljava/lang/String;]
   + NameAndType [a Ljava/util/ArrayList;]
-  + NameAndType [a Lnet/thempra/yocaina/d;]
+  + NameAndType [a Lnet/thempra/yocaina/e;]
   + NameAndType [append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
   + NameAndType [getText ()Landroid/text/Editable;]
   + NameAndType [toString ()Ljava/lang/String;]
@@ -3384,15 +3839,15 @@ Constant Pool (count = 69):
   + Utf8 [(Ljava/lang/String;)V]
   + Utf8 [(Lnet/thempra/yocaina/RepositoryActivity;)V]
   + Utf8 [(Lnet/thempra/yocaina/RepositoryActivity;Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;]
-  + Utf8 [(Lnet/thempra/yocaina/d;)Lnet/thempra/yocaina/RepositoryActivity;]
-  + Utf8 [(Lnet/thempra/yocaina/d;)V]
+  + Utf8 [(Lnet/thempra/yocaina/e;)Lnet/thempra/yocaina/RepositoryActivity;]
+  + Utf8 [(Lnet/thempra/yocaina/e;)V]
   + Utf8 [([Landroid/app/Activity;)Ljava/lang/String;]
   + Utf8 [([Ljava/lang/Object;)Ljava/lang/Object;]
   + Utf8 [/cards.xml]
   + Utf8 [<init>]
   + Utf8 [Code]
   + Utf8 [Ljava/util/ArrayList;]
-  + Utf8 [Lnet/thempra/yocaina/d;]
+  + Utf8 [Lnet/thempra/yocaina/e;]
   + Utf8 [[Landroid/app/Activity;]
   + Utf8 [a]
   + Utf8 [android/os/AsyncTask]
@@ -3405,25 +3860,25 @@ Constant Pool (count = 69):
   + Utf8 [http://]
   + Utf8 [java/lang/StringBuilder]
   + Utf8 [net/thempra/yocaina/RepositoryActivity]
-  + Utf8 [net/thempra/yocaina/d]
   + Utf8 [net/thempra/yocaina/e]
+  + Utf8 [net/thempra/yocaina/f]
   + Utf8 [toString]
 
 Fields (count = 1):
-  + Field:        a Lnet/thempra/yocaina/d;
+  + Field:        a Lnet/thempra/yocaina/e;
     Access flags: 0x1010
-      = final synthetic net.thempra.yocaina.d a
+      = final synthetic net.thempra.yocaina.e a
 
 Methods (count = 3):
-  - Method:       <init>(Lnet/thempra/yocaina/d;)V
+  - Method:       <init>(Lnet/thempra/yocaina/e;)V
     Access flags: 0x0
-      = e(net.thempra.yocaina.d)
+      = f(net.thempra.yocaina.e)
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 10, locals = 2, stack = 2):
       [0] aload_0 v0
       [1] aload_1 v1
       [2] putfield #13
-        + Fieldref [net/thempra/yocaina/e.a Lnet/thempra/yocaina/d;]
+        + Fieldref [net/thempra/yocaina/f.a Lnet/thempra/yocaina/e;]
       [5] aload_0 v0
       [6] invokespecial #14
         + Methodref [android/os/AsyncTask.<init> ()V]
@@ -3437,14 +3892,14 @@ Methods (count = 3):
     + Code attribute instructions (code length = 65, locals = 2, stack = 5):
       [0] aload_0 v0
       [1] getfield #13
-        + Fieldref [net/thempra/yocaina/e.a Lnet/thempra/yocaina/d;]
+        + Fieldref [net/thempra/yocaina/f.a Lnet/thempra/yocaina/e;]
       [4] invokestatic #22
-        + Methodref [net/thempra/yocaina/d.a (Lnet/thempra/yocaina/d;)Lnet/thempra/yocaina/RepositoryActivity;]
+        + Methodref [net/thempra/yocaina/e.a (Lnet/thempra/yocaina/e;)Lnet/thempra/yocaina/RepositoryActivity;]
       [7] aload_0 v0
       [8] getfield #13
-        + Fieldref [net/thempra/yocaina/e.a Lnet/thempra/yocaina/d;]
+        + Fieldref [net/thempra/yocaina/f.a Lnet/thempra/yocaina/e;]
       [11] invokestatic #22
-        + Methodref [net/thempra/yocaina/d.a (Lnet/thempra/yocaina/d;)Lnet/thempra/yocaina/RepositoryActivity;]
+        + Methodref [net/thempra/yocaina/e.a (Lnet/thempra/yocaina/e;)Lnet/thempra/yocaina/RepositoryActivity;]
       [14] new #8
         + Class [java/lang/StringBuilder]
       [17] dup
@@ -3474,9 +3929,9 @@ Methods (count = 3):
         + Fieldref [net/thempra/yocaina/RepositoryActivity.a Ljava/util/ArrayList;]
       [53] aload_0 v0
       [54] getfield #13
-        + Fieldref [net/thempra/yocaina/e.a Lnet/thempra/yocaina/d;]
+        + Fieldref [net/thempra/yocaina/f.a Lnet/thempra/yocaina/e;]
       [57] invokestatic #22
-        + Methodref [net/thempra/yocaina/d.a (Lnet/thempra/yocaina/d;)Lnet/thempra/yocaina/RepositoryActivity;]
+        + Methodref [net/thempra/yocaina/e.a (Lnet/thempra/yocaina/e;)Lnet/thempra/yocaina/RepositoryActivity;]
       [60] invokestatic #20
         + Methodref [net/thempra/yocaina/RepositoryActivity.a (Lnet/thempra/yocaina/RepositoryActivity;)V]
       [63] aconst_null
@@ -3493,7 +3948,7 @@ Methods (count = 3):
       [2] checkcast #4
         + Class [[Landroid/app/Activity;]
       [5] invokevirtual #23
-        + Methodref [net/thempra/yocaina/e.a ([Landroid/app/Activity;)Ljava/lang/String;]
+        + Methodref [net/thempra/yocaina/f.a ([Landroid/app/Activity;)Ljava/lang/String;]
       [8] areturn
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 0):
@@ -3501,12 +3956,12 @@ Methods (count = 3):
 Class file attributes (count = 0):
 
 _____________________________________________________________________
-+ Program class: net/thempra/yocaina/f
++ Program class: net/thempra/yocaina/g
   Superclass:    android/os/AsyncTask
   Major version: 0x32
   Minor version: 0x0
   Access flags:  0x20
-    = class net.thempra.yocaina.f extends android.os.AsyncTask
+    = class net.thempra.yocaina.g extends android.os.AsyncTask
 
 Interfaces (count = 0):
 
@@ -3520,16 +3975,16 @@ Constant Pool (count = 58):
   + Class [java/net/URL]
   + Class [java/util/HashMap]
   + Class [net/thempra/yocaina/RepositoryActivity]
-  + Class [net/thempra/yocaina/f]
-  + Fieldref [net/thempra/yocaina/f.a Lnet/thempra/yocaina/RepositoryActivity;]
-  + Fieldref [net/thempra/yocaina/f.b Ljava/util/HashMap;]
+  + Class [net/thempra/yocaina/g]
+  + Fieldref [net/thempra/yocaina/g.a Lnet/thempra/yocaina/RepositoryActivity;]
+  + Fieldref [net/thempra/yocaina/g.b Ljava/util/HashMap;]
   + Methodref [android/os/AsyncTask.<init> ()V]
   + Methodref [java/lang/Object.toString ()Ljava/lang/String;]
   + Methodref [java/net/MalformedURLException.printStackTrace ()V]
   + Methodref [java/net/URL.<init> (Ljava/lang/String;)V]
   + Methodref [java/util/HashMap.get (Ljava/lang/Object;)Ljava/lang/Object;]
   + Methodref [net/thempra/yocaina/RepositoryActivity.a (Ljava/lang/String;Ljava/net/URL;)V]
-  + Methodref [net/thempra/yocaina/f.a ([Landroid/app/Activity;)Ljava/lang/String;]
+  + Methodref [net/thempra/yocaina/g.a ([Landroid/app/Activity;)Ljava/lang/String;]
   + NameAndType [<init> ()V]
   + NameAndType [<init> (Ljava/lang/String;)V]
   + NameAndType [a (Ljava/lang/String;Ljava/net/URL;)V]
@@ -3564,7 +4019,7 @@ Constant Pool (count = 58):
   + Utf8 [java/util/HashMap]
   + Utf8 [name]
   + Utf8 [net/thempra/yocaina/RepositoryActivity]
-  + Utf8 [net/thempra/yocaina/f]
+  + Utf8 [net/thempra/yocaina/g]
   + Utf8 [printStackTrace]
   + Utf8 [toString]
   + Utf8 [url]
@@ -3580,17 +4035,17 @@ Fields (count = 2):
 Methods (count = 3):
   - Method:       <init>(Lnet/thempra/yocaina/RepositoryActivity;Ljava/util/HashMap;)V
     Access flags: 0x0
-      = f(net.thempra.yocaina.RepositoryActivity,java.util.HashMap)
+      = g(net.thempra.yocaina.RepositoryActivity,java.util.HashMap)
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 15, locals = 3, stack = 2):
       [0] aload_0 v0
       [1] aload_1 v1
       [2] putfield #11
-        + Fieldref [net/thempra/yocaina/f.a Lnet/thempra/yocaina/RepositoryActivity;]
+        + Fieldref [net/thempra/yocaina/g.a Lnet/thempra/yocaina/RepositoryActivity;]
       [5] aload_0 v0
       [6] aload_2 v2
       [7] putfield #12
-        + Fieldref [net/thempra/yocaina/f.b Ljava/util/HashMap;]
+        + Fieldref [net/thempra/yocaina/g.b Ljava/util/HashMap;]
       [10] aload_0 v0
       [11] invokespecial #13
         + Methodref [android/os/AsyncTask.<init> ()V]
@@ -3604,10 +4059,10 @@ Methods (count = 3):
     + Code attribute instructions (code length = 48, locals = 3, stack = 6):
       [0] aload_0 v0
       [1] getfield #11
-        + Fieldref [net/thempra/yocaina/f.a Lnet/thempra/yocaina/RepositoryActivity;]
+        + Fieldref [net/thempra/yocaina/g.a Lnet/thempra/yocaina/RepositoryActivity;]
       [4] aload_0 v0
       [5] getfield #12
-        + Fieldref [net/thempra/yocaina/f.b Ljava/util/HashMap;]
+        + Fieldref [net/thempra/yocaina/g.b Ljava/util/HashMap;]
       [8] ldc #1
         + String [name]
       [10] invokevirtual #17
@@ -3619,7 +4074,7 @@ Methods (count = 3):
       [19] dup
       [20] aload_0 v0
       [21] getfield #12
-        + Fieldref [net/thempra/yocaina/f.b Ljava/util/HashMap;]
+        + Fieldref [net/thempra/yocaina/g.b Ljava/util/HashMap;]
       [24] ldc #2
         + String [url]
       [26] invokevirtual #17
@@ -3654,7 +4109,7 @@ Methods (count = 3):
       [2] checkcast #3
         + Class [[Landroid/app/Activity;]
       [5] invokevirtual #19
-        + Methodref [net/thempra/yocaina/f.a ([Landroid/app/Activity;)Ljava/lang/String;]
+        + Methodref [net/thempra/yocaina/g.a ([Landroid/app/Activity;)Ljava/lang/String;]
       [8] areturn
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 0):
@@ -3785,13 +4240,47 @@ _____________________________________________________________________
 
 Interfaces (count = 0):
 
-Constant Pool (count = 164):
+Constant Pool (count = 253):
   + String []
   + String [ ]
   + String [/yocaina/]
   + String [0x]
+  + String [card]
+  + String [keyA0]
+  + String [keyA1]
+  + String [keyA10]
+  + String [keyA11]
+  + String [keyA12]
+  + String [keyA13]
+  + String [keyA14]
+  + String [keyA15]
+  + String [keyA2]
+  + String [keyA3]
+  + String [keyA4]
+  + String [keyA5]
+  + String [keyA6]
+  + String [keyA7]
+  + String [keyA8]
+  + String [keyA9]
+  + String [keyB0]
+  + String [keyB1]
+  + String [keyB10]
+  + String [keyB11]
+  + String [keyB12]
+  + String [keyB13]
+  + String [keyB14]
+  + String [keyB15]
+  + String [keyB2]
+  + String [keyB3]
+  + String [keyB4]
+  + String [keyB5]
+  + String [keyB6]
+  + String [keyB7]
+  + String [keyB8]
+  + String [keyB9]
   + String [yocainatags]
   + Class [[B]
+  + Class [[Ljava/lang/String;]
   + Class [a/a/a]
   + Class [android/nfc/Tag]
   + Class [android/nfc/tech/MifareClassic]
@@ -3808,11 +4297,14 @@ Constant Pool (count = 164):
   + Class [java/lang/String]
   + Class [java/lang/StringBuilder]
   + Class [java/util/ArrayList]
+  + Class [java/util/Iterator]
   + Class [net/thempra/yocaina/a/a]
   + Class [net/thempra/yocaina/a/b]
   + Fieldref [net/thempra/yocaina/a/b.a Ljava/util/ArrayList;]
   + Fieldref [net/thempra/yocaina/a/b.b I]
   + Fieldref [net/thempra/yocaina/a/b.c Ljava/util/ArrayList;]
+  + Fieldref [net/thempra/yocaina/a/b.d Z]
+  + Methodref [a/a/a.a (Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/util/ArrayList;]
   + Methodref [a/a/a.a ([BI)Ljava/lang/String;]
   + Methodref [android/nfc/tech/MifareClassic.authenticateSectorWithKeyA (I[B)Z]
   + Methodref [android/nfc/tech/MifareClassic.connect ()V]
@@ -3824,7 +4316,6 @@ Constant Pool (count = 164):
   + Methodref [android/os/Environment.getExternalStorageDirectory ()Ljava/io/File;]
   + Methodref [android/util/Log.e (Ljava/lang/String;Ljava/lang/String;)I]
   + Methodref [java/io/BufferedReader.<init> (Ljava/io/Reader;)V]
-  + Methodref [java/io/BufferedReader.readLine ()Ljava/lang/String;]
   + Methodref [java/io/File.<init> (Ljava/lang/String;)V]
   + Methodref [java/io/FileInputStream.<init> (Ljava/io/File;)V]
   + Methodref [java/io/FileNotFoundException.printStackTrace ()V]
@@ -3833,7 +4324,6 @@ Constant Pool (count = 164):
   + Methodref [java/io/InputStreamReader.<init> (Ljava/io/InputStream;)V]
   + Methodref [java/lang/Exception.printStackTrace ()V]
   + Methodref [java/lang/Integer.parseInt (Ljava/lang/String;I)I]
-  + Methodref [java/lang/String.<init> ()V]
   + Methodref [java/lang/String.replace (Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;]
   + Methodref [java/lang/String.split (Ljava/lang/String;)[Ljava/lang/String;]
   + Methodref [java/lang/StringBuilder.<init> ()V]
@@ -3843,14 +4333,19 @@ Constant Pool (count = 164):
   + Methodref [java/util/ArrayList.add (Ljava/lang/Object;)Z]
   + Methodref [java/util/ArrayList.clear ()V]
   + Methodref [java/util/ArrayList.get (I)Ljava/lang/Object;]
+  + Methodref [java/util/ArrayList.iterator ()Ljava/util/Iterator;]
+  + Methodref [java/util/ArrayList.size ()I]
   + Methodref [net/thempra/yocaina/a/a.<init> ()V]
-  + Methodref [net/thempra/yocaina/a/b.a (Ljava/lang/String;)V]
+  + Methodref [net/thempra/yocaina/a/b.a (Ljava/lang/String;)I]
+  + InterfaceMethodref [java/util/Iterator.hasNext ()Z]
+  + InterfaceMethodref [java/util/Iterator.next ()Ljava/lang/Object;]
   + NameAndType [<init> ()V]
   + NameAndType [<init> (Ljava/io/File;)V]
   + NameAndType [<init> (Ljava/io/InputStream;)V]
   + NameAndType [<init> (Ljava/io/Reader;)V]
   + NameAndType [<init> (Ljava/lang/String;)V]
-  + NameAndType [a (Ljava/lang/String;)V]
+  + NameAndType [a (Ljava/lang/String;)I]
+  + NameAndType [a (Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/util/ArrayList;]
   + NameAndType [a ([BI)Ljava/lang/String;]
   + NameAndType [a Ljava/util/ArrayList;]
   + NameAndType [add (Ljava/lang/Object;)Z]
@@ -3861,6 +4356,7 @@ Constant Pool (count = 164):
   + NameAndType [c Ljava/util/ArrayList;]
   + NameAndType [clear ()V]
   + NameAndType [connect ()V]
+  + NameAndType [d Z]
   + NameAndType [e (Ljava/lang/String;Ljava/lang/String;)I]
   + NameAndType [get (I)Ljava/lang/Object;]
   + NameAndType [get (Landroid/nfc/Tag;)Landroid/nfc/tech/MifareClassic;]
@@ -3868,20 +4364,26 @@ Constant Pool (count = 164):
   + NameAndType [getExternalStorageDirectory ()Ljava/io/File;]
   + NameAndType [getLocalizedMessage ()Ljava/lang/String;]
   + NameAndType [getSectorCount ()I]
+  + NameAndType [hasNext ()Z]
+  + NameAndType [iterator ()Ljava/util/Iterator;]
+  + NameAndType [next ()Ljava/lang/Object;]
   + NameAndType [parseInt (Ljava/lang/String;I)I]
   + NameAndType [printStackTrace ()V]
   + NameAndType [readBlock (I)[B]
-  + NameAndType [readLine ()Ljava/lang/String;]
   + NameAndType [replace (Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;]
   + NameAndType [sectorToBlock (I)I]
+  + NameAndType [size ()I]
   + NameAndType [split (Ljava/lang/String;)[Ljava/lang/String;]
   + NameAndType [toString ()Ljava/lang/String;]
   + Utf8 []
   + Utf8 [ ]
   + Utf8 [()I]
   + Utf8 [()Ljava/io/File;]
+  + Utf8 [()Ljava/lang/Object;]
   + Utf8 [()Ljava/lang/String;]
+  + Utf8 [()Ljava/util/Iterator;]
   + Utf8 [()V]
+  + Utf8 [()Z]
   + Utf8 [(I)I]
   + Utf8 [(I)Ljava/lang/Object;]
   + Utf8 [(I)[B]
@@ -3894,11 +4396,13 @@ Constant Pool (count = 164):
   + Utf8 [(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;]
   + Utf8 [(Ljava/lang/Object;)Ljava/lang/StringBuilder;]
   + Utf8 [(Ljava/lang/Object;)Z]
+  + Utf8 [(Ljava/lang/String;)I]
   + Utf8 [(Ljava/lang/String;)Ljava/lang/StringBuilder;]
   + Utf8 [(Ljava/lang/String;)V]
   + Utf8 [(Ljava/lang/String;)[Ljava/lang/String;]
   + Utf8 [(Ljava/lang/String;I)I]
   + Utf8 [(Ljava/lang/String;Ljava/lang/String;)I]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/util/ArrayList;]
   + Utf8 [([BI)Ljava/lang/String;]
   + Utf8 [/yocaina/]
   + Utf8 [0x]
@@ -3907,7 +4411,9 @@ Constant Pool (count = 164):
   + Utf8 [I]
   + Utf8 [Ljava/util/ArrayList;]
   + Utf8 [StackMapTable]
+  + Utf8 [Z]
   + Utf8 [[B]
+  + Utf8 [[Ljava/lang/String;]
   + Utf8 [a]
   + Utf8 [a/a/a]
   + Utf8 [add]
@@ -3919,14 +4425,18 @@ Constant Pool (count = 164):
   + Utf8 [authenticateSectorWithKeyA]
   + Utf8 [b]
   + Utf8 [c]
+  + Utf8 [card]
   + Utf8 [clear]
   + Utf8 [connect]
+  + Utf8 [d]
   + Utf8 [e]
   + Utf8 [get]
   + Utf8 [getBlockCountInSector]
   + Utf8 [getExternalStorageDirectory]
   + Utf8 [getLocalizedMessage]
   + Utf8 [getSectorCount]
+  + Utf8 [hasNext]
+  + Utf8 [iterator]
   + Utf8 [java/io/BufferedReader]
   + Utf8 [java/io/File]
   + Utf8 [java/io/FileInputStream]
@@ -3938,47 +4448,96 @@ Constant Pool (count = 164):
   + Utf8 [java/lang/String]
   + Utf8 [java/lang/StringBuilder]
   + Utf8 [java/util/ArrayList]
+  + Utf8 [java/util/Iterator]
+  + Utf8 [keyA0]
+  + Utf8 [keyA1]
+  + Utf8 [keyA10]
+  + Utf8 [keyA11]
+  + Utf8 [keyA12]
+  + Utf8 [keyA13]
+  + Utf8 [keyA14]
+  + Utf8 [keyA15]
+  + Utf8 [keyA2]
+  + Utf8 [keyA3]
+  + Utf8 [keyA4]
+  + Utf8 [keyA5]
+  + Utf8 [keyA6]
+  + Utf8 [keyA7]
+  + Utf8 [keyA8]
+  + Utf8 [keyA9]
+  + Utf8 [keyB0]
+  + Utf8 [keyB1]
+  + Utf8 [keyB10]
+  + Utf8 [keyB11]
+  + Utf8 [keyB12]
+  + Utf8 [keyB13]
+  + Utf8 [keyB14]
+  + Utf8 [keyB15]
+  + Utf8 [keyB2]
+  + Utf8 [keyB3]
+  + Utf8 [keyB4]
+  + Utf8 [keyB5]
+  + Utf8 [keyB6]
+  + Utf8 [keyB7]
+  + Utf8 [keyB8]
+  + Utf8 [keyB9]
   + Utf8 [net/thempra/yocaina/a/a]
   + Utf8 [net/thempra/yocaina/a/b]
+  + Utf8 [next]
   + Utf8 [parseInt]
   + Utf8 [printStackTrace]
   + Utf8 [readBlock]
-  + Utf8 [readLine]
   + Utf8 [replace]
   + Utf8 [sectorToBlock]
+  + Utf8 [size]
   + Utf8 [split]
   + Utf8 [toString]
   + Utf8 [yocainatags]
 
-Fields (count = 0):
+Fields (count = 1):
+  + Field:        d Z
+    Access flags: 0x0
+      = boolean d
 
-Methods (count = 5):
+Methods (count = 6):
   - Method:       <init>(Ljava/lang/String;)V
     Access flags: 0x1
       = public b(java.lang.String)
     Class member attributes (count = 1):
-    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+    + Code attribute instructions (code length = 24, locals = 2, stack = 2):
       [0] aload_0 v0
-      [1] invokespecial #58
+      [1] invokespecial #95
         + Methodref [net/thempra/yocaina/a/a.<init> ()V]
       [4] aload_0 v0
-      [5] aload_1 v1
-      [6] invokevirtual #59
-        + Methodref [net/thempra/yocaina/a/b.a (Ljava/lang/String;)V]
-      [9] return
+      [5] iconst_0
+      [6] putfield #63
+        + Fieldref [net/thempra/yocaina/a/b.d Z]
+      [9] aload_0 v0
+      [10] aload_1 v1
+      [11] invokevirtual #96
+        + Methodref [net/thempra/yocaina/a/b.a (Ljava/lang/String;)I]
+      [14] iconst_1
+      [15] ificmpne +8 (target=23)
+      [18] aload_0 v0
+      [19] iconst_1
+      [20] putfield #63
+        + Fieldref [net/thempra/yocaina/a/b.d Z]
+      [23] return
       Code attribute exceptions (count = 0):
-      Code attribute attributes (attribute count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 1):
+        - [23] Var: [a:net/thempra/yocaina/a/b][a:java/lang/String], Stack: 
   + Method:       a(Landroid/nfc/Tag;)Ljava/util/ArrayList;
     Access flags: 0x1
       = public java.util.ArrayList a(android.nfc.Tag)
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 166, locals = 8, stack = 4):
       [0] aload_1 v1
-      [1] invokestatic #31
+      [1] invokestatic #68
         + Methodref [android/nfc/tech/MifareClassic.get (Landroid/nfc/Tag;)Landroid/nfc/tech/MifareClassic;]
       [4] astore_2 v2
       [5] aload_2 v2
-      [6] invokevirtual #30
+      [6] invokevirtual #67
         + Methodref [android/nfc/tech/MifareClassic.connect ()V]
       [9] iconst_0
       [10] istore v4
@@ -3990,89 +4549,89 @@ Methods (count = 5):
       [21] aload_2 v2
       [22] iload v6
       [24] aload_0 v0
-      [25] getfield #25
+      [25] getfield #60
         + Fieldref [net/thempra/yocaina/a/b.a Ljava/util/ArrayList;]
       [28] iload v6
-      [30] invokevirtual #57
+      [30] invokevirtual #92
         + Methodref [java/util/ArrayList.get (I)Ljava/lang/Object;]
-      [33] checkcast #6
+      [33] checkcast #39
         + Class [[B]
-      [36] invokevirtual #29
+      [36] invokevirtual #66
         + Methodref [android/nfc/tech/MifareClassic.authenticateSectorWithKeyA (I[B)Z]
       [39] istore v4
       [41] iload v4
       [43] ifeq +76 (target=119)
       [46] aload_2 v2
       [47] iload v6
-      [49] invokevirtual #35
+      [49] invokevirtual #72
         + Methodref [android/nfc/tech/MifareClassic.sectorToBlock (I)I]
       [52] istore v7
       [54] goto +44 (target=98)
       [57] aload_2 v2
       [58] iload v7
-      [60] invokevirtual #34
+      [60] invokevirtual #71
         + Methodref [android/nfc/tech/MifareClassic.readBlock (I)[B]
       [63] astore_3 v3
       [64] aload_3 v3
       [65] aload_3 v3
       [66] arraylength
-      [67] invokestatic #28
+      [67] invokestatic #65
         + Methodref [a/a/a.a ([BI)Ljava/lang/String;]
       [70] astore v5
       [72] aload v5
       [74] ifnull +16 (target=90)
       [77] aload_0 v0
-      [78] getfield #27
+      [78] getfield #62
         + Fieldref [net/thempra/yocaina/a/b.c Ljava/util/ArrayList;]
       [81] aload v5
-      [83] invokevirtual #55
+      [83] invokevirtual #90
         + Methodref [java/util/ArrayList.add (Ljava/lang/Object;)Z]
       [86] pop
       [87] goto +8 (target=95)
       [90] aload_0 v0
       [91] iconst_2
-      [92] putfield #26
+      [92] putfield #61
         + Fieldref [net/thempra/yocaina/a/b.b I]
       [95] iinc v7, 1
       [98] iload v7
       [100] aload_2 v2
       [101] iload v6
-      [103] invokevirtual #35
+      [103] invokevirtual #72
         + Methodref [android/nfc/tech/MifareClassic.sectorToBlock (I)I]
       [106] aload_2 v2
       [107] iload v6
-      [109] invokevirtual #32
+      [109] invokevirtual #69
         + Methodref [android/nfc/tech/MifareClassic.getBlockCountInSector (I)I]
       [112] iadd
       [113] ificmplt -56 (target=57)
       [116] goto +11 (target=127)
       [119] aload_0 v0
       [120] iconst_1
-      [121] putfield #26
+      [121] putfield #61
         + Fieldref [net/thempra/yocaina/a/b.b I]
       [124] goto +37 (target=161)
       [127] iinc v6, 1
       [130] iload v6
       [132] aload_2 v2
-      [133] invokevirtual #33
+      [133] invokevirtual #70
         + Methodref [android/nfc/tech/MifareClassic.getSectorCount ()I]
       [136] ificmplt -115 (target=21)
       [139] goto +22 (target=161)
       [142] astore v4
-      [144] ldc #5
+      [144] ldc #38
         + String [yocainatags]
       [146] aload v4
-      [148] invokevirtual #43
+      [148] invokevirtual #79
         + Methodref [java/io/IOException.getLocalizedMessage ()Ljava/lang/String;]
-      [151] invokestatic #37
+      [151] invokestatic #74
         + Methodref [android/util/Log.e (Ljava/lang/String;Ljava/lang/String;)I]
       [154] pop
       [155] aload_0 v0
       [156] bipush 6
-      [158] putfield #26
+      [158] putfield #61
         + Fieldref [net/thempra/yocaina/a/b.b I]
       [161] aload_0 v0
-      [162] getfield #27
+      [162] getfield #62
         + Fieldref [net/thempra/yocaina/a/b.c Ljava/util/ArrayList;]
       [165] areturn
       Code attribute exceptions (count = 1):
@@ -4091,227 +4650,436 @@ Methods (count = 5):
         - [139] Var: -1, Stack: (empty)
         - [142] Var: [a:net/thempra/yocaina/a/b][a:android/nfc/Tag][a:android/nfc/tech/MifareClassic], Stack: [a:java/io/IOException]
         - [161] Var: ..., Stack: (empty)
-  + Method:       a(Ljava/lang/String;)V
+  + Method:       a(Ljava/lang/String;)I
     Access flags: 0x4
-      = protected void a(java.lang.String)
+      = protected int a(java.lang.String)
     Class member attributes (count = 1):
-    + Code attribute instructions (code length = 283, locals = 8, stack = 6):
+    + Code attribute instructions (code length = 538, locals = 11, stack = 6):
       [0] aload_0 v0
-      [1] getfield #25
+      [1] getfield #60
         + Fieldref [net/thempra/yocaina/a/b.a Ljava/util/ArrayList;]
-      [4] invokevirtual #56
+      [4] invokevirtual #91
         + Methodref [java/util/ArrayList.clear ()V]
-      [7] new #13
+      [7] new #47
         + Class [java/io/File]
       [10] dup
-      [11] new #21
+      [11] new #55
         + Class [java/lang/StringBuilder]
       [14] dup
-      [15] invokespecial #51
+      [15] invokespecial #86
         + Methodref [java/lang/StringBuilder.<init> ()V]
-      [18] invokestatic #36
+      [18] invokestatic #73
         + Methodref [android/os/Environment.getExternalStorageDirectory ()Ljava/io/File;]
-      [21] invokevirtual #52
+      [21] invokevirtual #87
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;]
       [24] ldc #3
         + String [/yocaina/]
-      [26] invokevirtual #53
+      [26] invokevirtual #88
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
       [29] aload_1 v1
-      [30] invokevirtual #53
+      [30] invokevirtual #88
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [33] invokevirtual #54
+      [33] invokevirtual #89
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
-      [36] invokespecial #40
+      [36] invokespecial #76
         + Methodref [java/io/File.<init> (Ljava/lang/String;)V]
       [39] astore_2 v2
-      [40] new #14
+      [40] new #48
         + Class [java/io/FileInputStream]
       [43] dup
       [44] aload_2 v2
-      [45] invokespecial #41
+      [45] invokespecial #77
         + Methodref [java/io/FileInputStream.<init> (Ljava/io/File;)V]
       [48] astore_3 v3
-      [49] new #12
+      [49] new #46
         + Class [java/io/BufferedReader]
       [52] dup
-      [53] new #17
+      [53] new #51
         + Class [java/io/InputStreamReader]
       [56] dup
       [57] aload_3 v3
-      [58] invokespecial #45
+      [58] invokespecial #81
         + Methodref [java/io/InputStreamReader.<init> (Ljava/io/InputStream;)V]
-      [61] invokespecial #38
+      [61] invokespecial #75
         + Methodref [java/io/BufferedReader.<init> (Ljava/io/Reader;)V]
       [64] astore v4
-      [66] new #20
+      [66] bipush 32
+      [68] anewarray #54
         + Class [java/lang/String]
-      [69] dup
-      [70] invokespecial #48
-        + Methodref [java/lang/String.<init> ()V]
-      [73] astore v5
-      [75] goto +172 (target=247)
-      [78] aload v5
-      [80] ldc #2
-        + String [ ]
-      [82] invokevirtual #50
-        + Methodref [java/lang/String.split (Ljava/lang/String;)[Ljava/lang/String;]
-      [85] astore v6
-      [87] bipush 6
-      [89] newarray 8
+      [71] dup
+      [72] iconst_0
+      [73] ldc #6
+        + String [keyA0]
+      [75] aastore
+      [76] dup
+      [77] iconst_1
+      [78] ldc #7
+        + String [keyA1]
+      [80] aastore
+      [81] dup
+      [82] iconst_2
+      [83] ldc #14
+        + String [keyA2]
+      [85] aastore
+      [86] dup
+      [87] iconst_3
+      [88] ldc #15
+        + String [keyA3]
+      [90] aastore
       [91] dup
-      [92] iconst_0
-      [93] aload v6
-      [95] iconst_0
-      [96] aaload
-      [97] ldc #4
+      [92] iconst_4
+      [93] ldc #16
+        + String [keyA4]
+      [95] aastore
+      [96] dup
+      [97] iconst_5
+      [98] ldc #17
+        + String [keyA5]
+      [100] aastore
+      [101] dup
+      [102] bipush 6
+      [104] ldc #18
+        + String [keyA6]
+      [106] aastore
+      [107] dup
+      [108] bipush 7
+      [110] ldc #19
+        + String [keyA7]
+      [112] aastore
+      [113] dup
+      [114] bipush 8
+      [116] ldc #20
+        + String [keyA8]
+      [118] aastore
+      [119] dup
+      [120] bipush 9
+      [122] ldc #21
+        + String [keyA9]
+      [124] aastore
+      [125] dup
+      [126] bipush 10
+      [128] ldc #8
+        + String [keyA10]
+      [130] aastore
+      [131] dup
+      [132] bipush 11
+      [134] ldc #9
+        + String [keyA11]
+      [136] aastore
+      [137] dup
+      [138] bipush 12
+      [140] ldc #10
+        + String [keyA12]
+      [142] aastore
+      [143] dup
+      [144] bipush 13
+      [146] ldc #11
+        + String [keyA13]
+      [148] aastore
+      [149] dup
+      [150] bipush 14
+      [152] ldc #12
+        + String [keyA14]
+      [154] aastore
+      [155] dup
+      [156] bipush 15
+      [158] ldc #13
+        + String [keyA15]
+      [160] aastore
+      [161] dup
+      [162] bipush 16
+      [164] ldc #22
+        + String [keyB0]
+      [166] aastore
+      [167] dup
+      [168] bipush 17
+      [170] ldc #23
+        + String [keyB1]
+      [172] aastore
+      [173] dup
+      [174] bipush 18
+      [176] ldc #30
+        + String [keyB2]
+      [178] aastore
+      [179] dup
+      [180] bipush 19
+      [182] ldc #31
+        + String [keyB3]
+      [184] aastore
+      [185] dup
+      [186] bipush 20
+      [188] ldc #32
+        + String [keyB4]
+      [190] aastore
+      [191] dup
+      [192] bipush 21
+      [194] ldc #33
+        + String [keyB5]
+      [196] aastore
+      [197] dup
+      [198] bipush 22
+      [200] ldc #34
+        + String [keyB6]
+      [202] aastore
+      [203] dup
+      [204] bipush 23
+      [206] ldc #35
+        + String [keyB7]
+      [208] aastore
+      [209] dup
+      [210] bipush 24
+      [212] ldc #36
+        + String [keyB8]
+      [214] aastore
+      [215] dup
+      [216] bipush 25
+      [218] ldc #37
+        + String [keyB9]
+      [220] aastore
+      [221] dup
+      [222] bipush 26
+      [224] ldc #24
+        + String [keyB10]
+      [226] aastore
+      [227] dup
+      [228] bipush 27
+      [230] ldc #25
+        + String [keyB11]
+      [232] aastore
+      [233] dup
+      [234] bipush 28
+      [236] ldc #26
+        + String [keyB12]
+      [238] aastore
+      [239] dup
+      [240] bipush 29
+      [242] ldc #27
+        + String [keyB13]
+      [244] aastore
+      [245] dup
+      [246] bipush 30
+      [248] ldc #28
+        + String [keyB14]
+      [250] aastore
+      [251] dup
+      [252] bipush 31
+      [254] ldc #29
+        + String [keyB15]
+      [256] aastore
+      [257] astore v5
+      [259] new #55
+        + Class [java/lang/StringBuilder]
+      [262] dup
+      [263] invokespecial #86
+        + Methodref [java/lang/StringBuilder.<init> ()V]
+      [266] invokestatic #73
+        + Methodref [android/os/Environment.getExternalStorageDirectory ()Ljava/io/File;]
+      [269] invokevirtual #87
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;]
+      [272] ldc #3
+        + String [/yocaina/]
+      [274] invokevirtual #88
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [277] aload_1 v1
+      [278] invokevirtual #88
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [281] invokevirtual #89
+        + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [284] ldc #5
+        + String [card]
+      [286] aload v5
+      [288] invokestatic #64
+        + Methodref [a/a/a.a (Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/util/ArrayList;]
+      [291] astore v6
+      [293] aload v6
+      [295] invokevirtual #94
+        + Methodref [java/util/ArrayList.size ()I]
+      [298] ifne +5 (target=303)
+      [301] iconst_m1
+      [302] ireturn
+      [303] aload v6
+      [305] invokevirtual #93
+        + Methodref [java/util/ArrayList.iterator ()Ljava/util/Iterator;]
+      [308] astore v8
+      [310] goto +192 (target=502)
+      [313] aload v8
+      [315] invokeinterface #98
+        + InterfaceMethodref [java/util/Iterator.next ()Ljava/lang/Object;]
+      [320] checkcast #54
+        + Class [java/lang/String]
+      [323] astore v7
+      [325] aload v7
+      [327] ifnonnull +6 (target=333)
+      [330] goto +206 (target=536)
+      [333] aload v7
+      [335] ldc #2
+        + String [ ]
+      [337] invokevirtual #85
+        + Methodref [java/lang/String.split (Ljava/lang/String;)[Ljava/lang/String;]
+      [340] astore v9
+      [342] bipush 6
+      [344] newarray 8
+      [346] dup
+      [347] iconst_0
+      [348] aload v9
+      [350] iconst_0
+      [351] aaload
+      [352] ldc #4
         + String [0x]
-      [99] ldc #1
+      [354] ldc #1
         + String []
-      [101] invokevirtual #49
+      [356] invokevirtual #84
         + Methodref [java/lang/String.replace (Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;]
-      [104] bipush 16
-      [106] invokestatic #47
+      [359] bipush 16
+      [361] invokestatic #83
         + Methodref [java/lang/Integer.parseInt (Ljava/lang/String;I)I]
-      [109] sipush 255
-      [112] iand
-      [113] i2b
-      [114] bastore
-      [115] dup
-      [116] iconst_1
-      [117] aload v6
-      [119] iconst_1
-      [120] aaload
-      [121] ldc #4
+      [364] sipush 255
+      [367] iand
+      [368] i2b
+      [369] bastore
+      [370] dup
+      [371] iconst_1
+      [372] aload v9
+      [374] iconst_1
+      [375] aaload
+      [376] ldc #4
         + String [0x]
-      [123] ldc #1
+      [378] ldc #1
         + String []
-      [125] invokevirtual #49
+      [380] invokevirtual #84
         + Methodref [java/lang/String.replace (Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;]
-      [128] bipush 16
-      [130] invokestatic #47
+      [383] bipush 16
+      [385] invokestatic #83
         + Methodref [java/lang/Integer.parseInt (Ljava/lang/String;I)I]
-      [133] sipush 255
-      [136] iand
-      [137] i2b
-      [138] bastore
-      [139] dup
-      [140] iconst_2
-      [141] aload v6
-      [143] iconst_2
-      [144] aaload
-      [145] ldc #4
+      [388] sipush 255
+      [391] iand
+      [392] i2b
+      [393] bastore
+      [394] dup
+      [395] iconst_2
+      [396] aload v9
+      [398] iconst_2
+      [399] aaload
+      [400] ldc #4
         + String [0x]
-      [147] ldc #1
+      [402] ldc #1
         + String []
-      [149] invokevirtual #49
+      [404] invokevirtual #84
         + Methodref [java/lang/String.replace (Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;]
-      [152] bipush 16
-      [154] invokestatic #47
+      [407] bipush 16
+      [409] invokestatic #83
         + Methodref [java/lang/Integer.parseInt (Ljava/lang/String;I)I]
-      [157] sipush 255
-      [160] iand
-      [161] i2b
-      [162] bastore
-      [163] dup
-      [164] iconst_3
-      [165] aload v6
-      [167] iconst_3
-      [168] aaload
-      [169] ldc #4
+      [412] sipush 255
+      [415] iand
+      [416] i2b
+      [417] bastore
+      [418] dup
+      [419] iconst_3
+      [420] aload v9
+      [422] iconst_3
+      [423] aaload
+      [424] ldc #4
         + String [0x]
-      [171] ldc #1
+      [426] ldc #1
         + String []
-      [173] invokevirtual #49
+      [428] invokevirtual #84
         + Methodref [java/lang/String.replace (Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;]
-      [176] bipush 16
-      [178] invokestatic #47
+      [431] bipush 16
+      [433] invokestatic #83
         + Methodref [java/lang/Integer.parseInt (Ljava/lang/String;I)I]
-      [181] sipush 255
-      [184] iand
-      [185] i2b
-      [186] bastore
-      [187] dup
-      [188] iconst_4
-      [189] aload v6
-      [191] iconst_4
-      [192] aaload
-      [193] ldc #4
+      [436] sipush 255
+      [439] iand
+      [440] i2b
+      [441] bastore
+      [442] dup
+      [443] iconst_4
+      [444] aload v9
+      [446] iconst_4
+      [447] aaload
+      [448] ldc #4
         + String [0x]
-      [195] ldc #1
+      [450] ldc #1
         + String []
-      [197] invokevirtual #49
+      [452] invokevirtual #84
         + Methodref [java/lang/String.replace (Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;]
-      [200] bipush 16
-      [202] invokestatic #47
+      [455] bipush 16
+      [457] invokestatic #83
         + Methodref [java/lang/Integer.parseInt (Ljava/lang/String;I)I]
-      [205] sipush 255
-      [208] iand
-      [209] i2b
-      [210] bastore
-      [211] dup
-      [212] iconst_5
-      [213] aload v6
-      [215] iconst_5
-      [216] aaload
-      [217] ldc #4
+      [460] sipush 255
+      [463] iand
+      [464] i2b
+      [465] bastore
+      [466] dup
+      [467] iconst_5
+      [468] aload v9
+      [470] iconst_5
+      [471] aaload
+      [472] ldc #4
         + String [0x]
-      [219] ldc #1
+      [474] ldc #1
         + String []
-      [221] invokevirtual #49
+      [476] invokevirtual #84
         + Methodref [java/lang/String.replace (Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;]
-      [224] bipush 16
-      [226] invokestatic #47
+      [479] bipush 16
+      [481] invokestatic #83
         + Methodref [java/lang/Integer.parseInt (Ljava/lang/String;I)I]
-      [229] sipush 255
-      [232] iand
-      [233] i2b
-      [234] bastore
-      [235] astore v7
-      [237] aload_0 v0
-      [238] getfield #25
+      [484] sipush 255
+      [487] iand
+      [488] i2b
+      [489] bastore
+      [490] astore v10
+      [492] aload_0 v0
+      [493] getfield #60
         + Fieldref [net/thempra/yocaina/a/b.a Ljava/util/ArrayList;]
-      [241] aload v7
-      [243] invokevirtual #55
+      [496] aload v10
+      [498] invokevirtual #90
         + Methodref [java/util/ArrayList.add (Ljava/lang/Object;)Z]
-      [246] pop
-      [247] aload v4
-      [249] invokevirtual #39
-        + Methodref [java/io/BufferedReader.readLine ()Ljava/lang/String;]
-      [252] dup
-      [253] astore v5
-      [255] ifnonnull -177 (target=78)
-      [258] goto +24 (target=282)
-      [261] astore_2 v2
-      [262] aload_2 v2
-      [263] invokevirtual #42
+      [501] pop
+      [502] aload v8
+      [504] invokeinterface #97
+        + InterfaceMethodref [java/util/Iterator.hasNext ()Z]
+      [509] ifne -196 (target=313)
+      [512] goto +24 (target=536)
+      [515] astore_2 v2
+      [516] aload_2 v2
+      [517] invokevirtual #78
         + Methodref [java/io/FileNotFoundException.printStackTrace ()V]
-      [266] goto +16 (target=282)
-      [269] astore_2 v2
-      [270] aload_2 v2
-      [271] invokevirtual #44
+      [520] goto +16 (target=536)
+      [523] astore_2 v2
+      [524] aload_2 v2
+      [525] invokevirtual #80
         + Methodref [java/io/IOException.printStackTrace ()V]
-      [274] goto +8 (target=282)
-      [277] astore_2 v2
-      [278] aload_2 v2
-      [279] invokevirtual #46
+      [528] goto +8 (target=536)
+      [531] astore_2 v2
+      [532] aload_2 v2
+      [533] invokevirtual #82
         + Methodref [java/lang/Exception.printStackTrace ()V]
-      [282] return
-      Code attribute exceptions (count = 3):
-      - ExceptionInfo (7 -> 258: 261):
+      [536] iconst_1
+      [537] ireturn
+      Code attribute exceptions (count = 6):
+      - ExceptionInfo (7 -> 301: 515):
       + Class [java/io/FileNotFoundException]
-      - ExceptionInfo (7 -> 258: 269):
+      - ExceptionInfo (303 -> 512: 515):
+      + Class [java/io/FileNotFoundException]
+      - ExceptionInfo (7 -> 301: 523):
       + Class [java/io/IOException]
-      - ExceptionInfo (7 -> 258: 277):
+      - ExceptionInfo (303 -> 512: 523):
+      + Class [java/io/IOException]
+      - ExceptionInfo (7 -> 301: 531):
+      + Class [java/lang/Exception]
+      - ExceptionInfo (303 -> 512: 531):
       + Class [java/lang/Exception]
       Code attribute attributes (attribute count = 1):
-      + Stack map table attribute (count = 6):
-        - [78] Var: [a:net/thempra/yocaina/a/b][a:java/lang/String][a:java/io/File][a:java/io/FileInputStream][a:java/io/BufferedReader][a:java/lang/String], Stack: 
-        - [247] Var: ..., Stack: (empty)
-        - [261] Var: [a:net/thempra/yocaina/a/b][a:java/lang/String], Stack: [a:java/io/FileNotFoundException]
-        - [269] Var: ..., Stack: [a:java/io/IOException]
-        - [277] Var: ..., Stack: [a:java/lang/Exception]
-        - [282] Var: ..., Stack: (empty)
+      + Stack map table attribute (count = 9):
+        - [303] Var: [a:net/thempra/yocaina/a/b][a:java/lang/String][a:java/io/File][a:java/io/FileInputStream][a:java/io/BufferedReader][a:[Ljava/lang/String;][a:java/util/ArrayList], Stack: 
+        - [313] Var: [a:net/thempra/yocaina/a/b][a:java/lang/String][a:java/io/File][a:java/io/FileInputStream][a:java/io/BufferedReader][a:[Ljava/lang/String;][a:java/util/ArrayList][T][a:java/util/Iterator], Stack: 
+        - [333] Var: [a:net/thempra/yocaina/a/b][a:java/lang/String][a:java/io/File][a:java/io/FileInputStream][a:java/io/BufferedReader][a:[Ljava/lang/String;][a:java/util/ArrayList][a:java/lang/String][a:java/util/Iterator], Stack: 
+        - [502] Var: [a:net/thempra/yocaina/a/b][a:java/lang/String][a:java/io/File][a:java/io/FileInputStream][a:java/io/BufferedReader][a:[Ljava/lang/String;][a:java/util/ArrayList][T][a:java/util/Iterator], Stack: 
+        - [512] Var: [a:net/thempra/yocaina/a/b][a:java/lang/String][a:java/io/File][a:java/io/FileInputStream][a:java/io/BufferedReader][a:[Ljava/lang/String;][a:java/util/ArrayList], Stack: 
+        - [515] Var: [a:net/thempra/yocaina/a/b][a:java/lang/String], Stack: [a:java/io/FileNotFoundException]
+        - [523] Var: ..., Stack: [a:java/io/IOException]
+        - [531] Var: ..., Stack: [a:java/lang/Exception]
+        - [536] Var: ..., Stack: (empty)
   + Method:       a()I
     Access flags: 0x1
       = public int a()
@@ -4327,8 +5095,19 @@ Methods (count = 5):
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 5, locals = 1, stack = 1):
       [0] aload_0 v0
-      [1] getfield #26
+      [1] getfield #61
         + Fieldref [net/thempra/yocaina/a/b.b I]
+      [4] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       c()Z
+    Access flags: 0x1
+      = public boolean c()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #63
+        + Fieldref [net/thempra/yocaina/a/b.d Z]
       [4] ireturn
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 0):

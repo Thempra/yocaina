@@ -1,6 +1,8 @@
 com.overxet.Utils -> a.a.a:
     byte[] HEX_CHAR_TABLE -> a
     java.lang.String getHexString(byte[],int) -> a
+    java.util.ArrayList getItemsFromFile(java.lang.String,java.lang.String,java.lang.String[]) -> a
+    java.lang.String getNodeValueByTagName(org.w3c.dom.Node,java.lang.String) -> a
 net.thempra.yocaina.MainActivity -> net.thempra.yocaina.MainActivity:
     android.widget.TextView status_Data -> a
     android.widget.Button btn_clear -> b
@@ -28,8 +30,9 @@ net.thempra.yocaina.MainActivity -> net.thempra.yocaina.MainActivity:
     boolean LoadCards() -> f
     java.util.List access$0() -> a
     void access$1(net.thempra.yocaina.MainActivity,net.thempra.yocaina.cards.Card) -> a
-    void access$2(net.thempra.yocaina.MainActivity,android.nfc.Tag) -> a
-    void access$3() -> b
+    net.thempra.yocaina.cards.Card access$2(net.thempra.yocaina.MainActivity) -> a
+    void access$3(net.thempra.yocaina.MainActivity,android.nfc.Tag) -> a
+    void access$4() -> b
 net.thempra.yocaina.MainActivity$1 -> net.thempra.yocaina.a:
     net.thempra.yocaina.MainActivity this$0 -> a
     void onClick(android.view.View) -> onClick
@@ -37,7 +40,10 @@ net.thempra.yocaina.MainActivity$2 -> net.thempra.yocaina.b:
     net.thempra.yocaina.MainActivity this$0 -> a
     android.nfc.Tag val$tagFromIntent -> b
     void onClick(android.content.DialogInterface,int) -> onClick
-net.thempra.yocaina.MainActivity$3 -> net.thempra.yocaina.c:
+net.thempra.yocaina.MainActivity$2$1 -> net.thempra.yocaina.c:
+    net.thempra.yocaina.MainActivity$2 this$1 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+net.thempra.yocaina.MainActivity$3 -> net.thempra.yocaina.d:
     net.thempra.yocaina.MainActivity this$0 -> a
     void onClick(android.content.DialogInterface,int) -> onClick
 net.thempra.yocaina.RepositoryActivity -> net.thempra.yocaina.RepositoryActivity:
@@ -57,15 +63,15 @@ net.thempra.yocaina.RepositoryActivity -> net.thempra.yocaina.RepositoryActivity
     java.util.ArrayList access$1(net.thempra.yocaina.RepositoryActivity,java.lang.String,java.lang.String) -> a
     void access$2(net.thempra.yocaina.RepositoryActivity) -> a
     void access$3(net.thempra.yocaina.RepositoryActivity) -> b
-net.thempra.yocaina.RepositoryActivity$1 -> net.thempra.yocaina.d:
+net.thempra.yocaina.RepositoryActivity$1 -> net.thempra.yocaina.e:
     net.thempra.yocaina.RepositoryActivity this$0 -> a
     void onClick(android.view.View) -> onClick
     net.thempra.yocaina.RepositoryActivity access$0(net.thempra.yocaina.RepositoryActivity$1) -> a
-net.thempra.yocaina.RepositoryActivity$1$1 -> net.thempra.yocaina.e:
+net.thempra.yocaina.RepositoryActivity$1$1 -> net.thempra.yocaina.f:
     net.thempra.yocaina.RepositoryActivity$1 this$1 -> a
     java.lang.String doInBackground(android.app.Activity[]) -> a
     java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
-net.thempra.yocaina.RepositoryActivity$2 -> net.thempra.yocaina.f:
+net.thempra.yocaina.RepositoryActivity$2 -> net.thempra.yocaina.g:
     net.thempra.yocaina.RepositoryActivity this$0 -> a
     java.util.HashMap val$item -> b
     java.lang.String doInBackground(android.app.Activity[]) -> a
@@ -77,11 +83,13 @@ net.thempra.yocaina.cards.Card -> net.thempra.yocaina.a.a:
     java.util.ArrayList getData(android.nfc.Tag) -> a
     int blocksInSector() -> a
     int getLastError() -> b
-net.thempra.yocaina.cards.CardMifare -> net.thempra.yocaina.a.b:
+net.thempra.yocaina.cards.CardMifareClassic -> net.thempra.yocaina.a.b:
+    boolean keysloaded -> d
     java.util.ArrayList getData(android.nfc.Tag) -> a
-    void LoadKeys(java.lang.String) -> a
+    int LoadKeys(java.lang.String) -> a
     int blocksInSector() -> a
     int getLastError() -> b
+    boolean iskeysLoaded() -> c
 net.thempra.yocaina.cards.CardNfcV -> net.thempra.yocaina.a.c:
     java.util.ArrayList getData(android.nfc.Tag) -> a
     int blocksInSector() -> a

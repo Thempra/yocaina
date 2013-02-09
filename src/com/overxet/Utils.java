@@ -11,6 +11,9 @@ import java.util.List;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 
+import net.thempra.yocaina.R;
+import net.thempra.yocaina.cards.Card;
+
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -18,6 +21,8 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
 import org.xmlpull.v1.XmlSerializer;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Message;
 import android.util.Xml;
 
@@ -183,7 +188,6 @@ public class Utils {
 	    return nodeValue;
 	}
 
-	
 	
 	
 }

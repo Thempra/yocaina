@@ -90,8 +90,9 @@ public class CardNfcV extends Card {
 	}
 
 	@Override
-	protected void LoadKeys(String file) {
+	protected int LoadKeys(String file) {
 		// TODO Auto-generated method stub
+		return -1;
 		
 	}
 

@@ -33,7 +33,7 @@ public abstract class Card {
 	}
 	
 	public abstract Boolean dumpToFile();
-	protected abstract void LoadKeys(String file);
+	protected abstract int LoadKeys(String file);
 	public abstract int blocksInSector();
 	public abstract int getLastError();
 	

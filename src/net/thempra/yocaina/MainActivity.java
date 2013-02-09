@@ -1,7 +1,6 @@
 package net.thempra.yocaina;
 
 import java.io.File;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,18 +24,11 @@ import android.nfc.tech.MifareClassic;
 import android.os.Bundle;
 import android.os.Environment;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.view.View.OnClickListener;
-import android.view.ViewGroup;
-import android.view.ViewGroup.LayoutParams;
-import android.widget.AdapterView;
 import android.widget.Button;
-import android.widget.ListView;
-import android.widget.TableLayout;
-import android.widget.TableRow;
 import android.widget.TextView;
 
 public class MainActivity extends Activity implements OnClickListener {
@@ -50,7 +42,6 @@ public class MainActivity extends Activity implements OnClickListener {
 	private static Button btnCards;
 	
 	private static  List<String> cmbCards;
-	private static TableLayout tl;
 
 	// NFC parts
 	private static NfcAdapter mAdapter;
@@ -71,7 +62,7 @@ public class MainActivity extends Activity implements OnClickListener {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.main);
+		setContentView(R.layout.mainactivity);
 
 		
 		status_Data = (TextView) findViewById(R.id.status_data);
@@ -160,162 +151,10 @@ public class MainActivity extends Activity implements OnClickListener {
 		return null;
 	}
 
-	void resolveIntent(Intent intent) {
-
-		// Parse the intent
-		String action = intent.getAction();
-		if (NfcAdapter.ACTION_TECH_DISCOVERED.equals(action)) {
-			// status_Data.setText("Discovered tag with intent: " + intent);
-			final Tag tagFromIntent = intent.getParcelableExtra(NfcAdapter.EXTRA_TAG);
-			
-			status_Data.setText(R.string.reading);
-			
-			clearFields();
-			
-			//Detecting card
-			if (tagFromIntent.getTechList()[0].equals("android.nfc.tech.MifareClassic"))
-			{
-				  AlertDialog d;
-				  int default_value=0;
-				 
-				     //c.show();
-				     AlertDialog.Builder builder=new AlertDialog.Builder(this).setSingleChoiceItems(getCards(), default_value,new  DialogInterface.OnClickListener() {
-				    	 @Override
-				         public void onClick(DialogInterface dialog, int position) 
-				         {
-				    		 dialog.dismiss(); 
-				        	 currentCard = new CardMifareClassic(cmbCards.get(position).toString());
-				        	 showCardData(tagFromIntent);
-				        	
-				         }
-				     }).setTitle(R.string.selectCard);
-				     
-				     d=builder.create();
-				     d.show();
-				 
-				
-				
-				//currentCard = new CardMifare(cmbCards.getSelectedItem().toString());
-			}
-			else if (tagFromIntent.getTechList()[0].equals("android.nfc.tech.NfcV"))
-				currentCard = new CardNfcV("");
-			
-			
-		} else {
-			status_Data.setText(getString(R.string.online)+" + " + getString(R.string.readyScan));
-		}
-	}
-
-	
-	
-	private void showCardData(Tag tagFromIntent) {
-		ArrayList<String> dump;
-		//Reading card
-		
-		dump = currentCard.getData(tagFromIntent);
-		if ( dump.size() ==0)
-		{
-			status_Data.setText(R.string.errorReading);
-			showAlert(currentCard.getLastError());
-		}
-		else
-		{
-			status_Data.setText(R.string.tagRead);
-			//Publish data to Activity
-			for (int i = 0; i < dump.size() ; i++)
-			{
-
-				if (i%currentCard.blocksInSector()==0)
-				{
-				tl = (TableLayout) findViewById(R.id.tblGeneral);
-
-				//TableRow trTitle = new TableRow(this);
-			    TableRow trTitle = (TableRow)LayoutInflater.from(this).inflate(R.layout.table_section_header, null);
-				trTitle.setLayoutParams(new LayoutParams(
-						LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT));
-
-				
-				
-				TextView tvSect = new TextView(this);
-				tvSect.setText("\n" + getString(R.string.section) +" " + i/currentCard.blocksInSector());
-				//tvSect.setTextColor(Color.YELLOW);
-
-				trTitle.addView(tvSect);
-				tl.addView(trTitle,
-						new TableLayout.LayoutParams(
-								LayoutParams.FILL_PARENT,
-								LayoutParams.WRAP_CONTENT));
-				}
-				
-				TableRow tr1 = (TableRow)LayoutInflater.from(this).inflate(R.layout.table_section_data, null);
-				//TableRow tr1 = new TableRow(this);
-				tr1.setLayoutParams(new LayoutParams(
-						LayoutParams.FILL_PARENT,
-						LayoutParams.WRAP_CONTENT));
-				
-				
-
-				TextView tvBlk = new TextView(this);
-				tvBlk.setText(getString(R.string.block) +" " + i +":   ");
-
-				TextView textview = new TextView(this);
-				textview.setText(dump.get(i));
-
-				tr1.addView(tvBlk);
-				tr1.addView(textview);
-				tl.addView(tr1, new TableLayout.LayoutParams(
-						LayoutParams.FILL_PARENT,
-						LayoutParams.WRAP_CONTENT));
-				
-			}
-		}
-	}
-
-	private void showAlert(int alertCase) {
-		// prepare the alert box
-		AlertDialog.Builder alertbox = new AlertDialog.Builder(this);
-		switch (alertCase) {
-
-		case Card.AUTH:// Card Authentication Error
-			alertbox.setMessage(R.string.authFailed);
-			break;
-		case Card.EMPTY_BLOCK: // Block 0 Empty
-			alertbox.setMessage(R.string.blockFailed);
-			break;
-		case Card.NETWORK: // Communication Error
-			alertbox.setMessage(R.string.errorReading);
-			break;
-		}
-		// set a positive/yes button and create a listener
-		alertbox.setPositiveButton("OK", new DialogInterface.OnClickListener() {
-
-			// Save the data from the UI to the database - already done
-			public void onClick(DialogInterface arg0, int arg1) {
-				clearFields();
-			}
-		});
-		// display box
-		alertbox.show();
-
-	}
-
 	
 	@Override
 	public void onClick(View v) {
-		clearFields();
-	}
-
-	private static void clearFields() {
-		// View purchScanES1 = (View) findViewById(R.id.purchScanES1);
-		if (tl != null) {
-			int count = tl.getChildCount();
-			for (int i = 0; i < count; i++) {
-				View child = tl.getChildAt(i);
-				if (child instanceof TableRow)
-					((ViewGroup) child).removeAllViews();
-			}
-		}
-		status_Data.setText(R.string.readyScan);
+		//clearFields();
 	}
 
 	@Override
@@ -341,10 +180,92 @@ public class MainActivity extends Activity implements OnClickListener {
 			mAdapter.disableForegroundDispatch(this);
 	}
 
-/*	private byte[] GetKey(int n, int sector) {
-		return customKeys.get(sector);
+	
+	void resolveIntent(Intent intent) {
+
+		// Parse the intent
+		String action = intent.getAction();
+		if (NfcAdapter.ACTION_TECH_DISCOVERED.equals(action)) {
+			// status_Data.setText("Discovered tag with intent: " + intent);
+			final Tag tagFromIntent = intent.getParcelableExtra(NfcAdapter.EXTRA_TAG);
+			
+			status_Data.setText(R.string.reading);
+			
+			//clearFields();
+			
+			//Detecting card
+			if (tagFromIntent.getTechList()[0].equals("android.nfc.tech.MifareClassic"))
+			{
+				  AlertDialog d;
+				  int default_value=0;
+				 
+				     //c.show();
+				     AlertDialog.Builder builder=new AlertDialog.Builder(this).setSingleChoiceItems(getCards(), default_value,new  DialogInterface.OnClickListener() {
+				    	 @Override
+				         public void onClick(DialogInterface dialog, int position) 
+				         {
+				    		 dialog.dismiss(); 
+				        	 currentCard = new CardMifareClassic(cmbCards.get(position).toString());
+				        	 
+				        	 if (!((CardMifareClassic) currentCard).iskeysLoaded())
+				        	 {
+				        		 
+				        		 AlertDialog alert = new AlertDialog.Builder(MainActivity.this).create();
+				                 alert.setTitle("Files out of date");
+				                 alert.setMessage("Your files are out of date.\n Please update new format files from the repository");
+				                 alert.setButton("OK", new DialogInterface.OnClickListener() {
+
+				                     public void onClick(DialogInterface dialog, int which) {
+				                         // TODO Auto-generated method stub
+
+				                     }
+				                 });
+				                 alert.show();
+				                 
+				        	 }else
+				        	 {
+				        		// showCardData(tagFromIntent);
+				        		 ArrayList<String> dump;
+				        			//Reading card
+				        			
+				        		dump = currentCard.getData(tagFromIntent);
+				        		
+				        		if ( dump.size() ==0)
+				        		{
+				        			showAlert(currentCard.getLastError());
+				        		}else
+				        		{
+					        		Intent showScan = new Intent(MainActivity.this, DataActivity.class);
+					        		//Send data to other Activity
+					        		showScan.putExtra("DUMP",dump);
+					        		showScan.putExtra("blocksBySector", currentCard.blocksInSector());
+					        		//showScan.putExtra("CARD",currentCard);
+					        		
+					 	            startActivity(showScan);
+				        		}
+				        	 }
+				        	
+				         }
+				     }).setTitle(R.string.selectCard);
+				     
+				     d=builder.create();
+				     d.show();
+				 
+				
+				
+				//currentCard = new CardMifare(cmbCards.getSelectedItem().toString());
+			}
+			else if (tagFromIntent.getTechList()[0].equals("android.nfc.tech.NfcV"))
+				currentCard = new CardNfcV("");
+			
+			
+		} else {
+			status_Data.setText(getString(R.string.online)+" + " + getString(R.string.readyScan));
+		}
 	}
-*/
+
+	
+
 	
 	private CharSequence[] getCards() {
 		// /sdcard/yocaina
@@ -402,4 +323,33 @@ public class MainActivity extends Activity implements OnClickListener {
 	}
 
 
+	
+	private void showAlert(int alertCase) {
+		// prepare the alert box
+		AlertDialog.Builder alertbox = new AlertDialog.Builder(this);
+		switch (alertCase) {
+
+		case Card.AUTH:// Card Authentication Error
+			alertbox.setMessage(R.string.authFailed);
+			break;
+		case Card.EMPTY_BLOCK: // Block 0 Empty
+			alertbox.setMessage(R.string.blockFailed);
+			break;
+		case Card.NETWORK: // Communication Error
+			alertbox.setMessage(R.string.errorReading);
+			break;
+		}
+		// set a positive/yes button and create a listener
+		alertbox.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+
+			// Save the data from the UI to the database - already done
+			public void onClick(DialogInterface arg0, int arg1) {
+				//clearFields();
+			}
+		});
+		// display box
+		alertbox.show();
+
+	}	
+	
 }

@@ -83,17 +83,7 @@
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content" 
 				android:text="@string/scanTag" />
-			
-  
 		</LinearLayout>
-
-		<View
-		    android:id="@+id/viewScan"
-		    style="@style/table_header"
-		    android:layout_width="match_parent"
-		    android:layout_height="55px"
-		    android:background="#000000" />
-
 		
 	</TableLayout>
 	 

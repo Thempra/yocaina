@@ -19,11 +19,12 @@ import android.util.Log;
 
 public class CardMifareClassic extends Card {
 
+	boolean keysloaded=false;
 	
 	public CardMifareClassic (String filecfg)
 	{
-		this.LoadKeys(filecfg);
-		
+		if (this.LoadKeys(filecfg)==1)
+			keysloaded= true;
 	}
 	
 	@Override
@@ -117,7 +118,7 @@ public class CardMifareClassic extends Card {
 
 
 	
-	protected void LoadKeys(String file) {
+	protected int LoadKeys(String file) {
 		customKeys.clear();
 
 		try {
@@ -136,6 +137,7 @@ public class CardMifareClassic extends Card {
 			ArrayList<String> arrayKeys= Utils.getItemsFromFile(Environment.getExternalStorageDirectory()
 					+ "/yocaina/" + file,"card",items);
 			
+			if (arrayKeys.size()== 0) return -1;
 			//while ((readString = buf.readLine()) != null) {
 			for ( String readString: arrayKeys){
 				
@@ -174,7 +176,8 @@ public class CardMifareClassic extends Card {
 			e.printStackTrace();
 
 		}
-
+		return 1;
+		
 	}
 
 	@Override
@@ -188,5 +191,11 @@ public class CardMifareClassic extends Card {
 		// TODO Auto-generated method stub
 		return lasterror;
 	}
+	
+	public boolean iskeysLoaded() {
+		// TODO Auto-generated method stub
+		return keysloaded;
+	}
+	
 	
 }
