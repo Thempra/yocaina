@@ -12,7 +12,8 @@
     <string name="dumpToFile">Volcar a fichero</string>
     <string name="clone">Clonar</string>
 	<string name="repository">Repositorio</string>
- 
+    <string name="other">Otros</string>
+	
     <string name="neardevice">Acerca la tarjeta a tu dispositivo.</string>
     <string name="developing">En desarrollo ..</string>
     <string name="notImplemented">No implementado todavia.</string>
@@ -36,4 +37,12 @@
     
     <string name="download">Descargar</string>
     <string name="cardsAvailable">Tarjetas disponibles:</string>
+    
+    <string name="dumped">Tarjeta volcada en </string>
+    <string name="dumped_error">No ha sido posible volcar la tarjeta</string>
+    
+    <string name="and_try_again">Vuelve a intentalo de nuevo.</string>
+
+    <string name="ok">Ok</string>
+         
 </resources>

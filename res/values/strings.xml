@@ -39,5 +39,11 @@
     <string name="download">Download</string>
     <string name="cardsAvailable">Cards Available:</string>
     
- 
+    <string name="dumped">Card dumped at </string>
+    <string name="dumped_error">Can\'t make a dump from card</string>
+    
+     <string name="and_try_again">Try again later.</string>
+  
+     <string name="ok">Ok</string>
+  
 </resources>

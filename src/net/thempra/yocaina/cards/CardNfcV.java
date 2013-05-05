@@ -84,7 +84,7 @@ public class CardNfcV extends Card {
 	}
 
 	@Override
-	public Boolean dumpToFile() {
+	public String dumpToFile(String path) {
 		// TODO Auto-generated method stub
 		return null;
 	}

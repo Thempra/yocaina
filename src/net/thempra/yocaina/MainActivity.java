@@ -12,7 +12,6 @@ import net.thempra.yocaina.cards.CardNfcV;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
-import android.app.Notification.Builder;
 import android.app.PendingIntent;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -108,7 +107,6 @@ public class MainActivity extends Activity implements OnClickListener {
 			
 			// Register the onClick listener with the implementation above
 			//btn_scan.setOnClickListener(this);
-			btnDumpToFile.setOnClickListener(dumpToFile());
 			
 
 			mAdapter = NfcAdapter.getDefaultAdapter(this);
@@ -172,11 +170,30 @@ public class MainActivity extends Activity implements OnClickListener {
 		
 		btnDumpToFile.setOnClickListener(new OnClickListener() {
 			public void onClick(View view) {
-				AlertDialog.Builder dialog = new AlertDialog.Builder(MainActivity.this);
-				dialog.setTitle(getString(R.string.developing));
-				dialog.setMessage(getString(R.string.notImplemented));
-				dialog.setPositiveButton("OK", null);
-				dialog.show();
+
+				if (currentCard != null)
+				{
+					String path=currentCard.dumpToFile("dumped");
+					
+					AlertDialog.Builder dialog = new AlertDialog.Builder(MainActivity.this);
+					dialog.setTitle(getString(R.string.dump));
+					dialog.setPositiveButton(getString(R.string.ok), null);
+					
+					if (!path.isEmpty() )
+						dialog.setMessage(getString(R.string.dumped)+path);
+					else
+						dialog.setMessage(getString(R.string.dumped_error));
+
+					dialog.show();
+				}
+				else
+				{
+					AlertDialog.Builder dialog = new AlertDialog.Builder(MainActivity.this);
+					dialog.setTitle(getString(R.string.dump));
+					dialog.setMessage(getString(R.string.neardevice)+"\n"+getString(R.string.and_try_again));
+					dialog.setPositiveButton(getString(R.string.ok), null);
+					dialog.show();
+				}
 				
 			}
 		});
@@ -206,14 +223,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		
 	}
 
-	private OnClickListener dumpToFile() {
-		// TODO Auto-generated method stub
-
-		//crdMifare.dumpToFile();
-
-		return null;
-	}
-
+	
 	
 	@Override
 	public void onClick(View v) {
@@ -234,7 +244,8 @@ public class MainActivity extends Activity implements OnClickListener {
 		resolveIntent(intent);
 		// mText.setText("Discovered tag " + ++mCount + " with intent: " +
 		// intent);
-		dialogToScan.dismiss();
+		if ((dialogToScan!=null) && (dialogToScan.isShowing()))
+			dialogToScan.dismiss();
 		
 	}
 
@@ -349,10 +360,23 @@ public class MainActivity extends Activity implements OnClickListener {
 
 		
 		File[] files = f.listFiles();
-		CharSequence[] cards = new CharSequence[files.length];;
 		
-		for (int i = 0; i< files.length; i++)
-			cards[i]=files[i].getName();	
+		//FIXME: Patch before to make key dir, and migrate all filess
+		int totalKeys=0;
+		for (int i = 0; i< files.length; i++)	
+		{
+			if (files[i].isFile())
+				totalKeys++;
+		}
+		
+		CharSequence[] cards = new CharSequence[totalKeys];
+		
+		for (int i = 0; i< files.length; i++)	
+		{
+			if (files[i].isFile())
+				cards[i]=files[i].getName();	
+		
+		}
 		return cards;
 			
 			
@@ -378,7 +402,8 @@ public class MainActivity extends Activity implements OnClickListener {
 
 			// Fill items
 			for (File inFile : files) {
-				cmbCards.add(inFile.getName());
+				if (inFile.isFile())
+					cmbCards.add(inFile.getName());
 
 			}
 

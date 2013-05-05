@@ -16,7 +16,7 @@ public abstract class Card {
 	protected ArrayList<byte[]> customKeys = new ArrayList<byte[]>();
 	protected int lasterror =0;
 	protected ArrayList<String> dump= new ArrayList<String>();
-	
+	protected byte[] bDump;
 	
 	
 	public abstract Boolean setType();
@@ -32,7 +32,7 @@ public abstract class Card {
 		return dump;
 	}
 	
-	public abstract Boolean dumpToFile();
+	public abstract String dumpToFile(String path);
 	protected abstract int LoadKeys(String file);
 	public abstract int blocksInSector();
 	public abstract int getLastError();

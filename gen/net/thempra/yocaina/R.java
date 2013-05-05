@@ -57,6 +57,7 @@ public final class R {
         public static final int table_section_header=0x7f030005;
     }
     public static final class string {
+        public static final int and_try_again=0x7f05001d;
         public static final int app_name=0x7f050001;
         public static final int authFailed=0x7f050013;
         public static final int block=0x7f050018;
@@ -69,10 +70,13 @@ public final class R {
         public static final int download=0x7f050019;
         public static final int dump=0x7f050006;
         public static final int dumpToFile=0x7f050007;
+        public static final int dumped=0x7f05001b;
+        public static final int dumped_error=0x7f05001c;
         public static final int errorReading=0x7f050012;
         public static final int neardevice=0x7f05000b;
         public static final int noCards=0x7f050016;
         public static final int notImplemented=0x7f05000d;
+        public static final int ok=0x7f05001e;
         public static final int online=0x7f05000e;
         public static final int other=0x7f05000a;
         public static final int reading=0x7f05000f;

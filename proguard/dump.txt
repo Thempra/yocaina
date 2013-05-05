@@ -484,12 +484,12 @@ Interfaces (count = 0):
 
 Constant Pool (count = 174):
   + Integer [2130903041]
+  + Integer [2130903044]
   + Integer [2130903045]
-  + Integer [2130903046]
-  + Integer [2131034124]
-  + Integer [2131034125]
+  + Integer [2131034129]
   + Integer [2131034130]
-  + Integer [2131034131]
+  + Integer [2131034135]
+  + Integer [2131034136]
   + Integer [2131165185]
   + Integer [2131165188]
   + String [
@@ -764,14 +764,14 @@ Methods (count = 3):
       [7] getstatic #32
         + Fieldref [net/thempra/yocaina/DataActivity.b Landroid/widget/TextView;]
       [10] ldc #5
-        + Integer [2131034125]
+        + Integer [2131034130]
       [12] invokevirtual #46
         + Methodref [android/widget/TextView.setText (I)V]
       [15] goto +286 (target=301)
       [18] getstatic #32
         + Fieldref [net/thempra/yocaina/DataActivity.b Landroid/widget/TextView;]
       [21] ldc #4
-        + Integer [2131034124]
+        + Integer [2131034129]
       [23] invokevirtual #46
         + Methodref [android/widget/TextView.setText (I)V]
       [26] iconst_0
@@ -796,7 +796,7 @@ Methods (count = 3):
       [53] invokestatic #37
         + Methodref [android/view/LayoutInflater.from (Landroid/content/Context;)Landroid/view/LayoutInflater;]
       [56] ldc #3
-        + Integer [2130903046]
+        + Integer [2130903045]
       [58] aconst_null
       [59] invokevirtual #38
         + Methodref [android/view/LayoutInflater.inflate (ILandroid/view/ViewGroup;)Landroid/view/View;]
@@ -831,7 +831,7 @@ Methods (count = 3):
         + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
       [103] aload_0 v0
       [104] ldc #6
-        + Integer [2131034130]
+        + Integer [2131034135]
       [106] invokevirtual #60
         + Methodref [net/thempra/yocaina/DataActivity.getString (I)Ljava/lang/String;]
       [109] invokevirtual #53
@@ -871,7 +871,7 @@ Methods (count = 3):
       [158] invokestatic #37
         + Methodref [android/view/LayoutInflater.from (Landroid/content/Context;)Landroid/view/LayoutInflater;]
       [161] ldc #2
-        + Integer [2130903045]
+        + Integer [2130903044]
       [163] aconst_null
       [164] invokevirtual #38
         + Methodref [android/view/LayoutInflater.inflate (ILandroid/view/ViewGroup;)Landroid/view/View;]
@@ -901,7 +901,7 @@ Methods (count = 3):
       [202] dup
       [203] aload_0 v0
       [204] ldc #7
-        + Integer [2131034131]
+        + Integer [2131034136]
       [206] invokevirtual #60
         + Methodref [net/thempra/yocaina/DataActivity.getString (I)Ljava/lang/String;]
       [209] invokestatic #50
@@ -988,23 +988,25 @@ _____________________________________________________________________
 Interfaces (count = 1):
   + Class [android/view/View$OnClickListener]
 
-Constant Pool (count = 389):
+Constant Pool (count = 421):
   + Integer [536870912]
-  + Integer [2130903043]
+  + Integer [2130903042]
   + Integer [2131034113]
-  + Integer [2131034121]
-  + Integer [2131034122]
-  + Integer [2131034123]
-  + Integer [2131034125]
   + Integer [2131034126]
   + Integer [2131034127]
   + Integer [2131034128]
-  + Integer [2131034129]
+  + Integer [2131034130]
+  + Integer [2131034131]
+  + Integer [2131034132]
+  + Integer [2131034133]
+  + Integer [2131034134]
   + Integer [2131165188]
-  + Integer [2131165191]
   + Integer [2131165192]
   + Integer [2131165193]
   + Integer [2131165194]
+  + Integer [2131165195]
+  + Integer [2131165196]
+  + Integer [2131165197]
   + String []
   + String [
 
@@ -1034,6 +1036,7 @@ Constant Pool (count = 389):
   + Class [android/app/Activity]
   + Class [android/app/AlertDialog]
   + Class [android/app/AlertDialog$Builder]
+  + Class [android/app/Dialog]
   + Class [android/app/PendingIntent]
   + Class [android/content/Intent]
   + Class [android/content/IntentFilter]
@@ -1062,18 +1065,26 @@ Constant Pool (count = 389):
   + Class [net/thempra/yocaina/a]
   + Class [net/thempra/yocaina/a/c]
   + Class [net/thempra/yocaina/b]
+  + Class [net/thempra/yocaina/c]
   + Class [net/thempra/yocaina/d]
-  + Fieldref [net/thempra/yocaina/MainActivity.a Landroid/widget/TextView;]
-  + Fieldref [net/thempra/yocaina/MainActivity.b Landroid/widget/Button;]
+  + Class [net/thempra/yocaina/e]
+  + Class [net/thempra/yocaina/f]
+  + Class [net/thempra/yocaina/g]
+  + Class [net/thempra/yocaina/i]
+  + Fieldref [net/thempra/yocaina/MainActivity.a Landroid/app/Dialog;]
+  + Fieldref [net/thempra/yocaina/MainActivity.b Landroid/widget/TextView;]
   + Fieldref [net/thempra/yocaina/MainActivity.c Landroid/widget/Button;]
   + Fieldref [net/thempra/yocaina/MainActivity.d Landroid/widget/Button;]
   + Fieldref [net/thempra/yocaina/MainActivity.e Landroid/widget/Button;]
-  + Fieldref [net/thempra/yocaina/MainActivity.f Ljava/util/List;]
-  + Fieldref [net/thempra/yocaina/MainActivity.g Landroid/nfc/NfcAdapter;]
-  + Fieldref [net/thempra/yocaina/MainActivity.h Landroid/app/PendingIntent;]
-  + Fieldref [net/thempra/yocaina/MainActivity.i [Landroid/content/IntentFilter;]
-  + Fieldref [net/thempra/yocaina/MainActivity.j [[Ljava/lang/String;]
-  + Fieldref [net/thempra/yocaina/MainActivity.k Lnet/thempra/yocaina/a/a;]
+  + Fieldref [net/thempra/yocaina/MainActivity.f Landroid/widget/Button;]
+  + Fieldref [net/thempra/yocaina/MainActivity.g Landroid/widget/Button;]
+  + Fieldref [net/thempra/yocaina/MainActivity.h Landroid/widget/Button;]
+  + Fieldref [net/thempra/yocaina/MainActivity.i Ljava/util/List;]
+  + Fieldref [net/thempra/yocaina/MainActivity.j Landroid/nfc/NfcAdapter;]
+  + Fieldref [net/thempra/yocaina/MainActivity.k Landroid/app/PendingIntent;]
+  + Fieldref [net/thempra/yocaina/MainActivity.l [Landroid/content/IntentFilter;]
+  + Fieldref [net/thempra/yocaina/MainActivity.m [[Ljava/lang/String;]
+  + Fieldref [net/thempra/yocaina/MainActivity.n Lnet/thempra/yocaina/a/a;]
   + Methodref [android/app/Activity.<init> ()V]
   + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
   + Methodref [android/app/Activity.onPause ()V]
@@ -1086,6 +1097,8 @@ Constant Pool (count = 389):
   + Methodref [android/app/AlertDialog$Builder.setSingleChoiceItems ([Ljava/lang/CharSequence;ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
   + Methodref [android/app/AlertDialog$Builder.setTitle (I)Landroid/app/AlertDialog$Builder;]
   + Methodref [android/app/AlertDialog$Builder.show ()Landroid/app/AlertDialog;]
+  + Methodref [android/app/Dialog.dismiss ()V]
+  + Methodref [android/app/Dialog.isShowing ()Z]
   + Methodref [android/app/PendingIntent.getActivity (Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;]
   + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
   + Methodref [android/content/Intent.addFlags (I)Landroid/content/Intent;]
@@ -1101,13 +1114,13 @@ Constant Pool (count = 389):
   + Methodref [android/os/Environment.getExternalStorageDirectory ()Ljava/io/File;]
   + Methodref [android/util/Log.i (Ljava/lang/String;Ljava/lang/String;)I]
   + Methodref [android/view/Window.setFlags (II)V]
-  + Methodref [android/widget/Button.setEnabled (Z)V]
   + Methodref [android/widget/Button.setOnClickListener (Landroid/view/View$OnClickListener;)V]
   + Methodref [android/widget/TextView.setText (I)V]
   + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
   + Methodref [java/io/File.<init> (Ljava/lang/String;)V]
   + Methodref [java/io/File.getName ()Ljava/lang/String;]
   + Methodref [java/io/File.isDirectory ()Z]
+  + Methodref [java/io/File.isFile ()Z]
   + Methodref [java/io/File.listFiles ()[Ljava/io/File;]
   + Methodref [java/io/File.mkdirs ()Z]
   + Methodref [java/io/File.toString ()Ljava/lang/String;]
@@ -1126,7 +1139,6 @@ Constant Pool (count = 389):
   + Methodref [java/util/ArrayList.<init> ()V]
   + Methodref [net/thempra/yocaina/MainActivity.a (I)V]
   + Methodref [net/thempra/yocaina/MainActivity.a (Landroid/content/Intent;)V]
-  + Methodref [net/thempra/yocaina/MainActivity.b ()Landroid/view/View$OnClickListener;]
   + Methodref [net/thempra/yocaina/MainActivity.c ()[Ljava/lang/CharSequence;]
   + Methodref [net/thempra/yocaina/MainActivity.d ()Z]
   + Methodref [net/thempra/yocaina/MainActivity.findViewById (I)Landroid/view/View;]
@@ -1139,8 +1151,13 @@ Constant Pool (count = 389):
   + Methodref [net/thempra/yocaina/MainActivity.setRequestedOrientation (I)V]
   + Methodref [net/thempra/yocaina/a.<init> (Lnet/thempra/yocaina/MainActivity;)V]
   + Methodref [net/thempra/yocaina/a/c.<init> (Ljava/lang/String;)V]
-  + Methodref [net/thempra/yocaina/b.<init> (Lnet/thempra/yocaina/MainActivity;Landroid/nfc/Tag;)V]
+  + Methodref [net/thempra/yocaina/b.<init> (Lnet/thempra/yocaina/MainActivity;)V]
+  + Methodref [net/thempra/yocaina/c.<init> (Lnet/thempra/yocaina/MainActivity;)V]
   + Methodref [net/thempra/yocaina/d.<init> (Lnet/thempra/yocaina/MainActivity;)V]
+  + Methodref [net/thempra/yocaina/e.<init> (Lnet/thempra/yocaina/MainActivity;)V]
+  + Methodref [net/thempra/yocaina/f.<init> (Lnet/thempra/yocaina/MainActivity;)V]
+  + Methodref [net/thempra/yocaina/g.<init> (Lnet/thempra/yocaina/MainActivity;Landroid/nfc/Tag;)V]
+  + Methodref [net/thempra/yocaina/i.<init> (Lnet/thempra/yocaina/MainActivity;)V]
   + InterfaceMethodref [java/util/List.add (Ljava/lang/Object;)Z]
   + InterfaceMethodref [java/util/List.isEmpty ()Z]
   + NameAndType [<init> ()V]
@@ -1152,26 +1169,26 @@ Constant Pool (count = 389):
   + NameAndType [<init> (Lnet/thempra/yocaina/MainActivity;Landroid/nfc/Tag;)V]
   + NameAndType [a (I)V]
   + NameAndType [a (Landroid/content/Intent;)V]
-  + NameAndType [a Landroid/widget/TextView;]
+  + NameAndType [a Landroid/app/Dialog;]
   + NameAndType [add (Ljava/lang/Object;)Z]
   + NameAndType [addDataType (Ljava/lang/String;)V]
   + NameAndType [addFlags (I)Landroid/content/Intent;]
   + NameAndType [append (Ljava/lang/Object;)Ljava/lang/StringBuilder;]
   + NameAndType [append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-  + NameAndType [b ()Landroid/view/View$OnClickListener;]
-  + NameAndType [b Landroid/widget/Button;]
+  + NameAndType [b Landroid/widget/TextView;]
   + NameAndType [c ()[Ljava/lang/CharSequence;]
   + NameAndType [c Landroid/widget/Button;]
   + NameAndType [create ()Landroid/app/AlertDialog;]
   + NameAndType [d ()Z]
   + NameAndType [d Landroid/widget/Button;]
   + NameAndType [disableForegroundDispatch (Landroid/app/Activity;)V]
+  + NameAndType [dismiss ()V]
   + NameAndType [e Landroid/widget/Button;]
   + NameAndType [enableForegroundDispatch (Landroid/app/Activity;Landroid/app/PendingIntent;[Landroid/content/IntentFilter;[[Ljava/lang/String;)V]
   + NameAndType [equals (Ljava/lang/Object;)Z]
-  + NameAndType [f Ljava/util/List;]
+  + NameAndType [f Landroid/widget/Button;]
   + NameAndType [findViewById (I)Landroid/view/View;]
-  + NameAndType [g Landroid/nfc/NfcAdapter;]
+  + NameAndType [g Landroid/widget/Button;]
   + NameAndType [getAction ()Ljava/lang/String;]
   + NameAndType [getActivity (Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;]
   + NameAndType [getClass ()Ljava/lang/Class;]
@@ -1184,21 +1201,25 @@ Constant Pool (count = 389):
   + NameAndType [getString (I)Ljava/lang/String;]
   + NameAndType [getTechList ()[Ljava/lang/String;]
   + NameAndType [getWindow ()Landroid/view/Window;]
-  + NameAndType [h Landroid/app/PendingIntent;]
+  + NameAndType [h Landroid/widget/Button;]
   + NameAndType [i (Ljava/lang/String;Ljava/lang/String;)I]
-  + NameAndType [i [Landroid/content/IntentFilter;]
+  + NameAndType [i Ljava/util/List;]
   + NameAndType [isDirectory ()Z]
   + NameAndType [isEmpty ()Z]
-  + NameAndType [j [[Ljava/lang/String;]
-  + NameAndType [k Lnet/thempra/yocaina/a/a;]
+  + NameAndType [isFile ()Z]
+  + NameAndType [isShowing ()Z]
+  + NameAndType [j Landroid/nfc/NfcAdapter;]
+  + NameAndType [k Landroid/app/PendingIntent;]
+  + NameAndType [l [Landroid/content/IntentFilter;]
   + NameAndType [listFiles ()[Ljava/io/File;]
+  + NameAndType [m [[Ljava/lang/String;]
   + NameAndType [mkdirs ()Z]
+  + NameAndType [n Lnet/thempra/yocaina/a/a;]
   + NameAndType [onCreate (Landroid/os/Bundle;)V]
   + NameAndType [onPause ()V]
   + NameAndType [onResume ()V]
   + NameAndType [requestWindowFeature (I)Z]
   + NameAndType [setContentView (I)V]
-  + NameAndType [setEnabled (Z)V]
   + NameAndType [setFlags (II)V]
   + NameAndType [setMessage (I)Landroid/app/AlertDialog$Builder;]
   + NameAndType [setOnClickListener (Landroid/view/View$OnClickListener;)V]
@@ -1222,8 +1243,8 @@ Constant Pool (count = 389):
   + Utf8 [()Landroid/app/AlertDialog;]
   + Utf8 [()Landroid/content/Intent;]
   + Utf8 [()Landroid/content/res/Resources;]
-  + Utf8 [()Landroid/view/View$OnClickListener;]
   + Utf8 [()Landroid/view/Window;]
+  + Utf8 [()Landroid/widget/TextView;]
   + Utf8 [()Ljava/io/File;]
   + Utf8 [()Ljava/lang/Class;]
   + Utf8 [()Ljava/lang/String;]
@@ -1265,7 +1286,6 @@ Constant Pool (count = 389):
   + Utf8 [(Lnet/thempra/yocaina/MainActivity;I)V]
   + Utf8 [(Lnet/thempra/yocaina/MainActivity;Landroid/nfc/Tag;)V]
   + Utf8 [(Lnet/thempra/yocaina/MainActivity;Lnet/thempra/yocaina/a/a;)V]
-  + Utf8 [(Z)V]
   + Utf8 [([Ljava/lang/CharSequence;ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
   + Utf8 [*/*]
   + Utf8 [......]
@@ -1280,6 +1300,7 @@ Constant Pool (count = 389):
   + Utf8 [Foreground dispatch]
   + Utf8 [Format file (keys):
 ]
+  + Utf8 [Landroid/app/Dialog;]
   + Utf8 [Landroid/app/PendingIntent;]
   + Utf8 [Landroid/nfc/NfcAdapter;]
   + Utf8 [Landroid/widget/Button;]
@@ -1305,6 +1326,7 @@ Constant Pool (count = 389):
   + Utf8 [android/app/Activity]
   + Utf8 [android/app/AlertDialog]
   + Utf8 [android/app/AlertDialog$Builder]
+  + Utf8 [android/app/Dialog]
   + Utf8 [android/app/PendingIntent]
   + Utf8 [android/content/Intent]
   + Utf8 [android/content/IntentFilter]
@@ -1326,6 +1348,7 @@ Constant Pool (count = 389):
   + Utf8 [create]
   + Utf8 [d]
   + Utf8 [disableForegroundDispatch]
+  + Utf8 [dismiss]
   + Utf8 [e]
   + Utf8 [enableForegroundDispatch]
   + Utf8 [equals]
@@ -1349,6 +1372,8 @@ Constant Pool (count = 389):
   + Utf8 [i]
   + Utf8 [isDirectory]
   + Utf8 [isEmpty]
+  + Utf8 [isFile]
+  + Utf8 [isShowing]
   + Utf8 [j]
   + Utf8 [java/io/File]
   + Utf8 [java/lang/CharSequence]
@@ -1360,13 +1385,21 @@ Constant Pool (count = 389):
   + Utf8 [java/util/ArrayList]
   + Utf8 [java/util/List]
   + Utf8 [k]
+  + Utf8 [l]
   + Utf8 [listFiles]
+  + Utf8 [m]
   + Utf8 [mkdirs]
+  + Utf8 [n]
   + Utf8 [net/thempra/yocaina/MainActivity]
   + Utf8 [net/thempra/yocaina/a]
   + Utf8 [net/thempra/yocaina/a/c]
   + Utf8 [net/thempra/yocaina/b]
+  + Utf8 [net/thempra/yocaina/c]
   + Utf8 [net/thempra/yocaina/d]
+  + Utf8 [net/thempra/yocaina/e]
+  + Utf8 [net/thempra/yocaina/f]
+  + Utf8 [net/thempra/yocaina/g]
+  + Utf8 [net/thempra/yocaina/i]
   + Utf8 [onClick]
   + Utf8 [onCreate]
   + Utf8 [onNewIntent]
@@ -1374,7 +1407,6 @@ Constant Pool (count = 389):
   + Utf8 [onResume]
   + Utf8 [requestWindowFeature]
   + Utf8 [setContentView]
-  + Utf8 [setEnabled]
   + Utf8 [setFlags]
   + Utf8 [setMessage]
   + Utf8 [setOnClickListener]
@@ -1388,13 +1420,10 @@ Constant Pool (count = 389):
   + Utf8 [toString]
   + Utf8 [valueOf]
 
-Fields (count = 11):
-  + Field:        a Landroid/widget/TextView;
+Fields (count = 14):
+  + Field:        b Landroid/widget/TextView;
     Access flags: 0xa
-      = private static android.widget.TextView a
-  + Field:        b Landroid/widget/Button;
-    Access flags: 0xa
-      = private static android.widget.Button b
+      = private static android.widget.TextView b
   + Field:        c Landroid/widget/Button;
     Access flags: 0xa
       = private static android.widget.Button c
@@ -1404,24 +1433,36 @@ Fields (count = 11):
   + Field:        e Landroid/widget/Button;
     Access flags: 0xa
       = private static android.widget.Button e
-  + Field:        f Ljava/util/List;
+  + Field:        f Landroid/widget/Button;
     Access flags: 0xa
-      = private static java.util.List f
-  + Field:        g Landroid/nfc/NfcAdapter;
+      = private static android.widget.Button f
+  + Field:        g Landroid/widget/Button;
     Access flags: 0xa
-      = private static android.nfc.NfcAdapter g
-  + Field:        h Landroid/app/PendingIntent;
+      = private static android.widget.Button g
+  + Field:        h Landroid/widget/Button;
     Access flags: 0xa
-      = private static android.app.PendingIntent h
-  + Field:        i [Landroid/content/IntentFilter;
+      = private static android.widget.Button h
+  + Field:        i Ljava/util/List;
     Access flags: 0xa
-      = private static android.content.IntentFilter[] i
-  + Field:        j [[Ljava/lang/String;
+      = private static java.util.List i
+  + Field:        j Landroid/nfc/NfcAdapter;
     Access flags: 0xa
-      = private static java.lang.String[][] j
-  + Field:        k Lnet/thempra/yocaina/a/a;
+      = private static android.nfc.NfcAdapter j
+  + Field:        k Landroid/app/PendingIntent;
+    Access flags: 0xa
+      = private static android.app.PendingIntent k
+  + Field:        l [Landroid/content/IntentFilter;
+    Access flags: 0xa
+      = private static android.content.IntentFilter[] l
+  + Field:        m [[Ljava/lang/String;
+    Access flags: 0xa
+      = private static java.lang.String[][] m
+  + Field:        n Lnet/thempra/yocaina/a/a;
     Access flags: 0x2
-      = private net.thempra.yocaina.a.a k
+      = private net.thempra.yocaina.a.a n
+  + Field:        a Landroid/app/Dialog;
+    Access flags: 0x0
+      = android.app.Dialog a
 
 Methods (count = 15):
   - Method:       <init>()V
@@ -1430,7 +1471,7 @@ Methods (count = 15):
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 5, locals = 1, stack = 1):
       [0] aload_0 v0
-      [1] invokespecial #81
+      [1] invokespecial #92
         + Methodref [android/app/Activity.<init> ()V]
       [4] return
       Code attribute exceptions (count = 0):
@@ -1439,291 +1480,336 @@ Methods (count = 15):
     Access flags: 0x1
       = public void onCreate(android.os.Bundle)
     Class member attributes (count = 1):
-    + Code attribute instructions (code length = 352, locals = 4, stack = 7):
+    + Code attribute instructions (code length = 428, locals = 5, stack = 7):
       [0] aload_0 v0
       [1] iconst_1
-      [2] invokevirtual #141
+      [2] invokevirtual #153
         + Methodref [net/thempra/yocaina/MainActivity.requestWindowFeature (I)Z]
       [5] pop
       [6] aload_0 v0
-      [7] invokevirtual #140
+      [7] invokevirtual #152
         + Methodref [net/thempra/yocaina/MainActivity.getWindow ()Landroid/view/Window;]
       [10] sipush 1024
       [13] sipush 1024
-      [16] invokevirtual #107
+      [16] invokevirtual #120
         + Methodref [android/view/Window.setFlags (II)V]
       [19] aload_0 v0
       [20] iconst_1
-      [21] invokevirtual #143
+      [21] invokevirtual #155
         + Methodref [net/thempra/yocaina/MainActivity.setRequestedOrientation (I)V]
       [24] aload_0 v0
       [25] aload_1 v1
-      [26] invokespecial #82
+      [26] invokespecial #93
         + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
       [29] aload_0 v0
       [30] ldc #2
-        + Integer [2130903043]
-      [32] invokevirtual #142
+        + Integer [2130903042]
+      [32] invokevirtual #154
         + Methodref [net/thempra/yocaina/MainActivity.setContentView (I)V]
-      [35] aload_0 v0
-      [36] ldc #12
+      [35] new #42
+        + Class [android/app/AlertDialog$Builder]
+      [38] dup
+      [39] aload_0 v0
+      [40] invokespecial #97
+        + Methodref [android/app/AlertDialog$Builder.<init> (Landroid/content/Context;)V]
+      [43] astore_2 v2
+      [44] aload_0 v0
+      [45] ldc #12
         + Integer [2131165188]
-      [38] invokevirtual #136
+      [47] invokevirtual #148
         + Methodref [net/thempra/yocaina/MainActivity.findViewById (I)Landroid/view/View;]
-      [41] checkcast #55
+      [50] checkcast #58
         + Class [android/widget/TextView]
-      [44] putstatic #70
-        + Fieldref [net/thempra/yocaina/MainActivity.a Landroid/widget/TextView;]
-      [47] aload_0 v0
-      [48] ldc #13
-        + Integer [2131165191]
-      [50] invokevirtual #136
-        + Methodref [net/thempra/yocaina/MainActivity.findViewById (I)Landroid/view/View;]
-      [53] checkcast #54
-        + Class [android/widget/Button]
-      [56] putstatic #71
-        + Fieldref [net/thempra/yocaina/MainActivity.b Landroid/widget/Button;]
-      [59] aload_0 v0
-      [60] ldc #14
+      [53] putstatic #79
+        + Fieldref [net/thempra/yocaina/MainActivity.b Landroid/widget/TextView;]
+      [56] aload_0 v0
+      [57] ldc #13
         + Integer [2131165192]
-      [62] invokevirtual #136
+      [59] invokevirtual #148
         + Methodref [net/thempra/yocaina/MainActivity.findViewById (I)Landroid/view/View;]
-      [65] checkcast #54
+      [62] checkcast #57
         + Class [android/widget/Button]
-      [68] putstatic #72
+      [65] putstatic #80
         + Fieldref [net/thempra/yocaina/MainActivity.c Landroid/widget/Button;]
-      [71] aload_0 v0
-      [72] ldc #15
+      [68] aload_0 v0
+      [69] ldc #14
         + Integer [2131165193]
-      [74] invokevirtual #136
+      [71] invokevirtual #148
         + Methodref [net/thempra/yocaina/MainActivity.findViewById (I)Landroid/view/View;]
-      [77] checkcast #54
+      [74] checkcast #57
         + Class [android/widget/Button]
-      [80] putstatic #73
+      [77] putstatic #81
         + Fieldref [net/thempra/yocaina/MainActivity.d Landroid/widget/Button;]
-      [83] aload_0 v0
-      [84] ldc #16
+      [80] aload_0 v0
+      [81] ldc #15
         + Integer [2131165194]
-      [86] invokevirtual #136
+      [83] invokevirtual #148
         + Methodref [net/thempra/yocaina/MainActivity.findViewById (I)Landroid/view/View;]
-      [89] checkcast #54
+      [86] checkcast #57
         + Class [android/widget/Button]
-      [92] putstatic #74
+      [89] putstatic #82
         + Fieldref [net/thempra/yocaina/MainActivity.e Landroid/widget/Button;]
-      [95] getstatic #72
-        + Fieldref [net/thempra/yocaina/MainActivity.c Landroid/widget/Button;]
-      [98] iconst_0
-      [99] invokevirtual #108
-        + Methodref [android/widget/Button.setEnabled (Z)V]
-      [102] getstatic #73
-        + Fieldref [net/thempra/yocaina/MainActivity.d Landroid/widget/Button;]
-      [105] iconst_0
-      [106] invokevirtual #108
-        + Methodref [android/widget/Button.setEnabled (Z)V]
-      [109] getstatic #74
-        + Fieldref [net/thempra/yocaina/MainActivity.e Landroid/widget/Button;]
-      [112] new #66
-        + Class [net/thempra/yocaina/a]
-      [115] dup
+      [92] aload_0 v0
+      [93] ldc #16
+        + Integer [2131165195]
+      [95] invokevirtual #148
+        + Methodref [net/thempra/yocaina/MainActivity.findViewById (I)Landroid/view/View;]
+      [98] checkcast #57
+        + Class [android/widget/Button]
+      [101] putstatic #83
+        + Fieldref [net/thempra/yocaina/MainActivity.f Landroid/widget/Button;]
+      [104] aload_0 v0
+      [105] ldc #17
+        + Integer [2131165196]
+      [107] invokevirtual #148
+        + Methodref [net/thempra/yocaina/MainActivity.findViewById (I)Landroid/view/View;]
+      [110] checkcast #57
+        + Class [android/widget/Button]
+      [113] putstatic #84
+        + Fieldref [net/thempra/yocaina/MainActivity.g Landroid/widget/Button;]
       [116] aload_0 v0
-      [117] invokespecial #144
+      [117] ldc #18
+        + Integer [2131165197]
+      [119] invokevirtual #148
+        + Methodref [net/thempra/yocaina/MainActivity.findViewById (I)Landroid/view/View;]
+      [122] checkcast #57
+        + Class [android/widget/Button]
+      [125] putstatic #85
+        + Fieldref [net/thempra/yocaina/MainActivity.h Landroid/widget/Button;]
+      [128] getstatic #84
+        + Fieldref [net/thempra/yocaina/MainActivity.g Landroid/widget/Button;]
+      [131] new #69
+        + Class [net/thempra/yocaina/a]
+      [134] dup
+      [135] aload_0 v0
+      [136] invokespecial #156
         + Methodref [net/thempra/yocaina/a.<init> (Lnet/thempra/yocaina/MainActivity;)V]
-      [120] invokevirtual #109
+      [139] invokevirtual #121
         + Methodref [android/widget/Button.setOnClickListener (Landroid/view/View$OnClickListener;)V]
-      [123] aload_0 v0
-      [124] invokespecial #135
+      [142] aload_0 v0
+      [143] invokespecial #147
         + Methodref [net/thempra/yocaina/MainActivity.d ()Z]
-      [127] ifne +83 (target=210)
-      [130] aload_0 v0
-      [131] invokevirtual #138
+      [146] ifne +83 (target=229)
+      [149] aload_0 v0
+      [150] invokevirtual #150
         + Methodref [net/thempra/yocaina/MainActivity.getResources ()Landroid/content/res/Resources;]
-      [134] astore_2 v2
-      [135] getstatic #70
-        + Fieldref [net/thempra/yocaina/MainActivity.a Landroid/widget/TextView;]
-      [138] new #62
+      [153] astore_3 v3
+      [154] getstatic #79
+        + Fieldref [net/thempra/yocaina/MainActivity.b Landroid/widget/TextView;]
+      [157] new #65
         + Class [java/lang/StringBuilder]
-      [141] dup
-      [142] ldc #11
-        + Integer [2131034129]
-      [144] invokestatic #123
+      [160] dup
+      [161] ldc #11
+        + Integer [2131034134]
+      [163] invokestatic #136
         + Methodref [java/lang/String.valueOf (I)Ljava/lang/String;]
-      [147] invokespecial #126
+      [166] invokespecial #139
         + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
-      [150] invokestatic #105
+      [169] invokestatic #118
         + Methodref [android/os/Environment.getExternalStorageDirectory ()Ljava/io/File;]
-      [153] invokevirtual #117
+      [172] invokevirtual #130
         + Methodref [java/io/File.toString ()Ljava/lang/String;]
-      [156] invokevirtual #128
+      [175] invokevirtual #141
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [159] ldc #22
+      [178] ldc #24
         + String [/]
-      [161] invokevirtual #128
+      [180] invokevirtual #141
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [164] aload_2 v2
-      [165] ldc #3
+      [183] aload_3 v3
+      [184] ldc #3
         + Integer [2131034113]
-      [167] invokevirtual #100
+      [186] invokevirtual #113
         + Methodref [android/content/res/Resources.getString (I)Ljava/lang/String;]
-      [170] invokevirtual #122
+      [189] invokevirtual #135
         + Methodref [java/lang/String.toLowerCase ()Ljava/lang/String;]
-      [173] invokevirtual #128
+      [192] invokevirtual #141
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [176] ldc #18
+      [195] ldc #20
         + String [
 
 ]
-      [178] invokevirtual #128
+      [197] invokevirtual #141
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [181] ldc #27
+      [200] ldc #29
         + String [Format file (keys):
 ]
-      [183] invokevirtual #128
+      [202] invokevirtual #141
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [186] ldc #23
+      [205] ldc #25
         + String [0xa0 0xa1 0xa2 0xa3 0xa4 0xa5
 ]
-      [188] invokevirtual #128
+      [207] invokevirtual #141
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [191] ldc #24
+      [210] ldc #26
         + String [0xa6 0xa7 0xa8 0xa9 0x14 0x10
 ]
-      [193] invokevirtual #128
+      [212] invokevirtual #141
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [196] ldc #21
+      [215] ldc #23
         + String [......]
-      [198] invokevirtual #128
+      [217] invokevirtual #141
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [201] invokevirtual #129
+      [220] invokevirtual #142
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
-      [204] invokevirtual #111
+      [223] invokevirtual #123
         + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
-      [207] goto +144 (target=351)
-      [210] getstatic #71
-        + Fieldref [net/thempra/yocaina/MainActivity.b Landroid/widget/Button;]
-      [213] aload_0 v0
-      [214] invokevirtual #109
-        + Methodref [android/widget/Button.setOnClickListener (Landroid/view/View$OnClickListener;)V]
-      [217] getstatic #73
-        + Fieldref [net/thempra/yocaina/MainActivity.d Landroid/widget/Button;]
-      [220] aload_0 v0
-      [221] invokespecial #133
-        + Methodref [net/thempra/yocaina/MainActivity.b ()Landroid/view/View$OnClickListener;]
-      [224] invokevirtual #109
-        + Methodref [android/widget/Button.setOnClickListener (Landroid/view/View$OnClickListener;)V]
-      [227] aload_0 v0
-      [228] invokestatic #103
+      [226] goto +145 (target=371)
+      [229] aload_0 v0
+      [230] invokestatic #116
         + Methodref [android/nfc/NfcAdapter.getDefaultAdapter (Landroid/content/Context;)Landroid/nfc/NfcAdapter;]
-      [231] putstatic #76
-        + Fieldref [net/thempra/yocaina/MainActivity.g Landroid/nfc/NfcAdapter;]
-      [234] getstatic #76
-        + Fieldref [net/thempra/yocaina/MainActivity.g Landroid/nfc/NfcAdapter;]
-      [237] ifnull +106 (target=343)
-      [240] aload_0 v0
-      [241] iconst_0
-      [242] new #42
+      [233] putstatic #87
+        + Fieldref [net/thempra/yocaina/MainActivity.j Landroid/nfc/NfcAdapter;]
+      [236] getstatic #87
+        + Fieldref [net/thempra/yocaina/MainActivity.j Landroid/nfc/NfcAdapter;]
+      [239] ifnull +110 (target=349)
+      [242] aload_0 v0
+      [243] iconst_0
+      [244] new #45
         + Class [android/content/Intent]
-      [245] dup
-      [246] aload_0 v0
-      [247] aload_0 v0
-      [248] invokevirtual #119
+      [247] dup
+      [248] aload_0 v0
+      [249] aload_0 v0
+      [250] invokevirtual #132
         + Methodref [java/lang/Object.getClass ()Ljava/lang/Class;]
-      [251] invokespecial #94
+      [253] invokespecial #107
         + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
-      [254] ldc #1
+      [256] ldc #1
         + Integer [536870912]
-      [256] invokevirtual #95
+      [258] invokevirtual #108
         + Methodref [android/content/Intent.addFlags (I)Landroid/content/Intent;]
-      [259] iconst_0
-      [260] invokestatic #93
+      [261] iconst_0
+      [262] invokestatic #106
         + Methodref [android/app/PendingIntent.getActivity (Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;]
-      [263] putstatic #77
-        + Fieldref [net/thempra/yocaina/MainActivity.h Landroid/app/PendingIntent;]
-      [266] new #43
+      [265] putstatic #88
+        + Fieldref [net/thempra/yocaina/MainActivity.k Landroid/app/PendingIntent;]
+      [268] new #46
         + Class [android/content/IntentFilter]
-      [269] dup
-      [270] ldc #30
+      [271] dup
+      [272] ldc #32
         + String [android.nfc.action.TECH_DISCOVERED]
-      [272] invokespecial #98
+      [274] invokespecial #111
         + Methodref [android/content/IntentFilter.<init> (Ljava/lang/String;)V]
-      [275] astore_2 v2
-      [276] aload_2 v2
-      [277] ldc #20
+      [277] astore_3 v3
+      [278] aload_3 v3
+      [279] ldc #22
         + String [*/*]
-      [279] invokevirtual #99
+      [281] invokevirtual #112
         + Methodref [android/content/IntentFilter.addDataType (Ljava/lang/String;)V]
-      [282] goto +15 (target=297)
-      [285] astore_3 v3
-      [286] new #60
+      [284] goto +17 (target=301)
+      [287] astore v4
+      [289] new #63
         + Class [java/lang/RuntimeException]
-      [289] dup
-      [290] ldc #34
+      [292] dup
+      [293] ldc #36
         + String [fail]
-      [292] aload_3 v3
-      [293] invokespecial #120
+      [295] aload v4
+      [297] invokespecial #133
         + Methodref [java/lang/RuntimeException.<init> (Ljava/lang/String;Ljava/lang/Throwable;)V]
-      [296] athrow
-      [297] iconst_1
-      [298] anewarray #43
+      [300] athrow
+      [301] iconst_1
+      [302] anewarray #46
         + Class [android/content/IntentFilter]
-      [301] dup
-      [302] iconst_0
-      [303] aload_2 v2
-      [304] aastore
-      [305] putstatic #78
-        + Fieldref [net/thempra/yocaina/MainActivity.i [Landroid/content/IntentFilter;]
-      [308] iconst_1
-      [309] anewarray #37
+      [305] dup
+      [306] iconst_0
+      [307] aload_3 v3
+      [308] aastore
+      [309] putstatic #89
+        + Fieldref [net/thempra/yocaina/MainActivity.l [Landroid/content/IntentFilter;]
+      [312] iconst_1
+      [313] anewarray #39
         + Class [[Ljava/lang/String;]
-      [312] dup
-      [313] iconst_0
-      [314] iconst_1
-      [315] anewarray #61
+      [316] dup
+      [317] iconst_0
+      [318] iconst_1
+      [319] anewarray #64
         + Class [java/lang/String]
-      [318] dup
-      [319] iconst_0
-      [320] ldc #48
+      [322] dup
+      [323] iconst_0
+      [324] ldc #51
         + Class [android/nfc/tech/MifareClassic]
-      [322] invokevirtual #118
+      [326] invokevirtual #131
         + Methodref [java/lang/Class.getName ()Ljava/lang/String;]
-      [325] aastore
-      [326] aastore
-      [327] putstatic #79
-        + Fieldref [net/thempra/yocaina/MainActivity.j [[Ljava/lang/String;]
-      [330] aload_0 v0
-      [331] invokevirtual #137
+      [329] aastore
+      [330] aastore
+      [331] putstatic #90
+        + Fieldref [net/thempra/yocaina/MainActivity.m [[Ljava/lang/String;]
+      [334] aload_0 v0
+      [335] invokevirtual #149
         + Methodref [net/thempra/yocaina/MainActivity.getIntent ()Landroid/content/Intent;]
-      [334] astore_3 v3
-      [335] aload_0 v0
-      [336] aload_3 v3
-      [337] invokevirtual #132
+      [338] astore v4
+      [340] aload_0 v0
+      [341] aload v4
+      [343] invokevirtual #145
         + Methodref [net/thempra/yocaina/MainActivity.a (Landroid/content/Intent;)V]
-      [340] goto +11 (target=351)
-      [343] getstatic #70
-        + Fieldref [net/thempra/yocaina/MainActivity.a Landroid/widget/TextView;]
-      [346] ldc #28
+      [346] goto +11 (target=357)
+      [349] getstatic #79
+        + Fieldref [net/thempra/yocaina/MainActivity.b Landroid/widget/TextView;]
+      [352] ldc #30
         + String [No NFC device]
-      [348] invokevirtual #111
+      [354] invokevirtual #123
         + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
-      [351] return
+      [357] getstatic #80
+        + Fieldref [net/thempra/yocaina/MainActivity.c Landroid/widget/Button;]
+      [360] new #71
+        + Class [net/thempra/yocaina/b]
+      [363] dup
+      [364] aload_0 v0
+      [365] invokespecial #158
+        + Methodref [net/thempra/yocaina/b.<init> (Lnet/thempra/yocaina/MainActivity;)V]
+      [368] invokevirtual #121
+        + Methodref [android/widget/Button.setOnClickListener (Landroid/view/View$OnClickListener;)V]
+      [371] getstatic #81
+        + Fieldref [net/thempra/yocaina/MainActivity.d Landroid/widget/Button;]
+      [374] new #72
+        + Class [net/thempra/yocaina/c]
+      [377] dup
+      [378] aload_0 v0
+      [379] invokespecial #159
+        + Methodref [net/thempra/yocaina/c.<init> (Lnet/thempra/yocaina/MainActivity;)V]
+      [382] invokevirtual #121
+        + Methodref [android/widget/Button.setOnClickListener (Landroid/view/View$OnClickListener;)V]
+      [385] getstatic #82
+        + Fieldref [net/thempra/yocaina/MainActivity.e Landroid/widget/Button;]
+      [388] new #73
+        + Class [net/thempra/yocaina/d]
+      [391] dup
+      [392] aload_0 v0
+      [393] invokespecial #160
+        + Methodref [net/thempra/yocaina/d.<init> (Lnet/thempra/yocaina/MainActivity;)V]
+      [396] invokevirtual #121
+        + Methodref [android/widget/Button.setOnClickListener (Landroid/view/View$OnClickListener;)V]
+      [399] getstatic #83
+        + Fieldref [net/thempra/yocaina/MainActivity.f Landroid/widget/Button;]
+      [402] new #74
+        + Class [net/thempra/yocaina/e]
+      [405] dup
+      [406] aload_0 v0
+      [407] invokespecial #161
+        + Methodref [net/thempra/yocaina/e.<init> (Lnet/thempra/yocaina/MainActivity;)V]
+      [410] invokevirtual #121
+        + Methodref [android/widget/Button.setOnClickListener (Landroid/view/View$OnClickListener;)V]
+      [413] getstatic #85
+        + Fieldref [net/thempra/yocaina/MainActivity.h Landroid/widget/Button;]
+      [416] new #75
+        + Class [net/thempra/yocaina/f]
+      [419] dup
+      [420] aload_0 v0
+      [421] invokespecial #162
+        + Methodref [net/thempra/yocaina/f.<init> (Lnet/thempra/yocaina/MainActivity;)V]
+      [424] invokevirtual #121
+        + Methodref [android/widget/Button.setOnClickListener (Landroid/view/View$OnClickListener;)V]
+      [427] return
       Code attribute exceptions (count = 1):
-      - ExceptionInfo (276 -> 282: 285):
+      - ExceptionInfo (278 -> 284: 287):
       + Class [android/content/IntentFilter$MalformedMimeTypeException]
       Code attribute attributes (attribute count = 1):
-      + Stack map table attribute (count = 5):
-        - [210] Var: ..., Stack: (empty)
-        - [285] Var: [a:net/thempra/yocaina/MainActivity][a:android/os/Bundle][a:android/content/IntentFilter], Stack: [a:android/content/IntentFilter$MalformedMimeTypeException]
-        - [297] Var: ..., Stack: (empty)
-        - [343] Var: -1, Stack: (empty)
-        - [351] Var: ..., Stack: (empty)
-  + Method:       b()Landroid/view/View$OnClickListener;
-    Access flags: 0x2
-      = private android.view.View$OnClickListener b()
-    Class member attributes (count = 1):
-    + Code attribute instructions (code length = 2, locals = 1, stack = 1):
-      [0] aconst_null
-      [1] areturn
-      Code attribute exceptions (count = 0):
-      Code attribute attributes (attribute count = 0):
+      + Stack map table attribute (count = 6):
+        - [229] Var: ...[a:android/app/AlertDialog$Builder], Stack: (empty)
+        - [287] Var: [a:net/thempra/yocaina/MainActivity][a:android/os/Bundle][a:android/app/AlertDialog$Builder][a:android/content/IntentFilter], Stack: [a:android/content/IntentFilter$MalformedMimeTypeException]
+        - [301] Var: ..., Stack: (empty)
+        - [349] Var: -1, Stack: (empty)
+        - [357] Var: ..., Stack: (empty)
+        - [371] Var: ..., Stack: (empty)
   + Method:       onClick(Landroid/view/View;)V
     Access flags: 0x1
       = public void onClick(android.view.View)
@@ -1738,21 +1824,21 @@ Methods (count = 15):
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 27, locals = 1, stack = 5):
       [0] aload_0 v0
-      [1] invokespecial #84
+      [1] invokespecial #95
         + Methodref [android/app/Activity.onResume ()V]
-      [4] getstatic #76
-        + Fieldref [net/thempra/yocaina/MainActivity.g Landroid/nfc/NfcAdapter;]
+      [4] getstatic #87
+        + Fieldref [net/thempra/yocaina/MainActivity.j Landroid/nfc/NfcAdapter;]
       [7] ifnull +19 (target=26)
-      [10] getstatic #76
-        + Fieldref [net/thempra/yocaina/MainActivity.g Landroid/nfc/NfcAdapter;]
+      [10] getstatic #87
+        + Fieldref [net/thempra/yocaina/MainActivity.j Landroid/nfc/NfcAdapter;]
       [13] aload_0 v0
-      [14] getstatic #77
-        + Fieldref [net/thempra/yocaina/MainActivity.h Landroid/app/PendingIntent;]
-      [17] getstatic #78
-        + Fieldref [net/thempra/yocaina/MainActivity.i [Landroid/content/IntentFilter;]
-      [20] getstatic #79
-        + Fieldref [net/thempra/yocaina/MainActivity.j [[Ljava/lang/String;]
-      [23] invokevirtual #102
+      [14] getstatic #88
+        + Fieldref [net/thempra/yocaina/MainActivity.k Landroid/app/PendingIntent;]
+      [17] getstatic #89
+        + Fieldref [net/thempra/yocaina/MainActivity.l [Landroid/content/IntentFilter;]
+      [20] getstatic #90
+        + Fieldref [net/thempra/yocaina/MainActivity.m [[Ljava/lang/String;]
+      [23] invokevirtual #115
         + Methodref [android/nfc/NfcAdapter.enableForegroundDispatch (Landroid/app/Activity;Landroid/app/PendingIntent;[Landroid/content/IntentFilter;[[Ljava/lang/String;)V]
       [26] return
       Code attribute exceptions (count = 0):
@@ -1763,46 +1849,63 @@ Methods (count = 15):
     Access flags: 0x1
       = public void onNewIntent(android.content.Intent)
     Class member attributes (count = 1):
-    + Code attribute instructions (code length = 28, locals = 2, stack = 4):
-      [0] ldc #26
+    + Code attribute instructions (code length = 52, locals = 2, stack = 4):
+      [0] ldc #28
         + String [Foreground dispatch]
-      [2] new #62
+      [2] new #65
         + Class [java/lang/StringBuilder]
       [5] dup
-      [6] ldc #25
+      [6] ldc #27
         + String [Discovered tag with intent: ]
-      [8] invokespecial #126
+      [8] invokespecial #139
         + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
       [11] aload_1 v1
-      [12] invokevirtual #127
+      [12] invokevirtual #140
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;]
-      [15] invokevirtual #129
+      [15] invokevirtual #142
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
-      [18] invokestatic #106
+      [18] invokestatic #119
         + Methodref [android/util/Log.i (Ljava/lang/String;Ljava/lang/String;)I]
       [21] pop
       [22] aload_0 v0
       [23] aload_1 v1
-      [24] invokevirtual #132
+      [24] invokevirtual #145
         + Methodref [net/thempra/yocaina/MainActivity.a (Landroid/content/Intent;)V]
-      [27] return
+      [27] aload_0 v0
+      [28] getfield #78
+        + Fieldref [net/thempra/yocaina/MainActivity.a Landroid/app/Dialog;]
+      [31] ifnull +20 (target=51)
+      [34] aload_0 v0
+      [35] getfield #78
+        + Fieldref [net/thempra/yocaina/MainActivity.a Landroid/app/Dialog;]
+      [38] invokevirtual #105
+        + Methodref [android/app/Dialog.isShowing ()Z]
+      [41] ifeq +10 (target=51)
+      [44] aload_0 v0
+      [45] getfield #78
+        + Fieldref [net/thempra/yocaina/MainActivity.a Landroid/app/Dialog;]
+      [48] invokevirtual #104
+        + Methodref [android/app/Dialog.dismiss ()V]
+      [51] return
       Code attribute exceptions (count = 0):
-      Code attribute attributes (attribute count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 1):
+        - [51] Var: ..., Stack: (empty)
   + Method:       onPause()V
     Access flags: 0x1
       = public void onPause()
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 18, locals = 1, stack = 2):
       [0] aload_0 v0
-      [1] invokespecial #83
+      [1] invokespecial #94
         + Methodref [android/app/Activity.onPause ()V]
-      [4] getstatic #76
-        + Fieldref [net/thempra/yocaina/MainActivity.g Landroid/nfc/NfcAdapter;]
+      [4] getstatic #87
+        + Fieldref [net/thempra/yocaina/MainActivity.j Landroid/nfc/NfcAdapter;]
       [7] ifnull +10 (target=17)
-      [10] getstatic #76
-        + Fieldref [net/thempra/yocaina/MainActivity.g Landroid/nfc/NfcAdapter;]
+      [10] getstatic #87
+        + Fieldref [net/thempra/yocaina/MainActivity.j Landroid/nfc/NfcAdapter;]
       [13] aload_0 v0
-      [14] invokevirtual #101
+      [14] invokevirtual #114
         + Methodref [android/nfc/NfcAdapter.disableForegroundDispatch (Landroid/app/Activity;)V]
       [17] return
       Code attribute exceptions (count = 0):
@@ -1815,122 +1918,122 @@ Methods (count = 15):
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 167, locals = 7, stack = 7):
       [0] aload_1 v1
-      [1] invokevirtual #96
+      [1] invokevirtual #109
         + Methodref [android/content/Intent.getAction ()Ljava/lang/String;]
       [4] astore_2 v2
-      [5] ldc #30
+      [5] ldc #32
         + String [android.nfc.action.TECH_DISCOVERED]
       [7] aload_2 v2
-      [8] invokevirtual #121
+      [8] invokevirtual #134
         + Methodref [java/lang/String.equals (Ljava/lang/Object;)Z]
       [11] ifeq +116 (target=127)
       [14] aload_1 v1
-      [15] ldc #31
+      [15] ldc #33
         + String [android.nfc.extra.TAG]
-      [17] invokevirtual #97
+      [17] invokevirtual #110
         + Methodref [android/content/Intent.getParcelableExtra (Ljava/lang/String;)Landroid/os/Parcelable;]
-      [20] checkcast #47
+      [20] checkcast #50
         + Class [android/nfc/Tag]
       [23] astore_3 v3
-      [24] getstatic #70
-        + Fieldref [net/thempra/yocaina/MainActivity.a Landroid/widget/TextView;]
+      [24] getstatic #79
+        + Fieldref [net/thempra/yocaina/MainActivity.b Landroid/widget/TextView;]
       [27] ldc #5
-        + Integer [2131034122]
-      [29] invokevirtual #110
+        + Integer [2131034127]
+      [29] invokevirtual #122
         + Methodref [android/widget/TextView.setText (I)V]
       [32] aload_3 v3
-      [33] invokevirtual #104
+      [33] invokevirtual #117
         + Methodref [android/nfc/Tag.getTechList ()[Ljava/lang/String;]
       [36] iconst_0
       [37] aaload
-      [38] ldc #32
+      [38] ldc #34
         + String [android.nfc.tech.MifareClassic]
-      [40] invokevirtual #121
+      [40] invokevirtual #134
         + Methodref [java/lang/String.equals (Ljava/lang/Object;)Z]
       [43] ifeq +54 (target=97)
       [46] iconst_0
       [47] istore v5
-      [49] new #40
+      [49] new #42
         + Class [android/app/AlertDialog$Builder]
       [52] dup
       [53] aload_0 v0
-      [54] invokespecial #86
+      [54] invokespecial #97
         + Methodref [android/app/AlertDialog$Builder.<init> (Landroid/content/Context;)V]
       [57] aload_0 v0
-      [58] invokespecial #134
+      [58] invokespecial #146
         + Methodref [net/thempra/yocaina/MainActivity.c ()[Ljava/lang/CharSequence;]
       [61] iload v5
-      [63] new #68
-        + Class [net/thempra/yocaina/b]
+      [63] new #76
+        + Class [net/thempra/yocaina/g]
       [66] dup
       [67] aload_0 v0
       [68] aload_3 v3
-      [69] invokespecial #146
-        + Methodref [net/thempra/yocaina/b.<init> (Lnet/thempra/yocaina/MainActivity;Landroid/nfc/Tag;)V]
-      [72] invokevirtual #90
+      [69] invokespecial #163
+        + Methodref [net/thempra/yocaina/g.<init> (Lnet/thempra/yocaina/MainActivity;Landroid/nfc/Tag;)V]
+      [72] invokevirtual #101
         + Methodref [android/app/AlertDialog$Builder.setSingleChoiceItems ([Ljava/lang/CharSequence;ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
       [75] ldc #6
-        + Integer [2131034123]
-      [77] invokevirtual #91
+        + Integer [2131034128]
+      [77] invokevirtual #102
         + Methodref [android/app/AlertDialog$Builder.setTitle (I)Landroid/app/AlertDialog$Builder;]
       [80] astore v6
       [82] aload v6
-      [84] invokevirtual #87
+      [84] invokevirtual #98
         + Methodref [android/app/AlertDialog$Builder.create ()Landroid/app/AlertDialog;]
       [87] astore v4
       [89] aload v4
-      [91] invokevirtual #85
+      [91] invokevirtual #96
         + Methodref [android/app/AlertDialog.show ()V]
       [94] goto +72 (target=166)
       [97] aload_3 v3
-      [98] invokevirtual #104
+      [98] invokevirtual #117
         + Methodref [android/nfc/Tag.getTechList ()[Ljava/lang/String;]
       [101] iconst_0
       [102] aaload
-      [103] ldc #33
+      [103] ldc #35
         + String [android.nfc.tech.NfcV]
-      [105] invokevirtual #121
+      [105] invokevirtual #134
         + Methodref [java/lang/String.equals (Ljava/lang/Object;)Z]
       [108] ifeq +58 (target=166)
       [111] aload_0 v0
-      [112] new #67
+      [112] new #70
         + Class [net/thempra/yocaina/a/c]
       [115] dup
-      [116] ldc #17
+      [116] ldc #19
         + String []
-      [118] invokespecial #145
+      [118] invokespecial #157
         + Methodref [net/thempra/yocaina/a/c.<init> (Ljava/lang/String;)V]
-      [121] putfield #80
-        + Fieldref [net/thempra/yocaina/MainActivity.k Lnet/thempra/yocaina/a/a;]
+      [121] putfield #91
+        + Fieldref [net/thempra/yocaina/MainActivity.n Lnet/thempra/yocaina/a/a;]
       [124] goto +42 (target=166)
-      [127] getstatic #70
-        + Fieldref [net/thempra/yocaina/MainActivity.a Landroid/widget/TextView;]
-      [130] new #62
+      [127] getstatic #79
+        + Fieldref [net/thempra/yocaina/MainActivity.b Landroid/widget/TextView;]
+      [130] new #65
         + Class [java/lang/StringBuilder]
       [133] dup
       [134] aload_0 v0
       [135] ldc #4
-        + Integer [2131034121]
-      [137] invokevirtual #139
+        + Integer [2131034126]
+      [137] invokevirtual #151
         + Methodref [net/thempra/yocaina/MainActivity.getString (I)Ljava/lang/String;]
-      [140] invokestatic #124
+      [140] invokestatic #137
         + Methodref [java/lang/String.valueOf (Ljava/lang/Object;)Ljava/lang/String;]
-      [143] invokespecial #126
+      [143] invokespecial #139
         + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
-      [146] ldc #19
+      [146] ldc #21
         + String [ + ]
-      [148] invokevirtual #128
+      [148] invokevirtual #141
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
       [151] aload_0 v0
       [152] ldc #10
-        + Integer [2131034128]
-      [154] invokevirtual #139
+        + Integer [2131034133]
+      [154] invokevirtual #151
         + Methodref [net/thempra/yocaina/MainActivity.getString (I)Ljava/lang/String;]
-      [157] invokevirtual #128
+      [157] invokevirtual #141
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [160] invokevirtual #129
+      [160] invokevirtual #142
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
-      [163] invokevirtual #111
+      [163] invokevirtual #123
         + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
       [166] return
       Code attribute exceptions (count = 0):
@@ -1944,200 +2047,226 @@ Methods (count = 15):
     Access flags: 0x2
       = private java.lang.CharSequence[] c()
     Class member attributes (count = 1):
-    + Code attribute instructions (code length = 142, locals = 6, stack = 5):
+    + Code attribute instructions (code length = 184, locals = 7, stack = 5):
       [0] aload_0 v0
-      [1] invokevirtual #138
+      [1] invokevirtual #150
         + Methodref [net/thempra/yocaina/MainActivity.getResources ()Landroid/content/res/Resources;]
       [4] astore_1 v1
-      [5] new #56
+      [5] new #59
         + Class [java/io/File]
       [8] dup
-      [9] new #62
+      [9] new #65
         + Class [java/lang/StringBuilder]
       [12] dup
-      [13] invokespecial #125
+      [13] invokespecial #138
         + Methodref [java/lang/StringBuilder.<init> ()V]
-      [16] invokestatic #105
+      [16] invokestatic #118
         + Methodref [android/os/Environment.getExternalStorageDirectory ()Ljava/io/File;]
-      [19] invokevirtual #127
+      [19] invokevirtual #140
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;]
-      [22] ldc #22
+      [22] ldc #24
         + String [/]
-      [24] invokevirtual #128
+      [24] invokevirtual #141
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
       [27] aload_1 v1
       [28] ldc #3
         + Integer [2131034113]
-      [30] invokevirtual #100
+      [30] invokevirtual #113
         + Methodref [android/content/res/Resources.getString (I)Ljava/lang/String;]
-      [33] invokevirtual #122
+      [33] invokevirtual #135
         + Methodref [java/lang/String.toLowerCase ()Ljava/lang/String;]
-      [36] invokevirtual #128
+      [36] invokevirtual #141
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [39] invokevirtual #129
+      [39] invokevirtual #142
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
-      [42] invokespecial #112
+      [42] invokespecial #124
         + Methodref [java/io/File.<init> (Ljava/lang/String;)V]
       [45] astore_2 v2
       [46] aload_2 v2
-      [47] invokevirtual #114
+      [47] invokevirtual #126
         + Methodref [java/io/File.isDirectory ()Z]
       [50] ifne +49 (target=99)
-      [53] new #56
+      [53] new #59
         + Class [java/io/File]
       [56] dup
-      [57] new #62
+      [57] new #65
         + Class [java/lang/StringBuilder]
       [60] dup
-      [61] invokespecial #125
+      [61] invokespecial #138
         + Methodref [java/lang/StringBuilder.<init> ()V]
-      [64] invokestatic #105
+      [64] invokestatic #118
         + Methodref [android/os/Environment.getExternalStorageDirectory ()Ljava/io/File;]
-      [67] invokevirtual #127
+      [67] invokevirtual #140
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;]
-      [70] ldc #22
+      [70] ldc #24
         + String [/]
-      [72] invokevirtual #128
+      [72] invokevirtual #141
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
       [75] aload_1 v1
       [76] ldc #3
         + Integer [2131034113]
-      [78] invokevirtual #100
+      [78] invokevirtual #113
         + Methodref [android/content/res/Resources.getString (I)Ljava/lang/String;]
-      [81] invokevirtual #122
+      [81] invokevirtual #135
         + Methodref [java/lang/String.toLowerCase ()Ljava/lang/String;]
-      [84] invokevirtual #128
+      [84] invokevirtual #141
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [87] invokevirtual #129
+      [87] invokevirtual #142
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
-      [90] invokespecial #112
+      [90] invokespecial #124
         + Methodref [java/io/File.<init> (Ljava/lang/String;)V]
       [93] astore_3 v3
       [94] aload_3 v3
-      [95] invokevirtual #116
+      [95] invokevirtual #129
         + Methodref [java/io/File.mkdirs ()Z]
       [98] pop
       [99] aload_2 v2
-      [100] invokevirtual #115
+      [100] invokevirtual #128
         + Methodref [java/io/File.listFiles ()[Ljava/io/File;]
       [103] astore_3 v3
-      [104] aload_3 v3
-      [105] arraylength
-      [106] anewarray #57
+      [104] iconst_0
+      [105] istore v4
+      [107] iconst_0
+      [108] istore v5
+      [110] goto +19 (target=129)
+      [113] aload_3 v3
+      [114] iload v5
+      [116] aaload
+      [117] invokevirtual #127
+        + Methodref [java/io/File.isFile ()Z]
+      [120] ifeq +6 (target=126)
+      [123] iinc v4, 1
+      [126] iinc v5, 1
+      [129] iload v5
+      [131] aload_3 v3
+      [132] arraylength
+      [133] ificmplt -20 (target=113)
+      [136] iload v4
+      [138] anewarray #60
         + Class [java/lang/CharSequence]
-      [109] astore v4
-      [111] iconst_0
-      [112] istore v5
-      [114] goto +18 (target=132)
-      [117] aload v4
-      [119] iload v5
-      [121] aload_3 v3
-      [122] iload v5
-      [124] aaload
-      [125] invokevirtual #113
+      [141] astore v5
+      [143] iconst_0
+      [144] istore v6
+      [146] goto +28 (target=174)
+      [149] aload_3 v3
+      [150] iload v6
+      [152] aaload
+      [153] invokevirtual #127
+        + Methodref [java/io/File.isFile ()Z]
+      [156] ifeq +15 (target=171)
+      [159] aload v5
+      [161] iload v6
+      [163] aload_3 v3
+      [164] iload v6
+      [166] aaload
+      [167] invokevirtual #125
         + Methodref [java/io/File.getName ()Ljava/lang/String;]
-      [128] aastore
-      [129] iinc v5, 1
-      [132] iload v5
-      [134] aload_3 v3
-      [135] arraylength
-      [136] ificmplt -19 (target=117)
-      [139] aload v4
-      [141] areturn
+      [170] aastore
+      [171] iinc v6, 1
+      [174] iload v6
+      [176] aload_3 v3
+      [177] arraylength
+      [178] ificmplt -29 (target=149)
+      [181] aload v5
+      [183] areturn
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 1):
-      + Stack map table attribute (count = 3):
+      + Stack map table attribute (count = 7):
         - [99] Var: ...[a:android/content/res/Resources][a:java/io/File], Stack: (empty)
-        - [117] Var: ...[a:[Ljava/io/File;][a:[Ljava/lang/CharSequence;][i], Stack: (empty)
-        - [132] Var: ..., Stack: (empty)
+        - [113] Var: ...[a:[Ljava/io/File;][i][i], Stack: (empty)
+        - [126] Var: ..., Stack: (empty)
+        - [129] Var: ..., Stack: (empty)
+        - [149] Var: [a:net/thempra/yocaina/MainActivity][a:android/content/res/Resources][a:java/io/File][a:[Ljava/io/File;][i][a:[Ljava/lang/CharSequence;][i], Stack: 
+        - [171] Var: ..., Stack: (empty)
+        - [174] Var: ..., Stack: (empty)
   + Method:       d()Z
     Access flags: 0x2
       = private boolean d()
     Class member attributes (count = 1):
-    + Code attribute instructions (code length = 173, locals = 8, stack = 5):
+    + Code attribute instructions (code length = 181, locals = 8, stack = 5):
       [0] aload_0 v0
-      [1] invokevirtual #138
+      [1] invokevirtual #150
         + Methodref [net/thempra/yocaina/MainActivity.getResources ()Landroid/content/res/Resources;]
       [4] astore_1 v1
-      [5] new #56
+      [5] new #59
         + Class [java/io/File]
       [8] dup
-      [9] new #62
+      [9] new #65
         + Class [java/lang/StringBuilder]
       [12] dup
-      [13] invokespecial #125
+      [13] invokespecial #138
         + Methodref [java/lang/StringBuilder.<init> ()V]
-      [16] invokestatic #105
+      [16] invokestatic #118
         + Methodref [android/os/Environment.getExternalStorageDirectory ()Ljava/io/File;]
-      [19] invokevirtual #127
+      [19] invokevirtual #140
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;]
-      [22] ldc #22
+      [22] ldc #24
         + String [/]
-      [24] invokevirtual #128
+      [24] invokevirtual #141
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
       [27] aload_1 v1
       [28] ldc #3
         + Integer [2131034113]
-      [30] invokevirtual #100
+      [30] invokevirtual #113
         + Methodref [android/content/res/Resources.getString (I)Ljava/lang/String;]
-      [33] invokevirtual #122
+      [33] invokevirtual #135
         + Methodref [java/lang/String.toLowerCase ()Ljava/lang/String;]
-      [36] invokevirtual #128
+      [36] invokevirtual #141
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [39] invokevirtual #129
+      [39] invokevirtual #142
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
-      [42] invokespecial #112
+      [42] invokespecial #124
         + Methodref [java/io/File.<init> (Ljava/lang/String;)V]
       [45] astore_2 v2
       [46] aload_2 v2
-      [47] invokevirtual #114
+      [47] invokevirtual #126
         + Methodref [java/io/File.isDirectory ()Z]
       [50] ifne +49 (target=99)
-      [53] new #56
+      [53] new #59
         + Class [java/io/File]
       [56] dup
-      [57] new #62
+      [57] new #65
         + Class [java/lang/StringBuilder]
       [60] dup
-      [61] invokespecial #125
+      [61] invokespecial #138
         + Methodref [java/lang/StringBuilder.<init> ()V]
-      [64] invokestatic #105
+      [64] invokestatic #118
         + Methodref [android/os/Environment.getExternalStorageDirectory ()Ljava/io/File;]
-      [67] invokevirtual #127
+      [67] invokevirtual #140
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;]
-      [70] ldc #22
+      [70] ldc #24
         + String [/]
-      [72] invokevirtual #128
+      [72] invokevirtual #141
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
       [75] aload_1 v1
       [76] ldc #3
         + Integer [2131034113]
-      [78] invokevirtual #100
+      [78] invokevirtual #113
         + Methodref [android/content/res/Resources.getString (I)Ljava/lang/String;]
-      [81] invokevirtual #122
+      [81] invokevirtual #135
         + Methodref [java/lang/String.toLowerCase ()Ljava/lang/String;]
-      [84] invokevirtual #128
+      [84] invokevirtual #141
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [87] invokevirtual #129
+      [87] invokevirtual #142
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
-      [90] invokespecial #112
+      [90] invokespecial #124
         + Methodref [java/io/File.<init> (Ljava/lang/String;)V]
       [93] astore_3 v3
       [94] aload_3 v3
-      [95] invokevirtual #116
+      [95] invokevirtual #129
         + Methodref [java/io/File.mkdirs ()Z]
       [98] pop
       [99] aload_2 v2
-      [100] invokevirtual #115
+      [100] invokevirtual #128
         + Methodref [java/io/File.listFiles ()[Ljava/io/File;]
       [103] astore_3 v3
-      [104] new #63
+      [104] new #66
         + Class [java/util/ArrayList]
       [107] dup
-      [108] invokespecial #130
+      [108] invokespecial #143
         + Methodref [java/util/ArrayList.<init> ()V]
-      [111] putstatic #75
-        + Fieldref [net/thempra/yocaina/MainActivity.f Ljava/util/List;]
+      [111] putstatic #86
+        + Fieldref [net/thempra/yocaina/MainActivity.i Ljava/util/List;]
       [114] aload_3 v3
       [115] dup
       [116] astore v7
@@ -2145,49 +2274,54 @@ Methods (count = 15):
       [119] istore v6
       [121] iconst_0
       [122] istore v5
-      [124] goto +27 (target=151)
+      [124] goto +35 (target=159)
       [127] aload v7
       [129] iload v5
       [131] aaload
       [132] astore v4
-      [134] getstatic #75
-        + Fieldref [net/thempra/yocaina/MainActivity.f Ljava/util/List;]
-      [137] aload v4
-      [139] invokevirtual #113
+      [134] aload v4
+      [136] invokevirtual #127
+        + Methodref [java/io/File.isFile ()Z]
+      [139] ifeq +17 (target=156)
+      [142] getstatic #86
+        + Fieldref [net/thempra/yocaina/MainActivity.i Ljava/util/List;]
+      [145] aload v4
+      [147] invokevirtual #125
         + Methodref [java/io/File.getName ()Ljava/lang/String;]
-      [142] invokeinterface #148
+      [150] invokeinterface #165
         + InterfaceMethodref [java/util/List.add (Ljava/lang/Object;)Z]
-      [147] pop
-      [148] iinc v5, 1
-      [151] iload v5
-      [153] iload v6
-      [155] ificmplt -28 (target=127)
-      [158] getstatic #75
-        + Fieldref [net/thempra/yocaina/MainActivity.f Ljava/util/List;]
-      [161] invokeinterface #149
+      [155] pop
+      [156] iinc v5, 1
+      [159] iload v5
+      [161] iload v6
+      [163] ificmplt -36 (target=127)
+      [166] getstatic #86
+        + Fieldref [net/thempra/yocaina/MainActivity.i Ljava/util/List;]
+      [169] invokeinterface #166
         + InterfaceMethodref [java/util/List.isEmpty ()Z]
-      [166] ifeq +5 (target=171)
-      [169] iconst_0
-      [170] ireturn
-      [171] iconst_1
-      [172] ireturn
+      [174] ifeq +5 (target=179)
+      [177] iconst_0
+      [178] ireturn
+      [179] iconst_1
+      [180] ireturn
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 1):
-      + Stack map table attribute (count = 4):
+      + Stack map table attribute (count = 5):
         - [99] Var: ...[a:android/content/res/Resources][a:java/io/File], Stack: (empty)
         - [127] Var: [a:net/thempra/yocaina/MainActivity][a:android/content/res/Resources][a:java/io/File][a:[Ljava/io/File;][T][i][i][a:[Ljava/io/File;], Stack: 
-        - [151] Var: ..., Stack: (empty)
-        - [171] Var: [a:net/thempra/yocaina/MainActivity][a:android/content/res/Resources][a:java/io/File][a:[Ljava/io/File;], Stack: 
+        - [156] Var: ..., Stack: (empty)
+        - [159] Var: ..., Stack: (empty)
+        - [179] Var: [a:net/thempra/yocaina/MainActivity][a:android/content/res/Resources][a:java/io/File][a:[Ljava/io/File;], Stack: 
   + Method:       a(I)V
     Access flags: 0x2
       = private void a(int)
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 96, locals = 3, stack = 5):
-      [0] new #40
+      [0] new #42
         + Class [android/app/AlertDialog$Builder]
       [3] dup
       [4] aload_0 v0
-      [5] invokespecial #86
+      [5] invokespecial #97
         + Methodref [android/app/AlertDialog$Builder.<init> (Landroid/content/Context;)V]
       [8] astore_2 v2
       [9] iload_1 v1
@@ -2201,38 +2335,38 @@ Methods (count = 15):
         default: offset = 65, target = 75
       [48] aload_2 v2
       [49] ldc #8
-        + Integer [2131034126]
-      [51] invokevirtual #88
+        + Integer [2131034131]
+      [51] invokevirtual #99
         + Methodref [android/app/AlertDialog$Builder.setMessage (I)Landroid/app/AlertDialog$Builder;]
       [54] pop
       [55] goto +20 (target=75)
       [58] aload_2 v2
       [59] ldc #9
-        + Integer [2131034127]
-      [61] invokevirtual #88
+        + Integer [2131034132]
+      [61] invokevirtual #99
         + Methodref [android/app/AlertDialog$Builder.setMessage (I)Landroid/app/AlertDialog$Builder;]
       [64] pop
       [65] goto +10 (target=75)
       [68] aload_2 v2
       [69] ldc #7
-        + Integer [2131034125]
-      [71] invokevirtual #88
+        + Integer [2131034130]
+      [71] invokevirtual #99
         + Methodref [android/app/AlertDialog$Builder.setMessage (I)Landroid/app/AlertDialog$Builder;]
       [74] pop
       [75] aload_2 v2
-      [76] ldc #29
+      [76] ldc #31
         + String [OK]
-      [78] new #69
-        + Class [net/thempra/yocaina/d]
+      [78] new #77
+        + Class [net/thempra/yocaina/i]
       [81] dup
       [82] aload_0 v0
-      [83] invokespecial #147
-        + Methodref [net/thempra/yocaina/d.<init> (Lnet/thempra/yocaina/MainActivity;)V]
-      [86] invokevirtual #89
+      [83] invokespecial #164
+        + Methodref [net/thempra/yocaina/i.<init> (Lnet/thempra/yocaina/MainActivity;)V]
+      [86] invokevirtual #100
         + Methodref [android/app/AlertDialog$Builder.setPositiveButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
       [89] pop
       [90] aload_2 v2
-      [91] invokevirtual #92
+      [91] invokevirtual #103
         + Methodref [android/app/AlertDialog$Builder.show ()Landroid/app/AlertDialog;]
       [94] pop
       [95] return
@@ -2243,13 +2377,24 @@ Methods (count = 15):
         - [58] Var: ..., Stack: (empty)
         - [68] Var: ..., Stack: (empty)
         - [75] Var: ..., Stack: (empty)
+  + Method:       a(Lnet/thempra/yocaina/MainActivity;)Lnet/thempra/yocaina/a/a;
+    Access flags: 0x1008
+      = static synthetic net.thempra.yocaina.a.a a(net.thempra.yocaina.MainActivity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] getfield #91
+        + Fieldref [net/thempra/yocaina/MainActivity.n Lnet/thempra/yocaina/a/a;]
+      [4] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
   + Method:       a()Ljava/util/List;
     Access flags: 0x1008
       = static synthetic java.util.List a()
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 4, locals = 0, stack = 1):
-      [0] getstatic #75
-        + Fieldref [net/thempra/yocaina/MainActivity.f Ljava/util/List;]
+      [0] getstatic #86
+        + Fieldref [net/thempra/yocaina/MainActivity.i Ljava/util/List;]
       [3] areturn
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 0):
@@ -2260,20 +2405,19 @@ Methods (count = 15):
     + Code attribute instructions (code length = 6, locals = 2, stack = 2):
       [0] aload_0 v0
       [1] aload_1 v1
-      [2] putfield #80
-        + Fieldref [net/thempra/yocaina/MainActivity.k Lnet/thempra/yocaina/a/a;]
+      [2] putfield #91
+        + Fieldref [net/thempra/yocaina/MainActivity.n Lnet/thempra/yocaina/a/a;]
       [5] return
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 0):
-  + Method:       a(Lnet/thempra/yocaina/MainActivity;)Lnet/thempra/yocaina/a/a;
+  + Method:       b()Landroid/widget/TextView;
     Access flags: 0x1008
-      = static synthetic net.thempra.yocaina.a.a a(net.thempra.yocaina.MainActivity)
+      = static synthetic android.widget.TextView b()
     Class member attributes (count = 1):
-    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
-      [0] aload_0 v0
-      [1] getfield #80
-        + Fieldref [net/thempra/yocaina/MainActivity.k Lnet/thempra/yocaina/a/a;]
-      [4] areturn
+    + Code attribute instructions (code length = 4, locals = 0, stack = 1):
+      [0] getstatic #79
+        + Fieldref [net/thempra/yocaina/MainActivity.b Landroid/widget/TextView;]
+      [3] areturn
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 0):
   + Method:       a(Lnet/thempra/yocaina/MainActivity;I)V
@@ -2283,7 +2427,7 @@ Methods (count = 15):
     + Code attribute instructions (code length = 6, locals = 2, stack = 2):
       [0] aload_0 v0
       [1] iload_1 v1
-      [2] invokespecial #131
+      [2] invokespecial #144
         + Methodref [net/thempra/yocaina/MainActivity.a (I)V]
       [5] return
       Code attribute exceptions (count = 0):
@@ -2393,9 +2537,834 @@ _____________________________________________________________________
     = class net.thempra.yocaina.b extends java.lang.Object
 
 Interfaces (count = 1):
+  + Class [android/view/View$OnClickListener]
+
+Constant Pool (count = 41):
+  + Integer [2131034123]
+  + Class [android/app/Dialog]
+  + Class [android/view/View$OnClickListener]
+  + Class [java/lang/Object]
+  + Class [net/thempra/yocaina/MainActivity]
+  + Class [net/thempra/yocaina/b]
+  + Fieldref [net/thempra/yocaina/MainActivity.a Landroid/app/Dialog;]
+  + Fieldref [net/thempra/yocaina/b.a Lnet/thempra/yocaina/MainActivity;]
+  + Methodref [android/app/Dialog.<init> (Landroid/content/Context;)V]
+  + Methodref [android/app/Dialog.setTitle (Ljava/lang/CharSequence;)V]
+  + Methodref [android/app/Dialog.show ()V]
+  + Methodref [java/lang/Object.<init> ()V]
+  + Methodref [net/thempra/yocaina/MainActivity.getString (I)Ljava/lang/String;]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Landroid/content/Context;)V]
+  + NameAndType [a Landroid/app/Dialog;]
+  + NameAndType [a Lnet/thempra/yocaina/MainActivity;]
+  + NameAndType [getString (I)Ljava/lang/String;]
+  + NameAndType [setTitle (Ljava/lang/CharSequence;)V]
+  + NameAndType [show ()V]
+  + Utf8 [()V]
+  + Utf8 [(I)Ljava/lang/String;]
+  + Utf8 [(Landroid/content/Context;)V]
+  + Utf8 [(Landroid/view/View;)V]
+  + Utf8 [(Ljava/lang/CharSequence;)V]
+  + Utf8 [(Lnet/thempra/yocaina/MainActivity;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Landroid/app/Dialog;]
+  + Utf8 [Lnet/thempra/yocaina/MainActivity;]
+  + Utf8 [a]
+  + Utf8 [android/app/Dialog]
+  + Utf8 [android/view/View$OnClickListener]
+  + Utf8 [getString]
+  + Utf8 [java/lang/Object]
+  + Utf8 [net/thempra/yocaina/MainActivity]
+  + Utf8 [net/thempra/yocaina/b]
+  + Utf8 [onClick]
+  + Utf8 [setTitle]
+  + Utf8 [show]
+
+Fields (count = 1):
+  + Field:        a Lnet/thempra/yocaina/MainActivity;
+    Access flags: 0x1010
+      = final synthetic net.thempra.yocaina.MainActivity a
+
+Methods (count = 2):
+  - Method:       <init>(Lnet/thempra/yocaina/MainActivity;)V
+    Access flags: 0x0
+      = b(net.thempra.yocaina.MainActivity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #8
+        + Fieldref [net/thempra/yocaina/b.a Lnet/thempra/yocaina/MainActivity;]
+      [5] aload_0 v0
+      [6] invokespecial #12
+        + Methodref [java/lang/Object.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onClick(Landroid/view/View;)V
+    Access flags: 0x1
+      = public void onClick(android.view.View)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 48, locals = 2, stack = 4):
+      [0] aload_0 v0
+      [1] getfield #8
+        + Fieldref [net/thempra/yocaina/b.a Lnet/thempra/yocaina/MainActivity;]
+      [4] new #2
+        + Class [android/app/Dialog]
+      [7] dup
+      [8] aload_0 v0
+      [9] getfield #8
+        + Fieldref [net/thempra/yocaina/b.a Lnet/thempra/yocaina/MainActivity;]
+      [12] invokespecial #9
+        + Methodref [android/app/Dialog.<init> (Landroid/content/Context;)V]
+      [15] putfield #7
+        + Fieldref [net/thempra/yocaina/MainActivity.a Landroid/app/Dialog;]
+      [18] aload_0 v0
+      [19] getfield #8
+        + Fieldref [net/thempra/yocaina/b.a Lnet/thempra/yocaina/MainActivity;]
+      [22] getfield #7
+        + Fieldref [net/thempra/yocaina/MainActivity.a Landroid/app/Dialog;]
+      [25] aload_0 v0
+      [26] getfield #8
+        + Fieldref [net/thempra/yocaina/b.a Lnet/thempra/yocaina/MainActivity;]
+      [29] ldc #1
+        + Integer [2131034123]
+      [31] invokevirtual #13
+        + Methodref [net/thempra/yocaina/MainActivity.getString (I)Ljava/lang/String;]
+      [34] invokevirtual #10
+        + Methodref [android/app/Dialog.setTitle (Ljava/lang/CharSequence;)V]
+      [37] aload_0 v0
+      [38] getfield #8
+        + Fieldref [net/thempra/yocaina/b.a Lnet/thempra/yocaina/MainActivity;]
+      [41] getfield #7
+        + Fieldref [net/thempra/yocaina/MainActivity.a Landroid/app/Dialog;]
+      [44] invokevirtual #11
+        + Methodref [android/app/Dialog.show ()V]
+      [47] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: net/thempra/yocaina/c
+  Superclass:    java/lang/Object
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x20
+    = class net.thempra.yocaina.c extends java.lang.Object
+
+Interfaces (count = 1):
+  + Class [android/view/View$OnClickListener]
+
+Constant Pool (count = 49):
+  + Integer [2131034124]
+  + Integer [2131034125]
+  + String [OK]
+  + Class [android/app/AlertDialog$Builder]
+  + Class [android/view/View$OnClickListener]
+  + Class [java/lang/Object]
+  + Class [net/thempra/yocaina/MainActivity]
+  + Class [net/thempra/yocaina/c]
+  + Fieldref [net/thempra/yocaina/c.a Lnet/thempra/yocaina/MainActivity;]
+  + Methodref [android/app/AlertDialog$Builder.<init> (Landroid/content/Context;)V]
+  + Methodref [android/app/AlertDialog$Builder.setMessage (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  + Methodref [android/app/AlertDialog$Builder.setPositiveButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+  + Methodref [android/app/AlertDialog$Builder.setTitle (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  + Methodref [android/app/AlertDialog$Builder.show ()Landroid/app/AlertDialog;]
+  + Methodref [java/lang/Object.<init> ()V]
+  + Methodref [net/thempra/yocaina/MainActivity.getString (I)Ljava/lang/String;]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Landroid/content/Context;)V]
+  + NameAndType [a Lnet/thempra/yocaina/MainActivity;]
+  + NameAndType [getString (I)Ljava/lang/String;]
+  + NameAndType [setMessage (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  + NameAndType [setPositiveButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+  + NameAndType [setTitle (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  + NameAndType [show ()Landroid/app/AlertDialog;]
+  + Utf8 [()Landroid/app/AlertDialog;]
+  + Utf8 [()V]
+  + Utf8 [(I)Ljava/lang/String;]
+  + Utf8 [(Landroid/content/Context;)V]
+  + Utf8 [(Landroid/view/View;)V]
+  + Utf8 [(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  + Utf8 [(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+  + Utf8 [(Lnet/thempra/yocaina/MainActivity;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Lnet/thempra/yocaina/MainActivity;]
+  + Utf8 [OK]
+  + Utf8 [a]
+  + Utf8 [android/app/AlertDialog$Builder]
+  + Utf8 [android/view/View$OnClickListener]
+  + Utf8 [getString]
+  + Utf8 [java/lang/Object]
+  + Utf8 [net/thempra/yocaina/MainActivity]
+  + Utf8 [net/thempra/yocaina/c]
+  + Utf8 [onClick]
+  + Utf8 [setMessage]
+  + Utf8 [setPositiveButton]
+  + Utf8 [setTitle]
+  + Utf8 [show]
+
+Fields (count = 1):
+  + Field:        a Lnet/thempra/yocaina/MainActivity;
+    Access flags: 0x1010
+      = final synthetic net.thempra.yocaina.MainActivity a
+
+Methods (count = 2):
+  - Method:       <init>(Lnet/thempra/yocaina/MainActivity;)V
+    Access flags: 0x0
+      = c(net.thempra.yocaina.MainActivity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #9
+        + Fieldref [net/thempra/yocaina/c.a Lnet/thempra/yocaina/MainActivity;]
+      [5] aload_0 v0
+      [6] invokespecial #15
+        + Methodref [java/lang/Object.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onClick(Landroid/view/View;)V
+    Access flags: 0x1
+      = public void onClick(android.view.View)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 54, locals = 3, stack = 3):
+      [0] new #4
+        + Class [android/app/AlertDialog$Builder]
+      [3] dup
+      [4] aload_0 v0
+      [5] getfield #9
+        + Fieldref [net/thempra/yocaina/c.a Lnet/thempra/yocaina/MainActivity;]
+      [8] invokespecial #10
+        + Methodref [android/app/AlertDialog$Builder.<init> (Landroid/content/Context;)V]
+      [11] astore_2 v2
+      [12] aload_2 v2
+      [13] aload_0 v0
+      [14] getfield #9
+        + Fieldref [net/thempra/yocaina/c.a Lnet/thempra/yocaina/MainActivity;]
+      [17] ldc #1
+        + Integer [2131034124]
+      [19] invokevirtual #16
+        + Methodref [net/thempra/yocaina/MainActivity.getString (I)Ljava/lang/String;]
+      [22] invokevirtual #13
+        + Methodref [android/app/AlertDialog$Builder.setTitle (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+      [25] pop
+      [26] aload_2 v2
+      [27] aload_0 v0
+      [28] getfield #9
+        + Fieldref [net/thempra/yocaina/c.a Lnet/thempra/yocaina/MainActivity;]
+      [31] ldc #2
+        + Integer [2131034125]
+      [33] invokevirtual #16
+        + Methodref [net/thempra/yocaina/MainActivity.getString (I)Ljava/lang/String;]
+      [36] invokevirtual #11
+        + Methodref [android/app/AlertDialog$Builder.setMessage (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+      [39] pop
+      [40] aload_2 v2
+      [41] ldc #3
+        + String [OK]
+      [43] aconst_null
+      [44] invokevirtual #12
+        + Methodref [android/app/AlertDialog$Builder.setPositiveButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+      [47] pop
+      [48] aload_2 v2
+      [49] invokevirtual #14
+        + Methodref [android/app/AlertDialog$Builder.show ()Landroid/app/AlertDialog;]
+      [52] pop
+      [53] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: net/thempra/yocaina/d
+  Superclass:    java/lang/Object
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x20
+    = class net.thempra.yocaina.d extends java.lang.Object
+
+Interfaces (count = 1):
+  + Class [android/view/View$OnClickListener]
+
+Constant Pool (count = 87):
+  + Integer [2131034118]
+  + Integer [2131034123]
+  + Integer [2131034139]
+  + Integer [2131034140]
+  + Integer [2131034141]
+  + Integer [2131034142]
+  + String [
+]
+  + String [dumped]
+  + Class [android/app/AlertDialog$Builder]
+  + Class [android/view/View$OnClickListener]
+  + Class [java/lang/Object]
+  + Class [java/lang/String]
+  + Class [java/lang/StringBuilder]
+  + Class [net/thempra/yocaina/MainActivity]
+  + Class [net/thempra/yocaina/a/a]
+  + Class [net/thempra/yocaina/d]
+  + Fieldref [net/thempra/yocaina/d.a Lnet/thempra/yocaina/MainActivity;]
+  + Methodref [android/app/AlertDialog$Builder.<init> (Landroid/content/Context;)V]
+  + Methodref [android/app/AlertDialog$Builder.setMessage (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  + Methodref [android/app/AlertDialog$Builder.setPositiveButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+  + Methodref [android/app/AlertDialog$Builder.setTitle (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  + Methodref [android/app/AlertDialog$Builder.show ()Landroid/app/AlertDialog;]
+  + Methodref [java/lang/Object.<init> ()V]
+  + Methodref [java/lang/String.isEmpty ()Z]
+  + Methodref [java/lang/String.valueOf (Ljava/lang/Object;)Ljava/lang/String;]
+  + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+  + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+  + Methodref [net/thempra/yocaina/MainActivity.a (Lnet/thempra/yocaina/MainActivity;)Lnet/thempra/yocaina/a/a;]
+  + Methodref [net/thempra/yocaina/MainActivity.getString (I)Ljava/lang/String;]
+  + Methodref [net/thempra/yocaina/a/a.a (Ljava/lang/String;)Ljava/lang/String;]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Landroid/content/Context;)V]
+  + NameAndType [<init> (Ljava/lang/String;)V]
+  + NameAndType [a (Ljava/lang/String;)Ljava/lang/String;]
+  + NameAndType [a (Lnet/thempra/yocaina/MainActivity;)Lnet/thempra/yocaina/a/a;]
+  + NameAndType [a Lnet/thempra/yocaina/MainActivity;]
+  + NameAndType [append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + NameAndType [getString (I)Ljava/lang/String;]
+  + NameAndType [isEmpty ()Z]
+  + NameAndType [setMessage (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  + NameAndType [setPositiveButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+  + NameAndType [setTitle (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  + NameAndType [show ()Landroid/app/AlertDialog;]
+  + NameAndType [toString ()Ljava/lang/String;]
+  + NameAndType [valueOf (Ljava/lang/Object;)Ljava/lang/String;]
+  + Utf8 [
+]
+  + Utf8 [()Landroid/app/AlertDialog;]
+  + Utf8 [()Ljava/lang/String;]
+  + Utf8 [()V]
+  + Utf8 [()Z]
+  + Utf8 [(I)Ljava/lang/String;]
+  + Utf8 [(Landroid/content/Context;)V]
+  + Utf8 [(Landroid/view/View;)V]
+  + Utf8 [(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  + Utf8 [(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+  + Utf8 [(Ljava/lang/Object;)Ljava/lang/String;]
+  + Utf8 [(Ljava/lang/String;)Ljava/lang/String;]
+  + Utf8 [(Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + Utf8 [(Ljava/lang/String;)V]
+  + Utf8 [(Lnet/thempra/yocaina/MainActivity;)Lnet/thempra/yocaina/a/a;]
+  + Utf8 [(Lnet/thempra/yocaina/MainActivity;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Lnet/thempra/yocaina/MainActivity;]
+  + Utf8 [StackMapTable]
+  + Utf8 [a]
+  + Utf8 [android/app/AlertDialog$Builder]
+  + Utf8 [android/view/View$OnClickListener]
+  + Utf8 [append]
+  + Utf8 [dumped]
+  + Utf8 [getString]
+  + Utf8 [isEmpty]
+  + Utf8 [java/lang/Object]
+  + Utf8 [java/lang/String]
+  + Utf8 [java/lang/StringBuilder]
+  + Utf8 [net/thempra/yocaina/MainActivity]
+  + Utf8 [net/thempra/yocaina/a/a]
+  + Utf8 [net/thempra/yocaina/d]
+  + Utf8 [onClick]
+  + Utf8 [setMessage]
+  + Utf8 [setPositiveButton]
+  + Utf8 [setTitle]
+  + Utf8 [show]
+  + Utf8 [toString]
+  + Utf8 [valueOf]
+
+Fields (count = 1):
+  + Field:        a Lnet/thempra/yocaina/MainActivity;
+    Access flags: 0x1010
+      = final synthetic net.thempra.yocaina.MainActivity a
+
+Methods (count = 2):
+  - Method:       <init>(Lnet/thempra/yocaina/MainActivity;)V
+    Access flags: 0x0
+      = d(net.thempra.yocaina.MainActivity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #17
+        + Fieldref [net/thempra/yocaina/d.a Lnet/thempra/yocaina/MainActivity;]
+      [5] aload_0 v0
+      [6] invokespecial #23
+        + Methodref [java/lang/Object.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onClick(Landroid/view/View;)V
+    Access flags: 0x1
+      = public void onClick(android.view.View)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 218, locals = 4, stack = 5):
+      [0] aload_0 v0
+      [1] getfield #17
+        + Fieldref [net/thempra/yocaina/d.a Lnet/thempra/yocaina/MainActivity;]
+      [4] invokestatic #29
+        + Methodref [net/thempra/yocaina/MainActivity.a (Lnet/thempra/yocaina/MainActivity;)Lnet/thempra/yocaina/a/a;]
+      [7] ifnull +120 (target=127)
+      [10] aload_0 v0
+      [11] getfield #17
+        + Fieldref [net/thempra/yocaina/d.a Lnet/thempra/yocaina/MainActivity;]
+      [14] invokestatic #29
+        + Methodref [net/thempra/yocaina/MainActivity.a (Lnet/thempra/yocaina/MainActivity;)Lnet/thempra/yocaina/a/a;]
+      [17] ldc #8
+        + String [dumped]
+      [19] invokevirtual #31
+        + Methodref [net/thempra/yocaina/a/a.a (Ljava/lang/String;)Ljava/lang/String;]
+      [22] astore_2 v2
+      [23] new #9
+        + Class [android/app/AlertDialog$Builder]
+      [26] dup
+      [27] aload_0 v0
+      [28] getfield #17
+        + Fieldref [net/thempra/yocaina/d.a Lnet/thempra/yocaina/MainActivity;]
+      [31] invokespecial #18
+        + Methodref [android/app/AlertDialog$Builder.<init> (Landroid/content/Context;)V]
+      [34] astore_3 v3
+      [35] aload_3 v3
+      [36] aload_0 v0
+      [37] getfield #17
+        + Fieldref [net/thempra/yocaina/d.a Lnet/thempra/yocaina/MainActivity;]
+      [40] ldc #1
+        + Integer [2131034118]
+      [42] invokevirtual #30
+        + Methodref [net/thempra/yocaina/MainActivity.getString (I)Ljava/lang/String;]
+      [45] invokevirtual #21
+        + Methodref [android/app/AlertDialog$Builder.setTitle (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+      [48] pop
+      [49] aload_3 v3
+      [50] aload_0 v0
+      [51] getfield #17
+        + Fieldref [net/thempra/yocaina/d.a Lnet/thempra/yocaina/MainActivity;]
+      [54] ldc #6
+        + Integer [2131034142]
+      [56] invokevirtual #30
+        + Methodref [net/thempra/yocaina/MainActivity.getString (I)Ljava/lang/String;]
+      [59] aconst_null
+      [60] invokevirtual #20
+        + Methodref [android/app/AlertDialog$Builder.setPositiveButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+      [63] pop
+      [64] aload_2 v2
+      [65] invokevirtual #24
+        + Methodref [java/lang/String.isEmpty ()Z]
+      [68] ifne +37 (target=105)
+      [71] aload_3 v3
+      [72] new #13
+        + Class [java/lang/StringBuilder]
+      [75] dup
+      [76] aload_0 v0
+      [77] getfield #17
+        + Fieldref [net/thempra/yocaina/d.a Lnet/thempra/yocaina/MainActivity;]
+      [80] ldc #3
+        + Integer [2131034139]
+      [82] invokevirtual #30
+        + Methodref [net/thempra/yocaina/MainActivity.getString (I)Ljava/lang/String;]
+      [85] invokestatic #25
+        + Methodref [java/lang/String.valueOf (Ljava/lang/Object;)Ljava/lang/String;]
+      [88] invokespecial #26
+        + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+      [91] aload_2 v2
+      [92] invokevirtual #27
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [95] invokevirtual #28
+        + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [98] invokevirtual #19
+        + Methodref [android/app/AlertDialog$Builder.setMessage (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+      [101] pop
+      [102] goto +17 (target=119)
+      [105] aload_3 v3
+      [106] aload_0 v0
+      [107] getfield #17
+        + Fieldref [net/thempra/yocaina/d.a Lnet/thempra/yocaina/MainActivity;]
+      [110] ldc #4
+        + Integer [2131034140]
+      [112] invokevirtual #30
+        + Methodref [net/thempra/yocaina/MainActivity.getString (I)Ljava/lang/String;]
+      [115] invokevirtual #19
+        + Methodref [android/app/AlertDialog$Builder.setMessage (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+      [118] pop
+      [119] aload_3 v3
+      [120] invokevirtual #22
+        + Methodref [android/app/AlertDialog$Builder.show ()Landroid/app/AlertDialog;]
+      [123] pop
+      [124] goto +93 (target=217)
+      [127] new #9
+        + Class [android/app/AlertDialog$Builder]
+      [130] dup
+      [131] aload_0 v0
+      [132] getfield #17
+        + Fieldref [net/thempra/yocaina/d.a Lnet/thempra/yocaina/MainActivity;]
+      [135] invokespecial #18
+        + Methodref [android/app/AlertDialog$Builder.<init> (Landroid/content/Context;)V]
+      [138] astore_2 v2
+      [139] aload_2 v2
+      [140] aload_0 v0
+      [141] getfield #17
+        + Fieldref [net/thempra/yocaina/d.a Lnet/thempra/yocaina/MainActivity;]
+      [144] ldc #1
+        + Integer [2131034118]
+      [146] invokevirtual #30
+        + Methodref [net/thempra/yocaina/MainActivity.getString (I)Ljava/lang/String;]
+      [149] invokevirtual #21
+        + Methodref [android/app/AlertDialog$Builder.setTitle (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+      [152] pop
+      [153] aload_2 v2
+      [154] new #13
+        + Class [java/lang/StringBuilder]
+      [157] dup
+      [158] aload_0 v0
+      [159] getfield #17
+        + Fieldref [net/thempra/yocaina/d.a Lnet/thempra/yocaina/MainActivity;]
+      [162] ldc #2
+        + Integer [2131034123]
+      [164] invokevirtual #30
+        + Methodref [net/thempra/yocaina/MainActivity.getString (I)Ljava/lang/String;]
+      [167] invokestatic #25
+        + Methodref [java/lang/String.valueOf (Ljava/lang/Object;)Ljava/lang/String;]
+      [170] invokespecial #26
+        + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+      [173] ldc #7
+        + String [
+]
+      [175] invokevirtual #27
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [178] aload_0 v0
+      [179] getfield #17
+        + Fieldref [net/thempra/yocaina/d.a Lnet/thempra/yocaina/MainActivity;]
+      [182] ldc #5
+        + Integer [2131034141]
+      [184] invokevirtual #30
+        + Methodref [net/thempra/yocaina/MainActivity.getString (I)Ljava/lang/String;]
+      [187] invokevirtual #27
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [190] invokevirtual #28
+        + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [193] invokevirtual #19
+        + Methodref [android/app/AlertDialog$Builder.setMessage (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+      [196] pop
+      [197] aload_2 v2
+      [198] aload_0 v0
+      [199] getfield #17
+        + Fieldref [net/thempra/yocaina/d.a Lnet/thempra/yocaina/MainActivity;]
+      [202] ldc #6
+        + Integer [2131034142]
+      [204] invokevirtual #30
+        + Methodref [net/thempra/yocaina/MainActivity.getString (I)Ljava/lang/String;]
+      [207] aconst_null
+      [208] invokevirtual #20
+        + Methodref [android/app/AlertDialog$Builder.setPositiveButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+      [211] pop
+      [212] aload_2 v2
+      [213] invokevirtual #22
+        + Methodref [android/app/AlertDialog$Builder.show ()Landroid/app/AlertDialog;]
+      [216] pop
+      [217] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 4):
+        - [105] Var: ...[a:java/lang/String][a:android/app/AlertDialog$Builder], Stack: (empty)
+        - [119] Var: ..., Stack: (empty)
+        - [127] Var: -2, Stack: (empty)
+        - [217] Var: ..., Stack: (empty)
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: net/thempra/yocaina/e
+  Superclass:    java/lang/Object
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x20
+    = class net.thempra.yocaina.e extends java.lang.Object
+
+Interfaces (count = 1):
+  + Class [android/view/View$OnClickListener]
+
+Constant Pool (count = 49):
+  + Integer [2131034124]
+  + Integer [2131034125]
+  + String [OK]
+  + Class [android/app/AlertDialog$Builder]
+  + Class [android/view/View$OnClickListener]
+  + Class [java/lang/Object]
+  + Class [net/thempra/yocaina/MainActivity]
+  + Class [net/thempra/yocaina/e]
+  + Fieldref [net/thempra/yocaina/e.a Lnet/thempra/yocaina/MainActivity;]
+  + Methodref [android/app/AlertDialog$Builder.<init> (Landroid/content/Context;)V]
+  + Methodref [android/app/AlertDialog$Builder.setMessage (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  + Methodref [android/app/AlertDialog$Builder.setPositiveButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+  + Methodref [android/app/AlertDialog$Builder.setTitle (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  + Methodref [android/app/AlertDialog$Builder.show ()Landroid/app/AlertDialog;]
+  + Methodref [java/lang/Object.<init> ()V]
+  + Methodref [net/thempra/yocaina/MainActivity.getString (I)Ljava/lang/String;]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Landroid/content/Context;)V]
+  + NameAndType [a Lnet/thempra/yocaina/MainActivity;]
+  + NameAndType [getString (I)Ljava/lang/String;]
+  + NameAndType [setMessage (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  + NameAndType [setPositiveButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+  + NameAndType [setTitle (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  + NameAndType [show ()Landroid/app/AlertDialog;]
+  + Utf8 [()Landroid/app/AlertDialog;]
+  + Utf8 [()V]
+  + Utf8 [(I)Ljava/lang/String;]
+  + Utf8 [(Landroid/content/Context;)V]
+  + Utf8 [(Landroid/view/View;)V]
+  + Utf8 [(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  + Utf8 [(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+  + Utf8 [(Lnet/thempra/yocaina/MainActivity;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Lnet/thempra/yocaina/MainActivity;]
+  + Utf8 [OK]
+  + Utf8 [a]
+  + Utf8 [android/app/AlertDialog$Builder]
+  + Utf8 [android/view/View$OnClickListener]
+  + Utf8 [getString]
+  + Utf8 [java/lang/Object]
+  + Utf8 [net/thempra/yocaina/MainActivity]
+  + Utf8 [net/thempra/yocaina/e]
+  + Utf8 [onClick]
+  + Utf8 [setMessage]
+  + Utf8 [setPositiveButton]
+  + Utf8 [setTitle]
+  + Utf8 [show]
+
+Fields (count = 1):
+  + Field:        a Lnet/thempra/yocaina/MainActivity;
+    Access flags: 0x1010
+      = final synthetic net.thempra.yocaina.MainActivity a
+
+Methods (count = 2):
+  - Method:       <init>(Lnet/thempra/yocaina/MainActivity;)V
+    Access flags: 0x0
+      = e(net.thempra.yocaina.MainActivity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #9
+        + Fieldref [net/thempra/yocaina/e.a Lnet/thempra/yocaina/MainActivity;]
+      [5] aload_0 v0
+      [6] invokespecial #15
+        + Methodref [java/lang/Object.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onClick(Landroid/view/View;)V
+    Access flags: 0x1
+      = public void onClick(android.view.View)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 54, locals = 3, stack = 3):
+      [0] new #4
+        + Class [android/app/AlertDialog$Builder]
+      [3] dup
+      [4] aload_0 v0
+      [5] getfield #9
+        + Fieldref [net/thempra/yocaina/e.a Lnet/thempra/yocaina/MainActivity;]
+      [8] invokespecial #10
+        + Methodref [android/app/AlertDialog$Builder.<init> (Landroid/content/Context;)V]
+      [11] astore_2 v2
+      [12] aload_2 v2
+      [13] aload_0 v0
+      [14] getfield #9
+        + Fieldref [net/thempra/yocaina/e.a Lnet/thempra/yocaina/MainActivity;]
+      [17] ldc #1
+        + Integer [2131034124]
+      [19] invokevirtual #16
+        + Methodref [net/thempra/yocaina/MainActivity.getString (I)Ljava/lang/String;]
+      [22] invokevirtual #13
+        + Methodref [android/app/AlertDialog$Builder.setTitle (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+      [25] pop
+      [26] aload_2 v2
+      [27] aload_0 v0
+      [28] getfield #9
+        + Fieldref [net/thempra/yocaina/e.a Lnet/thempra/yocaina/MainActivity;]
+      [31] ldc #2
+        + Integer [2131034125]
+      [33] invokevirtual #16
+        + Methodref [net/thempra/yocaina/MainActivity.getString (I)Ljava/lang/String;]
+      [36] invokevirtual #11
+        + Methodref [android/app/AlertDialog$Builder.setMessage (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+      [39] pop
+      [40] aload_2 v2
+      [41] ldc #3
+        + String [OK]
+      [43] aconst_null
+      [44] invokevirtual #12
+        + Methodref [android/app/AlertDialog$Builder.setPositiveButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+      [47] pop
+      [48] aload_2 v2
+      [49] invokevirtual #14
+        + Methodref [android/app/AlertDialog$Builder.show ()Landroid/app/AlertDialog;]
+      [52] pop
+      [53] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: net/thempra/yocaina/f
+  Superclass:    java/lang/Object
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x20
+    = class net.thempra.yocaina.f extends java.lang.Object
+
+Interfaces (count = 1):
+  + Class [android/view/View$OnClickListener]
+
+Constant Pool (count = 49):
+  + Integer [2131034124]
+  + Integer [2131034125]
+  + String [OK]
+  + Class [android/app/AlertDialog$Builder]
+  + Class [android/view/View$OnClickListener]
+  + Class [java/lang/Object]
+  + Class [net/thempra/yocaina/MainActivity]
+  + Class [net/thempra/yocaina/f]
+  + Fieldref [net/thempra/yocaina/f.a Lnet/thempra/yocaina/MainActivity;]
+  + Methodref [android/app/AlertDialog$Builder.<init> (Landroid/content/Context;)V]
+  + Methodref [android/app/AlertDialog$Builder.setMessage (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  + Methodref [android/app/AlertDialog$Builder.setPositiveButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+  + Methodref [android/app/AlertDialog$Builder.setTitle (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  + Methodref [android/app/AlertDialog$Builder.show ()Landroid/app/AlertDialog;]
+  + Methodref [java/lang/Object.<init> ()V]
+  + Methodref [net/thempra/yocaina/MainActivity.getString (I)Ljava/lang/String;]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Landroid/content/Context;)V]
+  + NameAndType [a Lnet/thempra/yocaina/MainActivity;]
+  + NameAndType [getString (I)Ljava/lang/String;]
+  + NameAndType [setMessage (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  + NameAndType [setPositiveButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+  + NameAndType [setTitle (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  + NameAndType [show ()Landroid/app/AlertDialog;]
+  + Utf8 [()Landroid/app/AlertDialog;]
+  + Utf8 [()V]
+  + Utf8 [(I)Ljava/lang/String;]
+  + Utf8 [(Landroid/content/Context;)V]
+  + Utf8 [(Landroid/view/View;)V]
+  + Utf8 [(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+  + Utf8 [(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+  + Utf8 [(Lnet/thempra/yocaina/MainActivity;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Lnet/thempra/yocaina/MainActivity;]
+  + Utf8 [OK]
+  + Utf8 [a]
+  + Utf8 [android/app/AlertDialog$Builder]
+  + Utf8 [android/view/View$OnClickListener]
+  + Utf8 [getString]
+  + Utf8 [java/lang/Object]
+  + Utf8 [net/thempra/yocaina/MainActivity]
+  + Utf8 [net/thempra/yocaina/f]
+  + Utf8 [onClick]
+  + Utf8 [setMessage]
+  + Utf8 [setPositiveButton]
+  + Utf8 [setTitle]
+  + Utf8 [show]
+
+Fields (count = 1):
+  + Field:        a Lnet/thempra/yocaina/MainActivity;
+    Access flags: 0x1010
+      = final synthetic net.thempra.yocaina.MainActivity a
+
+Methods (count = 2):
+  - Method:       <init>(Lnet/thempra/yocaina/MainActivity;)V
+    Access flags: 0x0
+      = f(net.thempra.yocaina.MainActivity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #9
+        + Fieldref [net/thempra/yocaina/f.a Lnet/thempra/yocaina/MainActivity;]
+      [5] aload_0 v0
+      [6] invokespecial #15
+        + Methodref [java/lang/Object.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onClick(Landroid/view/View;)V
+    Access flags: 0x1
+      = public void onClick(android.view.View)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 54, locals = 3, stack = 3):
+      [0] new #4
+        + Class [android/app/AlertDialog$Builder]
+      [3] dup
+      [4] aload_0 v0
+      [5] getfield #9
+        + Fieldref [net/thempra/yocaina/f.a Lnet/thempra/yocaina/MainActivity;]
+      [8] invokespecial #10
+        + Methodref [android/app/AlertDialog$Builder.<init> (Landroid/content/Context;)V]
+      [11] astore_2 v2
+      [12] aload_2 v2
+      [13] aload_0 v0
+      [14] getfield #9
+        + Fieldref [net/thempra/yocaina/f.a Lnet/thempra/yocaina/MainActivity;]
+      [17] ldc #1
+        + Integer [2131034124]
+      [19] invokevirtual #16
+        + Methodref [net/thempra/yocaina/MainActivity.getString (I)Ljava/lang/String;]
+      [22] invokevirtual #13
+        + Methodref [android/app/AlertDialog$Builder.setTitle (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+      [25] pop
+      [26] aload_2 v2
+      [27] aload_0 v0
+      [28] getfield #9
+        + Fieldref [net/thempra/yocaina/f.a Lnet/thempra/yocaina/MainActivity;]
+      [31] ldc #2
+        + Integer [2131034125]
+      [33] invokevirtual #16
+        + Methodref [net/thempra/yocaina/MainActivity.getString (I)Ljava/lang/String;]
+      [36] invokevirtual #11
+        + Methodref [android/app/AlertDialog$Builder.setMessage (Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;]
+      [39] pop
+      [40] aload_2 v2
+      [41] ldc #3
+        + String [OK]
+      [43] aconst_null
+      [44] invokevirtual #12
+        + Methodref [android/app/AlertDialog$Builder.setPositiveButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;]
+      [47] pop
+      [48] aload_2 v2
+      [49] invokevirtual #14
+        + Methodref [android/app/AlertDialog$Builder.show ()Landroid/app/AlertDialog;]
+      [52] pop
+      [53] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: net/thempra/yocaina/g
+  Superclass:    java/lang/Object
+  Major version: 0x32
+  Minor version: 0x0
+  Access flags:  0x20
+    = class net.thempra.yocaina.g extends java.lang.Object
+
+Interfaces (count = 1):
   + Class [android/content/DialogInterface$OnClickListener]
 
-Constant Pool (count = 137):
+Constant Pool (count = 147):
+  + Integer [2131034129]
   + String [DUMP]
   + String [Files out of date]
   + String [OK]
@@ -2407,6 +3376,7 @@ Constant Pool (count = 137):
   + Class [android/content/DialogInterface]
   + Class [android/content/DialogInterface$OnClickListener]
   + Class [android/content/Intent]
+  + Class [android/widget/TextView]
   + Class [java/lang/Object]
   + Class [java/lang/String]
   + Class [java/util/ArrayList]
@@ -2415,10 +3385,10 @@ Constant Pool (count = 137):
   + Class [net/thempra/yocaina/MainActivity]
   + Class [net/thempra/yocaina/a/a]
   + Class [net/thempra/yocaina/a/b]
-  + Class [net/thempra/yocaina/b]
-  + Class [net/thempra/yocaina/c]
-  + Fieldref [net/thempra/yocaina/b.a Lnet/thempra/yocaina/MainActivity;]
-  + Fieldref [net/thempra/yocaina/b.b Landroid/nfc/Tag;]
+  + Class [net/thempra/yocaina/g]
+  + Class [net/thempra/yocaina/h]
+  + Fieldref [net/thempra/yocaina/g.a Lnet/thempra/yocaina/MainActivity;]
+  + Fieldref [net/thempra/yocaina/g.b Landroid/nfc/Tag;]
   + Methodref [android/app/AlertDialog.setButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V]
   + Methodref [android/app/AlertDialog.setMessage (Ljava/lang/CharSequence;)V]
   + Methodref [android/app/AlertDialog.setTitle (Ljava/lang/CharSequence;)V]
@@ -2428,6 +3398,7 @@ Constant Pool (count = 137):
   + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
   + Methodref [android/content/Intent.putExtra (Ljava/lang/String;I)Landroid/content/Intent;]
   + Methodref [android/content/Intent.putExtra (Ljava/lang/String;Ljava/io/Serializable;)Landroid/content/Intent;]
+  + Methodref [android/widget/TextView.setText (I)V]
   + Methodref [java/lang/Object.<init> ()V]
   + Methodref [java/lang/String.toString ()Ljava/lang/String;]
   + Methodref [java/util/ArrayList.size ()I]
@@ -2435,20 +3406,21 @@ Constant Pool (count = 137):
   + Methodref [net/thempra/yocaina/MainActivity.a (Lnet/thempra/yocaina/MainActivity;)Lnet/thempra/yocaina/a/a;]
   + Methodref [net/thempra/yocaina/MainActivity.a (Lnet/thempra/yocaina/MainActivity;I)V]
   + Methodref [net/thempra/yocaina/MainActivity.a (Lnet/thempra/yocaina/MainActivity;Lnet/thempra/yocaina/a/a;)V]
+  + Methodref [net/thempra/yocaina/MainActivity.b ()Landroid/widget/TextView;]
   + Methodref [net/thempra/yocaina/MainActivity.startActivity (Landroid/content/Intent;)V]
   + Methodref [net/thempra/yocaina/a/a.a ()I]
   + Methodref [net/thempra/yocaina/a/a.a (Landroid/nfc/Tag;)Ljava/util/ArrayList;]
   + Methodref [net/thempra/yocaina/a/a.b ()I]
   + Methodref [net/thempra/yocaina/a/b.<init> (Ljava/lang/String;)V]
   + Methodref [net/thempra/yocaina/a/b.c ()Z]
-  + Methodref [net/thempra/yocaina/c.<init> (Lnet/thempra/yocaina/b;)V]
+  + Methodref [net/thempra/yocaina/h.<init> (Lnet/thempra/yocaina/g;)V]
   + InterfaceMethodref [android/content/DialogInterface.dismiss ()V]
   + InterfaceMethodref [java/util/List.get (I)Ljava/lang/Object;]
   + NameAndType [<init> ()V]
   + NameAndType [<init> (Landroid/content/Context;)V]
   + NameAndType [<init> (Landroid/content/Context;Ljava/lang/Class;)V]
   + NameAndType [<init> (Ljava/lang/String;)V]
-  + NameAndType [<init> (Lnet/thempra/yocaina/b;)V]
+  + NameAndType [<init> (Lnet/thempra/yocaina/g;)V]
   + NameAndType [a ()I]
   + NameAndType [a ()Ljava/util/List;]
   + NameAndType [a (Landroid/nfc/Tag;)Ljava/util/ArrayList;]
@@ -2457,6 +3429,7 @@ Constant Pool (count = 137):
   + NameAndType [a (Lnet/thempra/yocaina/MainActivity;Lnet/thempra/yocaina/a/a;)V]
   + NameAndType [a Lnet/thempra/yocaina/MainActivity;]
   + NameAndType [b ()I]
+  + NameAndType [b ()Landroid/widget/TextView;]
   + NameAndType [b Landroid/nfc/Tag;]
   + NameAndType [c ()Z]
   + NameAndType [create ()Landroid/app/AlertDialog;]
@@ -2466,6 +3439,7 @@ Constant Pool (count = 137):
   + NameAndType [putExtra (Ljava/lang/String;Ljava/io/Serializable;)Landroid/content/Intent;]
   + NameAndType [setButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V]
   + NameAndType [setMessage (Ljava/lang/CharSequence;)V]
+  + NameAndType [setText (I)V]
   + NameAndType [setTitle (Ljava/lang/CharSequence;)V]
   + NameAndType [show ()V]
   + NameAndType [size ()I]
@@ -2473,11 +3447,13 @@ Constant Pool (count = 137):
   + NameAndType [toString ()Ljava/lang/String;]
   + Utf8 [()I]
   + Utf8 [()Landroid/app/AlertDialog;]
+  + Utf8 [()Landroid/widget/TextView;]
   + Utf8 [()Ljava/lang/String;]
   + Utf8 [()Ljava/util/List;]
   + Utf8 [()V]
   + Utf8 [()Z]
   + Utf8 [(I)Ljava/lang/Object;]
+  + Utf8 [(I)V]
   + Utf8 [(Landroid/content/Context;)V]
   + Utf8 [(Landroid/content/Context;Ljava/lang/Class;)V]
   + Utf8 [(Landroid/content/DialogInterface;I)V]
@@ -2492,7 +3468,7 @@ Constant Pool (count = 137):
   + Utf8 [(Lnet/thempra/yocaina/MainActivity;I)V]
   + Utf8 [(Lnet/thempra/yocaina/MainActivity;Landroid/nfc/Tag;)V]
   + Utf8 [(Lnet/thempra/yocaina/MainActivity;Lnet/thempra/yocaina/a/a;)V]
-  + Utf8 [(Lnet/thempra/yocaina/b;)V]
+  + Utf8 [(Lnet/thempra/yocaina/g;)V]
   + Utf8 [<init>]
   + Utf8 [Code]
   + Utf8 [DUMP]
@@ -2509,6 +3485,7 @@ Constant Pool (count = 137):
   + Utf8 [android/content/DialogInterface]
   + Utf8 [android/content/DialogInterface$OnClickListener]
   + Utf8 [android/content/Intent]
+  + Utf8 [android/widget/TextView]
   + Utf8 [b]
   + Utf8 [blocksBySector]
   + Utf8 [c]
@@ -2523,12 +3500,13 @@ Constant Pool (count = 137):
   + Utf8 [net/thempra/yocaina/MainActivity]
   + Utf8 [net/thempra/yocaina/a/a]
   + Utf8 [net/thempra/yocaina/a/b]
-  + Utf8 [net/thempra/yocaina/b]
-  + Utf8 [net/thempra/yocaina/c]
+  + Utf8 [net/thempra/yocaina/g]
+  + Utf8 [net/thempra/yocaina/h]
   + Utf8 [onClick]
   + Utf8 [putExtra]
   + Utf8 [setButton]
   + Utf8 [setMessage]
+  + Utf8 [setText]
   + Utf8 [setTitle]
   + Utf8 [show]
   + Utf8 [size]
@@ -2546,19 +3524,19 @@ Fields (count = 2):
 Methods (count = 2):
   - Method:       <init>(Lnet/thempra/yocaina/MainActivity;Landroid/nfc/Tag;)V
     Access flags: 0x0
-      = b(net.thempra.yocaina.MainActivity,android.nfc.Tag)
+      = g(net.thempra.yocaina.MainActivity,android.nfc.Tag)
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 15, locals = 3, stack = 2):
       [0] aload_0 v0
       [1] aload_1 v1
-      [2] putfield #21
-        + Fieldref [net/thempra/yocaina/b.a Lnet/thempra/yocaina/MainActivity;]
+      [2] putfield #23
+        + Fieldref [net/thempra/yocaina/g.a Lnet/thempra/yocaina/MainActivity;]
       [5] aload_0 v0
       [6] aload_2 v2
-      [7] putfield #22
-        + Fieldref [net/thempra/yocaina/b.b Landroid/nfc/Tag;]
+      [7] putfield #24
+        + Fieldref [net/thempra/yocaina/g.b Landroid/nfc/Tag;]
       [10] aload_0 v0
-      [11] invokespecial #32
+      [11] invokespecial #35
         + Methodref [java/lang/Object.<init> ()V]
       [14] return
       Code attribute exceptions (count = 0):
@@ -2567,158 +3545,164 @@ Methods (count = 2):
     Access flags: 0x1
       = public void onClick(android.content.DialogInterface,int)
     Class member attributes (count = 1):
-    + Code attribute instructions (code length = 193, locals = 5, stack = 5):
+    + Code attribute instructions (code length = 201, locals = 5, stack = 5):
       [0] aload_1 v1
-      [1] invokeinterface #46
+      [1] invokeinterface #50
         + InterfaceMethodref [android/content/DialogInterface.dismiss ()V]
       [6] aload_0 v0
-      [7] getfield #21
-        + Fieldref [net/thempra/yocaina/b.a Lnet/thempra/yocaina/MainActivity;]
-      [10] new #18
+      [7] getfield #23
+        + Fieldref [net/thempra/yocaina/g.a Lnet/thempra/yocaina/MainActivity;]
+      [10] new #20
         + Class [net/thempra/yocaina/a/b]
       [13] dup
-      [14] invokestatic #35
+      [14] invokestatic #38
         + Methodref [net/thempra/yocaina/MainActivity.a ()Ljava/util/List;]
       [17] iload_2 v2
-      [18] invokeinterface #47
+      [18] invokeinterface #51
         + InterfaceMethodref [java/util/List.get (I)Ljava/lang/Object;]
-      [23] checkcast #12
+      [23] checkcast #14
         + Class [java/lang/String]
-      [26] invokevirtual #33
+      [26] invokevirtual #36
         + Methodref [java/lang/String.toString ()Ljava/lang/String;]
-      [29] invokespecial #43
+      [29] invokespecial #47
         + Methodref [net/thempra/yocaina/a/b.<init> (Ljava/lang/String;)V]
-      [32] invokestatic #38
+      [32] invokestatic #41
         + Methodref [net/thempra/yocaina/MainActivity.a (Lnet/thempra/yocaina/MainActivity;Lnet/thempra/yocaina/a/a;)V]
       [35] aload_0 v0
-      [36] getfield #21
-        + Fieldref [net/thempra/yocaina/b.a Lnet/thempra/yocaina/MainActivity;]
-      [39] invokestatic #36
+      [36] getfield #23
+        + Fieldref [net/thempra/yocaina/g.a Lnet/thempra/yocaina/MainActivity;]
+      [39] invokestatic #39
         + Methodref [net/thempra/yocaina/MainActivity.a (Lnet/thempra/yocaina/MainActivity;)Lnet/thempra/yocaina/a/a;]
-      [42] checkcast #18
+      [42] checkcast #20
         + Class [net/thempra/yocaina/a/b]
-      [45] invokevirtual #44
+      [45] invokevirtual #48
         + Methodref [net/thempra/yocaina/a/b.c ()Z]
       [48] ifne +51 (target=99)
-      [51] new #7
+      [51] new #8
         + Class [android/app/AlertDialog$Builder]
       [54] dup
       [55] aload_0 v0
-      [56] getfield #21
-        + Fieldref [net/thempra/yocaina/b.a Lnet/thempra/yocaina/MainActivity;]
-      [59] invokespecial #27
+      [56] getfield #23
+        + Fieldref [net/thempra/yocaina/g.a Lnet/thempra/yocaina/MainActivity;]
+      [59] invokespecial #29
         + Methodref [android/app/AlertDialog$Builder.<init> (Landroid/content/Context;)V]
-      [62] invokevirtual #28
+      [62] invokevirtual #30
         + Methodref [android/app/AlertDialog$Builder.create ()Landroid/app/AlertDialog;]
       [65] astore_3 v3
       [66] aload_3 v3
-      [67] ldc #2
+      [67] ldc #3
         + String [Files out of date]
-      [69] invokevirtual #25
+      [69] invokevirtual #27
         + Methodref [android/app/AlertDialog.setTitle (Ljava/lang/CharSequence;)V]
       [72] aload_3 v3
-      [73] ldc #4
+      [73] ldc #5
         + String [Your files are out of date.
  Please update new format files from the repository]
-      [75] invokevirtual #24
+      [75] invokevirtual #26
         + Methodref [android/app/AlertDialog.setMessage (Ljava/lang/CharSequence;)V]
       [78] aload_3 v3
-      [79] ldc #3
+      [79] ldc #4
         + String [OK]
-      [81] new #20
-        + Class [net/thempra/yocaina/c]
+      [81] new #22
+        + Class [net/thempra/yocaina/h]
       [84] dup
       [85] aload_0 v0
-      [86] invokespecial #45
-        + Methodref [net/thempra/yocaina/c.<init> (Lnet/thempra/yocaina/b;)V]
-      [89] invokevirtual #23
+      [86] invokespecial #49
+        + Methodref [net/thempra/yocaina/h.<init> (Lnet/thempra/yocaina/g;)V]
+      [89] invokevirtual #25
         + Methodref [android/app/AlertDialog.setButton (Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V]
       [92] aload_3 v3
-      [93] invokevirtual #26
+      [93] invokevirtual #28
         + Methodref [android/app/AlertDialog.show ()V]
-      [96] goto +96 (target=192)
+      [96] goto +104 (target=200)
       [99] aload_0 v0
-      [100] getfield #21
-        + Fieldref [net/thempra/yocaina/b.a Lnet/thempra/yocaina/MainActivity;]
-      [103] invokestatic #36
+      [100] getfield #23
+        + Fieldref [net/thempra/yocaina/g.a Lnet/thempra/yocaina/MainActivity;]
+      [103] invokestatic #39
         + Methodref [net/thempra/yocaina/MainActivity.a (Lnet/thempra/yocaina/MainActivity;)Lnet/thempra/yocaina/a/a;]
       [106] aload_0 v0
-      [107] getfield #22
-        + Fieldref [net/thempra/yocaina/b.b Landroid/nfc/Tag;]
-      [110] invokevirtual #41
+      [107] getfield #24
+        + Fieldref [net/thempra/yocaina/g.b Landroid/nfc/Tag;]
+      [110] invokevirtual #45
         + Methodref [net/thempra/yocaina/a/a.a (Landroid/nfc/Tag;)Ljava/util/ArrayList;]
       [113] astore_3 v3
-      [114] aload_3 v3
-      [115] invokevirtual #34
+      [114] invokestatic #42
+        + Methodref [net/thempra/yocaina/MainActivity.b ()Landroid/widget/TextView;]
+      [117] ldc #1
+        + Integer [2131034129]
+      [119] invokevirtual #34
+        + Methodref [android/widget/TextView.setText (I)V]
+      [122] aload_3 v3
+      [123] invokevirtual #37
         + Methodref [java/util/ArrayList.size ()I]
-      [118] ifne +23 (target=141)
-      [121] aload_0 v0
-      [122] getfield #21
-        + Fieldref [net/thempra/yocaina/b.a Lnet/thempra/yocaina/MainActivity;]
-      [125] aload_0 v0
-      [126] getfield #21
-        + Fieldref [net/thempra/yocaina/b.a Lnet/thempra/yocaina/MainActivity;]
-      [129] invokestatic #36
+      [126] ifne +23 (target=149)
+      [129] aload_0 v0
+      [130] getfield #23
+        + Fieldref [net/thempra/yocaina/g.a Lnet/thempra/yocaina/MainActivity;]
+      [133] aload_0 v0
+      [134] getfield #23
+        + Fieldref [net/thempra/yocaina/g.a Lnet/thempra/yocaina/MainActivity;]
+      [137] invokestatic #39
         + Methodref [net/thempra/yocaina/MainActivity.a (Lnet/thempra/yocaina/MainActivity;)Lnet/thempra/yocaina/a/a;]
-      [132] invokevirtual #42
+      [140] invokevirtual #46
         + Methodref [net/thempra/yocaina/a/a.b ()I]
-      [135] invokestatic #37
+      [143] invokestatic #40
         + Methodref [net/thempra/yocaina/MainActivity.a (Lnet/thempra/yocaina/MainActivity;I)V]
-      [138] goto +54 (target=192)
-      [141] new #10
+      [146] goto +54 (target=200)
+      [149] new #11
         + Class [android/content/Intent]
-      [144] dup
-      [145] aload_0 v0
-      [146] getfield #21
-        + Fieldref [net/thempra/yocaina/b.a Lnet/thempra/yocaina/MainActivity;]
-      [149] ldc #15
+      [152] dup
+      [153] aload_0 v0
+      [154] getfield #23
+        + Fieldref [net/thempra/yocaina/g.a Lnet/thempra/yocaina/MainActivity;]
+      [157] ldc #17
         + Class [net/thempra/yocaina/DataActivity]
-      [151] invokespecial #29
+      [159] invokespecial #31
         + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
-      [154] astore v4
-      [156] aload v4
-      [158] ldc #1
+      [162] astore v4
+      [164] aload v4
+      [166] ldc #2
         + String [DUMP]
-      [160] aload_3 v3
-      [161] invokevirtual #31
+      [168] aload_3 v3
+      [169] invokevirtual #33
         + Methodref [android/content/Intent.putExtra (Ljava/lang/String;Ljava/io/Serializable;)Landroid/content/Intent;]
-      [164] pop
-      [165] aload v4
-      [167] ldc #5
+      [172] pop
+      [173] aload v4
+      [175] ldc #6
         + String [blocksBySector]
-      [169] aload_0 v0
-      [170] getfield #21
-        + Fieldref [net/thempra/yocaina/b.a Lnet/thempra/yocaina/MainActivity;]
-      [173] invokestatic #36
+      [177] aload_0 v0
+      [178] getfield #23
+        + Fieldref [net/thempra/yocaina/g.a Lnet/thempra/yocaina/MainActivity;]
+      [181] invokestatic #39
         + Methodref [net/thempra/yocaina/MainActivity.a (Lnet/thempra/yocaina/MainActivity;)Lnet/thempra/yocaina/a/a;]
-      [176] invokevirtual #40
+      [184] invokevirtual #44
         + Methodref [net/thempra/yocaina/a/a.a ()I]
-      [179] invokevirtual #30
+      [187] invokevirtual #32
         + Methodref [android/content/Intent.putExtra (Ljava/lang/String;I)Landroid/content/Intent;]
-      [182] pop
-      [183] aload_0 v0
-      [184] getfield #21
-        + Fieldref [net/thempra/yocaina/b.a Lnet/thempra/yocaina/MainActivity;]
-      [187] aload v4
-      [189] invokevirtual #39
+      [190] pop
+      [191] aload_0 v0
+      [192] getfield #23
+        + Fieldref [net/thempra/yocaina/g.a Lnet/thempra/yocaina/MainActivity;]
+      [195] aload v4
+      [197] invokevirtual #43
         + Methodref [net/thempra/yocaina/MainActivity.startActivity (Landroid/content/Intent;)V]
-      [192] return
+      [200] return
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 1):
       + Stack map table attribute (count = 3):
         - [99] Var: ..., Stack: (empty)
-        - [141] Var: ...[a:java/util/ArrayList], Stack: (empty)
-        - [192] Var: -1, Stack: (empty)
+        - [149] Var: ...[a:java/util/ArrayList], Stack: (empty)
+        - [200] Var: -1, Stack: (empty)
 
 Class file attributes (count = 0):
 
 _____________________________________________________________________
-+ Program class: net/thempra/yocaina/c
++ Program class: net/thempra/yocaina/h
   Superclass:    java/lang/Object
   Major version: 0x32
   Minor version: 0x0
   Access flags:  0x20
-    = class net.thempra.yocaina.c extends java.lang.Object
+    = class net.thempra.yocaina.h extends java.lang.Object
 
 Interfaces (count = 1):
   + Class [android/content/DialogInterface$OnClickListener]
@@ -2726,38 +3710,38 @@ Interfaces (count = 1):
 Constant Pool (count = 19):
   + Class [android/content/DialogInterface$OnClickListener]
   + Class [java/lang/Object]
-  + Class [net/thempra/yocaina/c]
-  + Fieldref [net/thempra/yocaina/c.a Lnet/thempra/yocaina/b;]
+  + Class [net/thempra/yocaina/h]
+  + Fieldref [net/thempra/yocaina/h.a Lnet/thempra/yocaina/g;]
   + Methodref [java/lang/Object.<init> ()V]
   + NameAndType [<init> ()V]
-  + NameAndType [a Lnet/thempra/yocaina/b;]
+  + NameAndType [a Lnet/thempra/yocaina/g;]
   + Utf8 [()V]
   + Utf8 [(Landroid/content/DialogInterface;I)V]
-  + Utf8 [(Lnet/thempra/yocaina/b;)V]
+  + Utf8 [(Lnet/thempra/yocaina/g;)V]
   + Utf8 [<init>]
   + Utf8 [Code]
-  + Utf8 [Lnet/thempra/yocaina/b;]
+  + Utf8 [Lnet/thempra/yocaina/g;]
   + Utf8 [a]
   + Utf8 [android/content/DialogInterface$OnClickListener]
   + Utf8 [java/lang/Object]
-  + Utf8 [net/thempra/yocaina/c]
+  + Utf8 [net/thempra/yocaina/h]
   + Utf8 [onClick]
 
 Fields (count = 1):
-  + Field:        a Lnet/thempra/yocaina/b;
+  + Field:        a Lnet/thempra/yocaina/g;
     Access flags: 0x1010
-      = final synthetic net.thempra.yocaina.b a
+      = final synthetic net.thempra.yocaina.g a
 
 Methods (count = 2):
-  - Method:       <init>(Lnet/thempra/yocaina/b;)V
+  - Method:       <init>(Lnet/thempra/yocaina/g;)V
     Access flags: 0x0
-      = c(net.thempra.yocaina.b)
+      = h(net.thempra.yocaina.g)
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 10, locals = 2, stack = 2):
       [0] aload_0 v0
       [1] aload_1 v1
       [2] putfield #4
-        + Fieldref [net/thempra/yocaina/c.a Lnet/thempra/yocaina/b;]
+        + Fieldref [net/thempra/yocaina/h.a Lnet/thempra/yocaina/g;]
       [5] aload_0 v0
       [6] invokespecial #5
         + Methodref [java/lang/Object.<init> ()V]
@@ -2776,12 +3760,12 @@ Methods (count = 2):
 Class file attributes (count = 0):
 
 _____________________________________________________________________
-+ Program class: net/thempra/yocaina/d
++ Program class: net/thempra/yocaina/i
   Superclass:    java/lang/Object
   Major version: 0x32
   Minor version: 0x0
   Access flags:  0x20
-    = class net.thempra.yocaina.d extends java.lang.Object
+    = class net.thempra.yocaina.i extends java.lang.Object
 
 Interfaces (count = 1):
   + Class [android/content/DialogInterface$OnClickListener]
@@ -2789,8 +3773,8 @@ Interfaces (count = 1):
 Constant Pool (count = 19):
   + Class [android/content/DialogInterface$OnClickListener]
   + Class [java/lang/Object]
-  + Class [net/thempra/yocaina/d]
-  + Fieldref [net/thempra/yocaina/d.a Lnet/thempra/yocaina/MainActivity;]
+  + Class [net/thempra/yocaina/i]
+  + Fieldref [net/thempra/yocaina/i.a Lnet/thempra/yocaina/MainActivity;]
   + Methodref [java/lang/Object.<init> ()V]
   + NameAndType [<init> ()V]
   + NameAndType [a Lnet/thempra/yocaina/MainActivity;]
@@ -2803,7 +3787,7 @@ Constant Pool (count = 19):
   + Utf8 [a]
   + Utf8 [android/content/DialogInterface$OnClickListener]
   + Utf8 [java/lang/Object]
-  + Utf8 [net/thempra/yocaina/d]
+  + Utf8 [net/thempra/yocaina/i]
   + Utf8 [onClick]
 
 Fields (count = 1):
@@ -2814,13 +3798,13 @@ Fields (count = 1):
 Methods (count = 2):
   - Method:       <init>(Lnet/thempra/yocaina/MainActivity;)V
     Access flags: 0x0
-      = d(net.thempra.yocaina.MainActivity)
+      = i(net.thempra.yocaina.MainActivity)
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 10, locals = 2, stack = 2):
       [0] aload_0 v0
       [1] aload_1 v1
       [2] putfield #4
-        + Fieldref [net/thempra/yocaina/d.a Lnet/thempra/yocaina/MainActivity;]
+        + Fieldref [net/thempra/yocaina/i.a Lnet/thempra/yocaina/MainActivity;]
       [5] aload_0 v0
       [6] invokespecial #5
         + Methodref [java/lang/Object.<init> ()V]
@@ -2849,12 +3833,12 @@ _____________________________________________________________________
 Interfaces (count = 0):
 
 Constant Pool (count = 338):
-  + Integer [2130903044]
+  + Integer [2130903043]
   + Integer [2131034113]
-  + Integer [2131034133]
-  + Integer [2131165196]
-  + Integer [2131165197]
-  + Integer [2131165198]
+  + Integer [2131034138]
+  + Integer [2131165200]
+  + Integer [2131165201]
+  + Integer [2131165202]
   + String []
   + String [
  - ]
@@ -2889,8 +3873,8 @@ Constant Pool (count = 338):
   + Class [javax/xml/parsers/DocumentBuilder]
   + Class [javax/xml/parsers/DocumentBuilderFactory]
   + Class [net/thempra/yocaina/RepositoryActivity]
-  + Class [net/thempra/yocaina/e]
-  + Class [net/thempra/yocaina/g]
+  + Class [net/thempra/yocaina/j]
+  + Class [net/thempra/yocaina/l]
   + Class [org/apache/http/util/ByteArrayBuffer]
   + Class [org/w3c/dom/Document]
   + Class [org/w3c/dom/Element]
@@ -2955,9 +3939,9 @@ Constant Pool (count = 338):
   + Methodref [net/thempra/yocaina/RepositoryActivity.requestWindowFeature (I)Z]
   + Methodref [net/thempra/yocaina/RepositoryActivity.setContentView (I)V]
   + Methodref [net/thempra/yocaina/RepositoryActivity.setRequestedOrientation (I)V]
-  + Methodref [net/thempra/yocaina/e.<init> (Lnet/thempra/yocaina/RepositoryActivity;)V]
-  + Methodref [net/thempra/yocaina/g.<init> (Lnet/thempra/yocaina/RepositoryActivity;Ljava/util/HashMap;)V]
-  + Methodref [net/thempra/yocaina/g.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
+  + Methodref [net/thempra/yocaina/j.<init> (Lnet/thempra/yocaina/RepositoryActivity;)V]
+  + Methodref [net/thempra/yocaina/l.<init> (Lnet/thempra/yocaina/RepositoryActivity;Ljava/util/HashMap;)V]
+  + Methodref [net/thempra/yocaina/l.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
   + Methodref [org/apache/http/util/ByteArrayBuffer.<init> (I)V]
   + Methodref [org/apache/http/util/ByteArrayBuffer.append (I)V]
   + Methodref [org/apache/http/util/ByteArrayBuffer.toByteArray ()[B]
@@ -3155,8 +4139,8 @@ Constant Pool (count = 338):
   + Utf8 [mkdirs]
   + Utf8 [name]
   + Utf8 [net/thempra/yocaina/RepositoryActivity]
-  + Utf8 [net/thempra/yocaina/e]
-  + Utf8 [net/thempra/yocaina/g]
+  + Utf8 [net/thempra/yocaina/j]
+  + Utf8 [net/thempra/yocaina/l]
   + Utf8 [newDocumentBuilder]
   + Utf8 [newInstance]
   + Utf8 [next]
@@ -3256,12 +4240,12 @@ Methods (count = 11):
         + Methodref [net/thempra/yocaina/RepositoryActivity.setRequestedOrientation (I)V]
       [29] aload_0 v0
       [30] ldc #1
-        + Integer [2130903044]
+        + Integer [2130903043]
       [32] invokevirtual #104
         + Methodref [net/thempra/yocaina/RepositoryActivity.setContentView (I)V]
       [35] aload_0 v0
       [36] ldc #4
-        + Integer [2131165196]
+        + Integer [2131165200]
       [38] invokevirtual #99
         + Methodref [net/thempra/yocaina/RepositoryActivity.findViewById (I)Landroid/view/View;]
       [41] checkcast #22
@@ -3270,7 +4254,7 @@ Methods (count = 11):
         + Fieldref [net/thempra/yocaina/RepositoryActivity.d Landroid/widget/EditText;]
       [47] aload_0 v0
       [48] ldc #5
-        + Integer [2131165197]
+        + Integer [2131165201]
       [50] invokevirtual #99
         + Methodref [net/thempra/yocaina/RepositoryActivity.findViewById (I)Landroid/view/View;]
       [53] checkcast #21
@@ -3279,7 +4263,7 @@ Methods (count = 11):
         + Fieldref [net/thempra/yocaina/RepositoryActivity.e Landroid/widget/Button;]
       [59] aload_0 v0
       [60] ldc #6
-        + Integer [2131165198]
+        + Integer [2131165202]
       [62] invokevirtual #99
         + Methodref [net/thempra/yocaina/RepositoryActivity.findViewById (I)Landroid/view/View;]
       [65] checkcast #23
@@ -3300,11 +4284,11 @@ Methods (count = 11):
       [86] getstatic #52
         + Fieldref [net/thempra/yocaina/RepositoryActivity.e Landroid/widget/Button;]
       [89] new #40
-        + Class [net/thempra/yocaina/e]
+        + Class [net/thempra/yocaina/j]
       [92] dup
       [93] aload_0 v0
       [94] invokespecial #106
-        + Methodref [net/thempra/yocaina/e.<init> (Lnet/thempra/yocaina/RepositoryActivity;)V]
+        + Methodref [net/thempra/yocaina/j.<init> (Lnet/thempra/yocaina/RepositoryActivity;)V]
       [97] invokevirtual #60
         + Methodref [android/widget/Button.setOnClickListener (Landroid/view/View$OnClickListener;)V]
       [100] return
@@ -3395,7 +4379,7 @@ Methods (count = 11):
         + Fieldref [net/thempra/yocaina/RepositoryActivity.f Landroid/widget/TextView;]
       [107] aload_0 v0
       [108] ldc #3
-        + Integer [2131034133]
+        + Integer [2131034138]
       [110] invokevirtual #101
         + Methodref [net/thempra/yocaina/RepositoryActivity.getString (I)Ljava/lang/String;]
       [113] invokevirtual #62
@@ -3645,7 +4629,7 @@ Methods (count = 11):
     + Code attribute instructions (code length = 64, locals = 3, stack = 5):
       [0] aload_0 v0
       [1] ldc #6
-        + Integer [2131165198]
+        + Integer [2131165202]
       [3] invokevirtual #99
         + Methodref [net/thempra/yocaina/RepositoryActivity.findViewById (I)Landroid/view/View;]
       [6] checkcast #23
@@ -3666,12 +4650,12 @@ Methods (count = 11):
         + Class [java/util/HashMap]
       [32] astore_1 v1
       [33] new #41
-        + Class [net/thempra/yocaina/g]
+        + Class [net/thempra/yocaina/l]
       [36] dup
       [37] aload_0 v0
       [38] aload_1 v1
       [39] invokespecial #107
-        + Methodref [net/thempra/yocaina/g.<init> (Lnet/thempra/yocaina/RepositoryActivity;Ljava/util/HashMap;)V]
+        + Methodref [net/thempra/yocaina/l.<init> (Lnet/thempra/yocaina/RepositoryActivity;Ljava/util/HashMap;)V]
       [42] iconst_1
       [43] anewarray #16
         + Class [android/app/Activity]
@@ -3680,7 +4664,7 @@ Methods (count = 11):
       [48] aload_0 v0
       [49] aastore
       [50] invokevirtual #108
-        + Methodref [net/thempra/yocaina/g.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
+        + Methodref [net/thempra/yocaina/l.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
       [53] pop
       [54] aload_2 v2
       [55] invokeinterface #113
@@ -3879,12 +4863,12 @@ Methods (count = 11):
 Class file attributes (count = 0):
 
 _____________________________________________________________________
-+ Program class: net/thempra/yocaina/e
++ Program class: net/thempra/yocaina/j
   Superclass:    java/lang/Object
   Major version: 0x32
   Minor version: 0x0
   Access flags:  0x20
-    = class net.thempra.yocaina.e extends java.lang.Object
+    = class net.thempra.yocaina.j extends java.lang.Object
 
 Interfaces (count = 1):
   + Class [android/view/View$OnClickListener]
@@ -3894,23 +4878,23 @@ Constant Pool (count = 36):
   + Class [android/view/View$OnClickListener]
   + Class [java/lang/Object]
   + Class [net/thempra/yocaina/RepositoryActivity]
-  + Class [net/thempra/yocaina/e]
-  + Class [net/thempra/yocaina/f]
-  + Fieldref [net/thempra/yocaina/e.a Lnet/thempra/yocaina/RepositoryActivity;]
+  + Class [net/thempra/yocaina/j]
+  + Class [net/thempra/yocaina/k]
+  + Fieldref [net/thempra/yocaina/j.a Lnet/thempra/yocaina/RepositoryActivity;]
   + Methodref [java/lang/Object.<init> ()V]
   + Methodref [net/thempra/yocaina/RepositoryActivity.b (Lnet/thempra/yocaina/RepositoryActivity;)V]
-  + Methodref [net/thempra/yocaina/f.<init> (Lnet/thempra/yocaina/e;)V]
-  + Methodref [net/thempra/yocaina/f.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
+  + Methodref [net/thempra/yocaina/k.<init> (Lnet/thempra/yocaina/j;)V]
+  + Methodref [net/thempra/yocaina/k.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
   + NameAndType [<init> ()V]
-  + NameAndType [<init> (Lnet/thempra/yocaina/e;)V]
+  + NameAndType [<init> (Lnet/thempra/yocaina/j;)V]
   + NameAndType [a Lnet/thempra/yocaina/RepositoryActivity;]
   + NameAndType [b (Lnet/thempra/yocaina/RepositoryActivity;)V]
   + NameAndType [execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
   + Utf8 [()V]
   + Utf8 [(Landroid/view/View;)V]
   + Utf8 [(Lnet/thempra/yocaina/RepositoryActivity;)V]
-  + Utf8 [(Lnet/thempra/yocaina/e;)Lnet/thempra/yocaina/RepositoryActivity;]
-  + Utf8 [(Lnet/thempra/yocaina/e;)V]
+  + Utf8 [(Lnet/thempra/yocaina/j;)Lnet/thempra/yocaina/RepositoryActivity;]
+  + Utf8 [(Lnet/thempra/yocaina/j;)V]
   + Utf8 [([Ljava/lang/Object;)Landroid/os/AsyncTask;]
   + Utf8 [<init>]
   + Utf8 [Code]
@@ -3922,8 +4906,8 @@ Constant Pool (count = 36):
   + Utf8 [execute]
   + Utf8 [java/lang/Object]
   + Utf8 [net/thempra/yocaina/RepositoryActivity]
-  + Utf8 [net/thempra/yocaina/e]
-  + Utf8 [net/thempra/yocaina/f]
+  + Utf8 [net/thempra/yocaina/j]
+  + Utf8 [net/thempra/yocaina/k]
   + Utf8 [onClick]
 
 Fields (count = 1):
@@ -3934,13 +4918,13 @@ Fields (count = 1):
 Methods (count = 3):
   - Method:       <init>(Lnet/thempra/yocaina/RepositoryActivity;)V
     Access flags: 0x0
-      = e(net.thempra.yocaina.RepositoryActivity)
+      = j(net.thempra.yocaina.RepositoryActivity)
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 10, locals = 2, stack = 2):
       [0] aload_0 v0
       [1] aload_1 v1
       [2] putfield #7
-        + Fieldref [net/thempra/yocaina/e.a Lnet/thempra/yocaina/RepositoryActivity;]
+        + Fieldref [net/thempra/yocaina/j.a Lnet/thempra/yocaina/RepositoryActivity;]
       [5] aload_0 v0
       [6] invokespecial #8
         + Methodref [java/lang/Object.<init> ()V]
@@ -3953,33 +4937,33 @@ Methods (count = 3):
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 24, locals = 2, stack = 3):
       [0] new #6
-        + Class [net/thempra/yocaina/f]
+        + Class [net/thempra/yocaina/k]
       [3] dup
       [4] aload_0 v0
       [5] invokespecial #10
-        + Methodref [net/thempra/yocaina/f.<init> (Lnet/thempra/yocaina/e;)V]
+        + Methodref [net/thempra/yocaina/k.<init> (Lnet/thempra/yocaina/j;)V]
       [8] iconst_0
       [9] anewarray #1
         + Class [android/app/Activity]
       [12] invokevirtual #11
-        + Methodref [net/thempra/yocaina/f.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
+        + Methodref [net/thempra/yocaina/k.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
       [15] pop
       [16] aload_0 v0
       [17] getfield #7
-        + Fieldref [net/thempra/yocaina/e.a Lnet/thempra/yocaina/RepositoryActivity;]
+        + Fieldref [net/thempra/yocaina/j.a Lnet/thempra/yocaina/RepositoryActivity;]
       [20] invokestatic #9
         + Methodref [net/thempra/yocaina/RepositoryActivity.b (Lnet/thempra/yocaina/RepositoryActivity;)V]
       [23] return
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 0):
-  + Method:       a(Lnet/thempra/yocaina/e;)Lnet/thempra/yocaina/RepositoryActivity;
+  + Method:       a(Lnet/thempra/yocaina/j;)Lnet/thempra/yocaina/RepositoryActivity;
     Access flags: 0x1008
-      = static synthetic net.thempra.yocaina.RepositoryActivity a(net.thempra.yocaina.e)
+      = static synthetic net.thempra.yocaina.RepositoryActivity a(net.thempra.yocaina.j)
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 5, locals = 1, stack = 1):
       [0] aload_0 v0
       [1] getfield #7
-        + Fieldref [net/thempra/yocaina/e.a Lnet/thempra/yocaina/RepositoryActivity;]
+        + Fieldref [net/thempra/yocaina/j.a Lnet/thempra/yocaina/RepositoryActivity;]
       [4] areturn
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 0):
@@ -3987,12 +4971,12 @@ Methods (count = 3):
 Class file attributes (count = 0):
 
 _____________________________________________________________________
-+ Program class: net/thempra/yocaina/f
++ Program class: net/thempra/yocaina/k
   Superclass:    android/os/AsyncTask
   Major version: 0x32
   Minor version: 0x0
   Access flags:  0x20
-    = class net.thempra.yocaina.f extends android.os.AsyncTask
+    = class net.thempra.yocaina.k extends android.os.AsyncTask
 
 Interfaces (count = 0):
 
@@ -4006,10 +4990,10 @@ Constant Pool (count = 69):
   + Class [android/widget/EditText]
   + Class [java/lang/StringBuilder]
   + Class [net/thempra/yocaina/RepositoryActivity]
-  + Class [net/thempra/yocaina/e]
-  + Class [net/thempra/yocaina/f]
+  + Class [net/thempra/yocaina/j]
+  + Class [net/thempra/yocaina/k]
   + Fieldref [net/thempra/yocaina/RepositoryActivity.a Ljava/util/ArrayList;]
-  + Fieldref [net/thempra/yocaina/f.a Lnet/thempra/yocaina/e;]
+  + Fieldref [net/thempra/yocaina/k.a Lnet/thempra/yocaina/j;]
   + Methodref [android/os/AsyncTask.<init> ()V]
   + Methodref [android/widget/EditText.getText ()Landroid/text/Editable;]
   + Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
@@ -4018,18 +5002,18 @@ Constant Pool (count = 69):
   + Methodref [net/thempra/yocaina/RepositoryActivity.a ()Landroid/widget/EditText;]
   + Methodref [net/thempra/yocaina/RepositoryActivity.a (Lnet/thempra/yocaina/RepositoryActivity;)V]
   + Methodref [net/thempra/yocaina/RepositoryActivity.a (Lnet/thempra/yocaina/RepositoryActivity;Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;]
-  + Methodref [net/thempra/yocaina/e.a (Lnet/thempra/yocaina/e;)Lnet/thempra/yocaina/RepositoryActivity;]
-  + Methodref [net/thempra/yocaina/f.a ([Landroid/app/Activity;)Ljava/lang/String;]
+  + Methodref [net/thempra/yocaina/j.a (Lnet/thempra/yocaina/j;)Lnet/thempra/yocaina/RepositoryActivity;]
+  + Methodref [net/thempra/yocaina/k.a ([Landroid/app/Activity;)Ljava/lang/String;]
   + InterfaceMethodref [android/text/Editable.toString ()Ljava/lang/String;]
   + NameAndType [<init> ()V]
   + NameAndType [<init> (Ljava/lang/String;)V]
   + NameAndType [a ()Landroid/widget/EditText;]
   + NameAndType [a (Lnet/thempra/yocaina/RepositoryActivity;)V]
   + NameAndType [a (Lnet/thempra/yocaina/RepositoryActivity;Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;]
-  + NameAndType [a (Lnet/thempra/yocaina/e;)Lnet/thempra/yocaina/RepositoryActivity;]
+  + NameAndType [a (Lnet/thempra/yocaina/j;)Lnet/thempra/yocaina/RepositoryActivity;]
   + NameAndType [a ([Landroid/app/Activity;)Ljava/lang/String;]
   + NameAndType [a Ljava/util/ArrayList;]
-  + NameAndType [a Lnet/thempra/yocaina/e;]
+  + NameAndType [a Lnet/thempra/yocaina/j;]
   + NameAndType [append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
   + NameAndType [getText ()Landroid/text/Editable;]
   + NameAndType [toString ()Ljava/lang/String;]
@@ -4041,15 +5025,15 @@ Constant Pool (count = 69):
   + Utf8 [(Ljava/lang/String;)V]
   + Utf8 [(Lnet/thempra/yocaina/RepositoryActivity;)V]
   + Utf8 [(Lnet/thempra/yocaina/RepositoryActivity;Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;]
-  + Utf8 [(Lnet/thempra/yocaina/e;)Lnet/thempra/yocaina/RepositoryActivity;]
-  + Utf8 [(Lnet/thempra/yocaina/e;)V]
+  + Utf8 [(Lnet/thempra/yocaina/j;)Lnet/thempra/yocaina/RepositoryActivity;]
+  + Utf8 [(Lnet/thempra/yocaina/j;)V]
   + Utf8 [([Landroid/app/Activity;)Ljava/lang/String;]
   + Utf8 [([Ljava/lang/Object;)Ljava/lang/Object;]
   + Utf8 [/cards.xml]
   + Utf8 [<init>]
   + Utf8 [Code]
   + Utf8 [Ljava/util/ArrayList;]
-  + Utf8 [Lnet/thempra/yocaina/e;]
+  + Utf8 [Lnet/thempra/yocaina/j;]
   + Utf8 [[Landroid/app/Activity;]
   + Utf8 [a]
   + Utf8 [android/os/AsyncTask]
@@ -4062,25 +5046,25 @@ Constant Pool (count = 69):
   + Utf8 [http://]
   + Utf8 [java/lang/StringBuilder]
   + Utf8 [net/thempra/yocaina/RepositoryActivity]
-  + Utf8 [net/thempra/yocaina/e]
-  + Utf8 [net/thempra/yocaina/f]
+  + Utf8 [net/thempra/yocaina/j]
+  + Utf8 [net/thempra/yocaina/k]
   + Utf8 [toString]
 
 Fields (count = 1):
-  + Field:        a Lnet/thempra/yocaina/e;
+  + Field:        a Lnet/thempra/yocaina/j;
     Access flags: 0x1010
-      = final synthetic net.thempra.yocaina.e a
+      = final synthetic net.thempra.yocaina.j a
 
 Methods (count = 3):
-  - Method:       <init>(Lnet/thempra/yocaina/e;)V
+  - Method:       <init>(Lnet/thempra/yocaina/j;)V
     Access flags: 0x0
-      = f(net.thempra.yocaina.e)
+      = k(net.thempra.yocaina.j)
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 10, locals = 2, stack = 2):
       [0] aload_0 v0
       [1] aload_1 v1
       [2] putfield #13
-        + Fieldref [net/thempra/yocaina/f.a Lnet/thempra/yocaina/e;]
+        + Fieldref [net/thempra/yocaina/k.a Lnet/thempra/yocaina/j;]
       [5] aload_0 v0
       [6] invokespecial #14
         + Methodref [android/os/AsyncTask.<init> ()V]
@@ -4094,14 +5078,14 @@ Methods (count = 3):
     + Code attribute instructions (code length = 65, locals = 2, stack = 5):
       [0] aload_0 v0
       [1] getfield #13
-        + Fieldref [net/thempra/yocaina/f.a Lnet/thempra/yocaina/e;]
+        + Fieldref [net/thempra/yocaina/k.a Lnet/thempra/yocaina/j;]
       [4] invokestatic #22
-        + Methodref [net/thempra/yocaina/e.a (Lnet/thempra/yocaina/e;)Lnet/thempra/yocaina/RepositoryActivity;]
+        + Methodref [net/thempra/yocaina/j.a (Lnet/thempra/yocaina/j;)Lnet/thempra/yocaina/RepositoryActivity;]
       [7] aload_0 v0
       [8] getfield #13
-        + Fieldref [net/thempra/yocaina/f.a Lnet/thempra/yocaina/e;]
+        + Fieldref [net/thempra/yocaina/k.a Lnet/thempra/yocaina/j;]
       [11] invokestatic #22
-        + Methodref [net/thempra/yocaina/e.a (Lnet/thempra/yocaina/e;)Lnet/thempra/yocaina/RepositoryActivity;]
+        + Methodref [net/thempra/yocaina/j.a (Lnet/thempra/yocaina/j;)Lnet/thempra/yocaina/RepositoryActivity;]
       [14] new #8
         + Class [java/lang/StringBuilder]
       [17] dup
@@ -4131,9 +5115,9 @@ Methods (count = 3):
         + Fieldref [net/thempra/yocaina/RepositoryActivity.a Ljava/util/ArrayList;]
       [53] aload_0 v0
       [54] getfield #13
-        + Fieldref [net/thempra/yocaina/f.a Lnet/thempra/yocaina/e;]
+        + Fieldref [net/thempra/yocaina/k.a Lnet/thempra/yocaina/j;]
       [57] invokestatic #22
-        + Methodref [net/thempra/yocaina/e.a (Lnet/thempra/yocaina/e;)Lnet/thempra/yocaina/RepositoryActivity;]
+        + Methodref [net/thempra/yocaina/j.a (Lnet/thempra/yocaina/j;)Lnet/thempra/yocaina/RepositoryActivity;]
       [60] invokestatic #20
         + Methodref [net/thempra/yocaina/RepositoryActivity.a (Lnet/thempra/yocaina/RepositoryActivity;)V]
       [63] aconst_null
@@ -4150,7 +5134,7 @@ Methods (count = 3):
       [2] checkcast #4
         + Class [[Landroid/app/Activity;]
       [5] invokevirtual #23
-        + Methodref [net/thempra/yocaina/f.a ([Landroid/app/Activity;)Ljava/lang/String;]
+        + Methodref [net/thempra/yocaina/k.a ([Landroid/app/Activity;)Ljava/lang/String;]
       [8] areturn
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 0):
@@ -4158,12 +5142,12 @@ Methods (count = 3):
 Class file attributes (count = 0):
 
 _____________________________________________________________________
-+ Program class: net/thempra/yocaina/g
++ Program class: net/thempra/yocaina/l
   Superclass:    android/os/AsyncTask
   Major version: 0x32
   Minor version: 0x0
   Access flags:  0x20
-    = class net.thempra.yocaina.g extends android.os.AsyncTask
+    = class net.thempra.yocaina.l extends android.os.AsyncTask
 
 Interfaces (count = 0):
 
@@ -4177,16 +5161,16 @@ Constant Pool (count = 58):
   + Class [java/net/URL]
   + Class [java/util/HashMap]
   + Class [net/thempra/yocaina/RepositoryActivity]
-  + Class [net/thempra/yocaina/g]
-  + Fieldref [net/thempra/yocaina/g.a Lnet/thempra/yocaina/RepositoryActivity;]
-  + Fieldref [net/thempra/yocaina/g.b Ljava/util/HashMap;]
+  + Class [net/thempra/yocaina/l]
+  + Fieldref [net/thempra/yocaina/l.a Lnet/thempra/yocaina/RepositoryActivity;]
+  + Fieldref [net/thempra/yocaina/l.b Ljava/util/HashMap;]
   + Methodref [android/os/AsyncTask.<init> ()V]
   + Methodref [java/lang/Object.toString ()Ljava/lang/String;]
   + Methodref [java/net/MalformedURLException.printStackTrace ()V]
   + Methodref [java/net/URL.<init> (Ljava/lang/String;)V]
   + Methodref [java/util/HashMap.get (Ljava/lang/Object;)Ljava/lang/Object;]
   + Methodref [net/thempra/yocaina/RepositoryActivity.a (Ljava/lang/String;Ljava/net/URL;)V]
-  + Methodref [net/thempra/yocaina/g.a ([Landroid/app/Activity;)Ljava/lang/String;]
+  + Methodref [net/thempra/yocaina/l.a ([Landroid/app/Activity;)Ljava/lang/String;]
   + NameAndType [<init> ()V]
   + NameAndType [<init> (Ljava/lang/String;)V]
   + NameAndType [a (Ljava/lang/String;Ljava/net/URL;)V]
@@ -4221,7 +5205,7 @@ Constant Pool (count = 58):
   + Utf8 [java/util/HashMap]
   + Utf8 [name]
   + Utf8 [net/thempra/yocaina/RepositoryActivity]
-  + Utf8 [net/thempra/yocaina/g]
+  + Utf8 [net/thempra/yocaina/l]
   + Utf8 [printStackTrace]
   + Utf8 [toString]
   + Utf8 [url]
@@ -4237,17 +5221,17 @@ Fields (count = 2):
 Methods (count = 3):
   - Method:       <init>(Lnet/thempra/yocaina/RepositoryActivity;Ljava/util/HashMap;)V
     Access flags: 0x0
-      = g(net.thempra.yocaina.RepositoryActivity,java.util.HashMap)
+      = l(net.thempra.yocaina.RepositoryActivity,java.util.HashMap)
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 15, locals = 3, stack = 2):
       [0] aload_0 v0
       [1] aload_1 v1
       [2] putfield #11
-        + Fieldref [net/thempra/yocaina/g.a Lnet/thempra/yocaina/RepositoryActivity;]
+        + Fieldref [net/thempra/yocaina/l.a Lnet/thempra/yocaina/RepositoryActivity;]
       [5] aload_0 v0
       [6] aload_2 v2
       [7] putfield #12
-        + Fieldref [net/thempra/yocaina/g.b Ljava/util/HashMap;]
+        + Fieldref [net/thempra/yocaina/l.b Ljava/util/HashMap;]
       [10] aload_0 v0
       [11] invokespecial #13
         + Methodref [android/os/AsyncTask.<init> ()V]
@@ -4261,10 +5245,10 @@ Methods (count = 3):
     + Code attribute instructions (code length = 48, locals = 3, stack = 6):
       [0] aload_0 v0
       [1] getfield #11
-        + Fieldref [net/thempra/yocaina/g.a Lnet/thempra/yocaina/RepositoryActivity;]
+        + Fieldref [net/thempra/yocaina/l.a Lnet/thempra/yocaina/RepositoryActivity;]
       [4] aload_0 v0
       [5] getfield #12
-        + Fieldref [net/thempra/yocaina/g.b Ljava/util/HashMap;]
+        + Fieldref [net/thempra/yocaina/l.b Ljava/util/HashMap;]
       [8] ldc #1
         + String [name]
       [10] invokevirtual #17
@@ -4276,7 +5260,7 @@ Methods (count = 3):
       [19] dup
       [20] aload_0 v0
       [21] getfield #12
-        + Fieldref [net/thempra/yocaina/g.b Ljava/util/HashMap;]
+        + Fieldref [net/thempra/yocaina/l.b Ljava/util/HashMap;]
       [24] ldc #2
         + String [url]
       [26] invokevirtual #17
@@ -4311,7 +5295,7 @@ Methods (count = 3):
       [2] checkcast #3
         + Class [[Landroid/app/Activity;]
       [5] invokevirtual #19
-        + Methodref [net/thempra/yocaina/g.a ([Landroid/app/Activity;)Ljava/lang/String;]
+        + Methodref [net/thempra/yocaina/l.a ([Landroid/app/Activity;)Ljava/lang/String;]
       [8] areturn
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 0):
@@ -4328,7 +5312,7 @@ _____________________________________________________________________
 
 Interfaces (count = 0):
 
-Constant Pool (count = 32):
+Constant Pool (count = 35):
   + String [Not implemented yet]
   + Class [java/lang/Object]
   + Class [java/util/ArrayList]
@@ -4348,20 +5332,23 @@ Constant Pool (count = 32):
   + Utf8 [()V]
   + Utf8 [(Landroid/nfc/Tag;)Ljava/util/ArrayList;]
   + Utf8 [(Ljava/lang/Object;)Z]
+  + Utf8 [(Ljava/lang/String;)Ljava/lang/String;]
   + Utf8 [<init>]
   + Utf8 [Code]
   + Utf8 [I]
   + Utf8 [Ljava/util/ArrayList;]
   + Utf8 [Not implemented yet]
+  + Utf8 [[B]
   + Utf8 [a]
   + Utf8 [add]
   + Utf8 [b]
   + Utf8 [c]
+  + Utf8 [d]
   + Utf8 [java/lang/Object]
   + Utf8 [java/util/ArrayList]
   + Utf8 [net/thempra/yocaina/a/a]
 
-Fields (count = 3):
+Fields (count = 4):
   + Field:        a Ljava/util/ArrayList;
     Access flags: 0x4
       = protected java.util.ArrayList a
@@ -4371,8 +5358,11 @@ Fields (count = 3):
   + Field:        c Ljava/util/ArrayList;
     Access flags: 0x4
       = protected java.util.ArrayList c
+  + Field:        d [B
+    Access flags: 0x4
+      = protected byte[] d
 
-Methods (count = 4):
+Methods (count = 5):
   - Method:       <init>()V
     Access flags: 0x1
       = public a()
@@ -4423,6 +5413,9 @@ Methods (count = 4):
       [14] areturn
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 0):
+  + Method:       a(Ljava/lang/String;)Ljava/lang/String;
+    Access flags: 0x401
+      = public abstract java.lang.String a(java.lang.String)
   + Method:       a()I
     Access flags: 0x401
       = public abstract int a()
@@ -4442,11 +5435,14 @@ _____________________________________________________________________
 
 Interfaces (count = 0):
 
-Constant Pool (count = 253):
+Constant Pool (count = 292):
   + String []
   + String [ ]
+  + String [.mfc]
+  + String [/]
   + String [/yocaina/]
   + String [0x]
+  + String [_]
   + String [card]
   + String [keyA0]
   + String [keyA1]
@@ -4492,6 +5488,7 @@ Constant Pool (count = 253):
   + Class [java/io/File]
   + Class [java/io/FileInputStream]
   + Class [java/io/FileNotFoundException]
+  + Class [java/io/FileOutputStream]
   + Class [java/io/IOException]
   + Class [java/io/InputStreamReader]
   + Class [java/lang/Exception]
@@ -4499,13 +5496,15 @@ Constant Pool (count = 253):
   + Class [java/lang/String]
   + Class [java/lang/StringBuilder]
   + Class [java/util/ArrayList]
+  + Class [java/util/Calendar]
   + Class [java/util/Iterator]
   + Class [net/thempra/yocaina/a/a]
   + Class [net/thempra/yocaina/a/b]
   + Fieldref [net/thempra/yocaina/a/b.a Ljava/util/ArrayList;]
   + Fieldref [net/thempra/yocaina/a/b.b I]
   + Fieldref [net/thempra/yocaina/a/b.c Ljava/util/ArrayList;]
-  + Fieldref [net/thempra/yocaina/a/b.d Z]
+  + Fieldref [net/thempra/yocaina/a/b.d [B]
+  + Fieldref [net/thempra/yocaina/a/b.e Z]
   + Methodref [a/a/a.a (Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/util/ArrayList;]
   + Methodref [a/a/a.a ([BI)Ljava/lang/String;]
   + Methodref [android/nfc/tech/MifareClassic.authenticateSectorWithKeyA (I[B)Z]
@@ -4519,8 +5518,14 @@ Constant Pool (count = 253):
   + Methodref [android/util/Log.e (Ljava/lang/String;Ljava/lang/String;)I]
   + Methodref [java/io/BufferedReader.<init> (Ljava/io/Reader;)V]
   + Methodref [java/io/File.<init> (Ljava/lang/String;)V]
+  + Methodref [java/io/File.isDirectory ()Z]
+  + Methodref [java/io/File.mkdirs ()Z]
   + Methodref [java/io/FileInputStream.<init> (Ljava/io/File;)V]
   + Methodref [java/io/FileNotFoundException.printStackTrace ()V]
+  + Methodref [java/io/FileOutputStream.<init> (Ljava/io/File;)V]
+  + Methodref [java/io/FileOutputStream.close ()V]
+  + Methodref [java/io/FileOutputStream.flush ()V]
+  + Methodref [java/io/FileOutputStream.write ([B)V]
   + Methodref [java/io/IOException.getLocalizedMessage ()Ljava/lang/String;]
   + Methodref [java/io/IOException.printStackTrace ()V]
   + Methodref [java/io/InputStreamReader.<init> (Ljava/io/InputStream;)V]
@@ -4529,6 +5534,7 @@ Constant Pool (count = 253):
   + Methodref [java/lang/String.replace (Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;]
   + Methodref [java/lang/String.split (Ljava/lang/String;)[Ljava/lang/String;]
   + Methodref [java/lang/StringBuilder.<init> ()V]
+  + Methodref [java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;]
   + Methodref [java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;]
   + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
   + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
@@ -4537,8 +5543,10 @@ Constant Pool (count = 253):
   + Methodref [java/util/ArrayList.get (I)Ljava/lang/Object;]
   + Methodref [java/util/ArrayList.iterator ()Ljava/util/Iterator;]
   + Methodref [java/util/ArrayList.size ()I]
+  + Methodref [java/util/Calendar.get (I)I]
+  + Methodref [java/util/Calendar.getInstance ()Ljava/util/Calendar;]
   + Methodref [net/thempra/yocaina/a/a.<init> ()V]
-  + Methodref [net/thempra/yocaina/a/b.a (Ljava/lang/String;)I]
+  + Methodref [net/thempra/yocaina/a/b.b (Ljava/lang/String;)I]
   + InterfaceMethodref [java/util/Iterator.hasNext ()Z]
   + InterfaceMethodref [java/util/Iterator.next ()Ljava/lang/Object;]
   + NameAndType [<init> ()V]
@@ -4546,28 +5554,36 @@ Constant Pool (count = 253):
   + NameAndType [<init> (Ljava/io/InputStream;)V]
   + NameAndType [<init> (Ljava/io/Reader;)V]
   + NameAndType [<init> (Ljava/lang/String;)V]
-  + NameAndType [a (Ljava/lang/String;)I]
   + NameAndType [a (Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/util/ArrayList;]
   + NameAndType [a ([BI)Ljava/lang/String;]
   + NameAndType [a Ljava/util/ArrayList;]
   + NameAndType [add (Ljava/lang/Object;)Z]
+  + NameAndType [append (I)Ljava/lang/StringBuilder;]
   + NameAndType [append (Ljava/lang/Object;)Ljava/lang/StringBuilder;]
   + NameAndType [append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
   + NameAndType [authenticateSectorWithKeyA (I[B)Z]
+  + NameAndType [b (Ljava/lang/String;)I]
   + NameAndType [b I]
   + NameAndType [c Ljava/util/ArrayList;]
   + NameAndType [clear ()V]
+  + NameAndType [close ()V]
   + NameAndType [connect ()V]
-  + NameAndType [d Z]
+  + NameAndType [d [B]
   + NameAndType [e (Ljava/lang/String;Ljava/lang/String;)I]
+  + NameAndType [e Z]
+  + NameAndType [flush ()V]
+  + NameAndType [get (I)I]
   + NameAndType [get (I)Ljava/lang/Object;]
   + NameAndType [get (Landroid/nfc/Tag;)Landroid/nfc/tech/MifareClassic;]
   + NameAndType [getBlockCountInSector (I)I]
   + NameAndType [getExternalStorageDirectory ()Ljava/io/File;]
+  + NameAndType [getInstance ()Ljava/util/Calendar;]
   + NameAndType [getLocalizedMessage ()Ljava/lang/String;]
   + NameAndType [getSectorCount ()I]
   + NameAndType [hasNext ()Z]
+  + NameAndType [isDirectory ()Z]
   + NameAndType [iterator ()Ljava/util/Iterator;]
+  + NameAndType [mkdirs ()Z]
   + NameAndType [next ()Ljava/lang/Object;]
   + NameAndType [parseInt (Ljava/lang/String;I)I]
   + NameAndType [printStackTrace ()V]
@@ -4577,17 +5593,20 @@ Constant Pool (count = 253):
   + NameAndType [size ()I]
   + NameAndType [split (Ljava/lang/String;)[Ljava/lang/String;]
   + NameAndType [toString ()Ljava/lang/String;]
+  + NameAndType [write ([B)V]
   + Utf8 []
   + Utf8 [ ]
   + Utf8 [()I]
   + Utf8 [()Ljava/io/File;]
   + Utf8 [()Ljava/lang/Object;]
   + Utf8 [()Ljava/lang/String;]
+  + Utf8 [()Ljava/util/Calendar;]
   + Utf8 [()Ljava/util/Iterator;]
   + Utf8 [()V]
   + Utf8 [()Z]
   + Utf8 [(I)I]
   + Utf8 [(I)Ljava/lang/Object;]
+  + Utf8 [(I)Ljava/lang/StringBuilder;]
   + Utf8 [(I)[B]
   + Utf8 [(I[B)Z]
   + Utf8 [(Landroid/nfc/Tag;)Landroid/nfc/tech/MifareClassic;]
@@ -4599,13 +5618,17 @@ Constant Pool (count = 253):
   + Utf8 [(Ljava/lang/Object;)Ljava/lang/StringBuilder;]
   + Utf8 [(Ljava/lang/Object;)Z]
   + Utf8 [(Ljava/lang/String;)I]
+  + Utf8 [(Ljava/lang/String;)Ljava/lang/String;]
   + Utf8 [(Ljava/lang/String;)Ljava/lang/StringBuilder;]
   + Utf8 [(Ljava/lang/String;)V]
   + Utf8 [(Ljava/lang/String;)[Ljava/lang/String;]
   + Utf8 [(Ljava/lang/String;I)I]
   + Utf8 [(Ljava/lang/String;Ljava/lang/String;)I]
   + Utf8 [(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/util/ArrayList;]
+  + Utf8 [([B)V]
   + Utf8 [([BI)Ljava/lang/String;]
+  + Utf8 [.mfc]
+  + Utf8 [/]
   + Utf8 [/yocaina/]
   + Utf8 [0x]
   + Utf8 [<init>]
@@ -4616,6 +5639,7 @@ Constant Pool (count = 253):
   + Utf8 [Z]
   + Utf8 [[B]
   + Utf8 [[Ljava/lang/String;]
+  + Utf8 [_]
   + Utf8 [a]
   + Utf8 [a/a/a]
   + Utf8 [add]
@@ -4629,20 +5653,25 @@ Constant Pool (count = 253):
   + Utf8 [c]
   + Utf8 [card]
   + Utf8 [clear]
+  + Utf8 [close]
   + Utf8 [connect]
   + Utf8 [d]
   + Utf8 [e]
+  + Utf8 [flush]
   + Utf8 [get]
   + Utf8 [getBlockCountInSector]
   + Utf8 [getExternalStorageDirectory]
+  + Utf8 [getInstance]
   + Utf8 [getLocalizedMessage]
   + Utf8 [getSectorCount]
   + Utf8 [hasNext]
+  + Utf8 [isDirectory]
   + Utf8 [iterator]
   + Utf8 [java/io/BufferedReader]
   + Utf8 [java/io/File]
   + Utf8 [java/io/FileInputStream]
   + Utf8 [java/io/FileNotFoundException]
+  + Utf8 [java/io/FileOutputStream]
   + Utf8 [java/io/IOException]
   + Utf8 [java/io/InputStreamReader]
   + Utf8 [java/lang/Exception]
@@ -4650,6 +5679,7 @@ Constant Pool (count = 253):
   + Utf8 [java/lang/String]
   + Utf8 [java/lang/StringBuilder]
   + Utf8 [java/util/ArrayList]
+  + Utf8 [java/util/Calendar]
   + Utf8 [java/util/Iterator]
   + Utf8 [keyA0]
   + Utf8 [keyA1]
@@ -4683,6 +5713,7 @@ Constant Pool (count = 253):
   + Utf8 [keyB7]
   + Utf8 [keyB8]
   + Utf8 [keyB9]
+  + Utf8 [mkdirs]
   + Utf8 [net/thempra/yocaina/a/a]
   + Utf8 [net/thempra/yocaina/a/b]
   + Utf8 [next]
@@ -4694,36 +5725,37 @@ Constant Pool (count = 253):
   + Utf8 [size]
   + Utf8 [split]
   + Utf8 [toString]
+  + Utf8 [write]
   + Utf8 [yocainatags]
 
 Fields (count = 1):
-  + Field:        d Z
+  + Field:        e Z
     Access flags: 0x0
-      = boolean d
+      = boolean e
 
-Methods (count = 6):
+Methods (count = 7):
   - Method:       <init>(Ljava/lang/String;)V
     Access flags: 0x1
       = public b(java.lang.String)
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 24, locals = 2, stack = 2):
       [0] aload_0 v0
-      [1] invokespecial #95
+      [1] invokespecial #110
         + Methodref [net/thempra/yocaina/a/a.<init> ()V]
       [4] aload_0 v0
       [5] iconst_0
-      [6] putfield #63
-        + Fieldref [net/thempra/yocaina/a/b.d Z]
+      [6] putfield #69
+        + Fieldref [net/thempra/yocaina/a/b.e Z]
       [9] aload_0 v0
       [10] aload_1 v1
-      [11] invokevirtual #96
-        + Methodref [net/thempra/yocaina/a/b.a (Ljava/lang/String;)I]
+      [11] invokevirtual #111
+        + Methodref [net/thempra/yocaina/a/b.b (Ljava/lang/String;)I]
       [14] iconst_1
       [15] ificmpne +8 (target=23)
       [18] aload_0 v0
       [19] iconst_1
-      [20] putfield #63
-        + Fieldref [net/thempra/yocaina/a/b.d Z]
+      [20] putfield #69
+        + Fieldref [net/thempra/yocaina/a/b.e Z]
       [23] return
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 1):
@@ -4733,381 +5765,412 @@ Methods (count = 6):
     Access flags: 0x1
       = public java.util.ArrayList a(android.nfc.Tag)
     Class member attributes (count = 1):
-    + Code attribute instructions (code length = 166, locals = 8, stack = 4):
+    + Code attribute instructions (code length = 215, locals = 9, stack = 4):
       [0] aload_1 v1
-      [1] invokestatic #68
+      [1] invokestatic #74
         + Methodref [android/nfc/tech/MifareClassic.get (Landroid/nfc/Tag;)Landroid/nfc/tech/MifareClassic;]
       [4] astore_2 v2
-      [5] aload_2 v2
-      [6] invokevirtual #67
-        + Methodref [android/nfc/tech/MifareClassic.connect ()V]
-      [9] iconst_0
-      [10] istore v4
-      [12] aconst_null
-      [13] astore v5
-      [15] iconst_0
-      [16] istore v6
-      [18] goto +112 (target=130)
+      [5] aload_0 v0
+      [6] sipush 1024
+      [9] newarray 8
+      [11] putfield #68
+        + Fieldref [net/thempra/yocaina/a/b.d [B]
+      [14] aload_0 v0
+      [15] getfield #67
+        + Fieldref [net/thempra/yocaina/a/b.c Ljava/util/ArrayList;]
+      [18] invokevirtual #104
+        + Methodref [java/util/ArrayList.clear ()V]
       [21] aload_2 v2
-      [22] iload v6
-      [24] aload_0 v0
-      [25] getfield #60
+      [22] invokevirtual #73
+        + Methodref [android/nfc/tech/MifareClassic.connect ()V]
+      [25] iconst_0
+      [26] istore v4
+      [28] aconst_null
+      [29] astore v5
+      [31] iconst_0
+      [32] istore v6
+      [34] goto +145 (target=179)
+      [37] aload_2 v2
+      [38] iload v6
+      [40] aload_0 v0
+      [41] getfield #65
         + Fieldref [net/thempra/yocaina/a/b.a Ljava/util/ArrayList;]
-      [28] iload v6
-      [30] invokevirtual #92
+      [44] iload v6
+      [46] invokevirtual #105
         + Methodref [java/util/ArrayList.get (I)Ljava/lang/Object;]
-      [33] checkcast #39
+      [49] checkcast #42
         + Class [[B]
-      [36] invokevirtual #66
+      [52] invokevirtual #72
         + Methodref [android/nfc/tech/MifareClassic.authenticateSectorWithKeyA (I[B)Z]
-      [39] istore v4
-      [41] iload v4
-      [43] ifeq +76 (target=119)
-      [46] aload_2 v2
-      [47] iload v6
-      [49] invokevirtual #72
+      [55] istore v4
+      [57] iload v4
+      [59] ifeq +109 (target=168)
+      [62] aload_2 v2
+      [63] iload v6
+      [65] invokevirtual #78
         + Methodref [android/nfc/tech/MifareClassic.sectorToBlock (I)I]
-      [52] istore v7
-      [54] goto +44 (target=98)
-      [57] aload_2 v2
-      [58] iload v7
-      [60] invokevirtual #71
+      [68] istore v7
+      [70] goto +77 (target=147)
+      [73] aload_2 v2
+      [74] iload v7
+      [76] invokevirtual #77
         + Methodref [android/nfc/tech/MifareClassic.readBlock (I)[B]
-      [63] astore_3 v3
-      [64] aload_3 v3
-      [65] aload_3 v3
-      [66] arraylength
-      [67] invokestatic #65
+      [79] astore_3 v3
+      [80] iconst_0
+      [81] istore v8
+      [83] goto +23 (target=106)
+      [86] aload_0 v0
+      [87] getfield #68
+        + Fieldref [net/thempra/yocaina/a/b.d [B]
+      [90] iload v7
+      [92] bipush 16
+      [94] imul
+      [95] iload v8
+      [97] iadd
+      [98] aload_3 v3
+      [99] iload v8
+      [101] baload
+      [102] bastore
+      [103] iinc v8, 1
+      [106] iload v8
+      [108] bipush 16
+      [110] ificmplt -24 (target=86)
+      [113] aload_3 v3
+      [114] aload_3 v3
+      [115] arraylength
+      [116] invokestatic #71
         + Methodref [a/a/a.a ([BI)Ljava/lang/String;]
-      [70] astore v5
-      [72] aload v5
-      [74] ifnull +16 (target=90)
-      [77] aload_0 v0
-      [78] getfield #62
+      [119] astore v5
+      [121] aload v5
+      [123] ifnull +16 (target=139)
+      [126] aload_0 v0
+      [127] getfield #67
         + Fieldref [net/thempra/yocaina/a/b.c Ljava/util/ArrayList;]
-      [81] aload v5
-      [83] invokevirtual #90
+      [130] aload v5
+      [132] invokevirtual #103
         + Methodref [java/util/ArrayList.add (Ljava/lang/Object;)Z]
-      [86] pop
-      [87] goto +8 (target=95)
-      [90] aload_0 v0
-      [91] iconst_2
-      [92] putfield #61
+      [135] pop
+      [136] goto +8 (target=144)
+      [139] aload_0 v0
+      [140] iconst_2
+      [141] putfield #66
         + Fieldref [net/thempra/yocaina/a/b.b I]
-      [95] iinc v7, 1
-      [98] iload v7
-      [100] aload_2 v2
-      [101] iload v6
-      [103] invokevirtual #72
+      [144] iinc v7, 1
+      [147] iload v7
+      [149] aload_2 v2
+      [150] iload v6
+      [152] invokevirtual #78
         + Methodref [android/nfc/tech/MifareClassic.sectorToBlock (I)I]
-      [106] aload_2 v2
-      [107] iload v6
-      [109] invokevirtual #69
+      [155] aload_2 v2
+      [156] iload v6
+      [158] invokevirtual #75
         + Methodref [android/nfc/tech/MifareClassic.getBlockCountInSector (I)I]
-      [112] iadd
-      [113] ificmplt -56 (target=57)
-      [116] goto +11 (target=127)
-      [119] aload_0 v0
-      [120] iconst_1
-      [121] putfield #61
+      [161] iadd
+      [162] ificmplt -89 (target=73)
+      [165] goto +11 (target=176)
+      [168] aload_0 v0
+      [169] iconst_1
+      [170] putfield #66
         + Fieldref [net/thempra/yocaina/a/b.b I]
-      [124] goto +37 (target=161)
-      [127] iinc v6, 1
-      [130] iload v6
-      [132] aload_2 v2
-      [133] invokevirtual #70
+      [173] goto +37 (target=210)
+      [176] iinc v6, 1
+      [179] iload v6
+      [181] aload_2 v2
+      [182] invokevirtual #76
         + Methodref [android/nfc/tech/MifareClassic.getSectorCount ()I]
-      [136] ificmplt -115 (target=21)
-      [139] goto +22 (target=161)
-      [142] astore v4
-      [144] ldc #38
+      [185] ificmplt -148 (target=37)
+      [188] goto +22 (target=210)
+      [191] astore v4
+      [193] ldc #41
         + String [yocainatags]
-      [146] aload v4
-      [148] invokevirtual #79
+      [195] aload v4
+      [197] invokevirtual #91
         + Methodref [java/io/IOException.getLocalizedMessage ()Ljava/lang/String;]
-      [151] invokestatic #74
+      [200] invokestatic #80
         + Methodref [android/util/Log.e (Ljava/lang/String;Ljava/lang/String;)I]
-      [154] pop
-      [155] aload_0 v0
-      [156] bipush 6
-      [158] putfield #61
+      [203] pop
+      [204] aload_0 v0
+      [205] bipush 6
+      [207] putfield #66
         + Fieldref [net/thempra/yocaina/a/b.b I]
-      [161] aload_0 v0
-      [162] getfield #62
+      [210] aload_0 v0
+      [211] getfield #67
         + Fieldref [net/thempra/yocaina/a/b.c Ljava/util/ArrayList;]
-      [165] areturn
+      [214] areturn
       Code attribute exceptions (count = 1):
-      - ExceptionInfo (5 -> 139: 142):
+      - ExceptionInfo (21 -> 188: 191):
       + Class [java/io/IOException]
       Code attribute attributes (attribute count = 1):
-      + Stack map table attribute (count = 11):
-        - [21] Var: [a:net/thempra/yocaina/a/b][a:android/nfc/Tag][a:android/nfc/tech/MifareClassic][T][i][a:java/lang/String][i], Stack: 
-        - [57] Var: ...[i], Stack: (empty)
-        - [90] Var: [a:net/thempra/yocaina/a/b][a:android/nfc/Tag][a:android/nfc/tech/MifareClassic][a:[B][i][a:java/lang/String][i][i], Stack: 
-        - [95] Var: ..., Stack: (empty)
-        - [98] Var: [a:net/thempra/yocaina/a/b][a:android/nfc/Tag][a:android/nfc/tech/MifareClassic][T][i][a:java/lang/String][i][i], Stack: 
-        - [119] Var: -1, Stack: (empty)
-        - [127] Var: ..., Stack: (empty)
-        - [130] Var: ..., Stack: (empty)
+      + Stack map table attribute (count = 13):
+        - [37] Var: [a:net/thempra/yocaina/a/b][a:android/nfc/Tag][a:android/nfc/tech/MifareClassic][T][i][a:java/lang/String][i], Stack: 
+        - [73] Var: ...[i], Stack: (empty)
+        - [86] Var: [a:net/thempra/yocaina/a/b][a:android/nfc/Tag][a:android/nfc/tech/MifareClassic][a:[B][i][a:java/lang/String][i][i][i], Stack: 
+        - [106] Var: ..., Stack: (empty)
         - [139] Var: -1, Stack: (empty)
-        - [142] Var: [a:net/thempra/yocaina/a/b][a:android/nfc/Tag][a:android/nfc/tech/MifareClassic], Stack: [a:java/io/IOException]
-        - [161] Var: ..., Stack: (empty)
-  + Method:       a(Ljava/lang/String;)I
+        - [144] Var: ..., Stack: (empty)
+        - [147] Var: [a:net/thempra/yocaina/a/b][a:android/nfc/Tag][a:android/nfc/tech/MifareClassic][T][i][a:java/lang/String][i][i], Stack: 
+        - [168] Var: -1, Stack: (empty)
+        - [176] Var: ..., Stack: (empty)
+        - [179] Var: ..., Stack: (empty)
+        - [188] Var: -1, Stack: (empty)
+        - [191] Var: [a:net/thempra/yocaina/a/b][a:android/nfc/Tag][a:android/nfc/tech/MifareClassic], Stack: [a:java/io/IOException]
+        - [210] Var: ..., Stack: (empty)
+  + Method:       b(Ljava/lang/String;)I
     Access flags: 0x4
-      = protected int a(java.lang.String)
+      = protected int b(java.lang.String)
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 538, locals = 11, stack = 6):
       [0] aload_0 v0
-      [1] getfield #60
+      [1] getfield #65
         + Fieldref [net/thempra/yocaina/a/b.a Ljava/util/ArrayList;]
-      [4] invokevirtual #91
+      [4] invokevirtual #104
         + Methodref [java/util/ArrayList.clear ()V]
-      [7] new #47
+      [7] new #50
         + Class [java/io/File]
       [10] dup
-      [11] new #55
+      [11] new #59
         + Class [java/lang/StringBuilder]
       [14] dup
-      [15] invokespecial #86
+      [15] invokespecial #98
         + Methodref [java/lang/StringBuilder.<init> ()V]
-      [18] invokestatic #73
+      [18] invokestatic #79
         + Methodref [android/os/Environment.getExternalStorageDirectory ()Ljava/io/File;]
-      [21] invokevirtual #87
+      [21] invokevirtual #100
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;]
-      [24] ldc #3
+      [24] ldc #5
         + String [/yocaina/]
-      [26] invokevirtual #88
+      [26] invokevirtual #101
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
       [29] aload_1 v1
-      [30] invokevirtual #88
+      [30] invokevirtual #101
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [33] invokevirtual #89
+      [33] invokevirtual #102
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
-      [36] invokespecial #76
+      [36] invokespecial #82
         + Methodref [java/io/File.<init> (Ljava/lang/String;)V]
       [39] astore_2 v2
-      [40] new #48
+      [40] new #51
         + Class [java/io/FileInputStream]
       [43] dup
       [44] aload_2 v2
-      [45] invokespecial #77
+      [45] invokespecial #85
         + Methodref [java/io/FileInputStream.<init> (Ljava/io/File;)V]
       [48] astore_3 v3
-      [49] new #46
+      [49] new #49
         + Class [java/io/BufferedReader]
       [52] dup
-      [53] new #51
+      [53] new #55
         + Class [java/io/InputStreamReader]
       [56] dup
       [57] aload_3 v3
-      [58] invokespecial #81
+      [58] invokespecial #93
         + Methodref [java/io/InputStreamReader.<init> (Ljava/io/InputStream;)V]
-      [61] invokespecial #75
+      [61] invokespecial #81
         + Methodref [java/io/BufferedReader.<init> (Ljava/io/Reader;)V]
       [64] astore v4
       [66] bipush 32
-      [68] anewarray #54
+      [68] anewarray #58
         + Class [java/lang/String]
       [71] dup
       [72] iconst_0
-      [73] ldc #6
+      [73] ldc #9
         + String [keyA0]
       [75] aastore
       [76] dup
       [77] iconst_1
-      [78] ldc #7
+      [78] ldc #10
         + String [keyA1]
       [80] aastore
       [81] dup
       [82] iconst_2
-      [83] ldc #14
+      [83] ldc #17
         + String [keyA2]
       [85] aastore
       [86] dup
       [87] iconst_3
-      [88] ldc #15
+      [88] ldc #18
         + String [keyA3]
       [90] aastore
       [91] dup
       [92] iconst_4
-      [93] ldc #16
+      [93] ldc #19
         + String [keyA4]
       [95] aastore
       [96] dup
       [97] iconst_5
-      [98] ldc #17
+      [98] ldc #20
         + String [keyA5]
       [100] aastore
       [101] dup
       [102] bipush 6
-      [104] ldc #18
+      [104] ldc #21
         + String [keyA6]
       [106] aastore
       [107] dup
       [108] bipush 7
-      [110] ldc #19
+      [110] ldc #22
         + String [keyA7]
       [112] aastore
       [113] dup
       [114] bipush 8
-      [116] ldc #20
+      [116] ldc #23
         + String [keyA8]
       [118] aastore
       [119] dup
       [120] bipush 9
-      [122] ldc #21
+      [122] ldc #24
         + String [keyA9]
       [124] aastore
       [125] dup
       [126] bipush 10
-      [128] ldc #8
+      [128] ldc #11
         + String [keyA10]
       [130] aastore
       [131] dup
       [132] bipush 11
-      [134] ldc #9
+      [134] ldc #12
         + String [keyA11]
       [136] aastore
       [137] dup
       [138] bipush 12
-      [140] ldc #10
+      [140] ldc #13
         + String [keyA12]
       [142] aastore
       [143] dup
       [144] bipush 13
-      [146] ldc #11
+      [146] ldc #14
         + String [keyA13]
       [148] aastore
       [149] dup
       [150] bipush 14
-      [152] ldc #12
+      [152] ldc #15
         + String [keyA14]
       [154] aastore
       [155] dup
       [156] bipush 15
-      [158] ldc #13
+      [158] ldc #16
         + String [keyA15]
       [160] aastore
       [161] dup
       [162] bipush 16
-      [164] ldc #22
+      [164] ldc #25
         + String [keyB0]
       [166] aastore
       [167] dup
       [168] bipush 17
-      [170] ldc #23
+      [170] ldc #26
         + String [keyB1]
       [172] aastore
       [173] dup
       [174] bipush 18
-      [176] ldc #30
+      [176] ldc #33
         + String [keyB2]
       [178] aastore
       [179] dup
       [180] bipush 19
-      [182] ldc #31
+      [182] ldc #34
         + String [keyB3]
       [184] aastore
       [185] dup
       [186] bipush 20
-      [188] ldc #32
+      [188] ldc #35
         + String [keyB4]
       [190] aastore
       [191] dup
       [192] bipush 21
-      [194] ldc #33
+      [194] ldc #36
         + String [keyB5]
       [196] aastore
       [197] dup
       [198] bipush 22
-      [200] ldc #34
+      [200] ldc #37
         + String [keyB6]
       [202] aastore
       [203] dup
       [204] bipush 23
-      [206] ldc #35
+      [206] ldc #38
         + String [keyB7]
       [208] aastore
       [209] dup
       [210] bipush 24
-      [212] ldc #36
+      [212] ldc #39
         + String [keyB8]
       [214] aastore
       [215] dup
       [216] bipush 25
-      [218] ldc #37
+      [218] ldc #40
         + String [keyB9]
       [220] aastore
       [221] dup
       [222] bipush 26
-      [224] ldc #24
+      [224] ldc #27
         + String [keyB10]
       [226] aastore
       [227] dup
       [228] bipush 27
-      [230] ldc #25
+      [230] ldc #28
         + String [keyB11]
       [232] aastore
       [233] dup
       [234] bipush 28
-      [236] ldc #26
+      [236] ldc #29
         + String [keyB12]
       [238] aastore
       [239] dup
       [240] bipush 29
-      [242] ldc #27
+      [242] ldc #30
         + String [keyB13]
       [244] aastore
       [245] dup
       [246] bipush 30
-      [248] ldc #28
+      [248] ldc #31
         + String [keyB14]
       [250] aastore
       [251] dup
       [252] bipush 31
-      [254] ldc #29
+      [254] ldc #32
         + String [keyB15]
       [256] aastore
       [257] astore v5
-      [259] new #55
+      [259] new #59
         + Class [java/lang/StringBuilder]
       [262] dup
-      [263] invokespecial #86
+      [263] invokespecial #98
         + Methodref [java/lang/StringBuilder.<init> ()V]
-      [266] invokestatic #73
+      [266] invokestatic #79
         + Methodref [android/os/Environment.getExternalStorageDirectory ()Ljava/io/File;]
-      [269] invokevirtual #87
+      [269] invokevirtual #100
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;]
-      [272] ldc #3
+      [272] ldc #5
         + String [/yocaina/]
-      [274] invokevirtual #88
+      [274] invokevirtual #101
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
       [277] aload_1 v1
-      [278] invokevirtual #88
+      [278] invokevirtual #101
         + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
-      [281] invokevirtual #89
+      [281] invokevirtual #102
         + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
-      [284] ldc #5
+      [284] ldc #8
         + String [card]
       [286] aload v5
-      [288] invokestatic #64
+      [288] invokestatic #70
         + Methodref [a/a/a.a (Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljava/util/ArrayList;]
       [291] astore v6
       [293] aload v6
-      [295] invokevirtual #94
+      [295] invokevirtual #107
         + Methodref [java/util/ArrayList.size ()I]
       [298] ifne +5 (target=303)
       [301] iconst_m1
       [302] ireturn
       [303] aload v6
-      [305] invokevirtual #93
+      [305] invokevirtual #106
         + Methodref [java/util/ArrayList.iterator ()Ljava/util/Iterator;]
       [308] astore v8
       [310] goto +192 (target=502)
       [313] aload v8
-      [315] invokeinterface #98
+      [315] invokeinterface #113
         + InterfaceMethodref [java/util/Iterator.next ()Ljava/lang/Object;]
-      [320] checkcast #54
+      [320] checkcast #58
         + Class [java/lang/String]
       [323] astore v7
       [325] aload v7
@@ -5116,7 +6179,7 @@ Methods (count = 6):
       [333] aload v7
       [335] ldc #2
         + String [ ]
-      [337] invokevirtual #85
+      [337] invokevirtual #97
         + Methodref [java/lang/String.split (Ljava/lang/String;)[Ljava/lang/String;]
       [340] astore v9
       [342] bipush 6
@@ -5126,14 +6189,14 @@ Methods (count = 6):
       [348] aload v9
       [350] iconst_0
       [351] aaload
-      [352] ldc #4
+      [352] ldc #6
         + String [0x]
       [354] ldc #1
         + String []
-      [356] invokevirtual #84
+      [356] invokevirtual #96
         + Methodref [java/lang/String.replace (Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;]
       [359] bipush 16
-      [361] invokestatic #83
+      [361] invokestatic #95
         + Methodref [java/lang/Integer.parseInt (Ljava/lang/String;I)I]
       [364] sipush 255
       [367] iand
@@ -5144,14 +6207,14 @@ Methods (count = 6):
       [372] aload v9
       [374] iconst_1
       [375] aaload
-      [376] ldc #4
+      [376] ldc #6
         + String [0x]
       [378] ldc #1
         + String []
-      [380] invokevirtual #84
+      [380] invokevirtual #96
         + Methodref [java/lang/String.replace (Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;]
       [383] bipush 16
-      [385] invokestatic #83
+      [385] invokestatic #95
         + Methodref [java/lang/Integer.parseInt (Ljava/lang/String;I)I]
       [388] sipush 255
       [391] iand
@@ -5162,14 +6225,14 @@ Methods (count = 6):
       [396] aload v9
       [398] iconst_2
       [399] aaload
-      [400] ldc #4
+      [400] ldc #6
         + String [0x]
       [402] ldc #1
         + String []
-      [404] invokevirtual #84
+      [404] invokevirtual #96
         + Methodref [java/lang/String.replace (Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;]
       [407] bipush 16
-      [409] invokestatic #83
+      [409] invokestatic #95
         + Methodref [java/lang/Integer.parseInt (Ljava/lang/String;I)I]
       [412] sipush 255
       [415] iand
@@ -5180,14 +6243,14 @@ Methods (count = 6):
       [420] aload v9
       [422] iconst_3
       [423] aaload
-      [424] ldc #4
+      [424] ldc #6
         + String [0x]
       [426] ldc #1
         + String []
-      [428] invokevirtual #84
+      [428] invokevirtual #96
         + Methodref [java/lang/String.replace (Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;]
       [431] bipush 16
-      [433] invokestatic #83
+      [433] invokestatic #95
         + Methodref [java/lang/Integer.parseInt (Ljava/lang/String;I)I]
       [436] sipush 255
       [439] iand
@@ -5198,14 +6261,14 @@ Methods (count = 6):
       [444] aload v9
       [446] iconst_4
       [447] aaload
-      [448] ldc #4
+      [448] ldc #6
         + String [0x]
       [450] ldc #1
         + String []
-      [452] invokevirtual #84
+      [452] invokevirtual #96
         + Methodref [java/lang/String.replace (Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;]
       [455] bipush 16
-      [457] invokestatic #83
+      [457] invokestatic #95
         + Methodref [java/lang/Integer.parseInt (Ljava/lang/String;I)I]
       [460] sipush 255
       [463] iand
@@ -5216,14 +6279,14 @@ Methods (count = 6):
       [468] aload v9
       [470] iconst_5
       [471] aaload
-      [472] ldc #4
+      [472] ldc #6
         + String [0x]
       [474] ldc #1
         + String []
-      [476] invokevirtual #84
+      [476] invokevirtual #96
         + Methodref [java/lang/String.replace (Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;]
       [479] bipush 16
-      [481] invokestatic #83
+      [481] invokestatic #95
         + Methodref [java/lang/Integer.parseInt (Ljava/lang/String;I)I]
       [484] sipush 255
       [487] iand
@@ -5231,30 +6294,30 @@ Methods (count = 6):
       [489] bastore
       [490] astore v10
       [492] aload_0 v0
-      [493] getfield #60
+      [493] getfield #65
         + Fieldref [net/thempra/yocaina/a/b.a Ljava/util/ArrayList;]
       [496] aload v10
-      [498] invokevirtual #90
+      [498] invokevirtual #103
         + Methodref [java/util/ArrayList.add (Ljava/lang/Object;)Z]
       [501] pop
       [502] aload v8
-      [504] invokeinterface #97
+      [504] invokeinterface #112
         + InterfaceMethodref [java/util/Iterator.hasNext ()Z]
       [509] ifne -196 (target=313)
       [512] goto +24 (target=536)
       [515] astore_2 v2
       [516] aload_2 v2
-      [517] invokevirtual #78
+      [517] invokevirtual #86
         + Methodref [java/io/FileNotFoundException.printStackTrace ()V]
       [520] goto +16 (target=536)
       [523] astore_2 v2
       [524] aload_2 v2
-      [525] invokevirtual #80
+      [525] invokevirtual #92
         + Methodref [java/io/IOException.printStackTrace ()V]
       [528] goto +8 (target=536)
       [531] astore_2 v2
       [532] aload_2 v2
-      [533] invokevirtual #82
+      [533] invokevirtual #94
         + Methodref [java/lang/Exception.printStackTrace ()V]
       [536] iconst_1
       [537] ireturn
@@ -5297,7 +6360,7 @@ Methods (count = 6):
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 5, locals = 1, stack = 1):
       [0] aload_0 v0
-      [1] getfield #61
+      [1] getfield #66
         + Fieldref [net/thempra/yocaina/a/b.b I]
       [4] ireturn
       Code attribute exceptions (count = 0):
@@ -5308,11 +6371,178 @@ Methods (count = 6):
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 5, locals = 1, stack = 1):
       [0] aload_0 v0
-      [1] getfield #63
-        + Fieldref [net/thempra/yocaina/a/b.d Z]
+      [1] getfield #69
+        + Fieldref [net/thempra/yocaina/a/b.e Z]
       [4] ireturn
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 0):
+  + Method:       a(Ljava/lang/String;)Ljava/lang/String;
+    Access flags: 0x1
+      = public java.lang.String a(java.lang.String)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 215, locals = 6, stack = 4):
+      [0] invokestatic #109
+        + Methodref [java/util/Calendar.getInstance ()Ljava/util/Calendar;]
+      [3] astore_2 v2
+      [4] new #50
+        + Class [java/io/File]
+      [7] dup
+      [8] new #59
+        + Class [java/lang/StringBuilder]
+      [11] dup
+      [12] invokespecial #98
+        + Methodref [java/lang/StringBuilder.<init> ()V]
+      [15] invokestatic #79
+        + Methodref [android/os/Environment.getExternalStorageDirectory ()Ljava/io/File;]
+      [18] invokevirtual #100
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;]
+      [21] ldc #5
+        + String [/yocaina/]
+      [23] invokevirtual #101
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [26] aload_1 v1
+      [27] invokevirtual #101
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [30] ldc #4
+        + String [/]
+      [32] invokevirtual #101
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [35] invokevirtual #102
+        + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [38] invokespecial #82
+        + Methodref [java/io/File.<init> (Ljava/lang/String;)V]
+      [41] astore_3 v3
+      [42] aload_3 v3
+      [43] invokevirtual #83
+        + Methodref [java/io/File.isDirectory ()Z]
+      [46] ifne +8 (target=54)
+      [49] aload_3 v3
+      [50] invokevirtual #84
+        + Methodref [java/io/File.mkdirs ()Z]
+      [53] pop
+      [54] new #59
+        + Class [java/lang/StringBuilder]
+      [57] dup
+      [58] invokespecial #98
+        + Methodref [java/lang/StringBuilder.<init> ()V]
+      [61] invokestatic #79
+        + Methodref [android/os/Environment.getExternalStorageDirectory ()Ljava/io/File;]
+      [64] invokevirtual #100
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;]
+      [67] ldc #5
+        + String [/yocaina/]
+      [69] invokevirtual #101
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [72] aload_1 v1
+      [73] invokevirtual #101
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [76] ldc #4
+        + String [/]
+      [78] invokevirtual #101
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [81] aload_2 v2
+      [82] iconst_5
+      [83] invokevirtual #108
+        + Methodref [java/util/Calendar.get (I)I]
+      [86] invokevirtual #99
+        + Methodref [java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;]
+      [89] ldc #7
+        + String [_]
+      [91] invokevirtual #101
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [94] aload_2 v2
+      [95] iconst_2
+      [96] invokevirtual #108
+        + Methodref [java/util/Calendar.get (I)I]
+      [99] iconst_1
+      [100] iadd
+      [101] invokevirtual #99
+        + Methodref [java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;]
+      [104] ldc #7
+        + String [_]
+      [106] invokevirtual #101
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [109] aload_2 v2
+      [110] iconst_1
+      [111] invokevirtual #108
+        + Methodref [java/util/Calendar.get (I)I]
+      [114] invokevirtual #99
+        + Methodref [java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;]
+      [117] ldc #7
+        + String [_]
+      [119] invokevirtual #101
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [122] aload_2 v2
+      [123] bipush 11
+      [125] invokevirtual #108
+        + Methodref [java/util/Calendar.get (I)I]
+      [128] invokevirtual #99
+        + Methodref [java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;]
+      [131] ldc #7
+        + String [_]
+      [133] invokevirtual #101
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [136] aload_2 v2
+      [137] bipush 12
+      [139] invokevirtual #108
+        + Methodref [java/util/Calendar.get (I)I]
+      [142] invokevirtual #99
+        + Methodref [java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;]
+      [145] ldc #7
+        + String [_]
+      [147] invokevirtual #101
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [150] aload_2 v2
+      [151] bipush 13
+      [153] invokevirtual #108
+        + Methodref [java/util/Calendar.get (I)I]
+      [156] invokevirtual #99
+        + Methodref [java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;]
+      [159] ldc #3
+        + String [.mfc]
+      [161] invokevirtual #101
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [164] invokevirtual #102
+        + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [167] astore v4
+      [169] new #50
+        + Class [java/io/File]
+      [172] dup
+      [173] aload v4
+      [175] invokespecial #82
+        + Methodref [java/io/File.<init> (Ljava/lang/String;)V]
+      [178] astore_3 v3
+      [179] new #53
+        + Class [java/io/FileOutputStream]
+      [182] dup
+      [183] aload_3 v3
+      [184] invokespecial #87
+        + Methodref [java/io/FileOutputStream.<init> (Ljava/io/File;)V]
+      [187] astore v5
+      [189] aload v5
+      [191] aload_0 v0
+      [192] getfield #68
+        + Fieldref [net/thempra/yocaina/a/b.d [B]
+      [195] invokevirtual #90
+        + Methodref [java/io/FileOutputStream.write ([B)V]
+      [198] aload v5
+      [200] invokevirtual #89
+        + Methodref [java/io/FileOutputStream.flush ()V]
+      [203] aload v5
+      [205] invokevirtual #88
+        + Methodref [java/io/FileOutputStream.close ()V]
+      [208] aload v4
+      [210] areturn
+      [211] astore v5
+      [213] aconst_null
+      [214] areturn
+      Code attribute exceptions (count = 1):
+      - ExceptionInfo (179 -> 210: 211):
+      + Class [java/io/IOException]
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 2):
+        - [54] Var: ...[a:java/util/Calendar][a:java/io/File], Stack: (empty)
+        - [211] Var: [a:net/thempra/yocaina/a/b][a:java/lang/String][a:java/util/Calendar][a:java/io/File][a:java/lang/String], Stack: [a:java/io/IOException]
 
 Class file attributes (count = 0):
 
@@ -5326,7 +6556,7 @@ _____________________________________________________________________
 
 Interfaces (count = 0):
 
-Constant Pool (count = 76):
+Constant Pool (count = 77):
   + String [Not implemented yet]
   + String [yocainatags]
   + Class [[B]
@@ -5369,6 +6599,7 @@ Constant Pool (count = 76):
   + Utf8 [(Landroid/nfc/Tag;)Landroid/nfc/tech/NfcV;]
   + Utf8 [(Landroid/nfc/Tag;)Ljava/util/ArrayList;]
   + Utf8 [(Ljava/lang/Object;)Z]
+  + Utf8 [(Ljava/lang/String;)Ljava/lang/String;]
   + Utf8 [(Ljava/lang/String;)V]
   + Utf8 [(Ljava/lang/String;Ljava/lang/String;)I]
   + Utf8 [([B)[B]
@@ -5405,7 +6636,7 @@ Constant Pool (count = 76):
 
 Fields (count = 0):
 
-Methods (count = 4):
+Methods (count = 5):
   - Method:       <init>(Ljava/lang/String;)V
     Access flags: 0x1
       = public c(java.lang.String)
@@ -5519,6 +6750,15 @@ Methods (count = 4):
         - [85] Var: [a:net/thempra/yocaina/a/c][a:android/nfc/Tag][a:android/nfc/tech/NfcV][T][a:java/lang/String], Stack: [a:android/nfc/TagLostException]
         - [89] Var: ..., Stack: [a:java/io/IOException]
         - [102] Var: ..., Stack: (empty)
+  + Method:       a(Ljava/lang/String;)Ljava/lang/String;
+    Access flags: 0x1
+      = public java.lang.String a(java.lang.String)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 2, locals = 2, stack = 1):
+      [0] aconst_null
+      [1] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
   + Method:       a()I
     Access flags: 0x1
       = public int a()
